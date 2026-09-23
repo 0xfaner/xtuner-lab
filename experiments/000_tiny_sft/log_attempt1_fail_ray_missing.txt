@@ -1,0 +1,66 @@
+Could not find the bitsandbytes CUDA binary at PosixPath('/home/gugubai/miniconda3/envs/xtuner/lib/python3.11/site-packages/bitsandbytes/libbitsandbytes_cuda130.so')
+The installed version of bitsandbytes was compiled without GPU support. 8-bit optimizers, 8-bit multiplication, and GPU quantization are unavailable.
+Import FlashAttention 2 failed No module named 'flash_attn', Please install it manually.
+Traceback (most recent call last):
+  File "/home/gugubai/workspace/xtuner/xtuner/v1/train/cli/sft.py", line 8, in <module>
+    from xtuner.v1.train.arguments import TrainingArguments
+  File "/home/gugubai/workspace/xtuner/xtuner/v1/train/__init__.py", line 2, in <module>
+    from .trainer import LoadCheckpointConfig, ResumeConfig, Trainer, TrainerConfig
+  File "/home/gugubai/workspace/xtuner/xtuner/v1/train/trainer.py", line 44, in <module>
+    from xtuner.v1.datasets.config import BaseDataloaderConfig, DataloaderConfig, DatasetConfigList
+  File "/home/gugubai/workspace/xtuner/xtuner/v1/datasets/__init__.py", line 13, in <module>
+    from .mllm_tokenize_fn import (
+  File "/home/gugubai/workspace/xtuner/xtuner/v1/datasets/mllm_tokenize_fn/__init__.py", line 2, in <module>
+    from .intern_s1_vl_tokenize_fn import InternS1VLTokenizeFnConfig, InternS1VLTokenizeFunction
+  File "/home/gugubai/workspace/xtuner/xtuner/v1/datasets/mllm_tokenize_fn/intern_s1_vl_tokenize_fn.py", line 16, in <module>
+    from xtuner.v1.model import InternS1BaseConfig, InternVLBaseConfig
+  File "/home/gugubai/workspace/xtuner/xtuner/v1/model/__init__.py", line 4, in <module>
+    from xtuner.v1.module.router.greedy import GreedyRouterConfig
+  File "/home/gugubai/workspace/xtuner/xtuner/v1/module/__init__.py", line 11, in <module>
+    from .lm_head import LMHead
+  File "/home/gugubai/workspace/xtuner/xtuner/v1/module/lm_head/__init__.py", line 1, in <module>
+    from .lm_head import LMHead
+  File "/home/gugubai/workspace/xtuner/xtuner/v1/module/lm_head/lm_head.py", line 9, in <module>
+    from xtuner.v1.loss.ce_loss import LMHeadLossContext
+  File "/home/gugubai/workspace/xtuner/xtuner/v1/loss/__init__.py", line 14, in <module>
+    from .rl_loss import LogProbConfig, LogProbContext, TopKLogProbConfig, TopKLogProbContext
+  File "/home/gugubai/workspace/xtuner/xtuner/v1/loss/rl_loss.py", line 8, in <module>
+    from xtuner.v1.rl.utils.misc import gather_logprobs
+  File "/home/gugubai/workspace/xtuner/xtuner/v1/rl/utils/__init__.py", line 27, in <module>
+    from .ray_accelerator_worker import (
+  File "/home/gugubai/workspace/xtuner/xtuner/v1/rl/utils/ray_accelerator_worker.py", line 4, in <module>
+    import ray
+ModuleNotFoundError: No module named 'ray'
+E0917 17:28:16.295000 10713 site-packages/torch/distributed/elastic/multiprocessing/api.py:1002] failed (exitcode: 1) local_rank: 0 (pid: 10753) of binary: /home/gugubai/miniconda3/envs/xtuner/bin/python3.11
+Traceback (most recent call last):
+  File "/home/gugubai/miniconda3/envs/xtuner/bin/torchrun", line 6, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/home/gugubai/miniconda3/envs/xtuner/lib/python3.11/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 380, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/gugubai/miniconda3/envs/xtuner/lib/python3.11/site-packages/torch/distributed/run.py", line 1138, in main
+    run(args)
+  File "/home/gugubai/miniconda3/envs/xtuner/lib/python3.11/site-packages/torch/distributed/run.py", line 1129, in run
+    elastic_launch(
+  File "/home/gugubai/miniconda3/envs/xtuner/lib/python3.11/site-packages/torch/distributed/launcher/api.py", line 197, in __call__
+    return launch_agent(
+           ^^^^^^^^^^^^^
+  File "/home/gugubai/miniconda3/envs/xtuner/lib/python3.11/site-packages/torch/distributed/launcher/api.py", line 386, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+xtuner/v1/train/cli/sft.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-09-17_17:28:16
+  host      : GuGu-Workstation
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 10753) 
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================

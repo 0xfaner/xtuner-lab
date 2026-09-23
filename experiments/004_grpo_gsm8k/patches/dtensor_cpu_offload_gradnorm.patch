@@ -1,0 +1,25 @@
+diff --git a/xtuner/v1/utils/dtensor.py b/xtuner/v1/utils/dtensor.py
+index f035b5fa..ebdf4b49 100644
+--- a/xtuner/v1/utils/dtensor.py
++++ b/xtuner/v1/utils/dtensor.py
+@@ -77,6 +77,14 @@ def cal_total_norm(
+     local_norm = torch.linalg.vector_norm(torch.stack([norm.to_local() for norm in norms]), norm_type, dtype=dtype)
+     if norm_type == 2:
+         local_norm_squared = local_norm**2
++        # [xtuner-lab patch] cpu_offload 下范数在 CPU、通信组是 NCCL：归约前挪到 mesh 设备、归约后挪回。
++        reduce_device = torch.device(device_mesh.device_type)
++        orig_device = local_norm_squared.device
++        if orig_device.type != reduce_device.type:
++            local_norm_squared = local_norm_squared.to(reduce_device)
+         for i, placement in enumerate(placements):
+             if isinstance(placement, Shard):
+                 # FSDP's strided bookkeeping placement is a Shard subclass, so
+@@ -86,6 +94,8 @@ def cal_total_norm(
+                 pass
+             else:
+                 raise ValueError(f"Unsupported placement type {placement} in clip_grad_norm")
++        if local_norm_squared.device.type != orig_device.type:
++            local_norm_squared = local_norm_squared.to(orig_device)
+         global_norm = local_norm_squared**0.5
+     else:
+         raise NotImplementedError

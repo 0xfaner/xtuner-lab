@@ -1,0 +1,130 @@
+Could not find the bitsandbytes CUDA binary at PosixPath('/home/gugubai/miniconda3/envs/xtuner/lib/python3.11/site-packages/bitsandbytes/libbitsandbytes_cuda130.so')
+The installed version of bitsandbytes was compiled without GPU support. 8-bit optimizers, 8-bit multiplication, and GPU quantization are unavailable.
+Import FlashAttention 2 failed No module named 'flash_attn', Please install it manually.
+[XTuner][2026-09-17 17:29:27][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-17 17:29:27][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-17 17:29:27][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-17 17:29:27][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-17 17:29:27][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-17 17:29:27][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-17 17:29:27][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-17 17:29:27][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-17 17:29:27][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-17 17:29:27][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-17 17:29:27][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-17 17:29:27][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-17 17:29:27][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-17 17:29:27][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-17 17:29:27][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-17 17:29:27][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-17 17:29:27][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-17 17:29:27][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-17 17:29:27][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-17 17:29:27][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-17 17:29:27][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-17 17:29:27][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-17 17:29:27][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-17 17:29:27][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-17 17:29:27][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-17 17:29:27][INFO] set HF_MODULES_CACHE to /home/gugubai/.cache/huggingface/modules_cache_GuGu-Workstation_11220 for current process (hostname=GuGu-Workstation, pid=11220)
+[XTuner][RANK 0][2026-09-17 17:29:27][WARNING] `resume_cfg` is deprecated, please use `auto_resume` and `load_checkpoint_cfg` instead
+[XTuner][RANK 0][2026-09-17 17:29:27][INFO] 
+============XTuner Training Environment============
+XTUNER_DETERMINISTIC: None
+XTUNER_GC_ENABLE: None
+XTUNER_FILE_OPEN_CONCURRENCY: None
+XTUNER_TOKENIZE_CHUNK_SIZE: None
+XTUNER_TOKENIZE_WORKERS: None
+XTUNER_ACTIVATION_OFFLOAD: None
+XTUNER_USE_FA3: 0
+XTUNER_DISPATCHER_DEBUG: None
+XTUNER_ROUTER_DEBUG: None
+XTUNER_DECORD_VIDEO_THREADS: None
+XTUNER_USE_CUTLASS_GROUP_GEMM: None
+GROUPED_GEMM_USE_CUTLASS: None
+XTUNER_USE_NATIVE_RMSNORM: None
+XTUNER_SM_MARGIN: None
+XTUNER_RL_FP8_QUANTIZE_IN_BF16: None
+==================================================
+[XTuner][RANK 0][2026-09-17 17:29:27][INFO] Using toy tokenizer: <xtuner.v1.train.toy_tokenizer.UTF8ByteTokenizer object at 0x72e0f8699b90>!
+[XTuner][RANK 0][2026-09-17 17:29:27][WARNING] Setting model_cfg.lm_loss_cfg from Trainer's loss_cfg for backward compatibility. In the future, please set lm_loss_cfg directly in model_cfg instead of Trainer.
+[XTuner][RANK 0][2026-09-17 17:29:27][WARNING] FSDPConfig.torch_compile is deprecated, and will be removed in version 1.1.0. Please use XTunerBaseModelConfig.compile_cfg to control whether to use torch.compile for the model
+[XTuner][RANK 0][2026-09-17 17:29:27][WARNING] `dataset_cfg` is deprecated, please use `dataloader_cfg.dataset_config_list` instead
+[XTuner][RANK 0][2026-09-17 17:29:27][SUCCESS] [Build Datasets] Elapsed time 0.05 seconds
+[XTuner][RANK 0][2026-09-17 17:29:27][INFO] [Dataset] Start packing data of ExpandSoftPackDataset.
+[XTuner][RANK 0][2026-09-17 17:29:27][INFO] Using 8 pack workers for packing datasets.
+0it [00:00, ?it/s]1it [00:00, 828.26it/s]
+[XTuner][RANK 0][2026-09-17 17:29:27][SUCCESS] [Pack Datasets] Elapsed time 0.06 seconds
+[XTuner][RANK 0][2026-09-17 17:29:27][INFO] [Dataset] (Original) 128 samples.
+[XTuner][RANK 0][2026-09-17 17:29:27][INFO] [Dataset] (Packed) 13 samples.
+[transformers] Unrecognized keys in `rope_parameters` for 'rope_type'='default': {'high_freq_factor', 'short_factor', 'long_factor', 'factor', 'mscale_all_dim', 'original_max_position_embeddings', 'beta_slow', 'truncate', 'low_freq_factor', 'beta_fast', 'mrope_section', 'mscale'}
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/home/gugubai/workspace/xtuner/xtuner/v1/train/cli/sft.py", line 46, in <module>
+[rank0]:     app(exit_on_error=False)
+[rank0]:   File "/home/gugubai/miniconda3/envs/xtuner/lib/python3.11/site-packages/cyclopts/core.py", line 1978, in __call__
+[rank0]:     result = _run_maybe_async_command(command, bound, resolved_backend)
+[rank0]:              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/gugubai/miniconda3/envs/xtuner/lib/python3.11/site-packages/cyclopts/_run.py", line 50, in _run_maybe_async_command
+[rank0]:     return command(*bound.args, **bound.kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/gugubai/workspace/xtuner/xtuner/v1/train/cli/sft.py", line 38, in main
+[rank0]:     trainer = Trainer.from_config(trainer_cfg)
+[rank0]:               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/gugubai/workspace/xtuner/xtuner/v1/train/trainer.py", line 796, in from_config
+[rank0]:     self = cls(
+[rank0]:            ^^^^
+[rank0]:   File "/home/gugubai/workspace/xtuner/xtuner/v1/train/trainer.py", line 721, in __init__
+[rank0]:     self._engine = self.build_engine(
+[rank0]:                    ^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/gugubai/workspace/xtuner/xtuner/v1/train/trainer.py", line 1164, in build_engine
+[rank0]:     engine = TrainEngine(  # type: ignore
+[rank0]:              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/gugubai/workspace/xtuner/xtuner/v1/engine/train_engine.py", line 156, in __init__
+[rank0]:     self.model = self.build_model()
+[rank0]:                  ^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/gugubai/workspace/xtuner/xtuner/v1/engine/train_engine.py", line 174, in build_model
+[rank0]:     model = self.model_cfg.build()
+[rank0]:             ^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/gugubai/workspace/xtuner/xtuner/v1/model/dense/qwen3.py", line 39, in build
+[rank0]:     return Qwen3Dense(self)
+[rank0]:            ^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/gugubai/workspace/xtuner/xtuner/v1/model/dense/dense.py", line 74, in __init__
+[rank0]:     self._maybe_enable_compile(self.compile_cfg)
+[rank0]:   File "/home/gugubai/workspace/xtuner/xtuner/v1/model/base.py", line 2106, in _maybe_enable_compile
+[rank0]:     self._compile_overwrite(target, option)
+[rank0]:   File "/home/gugubai/workspace/xtuner/xtuner/v1/model/base.py", line 2030, in _compile_overwrite
+[rank0]:     raise AttributeError(f"Compiling Error! Cannot locate the function: {func_name}")
+[rank0]: AttributeError: Compiling Error! Cannot locate the function: xtuner.v1.float8.triton_kernels.per_block_quant_gemm.per_block_quant_torch
+E0917 17:29:28.412000 11180 site-packages/torch/distributed/elastic/multiprocessing/api.py:1002] failed (exitcode: 1) local_rank: 0 (pid: 11220) of binary: /home/gugubai/miniconda3/envs/xtuner/bin/python3.11
+Traceback (most recent call last):
+  File "/home/gugubai/miniconda3/envs/xtuner/bin/torchrun", line 6, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/home/gugubai/miniconda3/envs/xtuner/lib/python3.11/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 380, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/gugubai/miniconda3/envs/xtuner/lib/python3.11/site-packages/torch/distributed/run.py", line 1138, in main
+    run(args)
+  File "/home/gugubai/miniconda3/envs/xtuner/lib/python3.11/site-packages/torch/distributed/run.py", line 1129, in run
+    elastic_launch(
+  File "/home/gugubai/miniconda3/envs/xtuner/lib/python3.11/site-packages/torch/distributed/launcher/api.py", line 197, in __call__
+    return launch_agent(
+           ^^^^^^^^^^^^^
+  File "/home/gugubai/miniconda3/envs/xtuner/lib/python3.11/site-packages/torch/distributed/launcher/api.py", line 386, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+xtuner/v1/train/cli/sft.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-09-17_17:29:28
+  host      : GuGu-Workstation
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 11220) 
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================

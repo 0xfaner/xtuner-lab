@@ -1,0 +1,62 @@
+[14:32:02] == 0. 机器现状 ==
+0, NVIDIA GeForce RTX 4080 SUPER, 32760 MiB, 595.71.05
+1, NVIDIA GeForce RTX 4080 SUPER, 32760 MiB, 595.71.05
+shm              62G     0   62G   0% /dev/shm
+/dev/md0        250G  5.3G  245G   3% /root/autodl-tmp
+
+[14:32:02] == 1. lmdeploy 推理引擎（要求 >=0.10.2） ==
+（已就位，跳过安装）
+lmdeploy: 0.17.0 | torch: 2.9.1+cu128
+
+[14:32:11] == 2. Qwen3-0.6B 模型（ModelScope） ==
+（已存在，跳过）
+LICENSE
+README.md
+config.json
+configuration.json
+generation_config.json
+merges.txt
+model.safetensors
+tokenizer.json
+
+[14:32:11] == 3. 数据检查 ==
+   199 /root/workspace/xtuner-lab/data/gsm8k_train.jsonl
+    99 /root/workspace/xtuner-lab/data/gsm8k_val.jsonl
+   298 total
+数据首行字段 OK: ['ability', 'data_source', 'extra_info', 'prompt', 'reward_model']
+
+[14:32:11] == 4. 预检（导入级 + 模型配置） ==
+[XTuner][2026-09-21 14:32:22][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-21 14:32:22][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-21 14:32:22][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-21 14:32:22][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-21 14:32:22][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-21 14:32:22][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-21 14:32:22][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-21 14:32:23][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-21 14:32:23][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-21 14:32:23][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-21 14:32:23][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-21 14:32:23][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-21 14:32:23][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-21 14:32:23][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-21 14:32:23][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-21 14:32:23][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-21 14:32:23][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-21 14:32:23][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-21 14:32:23][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-21 14:32:23][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-21 14:32:23][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-21 14:32:23][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-21 14:32:23][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-21 14:32:23][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-21 14:32:23][WARNING] flash-attn is not installed, using `flex_attention` instead.
+ray: 2.58.0 | lmdeploy: 0.17.0
+Import FlashAttention 2 failed No module named 'flash_attn', Please install it manually.
+0.6B model cfg: Qwen3DenseConfig | tie(原始): True
+[XTuner][2026-09-21 14:32:23][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[14:32:24] == e4_prep 完成 ✅ ==
+
+real	0m22.116s
+user	0m42.642s
+sys	0m3.263s

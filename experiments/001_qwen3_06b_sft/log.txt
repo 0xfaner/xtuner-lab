@@ -1,0 +1,1028 @@
+Could not find the bitsandbytes CUDA binary at PosixPath('/home/gugubai/miniconda3/envs/xtuner/lib/python3.11/site-packages/bitsandbytes/libbitsandbytes_cuda128.so')
+The installed version of bitsandbytes was compiled without GPU support. 8-bit optimizers, 8-bit multiplication, and GPU quantization are unavailable.
+Import FlashAttention 2 failed No module named 'flash_attn', Please install it manually.
+[XTuner][2026-09-17 21:32:44][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-17 21:32:44][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-17 21:32:44][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-17 21:32:44][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-17 21:32:44][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-17 21:32:44][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-17 21:32:44][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-17 21:32:44][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-17 21:32:44][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-17 21:32:44][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-17 21:32:44][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-17 21:32:44][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-17 21:32:44][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-17 21:32:44][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-17 21:32:44][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-17 21:32:44][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-17 21:32:44][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-17 21:32:44][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-17 21:32:44][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-17 21:32:44][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-17 21:32:44][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-17 21:32:44][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-17 21:32:44][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-17 21:32:44][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-17 21:32:44][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-17 21:32:44][INFO] set HF_MODULES_CACHE to /home/gugubai/.cache/huggingface/modules_cache_GuGu-Workstation_22647 for current process (hostname=GuGu-Workstation, pid=22647)
+[XTuner][2026-09-17 21:32:44][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[XTuner][RANK 0][2026-09-17 21:32:45][WARNING] `resume_cfg` is deprecated, please use `auto_resume` and `load_checkpoint_cfg` instead
+[XTuner][RANK 0][2026-09-17 21:32:45][INFO] 
+============XTuner Training Environment============
+XTUNER_DETERMINISTIC: None
+XTUNER_GC_ENABLE: None
+XTUNER_FILE_OPEN_CONCURRENCY: None
+XTUNER_TOKENIZE_CHUNK_SIZE: None
+XTUNER_TOKENIZE_WORKERS: None
+XTUNER_ACTIVATION_OFFLOAD: None
+XTUNER_USE_FA3: 0
+XTUNER_DISPATCHER_DEBUG: None
+XTUNER_ROUTER_DEBUG: None
+XTUNER_DECORD_VIDEO_THREADS: None
+XTUNER_USE_CUTLASS_GROUP_GEMM: None
+GROUPED_GEMM_USE_CUTLASS: None
+XTUNER_USE_NATIVE_RMSNORM: None
+XTUNER_SM_MARGIN: None
+XTUNER_RL_FP8_QUANTIZE_IN_BF16: None
+==================================================
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[XTuner][RANK 0][2026-09-17 21:32:45][WARNING] Setting model_cfg.lm_loss_cfg from Trainer's loss_cfg for backward compatibility. In the future, please set lm_loss_cfg directly in model_cfg instead of Trainer.
+[XTuner][RANK 0][2026-09-17 21:32:45][WARNING] FSDPConfig.torch_compile is deprecated, and will be removed in version 1.1.0. Please use XTunerBaseModelConfig.compile_cfg to control whether to use torch.compile for the model
+[XTuner][RANK 0][2026-09-17 21:32:45][WARNING] `dataset_cfg` is deprecated, please use `dataloader_cfg.dataset_config_list` instead
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[XTuner][RANK 0][2026-09-17 21:32:45][SUCCESS] [Build Datasets] Elapsed time 0.13 seconds
+[XTuner][RANK 0][2026-09-17 21:32:45][INFO] [Dataset] Start packing data of ExpandSoftPackDataset.
+[XTuner][RANK 0][2026-09-17 21:32:45][INFO] Using 8 pack workers for packing datasets.
+0it [00:00, ?it/s]1it [00:00, 629.87it/s]
+[XTuner][RANK 0][2026-09-17 21:32:45][SUCCESS] [Pack Datasets] Elapsed time 0.06 seconds
+[XTuner][RANK 0][2026-09-17 21:32:45][INFO] [Dataset] (Original) 2000 samples.
+[XTuner][RANK 0][2026-09-17 21:32:45][INFO] [Dataset] (Packed) 68 samples.
+[transformers] Unrecognized keys in `rope_parameters` for 'rope_type'='default': {'high_freq_factor', 'factor', 'short_factor', 'mscale', 'original_max_position_embeddings', 'beta_fast', 'truncate', 'beta_slow', 'long_factor', 'low_freq_factor', 'mscale_all_dim', 'mrope_section'}
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[FSDP Sharding]:   0%|          | 0/28 [00:00<?, ?it/s]/home/gugubai/workspace/xtuner/xtuner/v1/model/utils/checkpointing.py:91: FutureWarning: Please specify CheckpointImpl.NO_REENTRANT as CheckpointImpl.REENTRANT will soon be removed as the default and eventually deprecated.
+  return checkpoint_wrapper(
+[FSDP Sharding]: 100%|██████████| 28/28 [00:00<00:00, 641.32it/s]
+[XTuner][RANK 0][2026-09-17 21:32:45][INFO] FSDPQwen3Dense(
+  (norm): FSDPRMSNorm((1024,), type=default, eps=1e-06)
+  (lm_head): FSDPLMHead(in_features=1024, out_features=151936, bias=False)
+  (layers): ModuleDict(
+    (0): FSDPCheckpointWrapper(
+      (_checkpoint_wrapped_module): DenseDecoderLayer(
+        (self_attn): MultiHeadAttention(
+          (q_proj): _Linear(in_features=1024, out_features=2048, bias=False)
+          (k_proj): _Linear(in_features=1024, out_features=1024, bias=False)
+          (v_proj): _Linear(in_features=1024, out_features=1024, bias=False)
+          (o_proj): _Linear(in_features=2048, out_features=1024, bias=False)
+          (q_norm): RMSNorm((128,), type=default, eps=1e-06)
+          (k_norm): RMSNorm((128,), type=default, eps=1e-06)
+        )
+        (mlp): DenseMLP(
+          (gate_proj): _Linear(in_features=1024, out_features=3072, bias=False)
+          (up_proj): _Linear(in_features=1024, out_features=3072, bias=False)
+          (down_proj): _Linear(in_features=3072, out_features=1024, bias=False)
+        )
+        (input_layernorm): RMSNorm((1024,), type=default, eps=1e-06)
+        (post_attention_layernorm): RMSNorm((1024,), type=default, eps=1e-06)
+      )
+    )
+    (1): FSDPCheckpointWrapper(
+      (_checkpoint_wrapped_module): DenseDecoderLayer(
+        (self_attn): MultiHeadAttention(
+          (q_proj): _Linear(in_features=1024, out_features=2048, bias=False)
+          (k_proj): _Linear(in_features=1024, out_features=1024, bias=False)
+          (v_proj): _Linear(in_features=1024, out_features=1024, bias=False)
+          (o_proj): _Linear(in_features=2048, out_features=1024, bias=False)
+          (q_norm): RMSNorm((128,), type=default, eps=1e-06)
+          (k_norm): RMSNorm((128,), type=default, eps=1e-06)
+        )
+        (mlp): DenseMLP(
+          (gate_proj): _Linear(in_features=1024, out_features=3072, bias=False)
+          (up_proj): _Linear(in_features=1024, out_features=3072, bias=False)
+          (down_proj): _Linear(in_features=3072, out_features=1024, bias=False)
+        )
+        (input_layernorm): RMSNorm((1024,), type=default, eps=1e-06)
+        (post_attention_layernorm): RMSNorm((1024,), type=default, eps=1e-06)
+      )
+    )
+    (2): FSDPCheckpointWrapper(
+      (_checkpoint_wrapped_module): DenseDecoderLayer(
+        (self_attn): MultiHeadAttention(
+          (q_proj): _Linear(in_features=1024, out_features=2048, bias=False)
+          (k_proj): _Linear(in_features=1024, out_features=1024, bias=False)
+          (v_proj): _Linear(in_features=1024, out_features=1024, bias=False)
+          (o_proj): _Linear(in_features=2048, out_features=1024, bias=False)
+          (q_norm): RMSNorm((128,), type=default, eps=1e-06)
+          (k_norm): RMSNorm((128,), type=default, eps=1e-06)
+        )
+        (mlp): DenseMLP(
+          (gate_proj): _Linear(in_features=1024, out_features=3072, bias=False)
+          (up_proj): _Linear(in_features=1024, out_features=3072, bias=False)
+          (down_proj): _Linear(in_features=3072, out_features=1024, bias=False)
+        )
+        (input_layernorm): RMSNorm((1024,), type=default, eps=1e-06)
+        (post_attention_layernorm): RMSNorm((1024,), type=default, eps=1e-06)
+      )
+    )
+    (3): FSDPCheckpointWrapper(
+      (_checkpoint_wrapped_module): DenseDecoderLayer(
+        (self_attn): MultiHeadAttention(
+          (q_proj): _Linear(in_features=1024, out_features=2048, bias=False)
+          (k_proj): _Linear(in_features=1024, out_features=1024, bias=False)
+          (v_proj): _Linear(in_features=1024, out_features=1024, bias=False)
+          (o_proj): _Linear(in_features=2048, out_features=1024, bias=False)
+          (q_norm): RMSNorm((128,), type=default, eps=1e-06)
+          (k_norm): RMSNorm((128,), type=default, eps=1e-06)
+        )
+        (mlp): DenseMLP(
+          (gate_proj): _Linear(in_features=1024, out_features=3072, bias=False)
+          (up_proj): _Linear(in_features=1024, out_features=3072, bias=False)
+          (down_proj): _Linear(in_features=3072, out_features=1024, bias=False)
+        )
+        (input_layernorm): RMSNorm((1024,), type=default, eps=1e-06)
+        (post_attention_layernorm): RMSNorm((1024,), type=default, eps=1e-06)
+      )
+    )
+    (4): FSDPCheckpointWrapper(
+      (_checkpoint_wrapped_module): DenseDecoderLayer(
+        (self_attn): MultiHeadAttention(
+          (q_proj): _Linear(in_features=1024, out_features=2048, bias=False)
+          (k_proj): _Linear(in_features=1024, out_features=1024, bias=False)
+          (v_proj): _Linear(in_features=1024, out_features=1024, bias=False)
+          (o_proj): _Linear(in_features=2048, out_features=1024, bias=False)
+          (q_norm): RMSNorm((128,), type=default, eps=1e-06)
+          (k_norm): RMSNorm((128,), type=default, eps=1e-06)
+        )
+        (mlp): DenseMLP(
+          (gate_proj): _Linear(in_features=1024, out_features=3072, bias=False)
+          (up_proj): _Linear(in_features=1024, out_features=3072, bias=False)
+          (down_proj): _Linear(in_features=3072, out_features=1024, bias=False)
+        )
+        (input_layernorm): RMSNorm((1024,), type=default, eps=1e-06)
+        (post_attention_layernorm): RMSNorm((1024,), type=default, eps=1e-06)
+      )
+    )
+    (5): FSDPCheckpointWrapper(
+      (_checkpoint_wrapped_module): DenseDecoderLayer(
+        (self_attn): MultiHeadAttention(
+          (q_proj): _Linear(in_features=1024, out_features=2048, bias=False)
+          (k_proj): _Linear(in_features=1024, out_features=1024, bias=False)
+          (v_proj): _Linear(in_features=1024, out_features=1024, bias=False)
+          (o_proj): _Linear(in_features=2048, out_features=1024, bias=False)
+          (q_norm): RMSNorm((128,), type=default, eps=1e-06)
+          (k_norm): RMSNorm((128,), type=default, eps=1e-06)
+        )
+        (mlp): DenseMLP(
+          (gate_proj): _Linear(in_features=1024, out_features=3072, bias=False)
+          (up_proj): _Linear(in_features=1024, out_features=3072, bias=False)
+          (down_proj): _Linear(in_features=3072, out_features=1024, bias=False)
+        )
+        (input_layernorm): RMSNorm((1024,), type=default, eps=1e-06)
+        (post_attention_layernorm): RMSNorm((1024,), type=default, eps=1e-06)
+      )
+    )
+    (6): FSDPCheckpointWrapper(
+      (_checkpoint_wrapped_module): DenseDecoderLayer(
+        (self_attn): MultiHeadAttention(
+          (q_proj): _Linear(in_features=1024, out_features=2048, bias=False)
+          (k_proj): _Linear(in_features=1024, out_features=1024, bias=False)
+          (v_proj): _Linear(in_features=1024, out_features=1024, bias=False)
+          (o_proj): _Linear(in_features=2048, out_features=1024, bias=False)
+          (q_norm): RMSNorm((128,), type=default, eps=1e-06)
+          (k_norm): RMSNorm((128,), type=default, eps=1e-06)
+        )
+        (mlp): DenseMLP(
+          (gate_proj): _Linear(in_features=1024, out_features=3072, bias=False)
+          (up_proj): _Linear(in_features=1024, out_features=3072, bias=False)
+          (down_proj): _Linear(in_features=3072, out_features=1024, bias=False)
+        )
+        (input_layernorm): RMSNorm((1024,), type=default, eps=1e-06)
+        (post_attention_layernorm): RMSNorm((1024,), type=default, eps=1e-06)
+      )
+    )
+    (7): FSDPCheckpointWrapper(
+      (_checkpoint_wrapped_module): DenseDecoderLayer(
+        (self_attn): MultiHeadAttention(
+          (q_proj): _Linear(in_features=1024, out_features=2048, bias=False)
+          (k_proj): _Linear(in_features=1024, out_features=1024, bias=False)
+          (v_proj): _Linear(in_features=1024, out_features=1024, bias=False)
+          (o_proj): _Linear(in_features=2048, out_features=1024, bias=False)
+          (q_norm): RMSNorm((128,), type=default, eps=1e-06)
+          (k_norm): RMSNorm((128,), type=default, eps=1e-06)
+        )
+        (mlp): DenseMLP(
+          (gate_proj): _Linear(in_features=1024, out_features=3072, bias=False)
+          (up_proj): _Linear(in_features=1024, out_features=3072, bias=False)
+          (down_proj): _Linear(in_features=3072, out_features=1024, bias=False)
+        )
+        (input_layernorm): RMSNorm((1024,), type=default, eps=1e-06)
+        (post_attention_layernorm): RMSNorm((1024,), type=default, eps=1e-06)
+      )
+    )
+    (8): FSDPCheckpointWrapper(
+      (_checkpoint_wrapped_module): DenseDecoderLayer(
+        (self_attn): MultiHeadAttention(
+          (q_proj): _Linear(in_features=1024, out_features=2048, bias=False)
+          (k_proj): _Linear(in_features=1024, out_features=1024, bias=False)
+          (v_proj): _Linear(in_features=1024, out_features=1024, bias=False)
+          (o_proj): _Linear(in_features=2048, out_features=1024, bias=False)
+          (q_norm): RMSNorm((128,), type=default, eps=1e-06)
+          (k_norm): RMSNorm((128,), type=default, eps=1e-06)
+        )
+        (mlp): DenseMLP(
+          (gate_proj): _Linear(in_features=1024, out_features=3072, bias=False)
+          (up_proj): _Linear(in_features=1024, out_features=3072, bias=False)
+          (down_proj): _Linear(in_features=3072, out_features=1024, bias=False)
+        )
+        (input_layernorm): RMSNorm((1024,), type=default, eps=1e-06)
+        (post_attention_layernorm): RMSNorm((1024,), type=default, eps=1e-06)
+      )
+    )
+    (9): FSDPCheckpointWrapper(
+      (_checkpoint_wrapped_module): DenseDecoderLayer(
+        (self_attn): MultiHeadAttention(
+          (q_proj): _Linear(in_features=1024, out_features=2048, bias=False)
+          (k_proj): _Linear(in_features=1024, out_features=1024, bias=False)
+          (v_proj): _Linear(in_features=1024, out_features=1024, bias=False)
+          (o_proj): _Linear(in_features=2048, out_features=1024, bias=False)
+          (q_norm): RMSNorm((128,), type=default, eps=1e-06)
+          (k_norm): RMSNorm((128,), type=default, eps=1e-06)
+        )
+        (mlp): DenseMLP(
+          (gate_proj): _Linear(in_features=1024, out_features=3072, bias=False)
+          (up_proj): _Linear(in_features=1024, out_features=3072, bias=False)
+          (down_proj): _Linear(in_features=3072, out_features=1024, bias=False)
+        )
+        (input_layernorm): RMSNorm((1024,), type=default, eps=1e-06)
+        (post_attention_layernorm): RMSNorm((1024,), type=default, eps=1e-06)
+      )
+    )
+    (10): FSDPCheckpointWrapper(
+      (_checkpoint_wrapped_module): DenseDecoderLayer(
+        (self_attn): MultiHeadAttention(
+          (q_proj): _Linear(in_features=1024, out_features=2048, bias=False)
+          (k_proj): _Linear(in_features=1024, out_features=1024, bias=False)
+          (v_proj): _Linear(in_features=1024, out_features=1024, bias=False)
+          (o_proj): _Linear(in_features=2048, out_features=1024, bias=False)
+          (q_norm): RMSNorm((128,), type=default, eps=1e-06)
+          (k_norm): RMSNorm((128,), type=default, eps=1e-06)
+        )
+        (mlp): DenseMLP(
+          (gate_proj): _Linear(in_features=1024, out_features=3072, bias=False)
+          (up_proj): _Linear(in_features=1024, out_features=3072, bias=False)
+          (down_proj): _Linear(in_features=3072, out_features=1024, bias=False)
+        )
+        (input_layernorm): RMSNorm((1024,), type=default, eps=1e-06)
+        (post_attention_layernorm): RMSNorm((1024,), type=default, eps=1e-06)
+      )
+    )
+    (11): FSDPCheckpointWrapper(
+      (_checkpoint_wrapped_module): DenseDecoderLayer(
+        (self_attn): MultiHeadAttention(
+          (q_proj): _Linear(in_features=1024, out_features=2048, bias=False)
+          (k_proj): _Linear(in_features=1024, out_features=1024, bias=False)
+          (v_proj): _Linear(in_features=1024, out_features=1024, bias=False)
+          (o_proj): _Linear(in_features=2048, out_features=1024, bias=False)
+          (q_norm): RMSNorm((128,), type=default, eps=1e-06)
+          (k_norm): RMSNorm((128,), type=default, eps=1e-06)
+        )
+        (mlp): DenseMLP(
+          (gate_proj): _Linear(in_features=1024, out_features=3072, bias=False)
+          (up_proj): _Linear(in_features=1024, out_features=3072, bias=False)
+          (down_proj): _Linear(in_features=3072, out_features=1024, bias=False)
+        )
+        (input_layernorm): RMSNorm((1024,), type=default, eps=1e-06)
+        (post_attention_layernorm): RMSNorm((1024,), type=default, eps=1e-06)
+      )
+    )
+    (12): FSDPCheckpointWrapper(
+      (_checkpoint_wrapped_module): DenseDecoderLayer(
+        (self_attn): MultiHeadAttention(
+          (q_proj): _Linear(in_features=1024, out_features=2048, bias=False)
+          (k_proj): _Linear(in_features=1024, out_features=1024, bias=False)
+          (v_proj): _Linear(in_features=1024, out_features=1024, bias=False)
+          (o_proj): _Linear(in_features=2048, out_features=1024, bias=False)
+          (q_norm): RMSNorm((128,), type=default, eps=1e-06)
+          (k_norm): RMSNorm((128,), type=default, eps=1e-06)
+        )
+        (mlp): DenseMLP(
+          (gate_proj): _Linear(in_features=1024, out_features=3072, bias=False)
+          (up_proj): _Linear(in_features=1024, out_features=3072, bias=False)
+          (down_proj): _Linear(in_features=3072, out_features=1024, bias=False)
+        )
+        (input_layernorm): RMSNorm((1024,), type=default, eps=1e-06)
+        (post_attention_layernorm): RMSNorm((1024,), type=default, eps=1e-06)
+      )
+    )
+    (13): FSDPCheckpointWrapper(
+      (_checkpoint_wrapped_module): DenseDecoderLayer(
+        (self_attn): MultiHeadAttention(
+          (q_proj): _Linear(in_features=1024, out_features=2048, bias=False)
+          (k_proj): _Linear(in_features=1024, out_features=1024, bias=False)
+          (v_proj): _Linear(in_features=1024, out_features=1024, bias=False)
+          (o_proj): _Linear(in_features=2048, out_features=1024, bias=False)
+          (q_norm): RMSNorm((128,), type=default, eps=1e-06)
+          (k_norm): RMSNorm((128,), type=default, eps=1e-06)
+        )
+        (mlp): DenseMLP(
+          (gate_proj): _Linear(in_features=1024, out_features=3072, bias=False)
+          (up_proj): _Linear(in_features=1024, out_features=3072, bias=False)
+          (down_proj): _Linear(in_features=3072, out_features=1024, bias=False)
+        )
+        (input_layernorm): RMSNorm((1024,), type=default, eps=1e-06)
+        (post_attention_layernorm): RMSNorm((1024,), type=default, eps=1e-06)
+      )
+    )
+    (14): FSDPCheckpointWrapper(
+      (_checkpoint_wrapped_module): DenseDecoderLayer(
+        (self_attn): MultiHeadAttention(
+          (q_proj): _Linear(in_features=1024, out_features=2048, bias=False)
+          (k_proj): _Linear(in_features=1024, out_features=1024, bias=False)
+          (v_proj): _Linear(in_features=1024, out_features=1024, bias=False)
+          (o_proj): _Linear(in_features=2048, out_features=1024, bias=False)
+          (q_norm): RMSNorm((128,), type=default, eps=1e-06)
+          (k_norm): RMSNorm((128,), type=default, eps=1e-06)
+        )
+        (mlp): DenseMLP(
+          (gate_proj): _Linear(in_features=1024, out_features=3072, bias=False)
+          (up_proj): _Linear(in_features=1024, out_features=3072, bias=False)
+          (down_proj): _Linear(in_features=3072, out_features=1024, bias=False)
+        )
+        (input_layernorm): RMSNorm((1024,), type=default, eps=1e-06)
+        (post_attention_layernorm): RMSNorm((1024,), type=default, eps=1e-06)
+      )
+    )
+    (15): FSDPCheckpointWrapper(
+      (_checkpoint_wrapped_module): DenseDecoderLayer(
+        (self_attn): MultiHeadAttention(
+          (q_proj): _Linear(in_features=1024, out_features=2048, bias=False)
+          (k_proj): _Linear(in_features=1024, out_features=1024, bias=False)
+          (v_proj): _Linear(in_features=1024, out_features=1024, bias=False)
+          (o_proj): _Linear(in_features=2048, out_features=1024, bias=False)
+          (q_norm): RMSNorm((128,), type=default, eps=1e-06)
+          (k_norm): RMSNorm((128,), type=default, eps=1e-06)
+        )
+        (mlp): DenseMLP(
+          (gate_proj): _Linear(in_features=1024, out_features=3072, bias=False)
+          (up_proj): _Linear(in_features=1024, out_features=3072, bias=False)
+          (down_proj): _Linear(in_features=3072, out_features=1024, bias=False)
+        )
+        (input_layernorm): RMSNorm((1024,), type=default, eps=1e-06)
+        (post_attention_layernorm): RMSNorm((1024,), type=default, eps=1e-06)
+      )
+    )
+    (16): FSDPCheckpointWrapper(
+      (_checkpoint_wrapped_module): DenseDecoderLayer(
+        (self_attn): MultiHeadAttention(
+          (q_proj): _Linear(in_features=1024, out_features=2048, bias=False)
+          (k_proj): _Linear(in_features=1024, out_features=1024, bias=False)
+          (v_proj): _Linear(in_features=1024, out_features=1024, bias=False)
+          (o_proj): _Linear(in_features=2048, out_features=1024, bias=False)
+          (q_norm): RMSNorm((128,), type=default, eps=1e-06)
+          (k_norm): RMSNorm((128,), type=default, eps=1e-06)
+        )
+        (mlp): DenseMLP(
+          (gate_proj): _Linear(in_features=1024, out_features=3072, bias=False)
+          (up_proj): _Linear(in_features=1024, out_features=3072, bias=False)
+          (down_proj): _Linear(in_features=3072, out_features=1024, bias=False)
+        )
+        (input_layernorm): RMSNorm((1024,), type=default, eps=1e-06)
+        (post_attention_layernorm): RMSNorm((1024,), type=default, eps=1e-06)
+      )
+    )
+    (17): FSDPCheckpointWrapper(
+      (_checkpoint_wrapped_module): DenseDecoderLayer(
+        (self_attn): MultiHeadAttention(
+          (q_proj): _Linear(in_features=1024, out_features=2048, bias=False)
+          (k_proj): _Linear(in_features=1024, out_features=1024, bias=False)
+          (v_proj): _Linear(in_features=1024, out_features=1024, bias=False)
+          (o_proj): _Linear(in_features=2048, out_features=1024, bias=False)
+          (q_norm): RMSNorm((128,), type=default, eps=1e-06)
+          (k_norm): RMSNorm((128,), type=default, eps=1e-06)
+        )
+        (mlp): DenseMLP(
+          (gate_proj): _Linear(in_features=1024, out_features=3072, bias=False)
+          (up_proj): _Linear(in_features=1024, out_features=3072, bias=False)
+          (down_proj): _Linear(in_features=3072, out_features=1024, bias=False)
+        )
+        (input_layernorm): RMSNorm((1024,), type=default, eps=1e-06)
+        (post_attention_layernorm): RMSNorm((1024,), type=default, eps=1e-06)
+      )
+    )
+    (18): FSDPCheckpointWrapper(
+      (_checkpoint_wrapped_module): DenseDecoderLayer(
+        (self_attn): MultiHeadAttention(
+          (q_proj): _Linear(in_features=1024, out_features=2048, bias=False)
+          (k_proj): _Linear(in_features=1024, out_features=1024, bias=False)
+          (v_proj): _Linear(in_features=1024, out_features=1024, bias=False)
+          (o_proj): _Linear(in_features=2048, out_features=1024, bias=False)
+          (q_norm): RMSNorm((128,), type=default, eps=1e-06)
+          (k_norm): RMSNorm((128,), type=default, eps=1e-06)
+        )
+        (mlp): DenseMLP(
+          (gate_proj): _Linear(in_features=1024, out_features=3072, bias=False)
+          (up_proj): _Linear(in_features=1024, out_features=3072, bias=False)
+          (down_proj): _Linear(in_features=3072, out_features=1024, bias=False)
+        )
+        (input_layernorm): RMSNorm((1024,), type=default, eps=1e-06)
+        (post_attention_layernorm): RMSNorm((1024,), type=default, eps=1e-06)
+      )
+    )
+    (19): FSDPCheckpointWrapper(
+      (_checkpoint_wrapped_module): DenseDecoderLayer(
+        (self_attn): MultiHeadAttention(
+          (q_proj): _Linear(in_features=1024, out_features=2048, bias=False)
+          (k_proj): _Linear(in_features=1024, out_features=1024, bias=False)
+          (v_proj): _Linear(in_features=1024, out_features=1024, bias=False)
+          (o_proj): _Linear(in_features=2048, out_features=1024, bias=False)
+          (q_norm): RMSNorm((128,), type=default, eps=1e-06)
+          (k_norm): RMSNorm((128,), type=default, eps=1e-06)
+        )
+        (mlp): DenseMLP(
+          (gate_proj): _Linear(in_features=1024, out_features=3072, bias=False)
+          (up_proj): _Linear(in_features=1024, out_features=3072, bias=False)
+          (down_proj): _Linear(in_features=3072, out_features=1024, bias=False)
+        )
+        (input_layernorm): RMSNorm((1024,), type=default, eps=1e-06)
+        (post_attention_layernorm): RMSNorm((1024,), type=default, eps=1e-06)
+      )
+    )
+    (20): FSDPCheckpointWrapper(
+      (_checkpoint_wrapped_module): DenseDecoderLayer(
+        (self_attn): MultiHeadAttention(
+          (q_proj): _Linear(in_features=1024, out_features=2048, bias=False)
+          (k_proj): _Linear(in_features=1024, out_features=1024, bias=False)
+          (v_proj): _Linear(in_features=1024, out_features=1024, bias=False)
+          (o_proj): _Linear(in_features=2048, out_features=1024, bias=False)
+          (q_norm): RMSNorm((128,), type=default, eps=1e-06)
+          (k_norm): RMSNorm((128,), type=default, eps=1e-06)
+        )
+        (mlp): DenseMLP(
+          (gate_proj): _Linear(in_features=1024, out_features=3072, bias=False)
+          (up_proj): _Linear(in_features=1024, out_features=3072, bias=False)
+          (down_proj): _Linear(in_features=3072, out_features=1024, bias=False)
+        )
+        (input_layernorm): RMSNorm((1024,), type=default, eps=1e-06)
+        (post_attention_layernorm): RMSNorm((1024,), type=default, eps=1e-06)
+      )
+    )
+    (21): FSDPCheckpointWrapper(
+      (_checkpoint_wrapped_module): DenseDecoderLayer(
+        (self_attn): MultiHeadAttention(
+          (q_proj): _Linear(in_features=1024, out_features=2048, bias=False)
+          (k_proj): _Linear(in_features=1024, out_features=1024, bias=False)
+          (v_proj): _Linear(in_features=1024, out_features=1024, bias=False)
+          (o_proj): _Linear(in_features=2048, out_features=1024, bias=False)
+          (q_norm): RMSNorm((128,), type=default, eps=1e-06)
+          (k_norm): RMSNorm((128,), type=default, eps=1e-06)
+        )
+        (mlp): DenseMLP(
+          (gate_proj): _Linear(in_features=1024, out_features=3072, bias=False)
+          (up_proj): _Linear(in_features=1024, out_features=3072, bias=False)
+          (down_proj): _Linear(in_features=3072, out_features=1024, bias=False)
+        )
+        (input_layernorm): RMSNorm((1024,), type=default, eps=1e-06)
+        (post_attention_layernorm): RMSNorm((1024,), type=default, eps=1e-06)
+      )
+    )
+    (22): FSDPCheckpointWrapper(
+      (_checkpoint_wrapped_module): DenseDecoderLayer(
+        (self_attn): MultiHeadAttention(
+          (q_proj): _Linear(in_features=1024, out_features=2048, bias=False)
+          (k_proj): _Linear(in_features=1024, out_features=1024, bias=False)
+          (v_proj): _Linear(in_features=1024, out_features=1024, bias=False)
+          (o_proj): _Linear(in_features=2048, out_features=1024, bias=False)
+          (q_norm): RMSNorm((128,), type=default, eps=1e-06)
+          (k_norm): RMSNorm((128,), type=default, eps=1e-06)
+        )
+        (mlp): DenseMLP(
+          (gate_proj): _Linear(in_features=1024, out_features=3072, bias=False)
+          (up_proj): _Linear(in_features=1024, out_features=3072, bias=False)
+          (down_proj): _Linear(in_features=3072, out_features=1024, bias=False)
+        )
+        (input_layernorm): RMSNorm((1024,), type=default, eps=1e-06)
+        (post_attention_layernorm): RMSNorm((1024,), type=default, eps=1e-06)
+      )
+    )
+    (23): FSDPCheckpointWrapper(
+      (_checkpoint_wrapped_module): DenseDecoderLayer(
+        (self_attn): MultiHeadAttention(
+          (q_proj): _Linear(in_features=1024, out_features=2048, bias=False)
+          (k_proj): _Linear(in_features=1024, out_features=1024, bias=False)
+          (v_proj): _Linear(in_features=1024, out_features=1024, bias=False)
+          (o_proj): _Linear(in_features=2048, out_features=1024, bias=False)
+          (q_norm): RMSNorm((128,), type=default, eps=1e-06)
+          (k_norm): RMSNorm((128,), type=default, eps=1e-06)
+        )
+        (mlp): DenseMLP(
+          (gate_proj): _Linear(in_features=1024, out_features=3072, bias=False)
+          (up_proj): _Linear(in_features=1024, out_features=3072, bias=False)
+          (down_proj): _Linear(in_features=3072, out_features=1024, bias=False)
+        )
+        (input_layernorm): RMSNorm((1024,), type=default, eps=1e-06)
+        (post_attention_layernorm): RMSNorm((1024,), type=default, eps=1e-06)
+      )
+    )
+    (24): FSDPCheckpointWrapper(
+      (_checkpoint_wrapped_module): DenseDecoderLayer(
+        (self_attn): MultiHeadAttention(
+          (q_proj): _Linear(in_features=1024, out_features=2048, bias=False)
+          (k_proj): _Linear(in_features=1024, out_features=1024, bias=False)
+          (v_proj): _Linear(in_features=1024, out_features=1024, bias=False)
+          (o_proj): _Linear(in_features=2048, out_features=1024, bias=False)
+          (q_norm): RMSNorm((128,), type=default, eps=1e-06)
+          (k_norm): RMSNorm((128,), type=default, eps=1e-06)
+        )
+        (mlp): DenseMLP(
+          (gate_proj): _Linear(in_features=1024, out_features=3072, bias=False)
+          (up_proj): _Linear(in_features=1024, out_features=3072, bias=False)
+          (down_proj): _Linear(in_features=3072, out_features=1024, bias=False)
+        )
+        (input_layernorm): RMSNorm((1024,), type=default, eps=1e-06)
+        (post_attention_layernorm): RMSNorm((1024,), type=default, eps=1e-06)
+      )
+    )
+    (25): FSDPCheckpointWrapper(
+      (_checkpoint_wrapped_module): DenseDecoderLayer(
+        (self_attn): MultiHeadAttention(
+          (q_proj): _Linear(in_features=1024, out_features=2048, bias=False)
+          (k_proj): _Linear(in_features=1024, out_features=1024, bias=False)
+          (v_proj): _Linear(in_features=1024, out_features=1024, bias=False)
+          (o_proj): _Linear(in_features=2048, out_features=1024, bias=False)
+          (q_norm): RMSNorm((128,), type=default, eps=1e-06)
+          (k_norm): RMSNorm((128,), type=default, eps=1e-06)
+        )
+        (mlp): DenseMLP(
+          (gate_proj): _Linear(in_features=1024, out_features=3072, bias=False)
+          (up_proj): _Linear(in_features=1024, out_features=3072, bias=False)
+          (down_proj): _Linear(in_features=3072, out_features=1024, bias=False)
+        )
+        (input_layernorm): RMSNorm((1024,), type=default, eps=1e-06)
+        (post_attention_layernorm): RMSNorm((1024,), type=default, eps=1e-06)
+      )
+    )
+    (26): FSDPCheckpointWrapper(
+      (_checkpoint_wrapped_module): DenseDecoderLayer(
+        (self_attn): MultiHeadAttention(
+          (q_proj): _Linear(in_features=1024, out_features=2048, bias=False)
+          (k_proj): _Linear(in_features=1024, out_features=1024, bias=False)
+          (v_proj): _Linear(in_features=1024, out_features=1024, bias=False)
+          (o_proj): _Linear(in_features=2048, out_features=1024, bias=False)
+          (q_norm): RMSNorm((128,), type=default, eps=1e-06)
+          (k_norm): RMSNorm((128,), type=default, eps=1e-06)
+        )
+        (mlp): DenseMLP(
+          (gate_proj): _Linear(in_features=1024, out_features=3072, bias=False)
+          (up_proj): _Linear(in_features=1024, out_features=3072, bias=False)
+          (down_proj): _Linear(in_features=3072, out_features=1024, bias=False)
+        )
+        (input_layernorm): RMSNorm((1024,), type=default, eps=1e-06)
+        (post_attention_layernorm): RMSNorm((1024,), type=default, eps=1e-06)
+      )
+    )
+    (27): FSDPCheckpointWrapper(
+      (_checkpoint_wrapped_module): DenseDecoderLayer(
+        (self_attn): MultiHeadAttention(
+          (q_proj): _Linear(in_features=1024, out_features=2048, bias=False)
+          (k_proj): _Linear(in_features=1024, out_features=1024, bias=False)
+          (v_proj): _Linear(in_features=1024, out_features=1024, bias=False)
+          (o_proj): _Linear(in_features=2048, out_features=1024, bias=False)
+          (q_norm): RMSNorm((128,), type=default, eps=1e-06)
+          (k_norm): RMSNorm((128,), type=default, eps=1e-06)
+        )
+        (mlp): DenseMLP(
+          (gate_proj): _Linear(in_features=1024, out_features=3072, bias=False)
+          (up_proj): _Linear(in_features=1024, out_features=3072, bias=False)
+          (down_proj): _Linear(in_features=3072, out_features=1024, bias=False)
+        )
+        (input_layernorm): RMSNorm((1024,), type=default, eps=1e-06)
+        (post_attention_layernorm): RMSNorm((1024,), type=default, eps=1e-06)
+      )
+    )
+  )
+  (rotary_emb): RotaryEmbedding()
+  (embed_tokens): FSDPEmbedding(151936, 1024)
+)
+[XTuner][RANK 0][2026-09-17 21:32:45][INFO] Total trainable parameters: 751.63M, total parameters: 751.63M
+[XTuner][RANK 0][2026-09-17 21:32:45][INFO] Untrainable parameters names: []
+[XTuner][RANK 0][2026-09-17 21:32:45][SUCCESS] [HF loading cost] Elapsed time 0.09 seconds, peak gpu memory 3.1G
+[XTuner][RANK 0][2026-09-17 21:32:45][INFO] The `compile_cfg` of model is {}
+[XTuner][RANK 0][2026-09-17 21:32:45][INFO] Training config: {
+  "model_cfg": {
+    "hf_save_cfg": {
+      "worker_per_rank": 16,
+      "max_save_rank": 16,
+      "bucket_size": 4294967296,
+      "fp32_keys_pattern": null
+    },
+    "float8_cfg": null,
+    "compile_cfg": false,
+    "hf_key_mapping": null,
+    "dcp_ignore_frozen_params": true,
+    "lm_loss_cfg": {
+      "ignore_idx": -100,
+      "mode": "chunk",
+      "chunk_size": 1024,
+      "loss_reduction": "token"
+    },
+    "vocab_size": 151936,
+    "max_position_embeddings": 40960,
+    "eos_token_id": 151645,
+    "pad_token_id": null,
+    "num_hidden_layers": 28,
+    "hidden_size": 1024,
+    "intermediate_size": 3072,
+    "rms_norm_eps": 1e-6,
+    "rms_norm_type": "default",
+    "hidden_act": "silu",
+    "attention": {
+      "num_attention_heads": 16,
+      "num_key_value_heads": 8,
+      "head_dim": 128,
+      "dropout": 0.0,
+      "qkv_bias": false,
+      "qk_norm": true,
+      "rms_norm_eps": 1e-6,
+      "rms_norm_type": "default",
+      "o_bias": false,
+      "sliding_window": null,
+      "with_sink": false,
+      "with_gate": false,
+      "attn_impl": "flex_attention"
+    },
+    "linear_attention": null,
+    "mlp_bias": false,
+    "tie_word_embeddings": false,
+    "model_type": null,
+    "generate_config": null,
+    "return_hidden_states": false,
+    "use_sliding_window": false,
+    "max_window_layers": 28,
+    "rope_parameters_cfg": {
+      "rope_theta": 1000000.0,
+      "rope_type": "default",
+      "original_max_position_embeddings": null,
+      "factor": null,
+      "beta_fast": null,
+      "beta_slow": null,
+      "short_factor": null,
+      "long_factor": null,
+      "low_freq_factor": null,
+      "high_freq_factor": null,
+      "mscale": null,
+      "mscale_all_dim": null,
+      "truncate": false,
+      "mrope_section": null,
+      "partial_rotary_factor": 1.0,
+      "fope_init_factor": null,
+      "fope_sep_head": null,
+      "num_inv_freq": null
+    },
+    "mesh_prefix": "default",
+    "bos_token_id": 151643,
+    "rope_scaling": null,
+    "rope_parameters": {
+      "rope_theta": 1000000.0,
+      "rope_type": "default",
+      "original_max_position_embeddings": null,
+      "factor": null,
+      "beta_fast": null,
+      "beta_slow": null,
+      "short_factor": null,
+      "long_factor": null,
+      "low_freq_factor": null,
+      "high_freq_factor": null,
+      "mscale": null,
+      "mscale_all_dim": null,
+      "truncate": false,
+      "mrope_section": null,
+      "partial_rotary_factor": 1.0
+    },
+    "num_attention_heads": 16,
+    "num_key_value_heads": 8,
+    "head_dim": 128,
+    "layers_type": [
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention"
+    ]
+  },
+  "load_from": "/home/gugubai/workspace/xtuner-lab/models/Qwen3-0.6B",
+  "tokenizer_path": "/home/gugubai/workspace/xtuner-lab/models/Qwen3-0.6B",
+  "optim_cfg": {
+    "lr": 0.00006,
+    "max_grad_norm": 1.0,
+    "skip_grad_norm_threshold": null,
+    "weight_decay": 0.01,
+    "betas": [
+      0.9,
+      0.95
+    ],
+    "eps": 1e-8,
+    "foreach": false,
+    "swap_optimizer": false
+  },
+  "lr_cfg": {
+    "lr_type": "cosine",
+    "warmup_ratio": 0.03,
+    "lr_min": 1e-6
+  },
+  "loss_cfg": {
+    "ignore_idx": -100,
+    "mode": "chunk",
+    "chunk_size": 1024,
+    "loss_reduction": "token"
+  },
+  "fsdp_cfg": null,
+  "global_batch_size": null,
+  "work_dir": "/home/gugubai/workspace/xtuner-lab/experiments/001_qwen3_06b_sft/work_dir",
+  "log_dir": null,
+  "sp_size": 1,
+  "total_step": 200,
+  "total_epoch": null,
+  "resume_cfg": null,
+  "auto_resume": false,
+  "load_checkpoint_cfg": {
+    "checkpoint_path": null,
+    "load_optimizer_states": true,
+    "load_optimizer_args": true,
+    "load_dataset": true,
+    "load_scheduler": true,
+    "offload_optimizer_first_step": false
+  },
+  "strict_load": true,
+  "checkpoint_interval": -1,
+  "checkpoint_maxkeep": -1,
+  "async_hf_export": false,
+  "skip_checkpoint_validation": false,
+  "patch_for_dcp_finish": false,
+  "async_checkpoint": false,
+  "snapshot_interval": null,
+  "check_health_interval": null,
+  "hf_interval": null,
+  "hf_max_keep": null,
+  "exp_tracker": "jsonl",
+  "profile_step": null,
+  "profile_time": true,
+  "profile_memory": false,
+  "intra_layer_micro_batch": 1,
+  "seed": 42,
+  "dist_backend": null,
+  "debug": false,
+  "debug_skip_save": false,
+  "prober_list": [],
+  "do_clip": true,
+  "grad_norm_dtype": "torch.float32",
+  "hooks_config": {
+    "after_save_dcp": [],
+    "after_save_hf": [],
+    "after_save_snapshot": [],
+    "after_train_step": []
+  },
+  "internal_metrics_cfg": null
+}
+[XTuner][RANK 0][2026-09-17 21:32:45][INFO] grad_accumulation_steps: 1
+/home/gugubai/miniconda3/envs/xtuner/lib/python3.11/site-packages/torch/nn/attention/flex_attention.py:1622: FutureWarning: return_lse is deprecated and will be removed in v2.10. Please use return_aux=AuxRequest(lse=True) instead.
+  _warn_once(
+[XTuner][RANK 0][2026-09-17 21:32:49][INFO] Epoch 1 Step 1/200 data_time: 0.0100 lr: 0.000000e+00 time: 3.5467 text_tokens: 4086 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 4086 reduced_llm_loss: 2.20748186, local_loss: 2.20748186 step_consumed_tokens: 4086.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04601359, img_efficient_attn_ratio: 0.00000000 local_base_loss: 2.2075 grad_norm: 14.12002659 max_memory: 12.38 GB reserved_memory: 12.76 GB tgs: 1152.1 seqlen_tgs: 1154.9 exp_tgs: 1148.8 eta: 0:11:45 
+[XTuner][RANK 0][2026-09-17 21:32:49][INFO] Epoch 1 Step 2/200 data_time: 0.0080 lr: 1.000000e-05 time: 0.5553 text_tokens: 4087 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 8173 reduced_llm_loss: 2.23808956, local_loss: 2.23808956 step_consumed_tokens: 4087.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04142213, img_efficient_attn_ratio: 0.00000000 local_base_loss: 2.2381 grad_norm: 13.89500141 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7360.5 seqlen_tgs: 7376.7 exp_tgs: 1971.3 eta: 0:01:49 
+[XTuner][RANK 0][2026-09-17 21:32:50][INFO] Epoch 1 Step 3/200 data_time: 0.0074 lr: 2.000000e-05 time: 0.5483 text_tokens: 4080 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 12253 reduced_llm_loss: 1.91899967, local_loss: 1.91899967 step_consumed_tokens: 4080.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.05288529, img_efficient_attn_ratio: 0.00000000 local_base_loss: 1.9190 grad_norm: 11.62210560 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7440.9 seqlen_tgs: 7470.1 exp_tgs: 2588.8 eta: 0:01:48 
+[XTuner][RANK 0][2026-09-17 21:32:50][INFO] Epoch 1 Step 4/200 data_time: 0.0077 lr: 3.000000e-05 time: 0.5477 text_tokens: 4073 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 16326 reduced_llm_loss: 1.93354535, local_loss: 1.93354535 step_consumed_tokens: 4073.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04682720, img_efficient_attn_ratio: 0.00000000 local_base_loss: 1.9335 grad_norm: 8.11541843 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7436.1 seqlen_tgs: 7478.0 exp_tgs: 3069.0 eta: 0:01:47 
+[XTuner][RANK 0][2026-09-17 21:32:51][INFO] Epoch 1 Step 5/200 data_time: 0.0080 lr: 4.000000e-05 time: 0.5487 text_tokens: 4070 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 20396 reduced_llm_loss: 2.02689338, local_loss: 2.02689338 step_consumed_tokens: 4070.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04258931, img_efficient_attn_ratio: 0.00000000 local_base_loss: 2.0269 grad_norm: 8.64632225 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7417.4 seqlen_tgs: 7464.7 exp_tgs: 3452.5 eta: 0:01:47 
+[XTuner][RANK 0][2026-09-17 21:32:52][INFO] Epoch 1 Step 6/200 data_time: 0.0078 lr: 5.000000e-05 time: 0.5460 text_tokens: 4078 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 24474 reduced_llm_loss: 1.85918236, local_loss: 1.85918236 step_consumed_tokens: 4078.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04066324, img_efficient_attn_ratio: 0.00000000 local_base_loss: 1.8592 grad_norm: 8.28970051 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7468.6 seqlen_tgs: 7501.5 exp_tgs: 3769.4 eta: 0:01:45 
+[XTuner][RANK 0][2026-09-17 21:32:52][INFO] Epoch 1 Step 7/200 data_time: 0.0079 lr: 6.000000e-05 time: 0.5459 text_tokens: 4087 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 28561 reduced_llm_loss: 1.84870982, local_loss: 1.84870982 step_consumed_tokens: 4087.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.03939986, img_efficient_attn_ratio: 0.00000000 local_base_loss: 1.8487 grad_norm: 7.73122406 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7486.7 seqlen_tgs: 7503.2 exp_tgs: 4035.3 eta: 0:01:45 
+[XTuner][RANK 0][2026-09-17 21:32:53][INFO] Epoch 1 Step 8/200 data_time: 0.0075 lr: 5.999613e-05 time: 0.5470 text_tokens: 4054 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 32615 reduced_llm_loss: 1.91345572, local_loss: 1.91345572 step_consumed_tokens: 4054.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04767144, img_efficient_attn_ratio: 0.00000000 local_base_loss: 1.9135 grad_norm: 6.53424597 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7411.3 seqlen_tgs: 7488.1 exp_tgs: 4255.8 eta: 0:01:45 
+[XTuner][RANK 0][2026-09-17 21:32:53][INFO] Epoch 1 Step 9/200 data_time: 0.0074 lr: 5.998453e-05 time: 0.5473 text_tokens: 4091 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 36706 reduced_llm_loss: 1.88837957, local_loss: 1.88837957 step_consumed_tokens: 4091.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04704440, img_efficient_attn_ratio: 0.00000000 local_base_loss: 1.8884 grad_norm: 6.79113340 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7475.1 seqlen_tgs: 7484.2 exp_tgs: 4449.4 eta: 0:01:44 
+[XTuner][RANK 0][2026-09-17 21:32:54][INFO] Epoch 1 Step 10/200 data_time: 0.0075 lr: 5.996519e-05 time: 0.5481 text_tokens: 4088 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 40794 reduced_llm_loss: 1.71136165, local_loss: 1.71136165 step_consumed_tokens: 4088.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04877722, img_efficient_attn_ratio: 0.00000000 local_base_loss: 1.7114 grad_norm: 6.22914934 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7458.8 seqlen_tgs: 7473.4 exp_tgs: 4616.5 eta: 0:01:43 
+[XTuner][RANK 0][2026-09-17 21:32:55][INFO] Epoch 1 Step 11/200 data_time: 0.0076 lr: 5.993813e-05 time: 0.5474 text_tokens: 4082 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 44876 reduced_llm_loss: 1.96075869, local_loss: 1.96075869 step_consumed_tokens: 4082.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04905701, img_efficient_attn_ratio: 0.00000000 local_base_loss: 1.9608 grad_norm: 5.96950817 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7456.7 seqlen_tgs: 7482.3 exp_tgs: 4762.4 eta: 0:01:43 
+[XTuner][RANK 0][2026-09-17 21:32:55][INFO] Epoch 1 Step 12/200 data_time: 0.0081 lr: 5.990335e-05 time: 0.5493 text_tokens: 4090 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 48966 reduced_llm_loss: 1.93733680, local_loss: 1.93733680 step_consumed_tokens: 4090.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04317582, img_efficient_attn_ratio: 0.00000000 local_base_loss: 1.9373 grad_norm: 6.32931423 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7445.6 seqlen_tgs: 7456.6 exp_tgs: 4891.0 eta: 0:01:43 
+[XTuner][RANK 0][2026-09-17 21:32:56][INFO] Epoch 1 Step 13/200 data_time: 0.0081 lr: 5.986086e-05 time: 0.5478 text_tokens: 4077 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 53043 reduced_llm_loss: 2.09535241, local_loss: 2.09535241 step_consumed_tokens: 4077.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.03792548, img_efficient_attn_ratio: 0.00000000 local_base_loss: 2.0954 grad_norm: 5.71727657 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7442.2 seqlen_tgs: 7476.8 exp_tgs: 5004.6 eta: 0:01:42 
+[XTuner][RANK 0][2026-09-17 21:32:56][INFO] Epoch 1 Step 14/200 data_time: 0.0075 lr: 5.981067e-05 time: 0.5487 text_tokens: 4093 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 57136 reduced_llm_loss: 1.64691031, local_loss: 1.64691031 step_consumed_tokens: 4093.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04860735, img_efficient_attn_ratio: 0.00000000 local_base_loss: 1.6469 grad_norm: 5.12201309 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7459.0 seqlen_tgs: 7464.5 exp_tgs: 5107.7 eta: 0:01:41 
+[XTuner][RANK 0][2026-09-17 21:32:57][INFO] Epoch 1 Step 15/200 data_time: 0.0075 lr: 5.975279e-05 time: 0.5486 text_tokens: 4080 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 61216 reduced_llm_loss: 1.85387015, local_loss: 1.85387015 step_consumed_tokens: 4080.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04428446, img_efficient_attn_ratio: 0.00000000 local_base_loss: 1.8539 grad_norm: 5.51353598 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7437.1 seqlen_tgs: 7466.2 exp_tgs: 5199.4 eta: 0:01:41 
+[XTuner][RANK 0][2026-09-17 21:32:57][INFO] Epoch 1 Step 16/200 data_time: 0.0074 lr: 5.968724e-05 time: 0.5502 text_tokens: 4090 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 65306 reduced_llm_loss: 1.91617870, local_loss: 1.91617870 step_consumed_tokens: 4090.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.05633914, img_efficient_attn_ratio: 0.00000000 local_base_loss: 1.9162 grad_norm: 5.07494831 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7433.9 seqlen_tgs: 7444.8 exp_tgs: 5282.6 eta: 0:01:41 
+[XTuner][RANK 0][2026-09-17 21:32:58][INFO] Epoch 1 Step 17/200 data_time: 0.0076 lr: 5.961404e-05 time: 0.5498 text_tokens: 4091 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 69397 reduced_llm_loss: 1.67102432, local_loss: 1.67102432 step_consumed_tokens: 4091.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.05471718, img_efficient_attn_ratio: 0.00000000 local_base_loss: 1.6710 grad_norm: 5.46847820 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7440.3 seqlen_tgs: 7449.4 exp_tgs: 5358.3 eta: 0:01:40 
+[XTuner][RANK 0][2026-09-17 21:32:59][INFO] Epoch 1 Step 18/200 data_time: 0.0076 lr: 5.953321e-05 time: 0.5493 text_tokens: 4084 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 73481 reduced_llm_loss: 1.97796357, local_loss: 1.97796357 step_consumed_tokens: 4084.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04646587, img_efficient_attn_ratio: 0.00000000 local_base_loss: 1.9780 grad_norm: 5.49822521 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7434.3 seqlen_tgs: 7456.1 exp_tgs: 5427.2 eta: 0:01:39 
+[XTuner][RANK 0][2026-09-17 21:32:59][INFO] Epoch 1 Step 19/200 data_time: 0.0075 lr: 5.944476e-05 time: 0.5478 text_tokens: 4070 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 77551 reduced_llm_loss: 2.10352182, local_loss: 2.10352182 step_consumed_tokens: 4070.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04073215, img_efficient_attn_ratio: 0.00000000 local_base_loss: 2.1035 grad_norm: 5.62516785 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7429.6 seqlen_tgs: 7477.1 exp_tgs: 5489.9 eta: 0:01:39 
+[XTuner][RANK 0][2026-09-17 21:33:00][INFO] Epoch 1 Step 20/200 data_time: 0.0072 lr: 5.934872e-05 time: 0.5485 text_tokens: 4070 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 81621 reduced_llm_loss: 1.96820116, local_loss: 1.96820116 step_consumed_tokens: 4070.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04744959, img_efficient_attn_ratio: 0.00000000 local_base_loss: 1.9682 grad_norm: 5.70114517 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7420.9 seqlen_tgs: 7468.3 exp_tgs: 5547.6 eta: 0:01:38 
+[XTuner][RANK 0][2026-09-17 21:33:00][INFO] Epoch 1 Step 21/200 data_time: 0.0070 lr: 5.924511e-05 time: 0.5486 text_tokens: 4061 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 85682 reduced_llm_loss: 1.84086788, local_loss: 1.84086788 step_consumed_tokens: 4061.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.05559301, img_efficient_attn_ratio: 0.00000000 local_base_loss: 1.8409 grad_norm: 5.28035259 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7402.0 seqlen_tgs: 7465.8 exp_tgs: 5600.2 eta: 0:01:38 
+[XTuner][RANK 0][2026-09-17 21:33:01][INFO] Epoch 1 Step 22/200 data_time: 0.0077 lr: 5.913397e-05 time: 0.5465 text_tokens: 4065 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 89747 reduced_llm_loss: 2.10227060, local_loss: 2.10227060 step_consumed_tokens: 4065.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04334974, img_efficient_attn_ratio: 0.00000000 local_base_loss: 2.1023 grad_norm: 6.14911127 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7437.9 seqlen_tgs: 7494.6 exp_tgs: 5649.7 eta: 0:01:37 
+[XTuner][RANK 0][2026-09-17 21:33:02][INFO] Epoch 1 Step 23/200 data_time: 0.0072 lr: 5.901532e-05 time: 0.5474 text_tokens: 4063 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 93810 reduced_llm_loss: 1.97259068, local_loss: 1.97259068 step_consumed_tokens: 4063.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04959142, img_efficient_attn_ratio: 0.00000000 local_base_loss: 1.9726 grad_norm: 5.18365717 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7423.0 seqlen_tgs: 7483.3 exp_tgs: 5695.5 eta: 0:01:37 
+[XTuner][RANK 0][2026-09-17 21:33:02][INFO] Epoch 1 Step 24/200 data_time: 0.0075 lr: 5.888919e-05 time: 0.5501 text_tokens: 4091 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 97901 reduced_llm_loss: 1.74810243, local_loss: 1.74810243 step_consumed_tokens: 4091.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.05633318, img_efficient_attn_ratio: 0.00000000 local_base_loss: 1.7481 grad_norm: 5.45761299 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7436.6 seqlen_tgs: 7445.6 exp_tgs: 5738.7 eta: 0:01:36 
+[XTuner][RANK 0][2026-09-17 21:33:03][INFO] Epoch 1 Step 25/200 data_time: 0.0078 lr: 5.875561e-05 time: 0.5483 text_tokens: 4068 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 101969 reduced_llm_loss: 1.80566716, local_loss: 1.80566716 step_consumed_tokens: 4068.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04230690, img_efficient_attn_ratio: 0.00000000 local_base_loss: 1.8057 grad_norm: 5.38093710 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7419.8 seqlen_tgs: 7470.9 exp_tgs: 5778.2 eta: 0:01:36 
+[XTuner][RANK 0][2026-09-17 21:33:03][INFO] Epoch 1 Step 26/200 data_time: 0.0071 lr: 5.861463e-05 time: 0.5481 text_tokens: 4083 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 106052 reduced_llm_loss: 1.73379827, local_loss: 1.73379827 step_consumed_tokens: 4083.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04780340, img_efficient_attn_ratio: 0.00000000 local_base_loss: 1.7338 grad_norm: 5.16673660 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7449.5 seqlen_tgs: 7473.2 exp_tgs: 5816.3 eta: 0:01:35 
+[XTuner][RANK 0][2026-09-17 21:33:04][INFO] Epoch 1 Step 27/200 data_time: 0.0075 lr: 5.846627e-05 time: 0.5487 text_tokens: 4061 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 110113 reduced_llm_loss: 1.91206574, local_loss: 1.91206574 step_consumed_tokens: 4061.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.05428696, img_efficient_attn_ratio: 0.00000000 local_base_loss: 1.9121 grad_norm: 5.20265436 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7401.2 seqlen_tgs: 7465.0 exp_tgs: 5850.5 eta: 0:01:35 
+[XTuner][RANK 0][2026-09-17 21:33:05][INFO] Epoch 1 Step 28/200 data_time: 0.0075 lr: 5.831058e-05 time: 0.5486 text_tokens: 4083 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 114196 reduced_llm_loss: 2.05031371, local_loss: 2.05031371 step_consumed_tokens: 4083.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04362392, img_efficient_attn_ratio: 0.00000000 local_base_loss: 2.0503 grad_norm: 5.44777441 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7442.8 seqlen_tgs: 7466.5 exp_tgs: 5883.8 eta: 0:01:34 
+[XTuner][RANK 0][2026-09-17 21:33:05][INFO] Epoch 1 Step 29/200 data_time: 0.0076 lr: 5.814760e-05 time: 0.5484 text_tokens: 4073 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 118269 reduced_llm_loss: 1.89892089, local_loss: 1.89892089 step_consumed_tokens: 4073.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04458308, img_efficient_attn_ratio: 0.00000000 local_base_loss: 1.8989 grad_norm: 4.87289429 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7426.8 seqlen_tgs: 7468.8 exp_tgs: 5914.7 eta: 0:01:33 
+[XTuner][RANK 0][2026-09-17 21:33:06][INFO] Epoch 1 Step 30/200 data_time: 0.0073 lr: 5.797736e-05 time: 0.5500 text_tokens: 4081 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 122350 reduced_llm_loss: 1.95811355, local_loss: 1.95811355 step_consumed_tokens: 4081.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04957151, img_efficient_attn_ratio: 0.00000000 local_base_loss: 1.9581 grad_norm: 5.25935745 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7420.4 seqlen_tgs: 7447.6 exp_tgs: 5943.9 eta: 0:01:33 
+[XTuner][RANK 0][2026-09-17 21:33:06][INFO] Epoch 1 Step 31/200 data_time: 0.0070 lr: 5.779993e-05 time: 0.5501 text_tokens: 4073 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 126423 reduced_llm_loss: 1.81054544, local_loss: 1.81054544 step_consumed_tokens: 4073.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.05117893, img_efficient_attn_ratio: 0.00000000 local_base_loss: 1.8105 grad_norm: 4.96047306 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7403.9 seqlen_tgs: 7445.7 exp_tgs: 5971.0 eta: 0:01:33 
+[XTuner][RANK 0][2026-09-17 21:33:07][INFO] Epoch 1 Step 32/200 data_time: 0.0074 lr: 5.761533e-05 time: 0.5489 text_tokens: 4080 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 130503 reduced_llm_loss: 1.98242116, local_loss: 1.98242116 step_consumed_tokens: 4080.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.05169749, img_efficient_attn_ratio: 0.00000000 local_base_loss: 1.9824 grad_norm: 4.87937880 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7433.6 seqlen_tgs: 7462.8 exp_tgs: 5997.4 eta: 0:01:32 
+[XTuner][RANK 0][2026-09-17 21:33:07][INFO] Epoch 1 Step 33/200 data_time: 0.0076 lr: 5.742362e-05 time: 0.5487 text_tokens: 4084 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 134587 reduced_llm_loss: 1.83365560, local_loss: 1.83365560 step_consumed_tokens: 4084.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.05125654, img_efficient_attn_ratio: 0.00000000 local_base_loss: 1.8337 grad_norm: 4.76717377 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7443.2 seqlen_tgs: 7465.1 exp_tgs: 6022.4 eta: 0:01:31 
+[XTuner][RANK 0][2026-09-17 21:33:08][INFO] Epoch 1 Step 34/200 data_time: 0.0077 lr: 5.722485e-05 time: 0.5491 text_tokens: 4094 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 138681 reduced_llm_loss: 1.86694813, local_loss: 1.86694813 step_consumed_tokens: 4094.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04548764, img_efficient_attn_ratio: 0.00000000 local_base_loss: 1.8669 grad_norm: 4.95573139 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7455.3 seqlen_tgs: 7458.9 exp_tgs: 6046.5 eta: 0:01:30 
+[XTuner][RANK 0][2026-09-17 21:33:09][INFO] Epoch 1 Step 35/200 data_time: 0.0078 lr: 5.701908e-05 time: 0.5474 text_tokens: 4084 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 142765 reduced_llm_loss: 2.11019135, local_loss: 2.11019135 step_consumed_tokens: 4084.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04266953, img_efficient_attn_ratio: 0.00000000 local_base_loss: 2.1102 grad_norm: 5.39102983 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7461.0 seqlen_tgs: 7482.9 exp_tgs: 6069.4 eta: 0:01:30 
+[XTuner][RANK 0][2026-09-17 21:33:09][INFO] Epoch 1 Step 36/200 data_time: 0.0075 lr: 5.680635e-05 time: 0.5471 text_tokens: 4062 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 146827 reduced_llm_loss: 2.04470968, local_loss: 2.04470968 step_consumed_tokens: 4062.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04433322, img_efficient_attn_ratio: 0.00000000 local_base_loss: 2.0447 grad_norm: 5.01703691 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7424.9 seqlen_tgs: 7487.1 exp_tgs: 6090.3 eta: 0:01:30 
+[XTuner][RANK 0][2026-09-17 21:33:10][INFO] Epoch 1 Step 37/200 data_time: 0.0076 lr: 5.658672e-05 time: 0.5472 text_tokens: 4085 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 150912 reduced_llm_loss: 1.94326687, local_loss: 1.94326687 step_consumed_tokens: 4085.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.05080223, img_efficient_attn_ratio: 0.00000000 local_base_loss: 1.9433 grad_norm: 5.05911541 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7465.4 seqlen_tgs: 7485.5 exp_tgs: 6111.2 eta: 0:01:29 
+[XTuner][RANK 0][2026-09-17 21:33:10][INFO] Epoch 1 Step 38/200 data_time: 0.0075 lr: 5.636025e-05 time: 0.5482 text_tokens: 4094 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 155006 reduced_llm_loss: 2.06916857, local_loss: 2.06916857 step_consumed_tokens: 4094.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04790878, img_efficient_attn_ratio: 0.00000000 local_base_loss: 2.0692 grad_norm: 5.46978807 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7468.6 seqlen_tgs: 7472.3 exp_tgs: 6131.3 eta: 0:01:28 
+[XTuner][RANK 0][2026-09-17 21:33:11][INFO] Epoch 1 Step 39/200 data_time: 0.0073 lr: 5.612700e-05 time: 0.5465 text_tokens: 4073 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 159079 reduced_llm_loss: 1.86203408, local_loss: 1.86203408 step_consumed_tokens: 4073.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04724729, img_efficient_attn_ratio: 0.00000000 local_base_loss: 1.8620 grad_norm: 4.75214195 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7453.0 seqlen_tgs: 7495.1 exp_tgs: 6150.1 eta: 0:01:28 
+[XTuner][RANK 0][2026-09-17 21:33:12][INFO] Epoch 1 Step 40/200 data_time: 0.0075 lr: 5.588702e-05 time: 0.5474 text_tokens: 4087 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 163166 reduced_llm_loss: 1.79031599, local_loss: 1.79031599 step_consumed_tokens: 4087.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04675055, img_efficient_attn_ratio: 0.00000000 local_base_loss: 1.7903 grad_norm: 4.87153244 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7466.2 seqlen_tgs: 7482.6 exp_tgs: 6168.3 eta: 0:01:27 
+[XTuner][RANK 0][2026-09-17 21:33:12][INFO] Epoch 1 Step 41/200 data_time: 0.0073 lr: 5.564040e-05 time: 0.5490 text_tokens: 4079 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 167245 reduced_llm_loss: 1.66062415, local_loss: 1.66062415 step_consumed_tokens: 4079.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.05381775, img_efficient_attn_ratio: 0.00000000 local_base_loss: 1.6606 grad_norm: 4.67003775 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7430.4 seqlen_tgs: 7461.3 exp_tgs: 6185.1 eta: 0:01:27 
+[XTuner][RANK 0][2026-09-17 21:33:13][INFO] Epoch 1 Step 42/200 data_time: 0.0076 lr: 5.538718e-05 time: 0.5488 text_tokens: 4071 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 171316 reduced_llm_loss: 1.95395339, local_loss: 1.95395339 step_consumed_tokens: 4071.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04289532, img_efficient_attn_ratio: 0.00000000 local_base_loss: 1.9540 grad_norm: 4.60240126 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7418.3 seqlen_tgs: 7463.8 exp_tgs: 6200.9 eta: 0:01:26 
+[XTuner][RANK 0][2026-09-17 21:33:13][INFO] Epoch 1 Step 43/200 data_time: 0.0073 lr: 5.512743e-05 time: 0.5486 text_tokens: 4081 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 175397 reduced_llm_loss: 1.96021008, local_loss: 1.96021008 step_consumed_tokens: 4081.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04960835, img_efficient_attn_ratio: 0.00000000 local_base_loss: 1.9602 grad_norm: 4.90237951 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7439.3 seqlen_tgs: 7466.7 exp_tgs: 6216.5 eta: 0:01:26 
+[XTuner][RANK 0][2026-09-17 21:33:14][INFO] Epoch 1 Step 44/200 data_time: 0.0074 lr: 5.486122e-05 time: 0.5481 text_tokens: 4091 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 179488 reduced_llm_loss: 1.94504333, local_loss: 1.94504333 step_consumed_tokens: 4091.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04230618, img_efficient_attn_ratio: 0.00000000 local_base_loss: 1.9450 grad_norm: 5.17294407 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7464.1 seqlen_tgs: 7473.2 exp_tgs: 6231.9 eta: 0:01:25 
+[XTuner][RANK 0][2026-09-17 21:33:14][INFO] Epoch 1 Step 45/200 data_time: 0.0075 lr: 5.458863e-05 time: 0.5481 text_tokens: 4072 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 183560 reduced_llm_loss: 2.09518862, local_loss: 2.09518862 step_consumed_tokens: 4072.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04370153, img_efficient_attn_ratio: 0.00000000 local_base_loss: 2.0952 grad_norm: 5.10374928 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7429.8 seqlen_tgs: 7473.6 exp_tgs: 6246.0 eta: 0:01:25 
+[XTuner][RANK 0][2026-09-17 21:33:15][INFO] Epoch 1 Step 46/200 data_time: 0.0078 lr: 5.430972e-05 time: 0.5486 text_tokens: 4082 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 187642 reduced_llm_loss: 1.92877340, local_loss: 1.92877340 step_consumed_tokens: 4082.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04287696, img_efficient_attn_ratio: 0.00000000 local_base_loss: 1.9288 grad_norm: 4.94697618 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7440.3 seqlen_tgs: 7465.8 exp_tgs: 6259.7 eta: 0:01:24 
+[XTuner][RANK 0][2026-09-17 21:33:16][INFO] Epoch 1 Step 47/200 data_time: 0.0078 lr: 5.402456e-05 time: 0.5491 text_tokens: 4078 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 191720 reduced_llm_loss: 2.16220260, local_loss: 2.16220260 step_consumed_tokens: 4078.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04486287, img_efficient_attn_ratio: 0.00000000 local_base_loss: 2.1622 grad_norm: 5.41252851 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7426.6 seqlen_tgs: 7459.4 exp_tgs: 6272.7 eta: 0:01:24 
+[XTuner][RANK 0][2026-09-17 21:33:16][INFO] Epoch 1 Step 48/200 data_time: 0.0074 lr: 5.373324e-05 time: 0.5490 text_tokens: 4094 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 195814 reduced_llm_loss: 2.03384495, local_loss: 2.03384495 step_consumed_tokens: 4094.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04460585, img_efficient_attn_ratio: 0.00000000 local_base_loss: 2.0338 grad_norm: 5.10164833 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7457.4 seqlen_tgs: 7461.0 exp_tgs: 6285.7 eta: 0:01:23 
+[XTuner][RANK 0][2026-09-17 21:33:17][INFO] Epoch 1 Step 49/200 data_time: 0.0073 lr: 5.343582e-05 time: 0.5471 text_tokens: 4072 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 199886 reduced_llm_loss: 1.82226682, local_loss: 1.82226682 step_consumed_tokens: 4072.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04808760, img_efficient_attn_ratio: 0.00000000 local_base_loss: 1.8223 grad_norm: 4.78781796 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7442.8 seqlen_tgs: 7486.7 exp_tgs: 6298.0 eta: 0:01:22 
+[XTuner][RANK 0][2026-09-17 21:33:17][INFO] Epoch 1 Step 50/200 data_time: 0.0073 lr: 5.313239e-05 time: 0.5481 text_tokens: 4091 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 203977 reduced_llm_loss: 1.83377171, local_loss: 1.83377171 step_consumed_tokens: 4091.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.05069613, img_efficient_attn_ratio: 0.00000000 local_base_loss: 1.8338 grad_norm: 5.10382223 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7464.1 seqlen_tgs: 7473.2 exp_tgs: 6310.3 eta: 0:01:21 
+[XTuner][RANK 0][2026-09-17 21:33:18][INFO] Epoch 1 Step 51/200 data_time: 0.2636 lr: 5.282303e-05 time: 0.5602 text_tokens: 4081 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 208058 reduced_llm_loss: 1.94352806, local_loss: 1.94352806 step_consumed_tokens: 4081.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04360044, img_efficient_attn_ratio: 0.00000000 local_base_loss: 1.9435 grad_norm: 4.73162889 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7285.3 seqlen_tgs: 7312.1 exp_tgs: 6270.6 eta: 0:01:23 
+[XTuner][RANK 0][2026-09-17 21:33:19][INFO] Epoch 1 Step 52/200 data_time: 0.0078 lr: 5.250781e-05 time: 0.5491 text_tokens: 4070 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 212128 reduced_llm_loss: 1.97427487, local_loss: 1.97427487 step_consumed_tokens: 4070.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04122436, img_efficient_attn_ratio: 0.00000000 local_base_loss: 1.9743 grad_norm: 5.19970322 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7412.4 seqlen_tgs: 7459.8 exp_tgs: 6282.0 eta: 0:01:21 
+[XTuner][RANK 0][2026-09-17 21:33:19][INFO] Epoch 1 Step 53/200 data_time: 0.0075 lr: 5.218682e-05 time: 0.5467 text_tokens: 4075 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 216203 reduced_llm_loss: 2.06329560, local_loss: 2.06329560 step_consumed_tokens: 4075.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04582763, img_efficient_attn_ratio: 0.00000000 local_base_loss: 2.0633 grad_norm: 4.82995415 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7453.4 seqlen_tgs: 7491.8 exp_tgs: 6293.5 eta: 0:01:20 
+[XTuner][RANK 0][2026-09-17 21:33:20][INFO] Epoch 1 Step 54/200 data_time: 0.0074 lr: 5.186014e-05 time: 0.5465 text_tokens: 4080 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 220283 reduced_llm_loss: 1.98506904, local_loss: 1.98506904 step_consumed_tokens: 4080.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04611182, img_efficient_attn_ratio: 0.00000000 local_base_loss: 1.9851 grad_norm: 4.86269808 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7466.0 seqlen_tgs: 7495.2 exp_tgs: 6304.9 eta: 0:01:19 
+[XTuner][RANK 0][2026-09-17 21:33:21][INFO] Epoch 1 Step 55/200 data_time: 0.0071 lr: 5.152786e-05 time: 0.5493 text_tokens: 4085 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 224368 reduced_llm_loss: 1.94341290, local_loss: 1.94341290 step_consumed_tokens: 4085.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04912543, img_efficient_attn_ratio: 0.00000000 local_base_loss: 1.9434 grad_norm: 4.82104921 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7437.0 seqlen_tgs: 7457.0 exp_tgs: 6315.5 eta: 0:01:19 
+[XTuner][RANK 0][2026-09-17 21:33:21][INFO] Epoch 1 Step 56/200 data_time: 0.0077 lr: 5.119007e-05 time: 0.5475 text_tokens: 4071 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 228439 reduced_llm_loss: 2.12333775, local_loss: 2.12333775 step_consumed_tokens: 4071.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04295325, img_efficient_attn_ratio: 0.00000000 local_base_loss: 2.1233 grad_norm: 5.20279360 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7435.1 seqlen_tgs: 7480.7 exp_tgs: 6325.7 eta: 0:01:19 
+[XTuner][RANK 0][2026-09-17 21:33:22][INFO] Epoch 1 Step 57/200 data_time: 0.0075 lr: 5.084685e-05 time: 0.5477 text_tokens: 4074 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 232513 reduced_llm_loss: 2.08487582, local_loss: 2.08487582 step_consumed_tokens: 4074.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04265058, img_efficient_attn_ratio: 0.00000000 local_base_loss: 2.0849 grad_norm: 5.04901648 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7438.7 seqlen_tgs: 7478.9 exp_tgs: 6335.6 eta: 0:01:18 
+[XTuner][RANK 0][2026-09-17 21:33:22][INFO] Epoch 1 Step 58/200 data_time: 0.0071 lr: 5.049830e-05 time: 0.5480 text_tokens: 4057 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 236570 reduced_llm_loss: 1.98969460, local_loss: 1.98969460 step_consumed_tokens: 4057.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.05464554, img_efficient_attn_ratio: 0.00000000 local_base_loss: 1.9897 grad_norm: 4.80057573 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7402.7 seqlen_tgs: 7473.8 exp_tgs: 6344.8 eta: 0:01:18 
+[XTuner][RANK 0][2026-09-17 21:33:23][INFO] Epoch 1 Step 59/200 data_time: 0.0079 lr: 5.014450e-05 time: 0.5486 text_tokens: 4091 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 240661 reduced_llm_loss: 2.02652168, local_loss: 2.02652168 step_consumed_tokens: 4091.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04568231, img_efficient_attn_ratio: 0.00000000 local_base_loss: 2.0265 grad_norm: 4.80783081 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7457.2 seqlen_tgs: 7466.4 exp_tgs: 6354.3 eta: 0:01:17 
+[XTuner][RANK 0][2026-09-17 21:33:24][INFO] Epoch 1 Step 60/200 data_time: 0.0048 lr: 4.978555e-05 time: 0.5381 text_tokens: 2463 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 243124 reduced_llm_loss: 1.92743468, local_loss: 1.92743468 step_consumed_tokens: 2463.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.05286396, img_efficient_attn_ratio: 0.00000000 local_base_loss: 1.9274 grad_norm: 6.18850183 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 4577.6 seqlen_tgs: 7612.6 exp_tgs: 6323.5 eta: 0:02:03 
+[XTuner][RANK 0][2026-09-17 21:33:24][INFO] Epoch 1 Step 61/200 data_time: 0.0075 lr: 4.942154e-05 time: 0.5482 text_tokens: 4072 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 247196 reduced_llm_loss: 1.99837565, local_loss: 1.99837565 step_consumed_tokens: 4072.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04897547, img_efficient_attn_ratio: 0.00000000 local_base_loss: 1.9984 grad_norm: 4.99901581 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7428.6 seqlen_tgs: 7472.4 exp_tgs: 6332.7 eta: 0:01:15 
+[XTuner][RANK 0][2026-09-17 21:33:25][INFO] Epoch 1 Step 62/200 data_time: 0.0078 lr: 4.905257e-05 time: 0.5489 text_tokens: 4095 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 251291 reduced_llm_loss: 2.01256132, local_loss: 2.01256132 step_consumed_tokens: 4095.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04363918, img_efficient_attn_ratio: 0.00000000 local_base_loss: 2.0126 grad_norm: 4.73772669 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7460.1 seqlen_tgs: 7462.0 exp_tgs: 6342.1 eta: 0:01:14 
+[XTuner][RANK 0][2026-09-17 21:33:25][INFO] Epoch 1 Step 63/200 data_time: 0.0075 lr: 4.867874e-05 time: 0.5481 text_tokens: 4065 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 255356 reduced_llm_loss: 1.86423469, local_loss: 1.86423469 step_consumed_tokens: 4065.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04924178, img_efficient_attn_ratio: 0.00000000 local_base_loss: 1.8642 grad_norm: 4.78583956 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7416.2 seqlen_tgs: 7472.7 exp_tgs: 6350.6 eta: 0:01:14 
+[XTuner][RANK 0][2026-09-17 21:33:26][INFO] Epoch 1 Step 64/200 data_time: 0.0075 lr: 4.830014e-05 time: 0.5486 text_tokens: 4090 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 259446 reduced_llm_loss: 2.04645824, local_loss: 2.04645824 step_consumed_tokens: 4090.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04614186, img_efficient_attn_ratio: 0.00000000 local_base_loss: 2.0465 grad_norm: 5.30766773 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7455.4 seqlen_tgs: 7466.3 exp_tgs: 6359.4 eta: 0:01:13 
+[XTuner][RANK 0][2026-09-17 21:33:26][INFO] Epoch 1 Step 65/200 data_time: 0.0079 lr: 4.791687e-05 time: 0.5492 text_tokens: 4078 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 263524 reduced_llm_loss: 2.00699282, local_loss: 2.00699282 step_consumed_tokens: 4078.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04412282, img_efficient_attn_ratio: 0.00000000 local_base_loss: 2.0070 grad_norm: 4.97577524 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7424.9 seqlen_tgs: 7457.7 exp_tgs: 6367.5 eta: 0:01:13 
+[XTuner][RANK 0][2026-09-17 21:33:27][INFO] Epoch 1 Step 66/200 data_time: 0.0073 lr: 4.752903e-05 time: 0.5503 text_tokens: 4094 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 267618 reduced_llm_loss: 1.65734291, local_loss: 1.65734291 step_consumed_tokens: 4094.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.05432069, img_efficient_attn_ratio: 0.00000000 local_base_loss: 1.6573 grad_norm: 4.29322815 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7439.2 seqlen_tgs: 7442.8 exp_tgs: 6375.7 eta: 0:01:13 
+[XTuner][RANK 0][2026-09-17 21:33:28][INFO] Epoch 1 Step 67/200 data_time: 0.0074 lr: 4.713673e-05 time: 0.5507 text_tokens: 4086 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 271704 reduced_llm_loss: 1.93867338, local_loss: 1.93867338 step_consumed_tokens: 4086.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04912972, img_efficient_attn_ratio: 0.00000000 local_base_loss: 1.9387 grad_norm: 5.10183811 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7419.9 seqlen_tgs: 7438.1 exp_tgs: 6383.5 eta: 0:01:12 
+[XTuner][RANK 0][2026-09-17 21:33:28][INFO] Epoch 1 Step 68/200 data_time: 0.0072 lr: 4.674007e-05 time: 0.5505 text_tokens: 4073 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 275777 reduced_llm_loss: 2.03496504, local_loss: 2.03496504 step_consumed_tokens: 4073.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.05046523, img_efficient_attn_ratio: 0.00000000 local_base_loss: 2.0350 grad_norm: 4.74023676 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7399.2 seqlen_tgs: 7441.0 exp_tgs: 6390.7 eta: 0:01:12 
+[XTuner][RANK 0][2026-09-17 21:33:29][INFO] Epoch 2 Step 69/200 data_time: 0.0050 lr: 4.633915e-05 time: 0.5384 text_tokens: 2463 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 278240 reduced_llm_loss: 1.08392859, local_loss: 1.08392859 step_consumed_tokens: 2463.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.05286396, img_efficient_attn_ratio: 0.00000000 local_base_loss: 1.0839 grad_norm: 6.22418928 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 4574.5 seqlen_tgs: 7607.5 exp_tgs: 6363.0 eta: 0:01:55 
+[XTuner][RANK 0][2026-09-17 21:33:29][INFO] Epoch 2 Step 70/200 data_time: 0.0075 lr: 4.593407e-05 time: 0.5474 text_tokens: 4094 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 282334 reduced_llm_loss: 1.16591442, local_loss: 1.16591442 step_consumed_tokens: 4094.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04460585, img_efficient_attn_ratio: 0.00000000 local_base_loss: 1.1659 grad_norm: 5.24660730 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7479.3 seqlen_tgs: 7483.0 exp_tgs: 6371.3 eta: 0:01:10 
+[XTuner][RANK 0][2026-09-17 21:33:30][INFO] Epoch 2 Step 71/200 data_time: 0.0057 lr: 4.552494e-05 time: 0.5463 text_tokens: 4054 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 286388 reduced_llm_loss: 1.05010939, local_loss: 1.05010939 step_consumed_tokens: 4054.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04767144, img_efficient_attn_ratio: 0.00000000 local_base_loss: 1.0501 grad_norm: 5.60943413 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7420.8 seqlen_tgs: 7497.7 exp_tgs: 6378.8 eta: 0:01:10 
+[XTuner][RANK 0][2026-09-17 21:33:31][INFO] Epoch 2 Step 72/200 data_time: 0.0062 lr: 4.511188e-05 time: 0.5473 text_tokens: 4070 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 290458 reduced_llm_loss: 1.14933896, local_loss: 1.14933896 step_consumed_tokens: 4070.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04258931, img_efficient_attn_ratio: 0.00000000 local_base_loss: 1.1493 grad_norm: 4.99522543 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7435.9 seqlen_tgs: 7483.4 exp_tgs: 6386.2 eta: 0:01:09 
+[XTuner][RANK 0][2026-09-17 21:33:31][INFO] Epoch 2 Step 73/200 data_time: 0.0077 lr: 4.469499e-05 time: 0.5468 text_tokens: 4062 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 294520 reduced_llm_loss: 1.04215765, local_loss: 1.04215765 step_consumed_tokens: 4062.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04433322, img_efficient_attn_ratio: 0.00000000 local_base_loss: 1.0422 grad_norm: 4.55191088 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7429.2 seqlen_tgs: 7491.4 exp_tgs: 6393.2 eta: 0:01:08 
+[XTuner][RANK 0][2026-09-17 21:33:32][INFO] Epoch 2 Step 74/200 data_time: 0.0073 lr: 4.427437e-05 time: 0.5477 text_tokens: 4083 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 298603 reduced_llm_loss: 0.92175800, local_loss: 0.92175800 step_consumed_tokens: 4083.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04780340, img_efficient_attn_ratio: 0.00000000 local_base_loss: 0.9218 grad_norm: 4.98845196 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7455.3 seqlen_tgs: 7479.0 exp_tgs: 6400.4 eta: 0:01:08 
+[XTuner][RANK 0][2026-09-17 21:33:32][INFO] Epoch 2 Step 75/200 data_time: 0.0078 lr: 4.385014e-05 time: 0.5486 text_tokens: 4073 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 302676 reduced_llm_loss: 1.00681269, local_loss: 1.00681269 step_consumed_tokens: 4073.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04458308, img_efficient_attn_ratio: 0.00000000 local_base_loss: 1.0068 grad_norm: 6.38414049 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7424.2 seqlen_tgs: 7466.1 exp_tgs: 6407.0 eta: 0:01:07 
+[XTuner][RANK 0][2026-09-17 21:33:33][INFO] Epoch 2 Step 76/200 data_time: 0.0060 lr: 4.342241e-05 time: 0.5463 text_tokens: 4087 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 306763 reduced_llm_loss: 1.21104336, local_loss: 1.21104336 step_consumed_tokens: 4087.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04142213, img_efficient_attn_ratio: 0.00000000 local_base_loss: 1.2110 grad_norm: 6.45457125 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7481.6 seqlen_tgs: 7498.1 exp_tgs: 6414.2 eta: 0:01:06 
+[XTuner][RANK 0][2026-09-17 21:33:34][INFO] Epoch 2 Step 77/200 data_time: 0.0058 lr: 4.299129e-05 time: 0.5478 text_tokens: 4088 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 310851 reduced_llm_loss: 0.87142116, local_loss: 0.87142116 step_consumed_tokens: 4088.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04877722, img_efficient_attn_ratio: 0.00000000 local_base_loss: 0.8714 grad_norm: 5.55659103 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7463.2 seqlen_tgs: 7477.8 exp_tgs: 6421.2 eta: 0:01:06 
+[XTuner][RANK 0][2026-09-17 21:33:34][INFO] Epoch 2 Step 78/200 data_time: 0.0063 lr: 4.255689e-05 time: 0.5491 text_tokens: 4090 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 314941 reduced_llm_loss: 1.02002025, local_loss: 1.02002025 step_consumed_tokens: 4090.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04317582, img_efficient_attn_ratio: 0.00000000 local_base_loss: 1.0200 grad_norm: 6.35206270 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7448.1 seqlen_tgs: 7459.1 exp_tgs: 6427.8 eta: 0:01:06 
+[XTuner][RANK 0][2026-09-17 21:33:35][INFO] Epoch 2 Step 79/200 data_time: 0.0072 lr: 4.211933e-05 time: 0.5497 text_tokens: 4094 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 319035 reduced_llm_loss: 0.86483669, local_loss: 0.86483669 step_consumed_tokens: 4094.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.05432069, img_efficient_attn_ratio: 0.00000000 local_base_loss: 0.8648 grad_norm: 4.69122267 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7448.2 seqlen_tgs: 7451.8 exp_tgs: 6434.1 eta: 0:01:05 
+[XTuner][RANK 0][2026-09-17 21:33:35][INFO] Epoch 2 Step 80/200 data_time: 0.0075 lr: 4.167873e-05 time: 0.5497 text_tokens: 4072 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 323107 reduced_llm_loss: 0.90263116, local_loss: 0.90263116 step_consumed_tokens: 4072.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04808760, img_efficient_attn_ratio: 0.00000000 local_base_loss: 0.9026 grad_norm: 5.25421429 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7408.2 seqlen_tgs: 7451.8 exp_tgs: 6439.8 eta: 0:01:05 
+[XTuner][RANK 0][2026-09-17 21:33:36][INFO] Epoch 2 Step 81/200 data_time: 0.0080 lr: 4.123520e-05 time: 0.5496 text_tokens: 4068 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 327175 reduced_llm_loss: 0.84614408, local_loss: 0.84614408 step_consumed_tokens: 4068.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04230690, img_efficient_attn_ratio: 0.00000000 local_base_loss: 0.8461 grad_norm: 5.85327482 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7401.5 seqlen_tgs: 7452.5 exp_tgs: 6445.2 eta: 0:01:04 
+[XTuner][RANK 0][2026-09-17 21:33:36][INFO] Epoch 2 Step 82/200 data_time: 0.0076 lr: 4.078885e-05 time: 0.5513 text_tokens: 4072 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 331247 reduced_llm_loss: 1.08047128, local_loss: 1.08047128 step_consumed_tokens: 4072.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04897547, img_efficient_attn_ratio: 0.00000000 local_base_loss: 1.0805 grad_norm: 5.34753370 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7385.7 seqlen_tgs: 7429.2 exp_tgs: 6450.5 eta: 0:01:04 
+[XTuner][RANK 0][2026-09-17 21:33:37][INFO] Epoch 2 Step 83/200 data_time: 0.0078 lr: 4.033980e-05 time: 0.5513 text_tokens: 4061 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 335308 reduced_llm_loss: 0.94707543, local_loss: 0.94707543 step_consumed_tokens: 4061.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.05428696, img_efficient_attn_ratio: 0.00000000 local_base_loss: 0.9471 grad_norm: 4.84865141 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7366.9 seqlen_tgs: 7430.3 exp_tgs: 6455.3 eta: 0:01:04 
+[XTuner][RANK 0][2026-09-17 21:33:38][INFO] Epoch 2 Step 84/200 data_time: 0.0075 lr: 3.988817e-05 time: 0.5486 text_tokens: 4070 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 339378 reduced_llm_loss: 1.04700685, local_loss: 1.04700685 step_consumed_tokens: 4070.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04744959, img_efficient_attn_ratio: 0.00000000 local_base_loss: 1.0470 grad_norm: 5.60188770 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7418.7 seqlen_tgs: 7466.1 exp_tgs: 6460.6 eta: 0:01:03 
+[XTuner][RANK 0][2026-09-17 21:33:38][INFO] Epoch 2 Step 85/200 data_time: 0.0075 lr: 3.943408e-05 time: 0.5483 text_tokens: 4087 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 343465 reduced_llm_loss: 0.94632244, local_loss: 0.94632244 step_consumed_tokens: 4087.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04675055, img_efficient_attn_ratio: 0.00000000 local_base_loss: 0.9463 grad_norm: 4.99169683 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7454.6 seqlen_tgs: 7471.0 exp_tgs: 6466.2 eta: 0:01:02 
+[XTuner][RANK 0][2026-09-17 21:33:39][INFO] Epoch 2 Step 86/200 data_time: 0.0078 lr: 3.897764e-05 time: 0.5479 text_tokens: 4072 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 347537 reduced_llm_loss: 1.04454684, local_loss: 1.04454684 step_consumed_tokens: 4072.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04370153, img_efficient_attn_ratio: 0.00000000 local_base_loss: 1.0445 grad_norm: 5.01737785 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7431.7 seqlen_tgs: 7475.5 exp_tgs: 6471.3 eta: 0:01:01 
+[XTuner][RANK 0][2026-09-17 21:33:39][INFO] Epoch 2 Step 87/200 data_time: 0.0076 lr: 3.851899e-05 time: 0.5474 text_tokens: 4080 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 351617 reduced_llm_loss: 1.03328812, local_loss: 1.03328812 step_consumed_tokens: 4080.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04611182, img_efficient_attn_ratio: 0.00000000 local_base_loss: 1.0333 grad_norm: 4.79069710 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7452.9 seqlen_tgs: 7482.2 exp_tgs: 6476.6 eta: 0:01:01 
+[XTuner][RANK 0][2026-09-17 21:33:40][INFO] Epoch 2 Step 88/200 data_time: 0.0061 lr: 3.805823e-05 time: 0.5466 text_tokens: 4078 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 355695 reduced_llm_loss: 0.99246168, local_loss: 0.99246168 step_consumed_tokens: 4078.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04066324, img_efficient_attn_ratio: 0.00000000 local_base_loss: 0.9925 grad_norm: 5.38923264 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7461.2 seqlen_tgs: 7494.1 exp_tgs: 6482.0 eta: 0:01:00 
+[XTuner][RANK 0][2026-09-17 21:33:41][INFO] Epoch 2 Step 89/200 data_time: 0.0075 lr: 3.759549e-05 time: 0.5478 text_tokens: 4081 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 359776 reduced_llm_loss: 1.04133308, local_loss: 1.04133308 step_consumed_tokens: 4081.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04957151, img_efficient_attn_ratio: 0.00000000 local_base_loss: 1.0413 grad_norm: 4.79189873 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7449.6 seqlen_tgs: 7477.0 exp_tgs: 6487.0 eta: 0:01:00 
+[XTuner][RANK 0][2026-09-17 21:33:41][INFO] Epoch 2 Step 90/200 data_time: 0.0080 lr: 3.713088e-05 time: 0.5473 text_tokens: 4078 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 363854 reduced_llm_loss: 1.13896108, local_loss: 1.13896108 step_consumed_tokens: 4078.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04486287, img_efficient_attn_ratio: 0.00000000 local_base_loss: 1.1390 grad_norm: 4.57743692 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7450.9 seqlen_tgs: 7483.8 exp_tgs: 6491.9 eta: 0:00:59 
+[XTuner][RANK 0][2026-09-17 21:33:42][INFO] Epoch 2 Step 91/200 data_time: 0.0077 lr: 3.666454e-05 time: 0.5480 text_tokens: 4085 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 367939 reduced_llm_loss: 0.98526168, local_loss: 0.98526168 step_consumed_tokens: 4085.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.05080223, img_efficient_attn_ratio: 0.00000000 local_base_loss: 0.9853 grad_norm: 4.47948790 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7453.7 seqlen_tgs: 7473.8 exp_tgs: 6496.7 eta: 0:00:59 
+[XTuner][RANK 0][2026-09-17 21:33:42][INFO] Epoch 2 Step 92/200 data_time: 0.0077 lr: 3.619659e-05 time: 0.5480 text_tokens: 4081 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 372020 reduced_llm_loss: 0.98729843, local_loss: 0.98729843 step_consumed_tokens: 4081.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04360044, img_efficient_attn_ratio: 0.00000000 local_base_loss: 0.9873 grad_norm: 4.89921236 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7447.7 seqlen_tgs: 7475.1 exp_tgs: 6501.4 eta: 0:00:58 
+[XTuner][RANK 0][2026-09-17 21:33:43][INFO] Epoch 2 Step 93/200 data_time: 0.0080 lr: 3.572713e-05 time: 0.5481 text_tokens: 4078 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 376098 reduced_llm_loss: 1.01077867, local_loss: 1.01077867 step_consumed_tokens: 4078.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04412282, img_efficient_attn_ratio: 0.00000000 local_base_loss: 1.0108 grad_norm: 4.57805538 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7440.9 seqlen_tgs: 7473.7 exp_tgs: 6505.9 eta: 0:00:58 
+[XTuner][RANK 0][2026-09-17 21:33:43][INFO] Epoch 2 Step 94/200 data_time: 0.0079 lr: 3.525631e-05 time: 0.5490 text_tokens: 4094 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 380192 reduced_llm_loss: 1.10333657, local_loss: 1.10333657 step_consumed_tokens: 4094.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04790878, img_efficient_attn_ratio: 0.00000000 local_base_loss: 1.1033 grad_norm: 5.11533785 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7456.6 seqlen_tgs: 7460.2 exp_tgs: 6510.5 eta: 0:00:57 
+[XTuner][RANK 0][2026-09-17 21:33:44][INFO] Epoch 2 Step 95/200 data_time: 0.0077 lr: 3.478424e-05 time: 0.5524 text_tokens: 4091 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 384283 reduced_llm_loss: 0.96146691, local_loss: 0.96146691 step_consumed_tokens: 4091.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.05633318, img_efficient_attn_ratio: 0.00000000 local_base_loss: 0.9615 grad_norm: 6.79065943 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7405.8 seqlen_tgs: 7414.9 exp_tgs: 6514.6 eta: 0:00:57 
+[XTuner][RANK 0][2026-09-17 21:33:45][INFO] Epoch 2 Step 96/200 data_time: 0.0077 lr: 3.431105e-05 time: 0.5504 text_tokens: 4074 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 388357 reduced_llm_loss: 1.08953452, local_loss: 1.08953452 step_consumed_tokens: 4074.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04265058, img_efficient_attn_ratio: 0.00000000 local_base_loss: 1.0895 grad_norm: 5.02523994 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7402.2 seqlen_tgs: 7442.2 exp_tgs: 6518.5 eta: 0:00:56 
+[XTuner][RANK 0][2026-09-17 21:33:45][INFO] Epoch 2 Step 97/200 data_time: 0.0067 lr: 3.383686e-05 time: 0.5495 text_tokens: 4084 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 392441 reduced_llm_loss: 0.98102558, local_loss: 0.98102558 step_consumed_tokens: 4084.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04646587, img_efficient_attn_ratio: 0.00000000 local_base_loss: 0.9810 grad_norm: 5.24297857 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7431.6 seqlen_tgs: 7453.5 exp_tgs: 6522.7 eta: 0:00:56 
+[XTuner][RANK 0][2026-09-17 21:33:46][INFO] Epoch 2 Step 98/200 data_time: 0.0057 lr: 3.336179e-05 time: 0.5484 text_tokens: 4080 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 396521 reduced_llm_loss: 0.99054307, local_loss: 0.99054307 step_consumed_tokens: 4080.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04428446, img_efficient_attn_ratio: 0.00000000 local_base_loss: 0.9905 grad_norm: 6.03486919 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7440.3 seqlen_tgs: 7469.5 exp_tgs: 6527.1 eta: 0:00:55 
+[XTuner][RANK 0][2026-09-17 21:33:46][INFO] Epoch 2 Step 99/200 data_time: 0.0072 lr: 3.288597e-05 time: 0.5499 text_tokens: 4073 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 400594 reduced_llm_loss: 0.96070385, local_loss: 0.96070385 step_consumed_tokens: 4073.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.05117893, img_efficient_attn_ratio: 0.00000000 local_base_loss: 0.9607 grad_norm: 5.04167271 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7406.8 seqlen_tgs: 7448.6 exp_tgs: 6530.9 eta: 0:00:55 
+[XTuner][RANK 0][2026-09-17 21:33:47][INFO] Epoch 2 Step 100/200 data_time: 0.0060 lr: 3.240953e-05 time: 0.5485 text_tokens: 4086 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 404680 reduced_llm_loss: 1.16836834, local_loss: 1.16836834 step_consumed_tokens: 4086.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04601359, img_efficient_attn_ratio: 0.00000000 local_base_loss: 1.1684 grad_norm: 5.50017977 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7448.7 seqlen_tgs: 7467.0 exp_tgs: 6535.1 eta: 0:00:54 
+[XTuner][RANK 0][2026-09-17 21:33:48][INFO] Epoch 2 Step 101/200 data_time: 0.2597 lr: 3.193259e-05 time: 0.5601 text_tokens: 4081 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 408761 reduced_llm_loss: 0.99342608, local_loss: 0.99342608 step_consumed_tokens: 4081.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04960835, img_efficient_attn_ratio: 0.00000000 local_base_loss: 0.9934 grad_norm: 4.73899412 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7286.1 seqlen_tgs: 7312.9 exp_tgs: 6511.5 eta: 0:00:54 
+[XTuner][RANK 0][2026-09-17 21:33:48][INFO] Epoch 2 Step 102/200 data_time: 0.0078 lr: 3.145527e-05 time: 0.5504 text_tokens: 4071 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 412832 reduced_llm_loss: 0.95818877, local_loss: 0.95818877 step_consumed_tokens: 4071.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04289532, img_efficient_attn_ratio: 0.00000000 local_base_loss: 0.9582 grad_norm: 4.74463463 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7396.7 seqlen_tgs: 7442.1 exp_tgs: 6515.1 eta: 0:00:53 
+[XTuner][RANK 0][2026-09-17 21:33:49][INFO] Epoch 2 Step 103/200 data_time: 0.0075 lr: 3.097770e-05 time: 0.5503 text_tokens: 4065 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 416897 reduced_llm_loss: 0.98842347, local_loss: 0.98842347 step_consumed_tokens: 4065.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04924178, img_efficient_attn_ratio: 0.00000000 local_base_loss: 0.9884 grad_norm: 4.45125198 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7387.4 seqlen_tgs: 7443.7 exp_tgs: 6518.7 eta: 0:00:53 
+[XTuner][RANK 0][2026-09-17 21:33:50][INFO] Epoch 2 Step 104/200 data_time: 0.0079 lr: 3.050000e-05 time: 0.5519 text_tokens: 4091 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 420988 reduced_llm_loss: 1.02791381, local_loss: 1.02791381 step_consumed_tokens: 4091.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04568231, img_efficient_attn_ratio: 0.00000000 local_base_loss: 1.0279 grad_norm: 4.56917429 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7412.1 seqlen_tgs: 7421.1 exp_tgs: 6522.4 eta: 0:00:52 
+[XTuner][RANK 0][2026-09-17 21:33:50][INFO] Epoch 2 Step 105/200 data_time: 0.0085 lr: 3.002230e-05 time: 0.5473 text_tokens: 4071 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 425059 reduced_llm_loss: 1.14503288, local_loss: 1.14503288 step_consumed_tokens: 4071.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04295325, img_efficient_attn_ratio: 0.00000000 local_base_loss: 1.1450 grad_norm: 5.14125252 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7437.9 seqlen_tgs: 7483.6 exp_tgs: 6526.1 eta: 0:00:51 
+[XTuner][RANK 0][2026-09-17 21:33:51][INFO] Epoch 2 Step 106/200 data_time: 0.0061 lr: 2.954473e-05 time: 0.5471 text_tokens: 4087 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 429146 reduced_llm_loss: 0.98656625, local_loss: 0.98656625 step_consumed_tokens: 4087.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.03939986, img_efficient_attn_ratio: 0.00000000 local_base_loss: 0.9866 grad_norm: 6.12395191 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7470.6 seqlen_tgs: 7487.0 exp_tgs: 6530.2 eta: 0:00:50 
+[XTuner][RANK 0][2026-09-17 21:33:51][INFO] Epoch 2 Step 107/200 data_time: 0.0057 lr: 2.906741e-05 time: 0.5491 text_tokens: 4090 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 433236 reduced_llm_loss: 0.96559894, local_loss: 0.96559894 step_consumed_tokens: 4090.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.05633914, img_efficient_attn_ratio: 0.00000000 local_base_loss: 0.9656 grad_norm: 4.71100378 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7447.9 seqlen_tgs: 7458.8 exp_tgs: 6534.2 eta: 0:00:50 
+[XTuner][RANK 0][2026-09-17 21:33:52][INFO] Epoch 2 Step 108/200 data_time: 0.0081 lr: 2.859047e-05 time: 0.5487 text_tokens: 4084 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 437320 reduced_llm_loss: 1.13378644, local_loss: 1.13378644 step_consumed_tokens: 4084.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04266953, img_efficient_attn_ratio: 0.00000000 local_base_loss: 1.1338 grad_norm: 5.11016846 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7443.1 seqlen_tgs: 7464.9 exp_tgs: 6537.8 eta: 0:00:50 
+[XTuner][RANK 0][2026-09-17 21:33:53][INFO] Epoch 2 Step 109/200 data_time: 0.0076 lr: 2.811403e-05 time: 0.5478 text_tokens: 4090 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 441410 reduced_llm_loss: 1.11388814, local_loss: 1.11388814 step_consumed_tokens: 4090.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04614186, img_efficient_attn_ratio: 0.00000000 local_base_loss: 1.1139 grad_norm: 4.80984354 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7466.8 seqlen_tgs: 7477.8 exp_tgs: 6541.6 eta: 0:00:49 
+[XTuner][RANK 0][2026-09-17 21:33:53][INFO] Epoch 2 Step 110/200 data_time: 0.0074 lr: 2.763821e-05 time: 0.5477 text_tokens: 4080 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 445490 reduced_llm_loss: 1.02828717, local_loss: 1.02828717 step_consumed_tokens: 4080.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.05169749, img_efficient_attn_ratio: 0.00000000 local_base_loss: 1.0283 grad_norm: 4.63820791 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7448.9 seqlen_tgs: 7478.1 exp_tgs: 6545.2 eta: 0:00:48 
+[XTuner][RANK 0][2026-09-17 21:33:54][INFO] Epoch 2 Step 111/200 data_time: 0.0072 lr: 2.716314e-05 time: 0.5476 text_tokens: 4085 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 449575 reduced_llm_loss: 1.00086617, local_loss: 1.00086617 step_consumed_tokens: 4085.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04912543, img_efficient_attn_ratio: 0.00000000 local_base_loss: 1.0009 grad_norm: 4.49985886 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7459.8 seqlen_tgs: 7479.9 exp_tgs: 6548.8 eta: 0:00:48 
+[XTuner][RANK 0][2026-09-17 21:33:54][INFO] Epoch 2 Step 112/200 data_time: 0.0080 lr: 2.668895e-05 time: 0.5473 text_tokens: 4082 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 453657 reduced_llm_loss: 0.93669748, local_loss: 0.93669748 step_consumed_tokens: 4082.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04287696, img_efficient_attn_ratio: 0.00000000 local_base_loss: 0.9367 grad_norm: 5.61687040 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7458.4 seqlen_tgs: 7484.0 exp_tgs: 6552.3 eta: 0:00:47 
+[XTuner][RANK 0][2026-09-17 21:33:55][INFO] Epoch 2 Step 113/200 data_time: 0.0073 lr: 2.621576e-05 time: 0.5491 text_tokens: 4073 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 457730 reduced_llm_loss: 1.06567252, local_loss: 1.06567252 step_consumed_tokens: 4073.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.05046523, img_efficient_attn_ratio: 0.00000000 local_base_loss: 1.0657 grad_norm: 4.55524254 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7417.2 seqlen_tgs: 7459.1 exp_tgs: 6555.5 eta: 0:00:47 
+[XTuner][RANK 0][2026-09-17 21:33:56][INFO] Epoch 2 Step 114/200 data_time: 0.0075 lr: 2.574369e-05 time: 0.5497 text_tokens: 4086 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 461816 reduced_llm_loss: 0.98325229, local_loss: 0.98325229 step_consumed_tokens: 4086.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04912972, img_efficient_attn_ratio: 0.00000000 local_base_loss: 0.9833 grad_norm: 4.56408644 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7433.6 seqlen_tgs: 7451.8 exp_tgs: 6558.7 eta: 0:00:46 
+[XTuner][RANK 0][2026-09-17 21:33:56][INFO] Epoch 2 Step 115/200 data_time: 0.0078 lr: 2.527287e-05 time: 0.5484 text_tokens: 4070 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 465886 reduced_llm_loss: 1.09617651, local_loss: 1.09617651 step_consumed_tokens: 4070.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04073215, img_efficient_attn_ratio: 0.00000000 local_base_loss: 1.0962 grad_norm: 5.18881559 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7421.4 seqlen_tgs: 7468.8 exp_tgs: 6561.8 eta: 0:00:46 
+[XTuner][RANK 0][2026-09-17 21:33:57][INFO] Epoch 2 Step 116/200 data_time: 0.0079 lr: 2.480341e-05 time: 0.5501 text_tokens: 4070 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 469956 reduced_llm_loss: 1.00446200, local_loss: 1.00446200 step_consumed_tokens: 4070.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04122436, img_efficient_attn_ratio: 0.00000000 local_base_loss: 1.0045 grad_norm: 5.00061798 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7398.5 seqlen_tgs: 7445.7 exp_tgs: 6564.6 eta: 0:00:45 
+[XTuner][RANK 0][2026-09-17 21:33:57][INFO] Epoch 2 Step 117/200 data_time: 0.0059 lr: 2.433546e-05 time: 0.5486 text_tokens: 4073 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 474029 reduced_llm_loss: 0.87645370, local_loss: 0.87645370 step_consumed_tokens: 4073.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04682720, img_efficient_attn_ratio: 0.00000000 local_base_loss: 0.8765 grad_norm: 4.95158291 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7424.7 seqlen_tgs: 7466.6 exp_tgs: 6567.8 eta: 0:00:45 
+[XTuner][RANK 0][2026-09-17 21:33:58][INFO] Epoch 2 Step 118/200 data_time: 0.0080 lr: 2.386912e-05 time: 0.5493 text_tokens: 4095 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 478124 reduced_llm_loss: 1.05404234, local_loss: 1.05404234 step_consumed_tokens: 4095.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04363918, img_efficient_attn_ratio: 0.00000000 local_base_loss: 1.0540 grad_norm: 5.06278992 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7454.3 seqlen_tgs: 7456.1 exp_tgs: 6570.9 eta: 0:00:44 
+[XTuner][RANK 0][2026-09-17 21:33:58][INFO] Epoch 2 Step 119/200 data_time: 0.0062 lr: 2.340451e-05 time: 0.5533 text_tokens: 4091 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 482215 reduced_llm_loss: 0.87589991, local_loss: 0.87589991 step_consumed_tokens: 4091.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.05471718, img_efficient_attn_ratio: 0.00000000 local_base_loss: 0.8759 grad_norm: 5.12634611 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7393.3 seqlen_tgs: 7402.3 exp_tgs: 6573.8 eta: 0:00:44 
+[XTuner][RANK 0][2026-09-17 21:33:59][INFO] Epoch 2 Step 120/200 data_time: 0.0058 lr: 2.294177e-05 time: 0.5484 text_tokens: 4080 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 486295 reduced_llm_loss: 1.00729668, local_loss: 1.00729668 step_consumed_tokens: 4080.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.05288529, img_efficient_attn_ratio: 0.00000000 local_base_loss: 1.0073 grad_norm: 5.08163071 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7439.6 seqlen_tgs: 7468.8 exp_tgs: 6576.9 eta: 0:00:43 
+[XTuner][RANK 0][2026-09-17 21:34:00][INFO] Epoch 2 Step 121/200 data_time: 0.0072 lr: 2.248101e-05 time: 0.5493 text_tokens: 4057 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 490352 reduced_llm_loss: 1.09887350, local_loss: 1.09887350 step_consumed_tokens: 4057.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.05464554, img_efficient_attn_ratio: 0.00000000 local_base_loss: 1.0989 grad_norm: 4.95905495 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7385.5 seqlen_tgs: 7456.5 exp_tgs: 6579.5 eta: 0:00:43 
+[XTuner][RANK 0][2026-09-17 21:34:00][INFO] Epoch 2 Step 122/200 data_time: 0.0060 lr: 2.202236e-05 time: 0.5489 text_tokens: 4093 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 494445 reduced_llm_loss: 0.78027767, local_loss: 0.78027767 step_consumed_tokens: 4093.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04860735, img_efficient_attn_ratio: 0.00000000 local_base_loss: 0.7803 grad_norm: 4.64175367 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7457.4 seqlen_tgs: 7462.8 exp_tgs: 6582.6 eta: 0:00:42 
+[XTuner][RANK 0][2026-09-17 21:34:01][INFO] Epoch 2 Step 123/200 data_time: 0.0075 lr: 2.156592e-05 time: 0.5488 text_tokens: 4091 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 498536 reduced_llm_loss: 0.95073748, local_loss: 0.95073748 step_consumed_tokens: 4091.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.05069613, img_efficient_attn_ratio: 0.00000000 local_base_loss: 0.9507 grad_norm: 4.93301249 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7454.4 seqlen_tgs: 7463.6 exp_tgs: 6585.6 eta: 0:00:41 
+[XTuner][RANK 0][2026-09-17 21:34:01][INFO] Epoch 2 Step 124/200 data_time: 0.0079 lr: 2.111183e-05 time: 0.5486 text_tokens: 4065 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 502601 reduced_llm_loss: 1.13570917, local_loss: 1.13570917 step_consumed_tokens: 4065.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04334974, img_efficient_attn_ratio: 0.00000000 local_base_loss: 1.1357 grad_norm: 5.58593178 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7410.0 seqlen_tgs: 7466.5 exp_tgs: 6588.1 eta: 0:00:41 
+[XTuner][RANK 0][2026-09-17 21:34:02][INFO] Epoch 2 Step 125/200 data_time: 0.0072 lr: 2.066020e-05 time: 0.5489 text_tokens: 4061 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 506662 reduced_llm_loss: 0.95375568, local_loss: 0.95375568 step_consumed_tokens: 4061.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.05559301, img_efficient_attn_ratio: 0.00000000 local_base_loss: 0.9538 grad_norm: 4.74554396 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7398.2 seqlen_tgs: 7462.0 exp_tgs: 6590.6 eta: 0:00:41 
+[XTuner][RANK 0][2026-09-17 21:34:03][INFO] Epoch 2 Step 126/200 data_time: 0.0064 lr: 2.021115e-05 time: 0.5459 text_tokens: 4077 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 510739 reduced_llm_loss: 0.99024129, local_loss: 0.99024129 step_consumed_tokens: 4077.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.03792548, img_efficient_attn_ratio: 0.00000000 local_base_loss: 0.9902 grad_norm: 4.92860079 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7467.9 seqlen_tgs: 7502.7 exp_tgs: 6593.6 eta: 0:00:40 
+[XTuner][RANK 0][2026-09-17 21:34:03][INFO] Epoch 2 Step 127/200 data_time: 0.0059 lr: 1.976480e-05 time: 0.5470 text_tokens: 4082 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 514821 reduced_llm_loss: 0.96206897, local_loss: 0.96206897 step_consumed_tokens: 4082.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04905701, img_efficient_attn_ratio: 0.00000000 local_base_loss: 0.9621 grad_norm: 5.20460701 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7463.2 seqlen_tgs: 7488.8 exp_tgs: 6596.5 eta: 0:00:39 
+[XTuner][RANK 0][2026-09-17 21:34:04][INFO] Epoch 2 Step 128/200 data_time: 0.0057 lr: 1.932127e-05 time: 0.5475 text_tokens: 4091 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 518912 reduced_llm_loss: 0.92260748, local_loss: 0.92260748 step_consumed_tokens: 4091.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04704440, img_efficient_attn_ratio: 0.00000000 local_base_loss: 0.9226 grad_norm: 4.80443716 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7472.5 seqlen_tgs: 7481.6 exp_tgs: 6599.5 eta: 0:00:39 
+[XTuner][RANK 0][2026-09-17 21:34:04][INFO] Epoch 2 Step 129/200 data_time: 0.0075 lr: 1.888067e-05 time: 0.5488 text_tokens: 4073 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 522985 reduced_llm_loss: 0.96159494, local_loss: 0.96159494 step_consumed_tokens: 4073.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04724729, img_efficient_attn_ratio: 0.00000000 local_base_loss: 0.9616 grad_norm: 4.31068039 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7421.5 seqlen_tgs: 7463.4 exp_tgs: 6602.0 eta: 0:00:38 
+[XTuner][RANK 0][2026-09-17 21:34:05][INFO] Epoch 2 Step 130/200 data_time: 0.0077 lr: 1.844311e-05 time: 0.5486 text_tokens: 4075 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 527060 reduced_llm_loss: 1.08047998, local_loss: 1.08047998 step_consumed_tokens: 4075.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04582763, img_efficient_attn_ratio: 0.00000000 local_base_loss: 1.0805 grad_norm: 4.90385008 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7427.7 seqlen_tgs: 7466.0 exp_tgs: 6604.4 eta: 0:00:38 
+[XTuner][RANK 0][2026-09-17 21:34:05][INFO] Epoch 2 Step 131/200 data_time: 0.0076 lr: 1.800871e-05 time: 0.5486 text_tokens: 4091 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 531151 reduced_llm_loss: 1.01372385, local_loss: 1.01372385 step_consumed_tokens: 4091.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04230618, img_efficient_attn_ratio: 0.00000000 local_base_loss: 1.0137 grad_norm: 4.98989964 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7457.2 seqlen_tgs: 7466.3 exp_tgs: 6607.1 eta: 0:00:37 
+[XTuner][RANK 0][2026-09-17 21:34:06][INFO] Epoch 2 Step 132/200 data_time: 0.0078 lr: 1.757759e-05 time: 0.5509 text_tokens: 4094 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 535245 reduced_llm_loss: 0.94716489, local_loss: 0.94716489 step_consumed_tokens: 4094.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04548764, img_efficient_attn_ratio: 0.00000000 local_base_loss: 0.9472 grad_norm: 4.85164022 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7431.7 seqlen_tgs: 7435.3 exp_tgs: 6609.5 eta: 0:00:37 
+[XTuner][RANK 0][2026-09-17 21:34:07][INFO] Epoch 2 Step 133/200 data_time: 0.0075 lr: 1.714986e-05 time: 0.5503 text_tokens: 4079 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 539324 reduced_llm_loss: 0.80322963, local_loss: 0.80322963 step_consumed_tokens: 4079.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.05381775, img_efficient_attn_ratio: 0.00000000 local_base_loss: 0.8032 grad_norm: 4.47339582 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7412.8 seqlen_tgs: 7443.7 exp_tgs: 6611.8 eta: 0:00:36 
+[XTuner][RANK 0][2026-09-17 21:34:07][INFO] Epoch 2 Step 134/200 data_time: 0.0074 lr: 1.672563e-05 time: 0.5508 text_tokens: 4063 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 543387 reduced_llm_loss: 0.97284830, local_loss: 0.97284830 step_consumed_tokens: 4063.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04959142, img_efficient_attn_ratio: 0.00000000 local_base_loss: 0.9728 grad_norm: 4.84328651 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7376.9 seqlen_tgs: 7436.8 exp_tgs: 6613.8 eta: 0:00:36 
+[XTuner][RANK 0][2026-09-17 21:34:08][INFO] Epoch 2 Step 135/200 data_time: 0.0077 lr: 1.630501e-05 time: 0.5496 text_tokens: 4083 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 547470 reduced_llm_loss: 1.03033018, local_loss: 1.03033018 step_consumed_tokens: 4083.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04362392, img_efficient_attn_ratio: 0.00000000 local_base_loss: 1.0303 grad_norm: 4.86765385 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7428.5 seqlen_tgs: 7452.1 exp_tgs: 6616.1 eta: 0:00:35 
+[XTuner][RANK 0][2026-09-17 21:34:08][INFO] Epoch 2 Step 136/200 data_time: 0.0073 lr: 1.588812e-05 time: 0.5505 text_tokens: 4084 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 551554 reduced_llm_loss: 0.93095869, local_loss: 0.93095869 step_consumed_tokens: 4084.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.05125654, img_efficient_attn_ratio: 0.00000000 local_base_loss: 0.9310 grad_norm: 4.42995977 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7418.0 seqlen_tgs: 7439.8 exp_tgs: 6618.3 eta: 0:00:34 
+[XTuner][RANK 0][2026-09-17 21:34:09][INFO] Epoch 3 Step 137/200 data_time: 0.0076 lr: 1.547506e-05 time: 0.5494 text_tokens: 4081 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 555635 reduced_llm_loss: 0.48674890, local_loss: 0.48674890 step_consumed_tokens: 4081.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04960835, img_efficient_attn_ratio: 0.00000000 local_base_loss: 0.4867 grad_norm: 4.66475582 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7428.7 seqlen_tgs: 7456.0 exp_tgs: 6620.6 eta: 0:00:34 
+[XTuner][RANK 0][2026-09-17 21:34:10][INFO] Epoch 3 Step 138/200 data_time: 0.0071 lr: 1.506593e-05 time: 0.5499 text_tokens: 4061 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 559696 reduced_llm_loss: 0.56062102, local_loss: 0.56062102 step_consumed_tokens: 4061.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.05559301, img_efficient_attn_ratio: 0.00000000 local_base_loss: 0.5606 grad_norm: 4.12946320 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7384.3 seqlen_tgs: 7448.0 exp_tgs: 6622.5 eta: 0:00:34 
+[XTuner][RANK 0][2026-09-17 21:34:10][INFO] Epoch 3 Step 139/200 data_time: 0.0063 lr: 1.466085e-05 time: 0.5468 text_tokens: 4077 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 563773 reduced_llm_loss: 0.56235027, local_loss: 0.56235027 step_consumed_tokens: 4077.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.03792548, img_efficient_attn_ratio: 0.00000000 local_base_loss: 0.5624 grad_norm: 4.55566931 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7456.3 seqlen_tgs: 7491.0 exp_tgs: 6625.0 eta: 0:00:33 
+[XTuner][RANK 0][2026-09-17 21:34:11][INFO] Epoch 3 Step 140/200 data_time: 0.0074 lr: 1.425993e-05 time: 0.5479 text_tokens: 4073 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 567846 reduced_llm_loss: 0.58886015, local_loss: 0.58886015 step_consumed_tokens: 4073.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04724729, img_efficient_attn_ratio: 0.00000000 local_base_loss: 0.5889 grad_norm: 3.89828491 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7433.7 seqlen_tgs: 7475.7 exp_tgs: 6627.1 eta: 0:00:32 
+[XTuner][RANK 0][2026-09-17 21:34:11][INFO] Epoch 3 Step 141/200 data_time: 0.0058 lr: 1.386327e-05 time: 0.5480 text_tokens: 4088 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 571934 reduced_llm_loss: 0.38034964, local_loss: 0.38034964 step_consumed_tokens: 4088.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04877722, img_efficient_attn_ratio: 0.00000000 local_base_loss: 0.3803 grad_norm: 3.75771832 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7460.2 seqlen_tgs: 7474.8 exp_tgs: 6629.6 eta: 0:00:32 
+[XTuner][RANK 0][2026-09-17 21:34:12][INFO] Epoch 3 Step 142/200 data_time: 0.0067 lr: 1.347097e-05 time: 0.5484 text_tokens: 4084 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 576018 reduced_llm_loss: 0.40174252, local_loss: 0.40174252 step_consumed_tokens: 4084.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04646587, img_efficient_attn_ratio: 0.00000000 local_base_loss: 0.4017 grad_norm: 4.06538725 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7446.7 seqlen_tgs: 7468.5 exp_tgs: 6631.8 eta: 0:00:31 
+[XTuner][RANK 0][2026-09-17 21:34:13][INFO] Epoch 3 Step 143/200 data_time: 0.0076 lr: 1.308313e-05 time: 0.5483 text_tokens: 4094 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 580112 reduced_llm_loss: 0.58426625, local_loss: 0.58426625 step_consumed_tokens: 4094.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04460585, img_efficient_attn_ratio: 0.00000000 local_base_loss: 0.5843 grad_norm: 4.12681341 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7466.3 seqlen_tgs: 7470.0 exp_tgs: 6634.1 eta: 0:00:30 
+[XTuner][RANK 0][2026-09-17 21:34:13][INFO] Epoch 3 Step 144/200 data_time: 0.0076 lr: 1.269986e-05 time: 0.5487 text_tokens: 4087 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 584199 reduced_llm_loss: 0.39950702, local_loss: 0.39950702 step_consumed_tokens: 4087.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04675055, img_efficient_attn_ratio: 0.00000000 local_base_loss: 0.3995 grad_norm: 3.60951352 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7449.0 seqlen_tgs: 7465.5 exp_tgs: 6636.3 eta: 0:00:30 
+[XTuner][RANK 0][2026-09-17 21:34:14][INFO] Epoch 3 Step 145/200 data_time: 0.0077 lr: 1.232126e-05 time: 0.5494 text_tokens: 4081 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 588280 reduced_llm_loss: 0.43632779, local_loss: 0.43632779 step_consumed_tokens: 4081.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04360044, img_efficient_attn_ratio: 0.00000000 local_base_loss: 0.4363 grad_norm: 3.83544660 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7427.5 seqlen_tgs: 7454.8 exp_tgs: 6638.3 eta: 0:00:30 
+[XTuner][RANK 0][2026-09-17 21:34:14][INFO] Epoch 3 Step 146/200 data_time: 0.0073 lr: 1.194743e-05 time: 0.5503 text_tokens: 4084 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 592364 reduced_llm_loss: 0.58911312, local_loss: 0.58911312 step_consumed_tokens: 4084.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.05125654, img_efficient_attn_ratio: 0.00000000 local_base_loss: 0.5891 grad_norm: 3.99528456 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7421.5 seqlen_tgs: 7443.3 exp_tgs: 6640.2 eta: 0:00:29 
+[XTuner][RANK 0][2026-09-17 21:34:15][INFO] Epoch 3 Step 147/200 data_time: 0.0077 lr: 1.157846e-05 time: 0.5514 text_tokens: 4061 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 596425 reduced_llm_loss: 0.37290746, local_loss: 0.37290746 step_consumed_tokens: 4061.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.05428696, img_efficient_attn_ratio: 0.00000000 local_base_loss: 0.3729 grad_norm: 3.96670675 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7365.1 seqlen_tgs: 7428.5 exp_tgs: 6641.8 eta: 0:00:29 
+[XTuner][RANK 0][2026-09-17 21:34:15][INFO] Epoch 3 Step 148/200 data_time: 0.0060 lr: 1.121445e-05 time: 0.5490 text_tokens: 4070 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 600495 reduced_llm_loss: 0.53866577, local_loss: 0.53866577 step_consumed_tokens: 4070.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04258931, img_efficient_attn_ratio: 0.00000000 local_base_loss: 0.5387 grad_norm: 4.78522873 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7414.1 seqlen_tgs: 7461.5 exp_tgs: 6643.7 eta: 0:00:28 
+[XTuner][RANK 0][2026-09-17 21:34:16][INFO] Epoch 3 Step 149/200 data_time: 0.0073 lr: 1.085550e-05 time: 0.5520 text_tokens: 4094 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 604589 reduced_llm_loss: 0.32584763, local_loss: 0.32584763 step_consumed_tokens: 4094.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.05432069, img_efficient_attn_ratio: 0.00000000 local_base_loss: 0.3258 grad_norm: 3.96095681 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7416.5 seqlen_tgs: 7420.1 exp_tgs: 6645.6 eta: 0:00:27 
+[XTuner][RANK 0][2026-09-17 21:34:17][INFO] Epoch 3 Step 150/200 data_time: 0.0071 lr: 1.050170e-05 time: 0.5491 text_tokens: 4073 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 608662 reduced_llm_loss: 0.42965215, local_loss: 0.42965215 step_consumed_tokens: 4073.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.05117893, img_efficient_attn_ratio: 0.00000000 local_base_loss: 0.4297 grad_norm: 3.94299078 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7417.7 seqlen_tgs: 7459.6 exp_tgs: 6647.5 eta: 0:00:27 
+[XTuner][RANK 0][2026-09-17 21:34:18][INFO] Epoch 3 Step 151/200 data_time: 0.2632 lr: 1.015315e-05 time: 0.5601 text_tokens: 4072 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 612734 reduced_llm_loss: 0.39182180, local_loss: 0.39182180 step_consumed_tokens: 4072.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04808760, img_efficient_attn_ratio: 0.00000000 local_base_loss: 0.3918 grad_norm: 4.17966938 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7270.1 seqlen_tgs: 7313.0 exp_tgs: 6630.1 eta: 0:00:27 
+[XTuner][RANK 0][2026-09-17 21:34:18][INFO] Epoch 3 Step 152/200 data_time: 0.0079 lr: 9.809930e-06 time: 0.5487 text_tokens: 4078 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 616812 reduced_llm_loss: 0.47459435, local_loss: 0.47459435 step_consumed_tokens: 4078.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04486287, img_efficient_attn_ratio: 0.00000000 local_base_loss: 0.4746 grad_norm: 4.54965115 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7432.2 seqlen_tgs: 7465.0 exp_tgs: 6632.0 eta: 0:00:26 
+[XTuner][RANK 0][2026-09-17 21:34:19][INFO] Epoch 3 Step 153/200 data_time: 0.0078 lr: 9.472137e-06 time: 0.5490 text_tokens: 4073 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 620885 reduced_llm_loss: 0.41335148, local_loss: 0.41335148 step_consumed_tokens: 4073.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04458308, img_efficient_attn_ratio: 0.00000000 local_base_loss: 0.4134 grad_norm: 4.39642525 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7419.1 seqlen_tgs: 7461.0 exp_tgs: 6633.8 eta: 0:00:25 
+[XTuner][RANK 0][2026-09-17 21:34:19][INFO] Epoch 3 Step 154/200 data_time: 0.0058 lr: 9.139859e-06 time: 0.5480 text_tokens: 4080 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 624965 reduced_llm_loss: 0.48187262, local_loss: 0.48187262 step_consumed_tokens: 4080.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04428446, img_efficient_attn_ratio: 0.00000000 local_base_loss: 0.4819 grad_norm: 4.66848516 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7445.3 seqlen_tgs: 7474.5 exp_tgs: 6636.0 eta: 0:00:25 
+[XTuner][RANK 0][2026-09-17 21:34:20][INFO] Epoch 3 Step 155/200 data_time: 0.0057 lr: 8.813181e-06 time: 0.5480 text_tokens: 4091 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 629056 reduced_llm_loss: 0.44950753, local_loss: 0.44950753 step_consumed_tokens: 4091.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04704440, img_efficient_attn_ratio: 0.00000000 local_base_loss: 0.4495 grad_norm: 4.05834913 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7465.8 seqlen_tgs: 7474.9 exp_tgs: 6638.2 eta: 0:00:24 
+[XTuner][RANK 0][2026-09-17 21:34:20][INFO] Epoch 3 Step 156/200 data_time: 0.0080 lr: 8.492191e-06 time: 0.5498 text_tokens: 4078 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 633134 reduced_llm_loss: 0.41837221, local_loss: 0.41837221 step_consumed_tokens: 4078.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04412282, img_efficient_attn_ratio: 0.00000000 local_base_loss: 0.4184 grad_norm: 4.59353971 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7416.9 seqlen_tgs: 7449.6 exp_tgs: 6639.9 eta: 0:00:24 
+[XTuner][RANK 0][2026-09-17 21:34:21][INFO] Epoch 3 Step 157/200 data_time: 0.0080 lr: 8.176972e-06 time: 0.5499 text_tokens: 4091 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 637225 reduced_llm_loss: 0.44956037, local_loss: 0.44956037 step_consumed_tokens: 4091.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04568231, img_efficient_attn_ratio: 0.00000000 local_base_loss: 0.4496 grad_norm: 4.15071869 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7440.1 seqlen_tgs: 7449.2 exp_tgs: 6641.8 eta: 0:00:23 
+[XTuner][RANK 0][2026-09-17 21:34:22][INFO] Epoch 3 Step 158/200 data_time: 0.0057 lr: 7.867607e-06 time: 0.5497 text_tokens: 4090 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 641315 reduced_llm_loss: 0.41053891, local_loss: 0.41053891 step_consumed_tokens: 4090.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.05633914, img_efficient_attn_ratio: 0.00000000 local_base_loss: 0.4105 grad_norm: 3.82255697 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7439.9 seqlen_tgs: 7450.9 exp_tgs: 6643.8 eta: 0:00:22 
+[XTuner][RANK 0][2026-09-17 21:34:22][INFO] Epoch 3 Step 159/200 data_time: 0.0060 lr: 7.564176e-06 time: 0.5483 text_tokens: 4086 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 645401 reduced_llm_loss: 0.49227095, local_loss: 0.49227095 step_consumed_tokens: 4086.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04601359, img_efficient_attn_ratio: 0.00000000 local_base_loss: 0.4923 grad_norm: 4.53670979 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7452.4 seqlen_tgs: 7470.6 exp_tgs: 6645.8 eta: 0:00:22 
+[XTuner][RANK 0][2026-09-17 21:34:23][INFO] Epoch 3 Step 160/200 data_time: 0.0058 lr: 7.266760e-06 time: 0.5474 text_tokens: 4054 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 649455 reduced_llm_loss: 0.46226597, local_loss: 0.46226597 step_consumed_tokens: 4054.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04767144, img_efficient_attn_ratio: 0.00000000 local_base_loss: 0.4623 grad_norm: 5.25802040 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7405.6 seqlen_tgs: 7482.3 exp_tgs: 6647.5 eta: 0:00:21 
+[XTuner][RANK 0][2026-09-17 21:34:23][INFO] Epoch 3 Step 161/200 data_time: 0.0075 lr: 6.975437e-06 time: 0.5499 text_tokens: 4065 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 653520 reduced_llm_loss: 0.46238774, local_loss: 0.46238774 step_consumed_tokens: 4065.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04924178, img_efficient_attn_ratio: 0.00000000 local_base_loss: 0.4624 grad_norm: 4.55229282 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7392.8 seqlen_tgs: 7449.2 exp_tgs: 6649.1 eta: 0:00:21 
+[XTuner][RANK 0][2026-09-17 21:34:24][INFO] Epoch 3 Step 162/200 data_time: 0.0078 lr: 6.690283e-06 time: 0.5478 text_tokens: 4085 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 657605 reduced_llm_loss: 0.39696500, local_loss: 0.39696500 step_consumed_tokens: 4085.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.05080223, img_efficient_attn_ratio: 0.00000000 local_base_loss: 0.3970 grad_norm: 4.22582340 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7457.4 seqlen_tgs: 7477.5 exp_tgs: 6650.9 eta: 0:00:20 
+[XTuner][RANK 0][2026-09-17 21:34:25][INFO] Epoch 3 Step 163/200 data_time: 0.0076 lr: 6.411372e-06 time: 0.5487 text_tokens: 4072 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 661677 reduced_llm_loss: 0.47212923, local_loss: 0.47212923 step_consumed_tokens: 4072.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04897547, img_efficient_attn_ratio: 0.00000000 local_base_loss: 0.4721 grad_norm: 4.77513170 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7421.8 seqlen_tgs: 7465.5 exp_tgs: 6652.6 eta: 0:00:20 
+[XTuner][RANK 0][2026-09-17 21:34:25][INFO] Epoch 3 Step 164/200 data_time: 0.0060 lr: 6.138778e-06 time: 0.5475 text_tokens: 4073 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 665750 reduced_llm_loss: 0.37882578, local_loss: 0.37882578 step_consumed_tokens: 4073.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04682720, img_efficient_attn_ratio: 0.00000000 local_base_loss: 0.3788 grad_norm: 3.60978794 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7439.5 seqlen_tgs: 7481.5 exp_tgs: 6654.4 eta: 0:00:19 
+[XTuner][RANK 0][2026-09-17 21:34:26][INFO] Epoch 3 Step 165/200 data_time: 0.0076 lr: 5.872572e-06 time: 0.5475 text_tokens: 4091 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 669841 reduced_llm_loss: 0.54788101, local_loss: 0.54788101 step_consumed_tokens: 4091.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04230618, img_efficient_attn_ratio: 0.00000000 local_base_loss: 0.5479 grad_norm: 4.25656605 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7472.6 seqlen_tgs: 7481.7 exp_tgs: 6656.3 eta: 0:00:19 
+[XTuner][RANK 0][2026-09-17 21:34:26][INFO] Epoch 3 Step 166/200 data_time: 0.0080 lr: 5.612825e-06 time: 0.5476 text_tokens: 4082 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 673923 reduced_llm_loss: 0.42659658, local_loss: 0.42659658 step_consumed_tokens: 4082.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04287696, img_efficient_attn_ratio: 0.00000000 local_base_loss: 0.4266 grad_norm: 3.84403634 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7454.8 seqlen_tgs: 7480.4 exp_tgs: 6658.0 eta: 0:00:18 
+[XTuner][RANK 0][2026-09-17 21:34:27][INFO] Epoch 3 Step 167/200 data_time: 0.0078 lr: 5.359604e-06 time: 0.5481 text_tokens: 4062 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 677985 reduced_llm_loss: 0.43938297, local_loss: 0.43938297 step_consumed_tokens: 4062.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04433322, img_efficient_attn_ratio: 0.00000000 local_base_loss: 0.4394 grad_norm: 4.37706137 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7410.8 seqlen_tgs: 7472.8 exp_tgs: 6659.5 eta: 0:00:18 
+[XTuner][RANK 0][2026-09-17 21:34:27][INFO] Epoch 3 Step 168/200 data_time: 0.0061 lr: 5.112975e-06 time: 0.5478 text_tokens: 4078 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 682063 reduced_llm_loss: 0.37287164, local_loss: 0.37287164 step_consumed_tokens: 4078.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04066324, img_efficient_attn_ratio: 0.00000000 local_base_loss: 0.3729 grad_norm: 4.07884502 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7444.6 seqlen_tgs: 7477.4 exp_tgs: 6661.3 eta: 0:00:17 
+[XTuner][RANK 0][2026-09-17 21:34:28][INFO] Epoch 3 Step 169/200 data_time: 0.0075 lr: 4.873004e-06 time: 0.5495 text_tokens: 4081 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 686144 reduced_llm_loss: 0.44760877, local_loss: 0.44760877 step_consumed_tokens: 4081.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04957151, img_efficient_attn_ratio: 0.00000000 local_base_loss: 0.4476 grad_norm: 4.31067991 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7426.1 seqlen_tgs: 7453.4 exp_tgs: 6662.9 eta: 0:00:16 
+[XTuner][RANK 0][2026-09-17 21:34:29][INFO] Epoch 3 Step 170/200 data_time: 0.0074 lr: 4.639753e-06 time: 0.5499 text_tokens: 4063 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 690207 reduced_llm_loss: 0.54756200, local_loss: 0.54756200 step_consumed_tokens: 4063.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04959142, img_efficient_attn_ratio: 0.00000000 local_base_loss: 0.5476 grad_norm: 4.35046291 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7388.0 seqlen_tgs: 7448.0 exp_tgs: 6664.2 eta: 0:00:16 
+[XTuner][RANK 0][2026-09-17 21:34:29][INFO] Epoch 3 Step 171/200 data_time: 0.0078 lr: 4.413283e-06 time: 0.5501 text_tokens: 4071 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 694278 reduced_llm_loss: 0.53351992, local_loss: 0.53351992 step_consumed_tokens: 4071.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04295325, img_efficient_attn_ratio: 0.00000000 local_base_loss: 0.5335 grad_norm: 4.54254293 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7400.6 seqlen_tgs: 7446.0 exp_tgs: 6665.6 eta: 0:00:15 
+[XTuner][RANK 0][2026-09-17 21:34:30][INFO] Epoch 3 Step 172/200 data_time: 0.0079 lr: 4.193654e-06 time: 0.5497 text_tokens: 4068 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 698346 reduced_llm_loss: 0.31887197, local_loss: 0.31887197 step_consumed_tokens: 4068.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04230690, img_efficient_attn_ratio: 0.00000000 local_base_loss: 0.3189 grad_norm: 4.01278830 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7401.0 seqlen_tgs: 7452.0 exp_tgs: 6667.0 eta: 0:00:15 
+[XTuner][RANK 0][2026-09-17 21:34:30][INFO] Epoch 3 Step 173/200 data_time: 0.0077 lr: 3.980924e-06 time: 0.5498 text_tokens: 4070 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 702416 reduced_llm_loss: 0.50803995, local_loss: 0.50803995 step_consumed_tokens: 4070.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04073215, img_efficient_attn_ratio: 0.00000000 local_base_loss: 0.5080 grad_norm: 4.11855888 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7403.2 seqlen_tgs: 7450.5 exp_tgs: 6668.4 eta: 0:00:14 
+[XTuner][RANK 0][2026-09-17 21:34:31][INFO] Epoch 3 Step 174/200 data_time: 0.0074 lr: 3.775147e-06 time: 0.5492 text_tokens: 4086 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 706502 reduced_llm_loss: 0.45190829, local_loss: 0.45190829 step_consumed_tokens: 4086.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04912972, img_efficient_attn_ratio: 0.00000000 local_base_loss: 0.4519 grad_norm: 3.87260628 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7439.5 seqlen_tgs: 7457.7 exp_tgs: 6669.9 eta: 0:00:14 
+[XTuner][RANK 0][2026-09-17 21:34:32][INFO] Epoch 3 Step 175/200 data_time: 0.0077 lr: 3.576379e-06 time: 0.5476 text_tokens: 4072 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 710574 reduced_llm_loss: 0.42863488, local_loss: 0.42863488 step_consumed_tokens: 4072.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04370153, img_efficient_attn_ratio: 0.00000000 local_base_loss: 0.4286 grad_norm: 4.64015102 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7435.7 seqlen_tgs: 7479.5 exp_tgs: 6671.4 eta: 0:00:13 
+[XTuner][RANK 0][2026-09-17 21:34:32][INFO] Epoch 3 Step 176/200 data_time: 0.0072 lr: 3.384671e-06 time: 0.5485 text_tokens: 4085 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 714659 reduced_llm_loss: 0.45309594, local_loss: 0.45309594 step_consumed_tokens: 4085.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04912543, img_efficient_attn_ratio: 0.00000000 local_base_loss: 0.4531 grad_norm: 3.96728015 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7448.0 seqlen_tgs: 7468.0 exp_tgs: 6673.0 eta: 0:00:13 
+[XTuner][RANK 0][2026-09-17 21:34:33][INFO] Epoch 3 Step 177/200 data_time: 0.0072 lr: 3.200074e-06 time: 0.5488 text_tokens: 4073 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 718732 reduced_llm_loss: 0.52236032, local_loss: 0.52236032 step_consumed_tokens: 4073.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.05046523, img_efficient_attn_ratio: 0.00000000 local_base_loss: 0.5224 grad_norm: 4.02347898 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7421.4 seqlen_tgs: 7463.3 exp_tgs: 6674.4 eta: 0:00:12 
+[XTuner][RANK 0][2026-09-17 21:34:33][INFO] Epoch 3 Step 178/200 data_time: 0.0074 lr: 3.022635e-06 time: 0.5484 text_tokens: 4079 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 722811 reduced_llm_loss: 0.40692025, local_loss: 0.40692025 step_consumed_tokens: 4079.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.05381775, img_efficient_attn_ratio: 0.00000000 local_base_loss: 0.4069 grad_norm: 3.33554244 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7438.6 seqlen_tgs: 7469.6 exp_tgs: 6675.9 eta: 0:00:12 
+[XTuner][RANK 0][2026-09-17 21:34:34][INFO] Epoch 3 Step 179/200 data_time: 0.0062 lr: 2.852402e-06 time: 0.5512 text_tokens: 4091 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 726902 reduced_llm_loss: 0.39084455, local_loss: 0.39084455 step_consumed_tokens: 4091.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.05471718, img_efficient_attn_ratio: 0.00000000 local_base_loss: 0.3908 grad_norm: 3.47346282 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7422.7 seqlen_tgs: 7431.7 exp_tgs: 6677.4 eta: 0:00:11 
+[XTuner][RANK 0][2026-09-17 21:34:35][INFO] Epoch 3 Step 180/200 data_time: 0.0078 lr: 2.689419e-06 time: 0.5478 text_tokens: 4065 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 730967 reduced_llm_loss: 0.58943677, local_loss: 0.58943677 step_consumed_tokens: 4065.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04334974, img_efficient_attn_ratio: 0.00000000 local_base_loss: 0.5894 grad_norm: 4.38932896 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7420.8 seqlen_tgs: 7477.3 exp_tgs: 6678.8 eta: 0:00:10 
+[XTuner][RANK 0][2026-09-17 21:34:35][INFO] Epoch 3 Step 181/200 data_time: 0.0077 lr: 2.533729e-06 time: 0.5487 text_tokens: 4094 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 735061 reduced_llm_loss: 0.47643137, local_loss: 0.47643137 step_consumed_tokens: 4094.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04548764, img_efficient_attn_ratio: 0.00000000 local_base_loss: 0.4764 grad_norm: 3.91179585 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7461.4 seqlen_tgs: 7465.1 exp_tgs: 6680.3 eta: 0:00:10 
+[XTuner][RANK 0][2026-09-17 21:34:36][INFO] Epoch 3 Step 182/200 data_time: 0.0058 lr: 2.385373e-06 time: 0.5471 text_tokens: 4080 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 739141 reduced_llm_loss: 0.47409713, local_loss: 0.47409713 step_consumed_tokens: 4080.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.05288529, img_efficient_attn_ratio: 0.00000000 local_base_loss: 0.4741 grad_norm: 3.71054530 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7457.1 seqlen_tgs: 7486.4 exp_tgs: 6681.9 eta: 0:00:09 
+[XTuner][RANK 0][2026-09-17 21:34:36][INFO] Epoch 3 Step 183/200 data_time: 0.0074 lr: 2.244389e-06 time: 0.5490 text_tokens: 4070 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 743211 reduced_llm_loss: 0.39139971, local_loss: 0.39139971 step_consumed_tokens: 4070.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04744959, img_efficient_attn_ratio: 0.00000000 local_base_loss: 0.3914 grad_norm: 4.04417276 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7413.4 seqlen_tgs: 7460.7 exp_tgs: 6683.2 eta: 0:00:09 
+[XTuner][RANK 0][2026-09-17 21:34:37][INFO] Epoch 3 Step 184/200 data_time: 0.0081 lr: 2.110815e-06 time: 0.5498 text_tokens: 4070 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 747281 reduced_llm_loss: 0.45740002, local_loss: 0.45740002 step_consumed_tokens: 4070.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04122436, img_efficient_attn_ratio: 0.00000000 local_base_loss: 0.4574 grad_norm: 3.99535108 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7402.7 seqlen_tgs: 7450.0 exp_tgs: 6684.4 eta: 0:00:08 
+[XTuner][RANK 0][2026-09-17 21:34:37][INFO] Epoch 3 Step 185/200 data_time: 0.0076 lr: 1.984685e-06 time: 0.5493 text_tokens: 4094 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 751375 reduced_llm_loss: 0.46305111, local_loss: 0.46305111 step_consumed_tokens: 4094.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04790878, img_efficient_attn_ratio: 0.00000000 local_base_loss: 0.4631 grad_norm: 4.16120195 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7452.8 seqlen_tgs: 7456.4 exp_tgs: 6685.8 eta: 0:00:08 
+[XTuner][RANK 0][2026-09-17 21:34:38][INFO] Epoch 3 Step 186/200 data_time: 0.0073 lr: 1.866033e-06 time: 0.5490 text_tokens: 4091 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 755466 reduced_llm_loss: 0.47352207, local_loss: 0.47352207 step_consumed_tokens: 4091.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.05069613, img_efficient_attn_ratio: 0.00000000 local_base_loss: 0.4735 grad_norm: 4.04493141 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7451.9 seqlen_tgs: 7461.0 exp_tgs: 6687.2 eta: 0:00:07 
+[XTuner][RANK 0][2026-09-17 21:34:39][INFO] Epoch 3 Step 187/200 data_time: 0.0075 lr: 1.754890e-06 time: 0.5498 text_tokens: 4080 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 759546 reduced_llm_loss: 0.44873253, local_loss: 0.44873253 step_consumed_tokens: 4080.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04611182, img_efficient_attn_ratio: 0.00000000 local_base_loss: 0.4487 grad_norm: 4.47912312 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7420.3 seqlen_tgs: 7449.4 exp_tgs: 6688.5 eta: 0:00:07 
+[XTuner][RANK 0][2026-09-17 21:34:39][INFO] Epoch 3 Step 188/200 data_time: 0.0073 lr: 1.651284e-06 time: 0.5502 text_tokens: 4083 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 763629 reduced_llm_loss: 0.40339425, local_loss: 0.40339425 step_consumed_tokens: 4083.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04780340, img_efficient_attn_ratio: 0.00000000 local_base_loss: 0.4034 grad_norm: 4.44806719 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7421.3 seqlen_tgs: 7444.9 exp_tgs: 6689.8 eta: 0:00:06 
+[XTuner][RANK 0][2026-09-17 21:34:40][INFO] Epoch 3 Step 189/200 data_time: 0.0058 lr: 1.555244e-06 time: 0.5481 text_tokens: 4082 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 767711 reduced_llm_loss: 0.47297576, local_loss: 0.47297576 step_consumed_tokens: 4082.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04905701, img_efficient_attn_ratio: 0.00000000 local_base_loss: 0.4730 grad_norm: 3.83265471 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7448.1 seqlen_tgs: 7473.6 exp_tgs: 6691.2 eta: 0:00:05 
+[XTuner][RANK 0][2026-09-17 21:34:40][INFO] Epoch 3 Step 190/200 data_time: 0.0077 lr: 1.466794e-06 time: 0.5480 text_tokens: 4083 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 771794 reduced_llm_loss: 0.56452137, local_loss: 0.56452137 step_consumed_tokens: 4083.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04362392, img_efficient_attn_ratio: 0.00000000 local_base_loss: 0.5645 grad_norm: 4.07578373 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7450.8 seqlen_tgs: 7474.6 exp_tgs: 6692.6 eta: 0:00:05 
+[XTuner][RANK 0][2026-09-17 21:34:41][INFO] Epoch 3 Step 191/200 data_time: 0.0048 lr: 1.385957e-06 time: 0.5401 text_tokens: 2463 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 774257 reduced_llm_loss: 0.42983308, local_loss: 0.42983308 step_consumed_tokens: 2463.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.05286396, img_efficient_attn_ratio: 0.00000000 local_base_loss: 0.4298 grad_norm: 6.02979565 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 4560.4 seqlen_tgs: 7584.0 exp_tgs: 6680.6 eta: 0:00:08 
+[XTuner][RANK 0][2026-09-17 21:34:42][INFO] Epoch 3 Step 192/200 data_time: 0.0059 lr: 1.312755e-06 time: 0.5465 text_tokens: 4087 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 778344 reduced_llm_loss: 0.51696306, local_loss: 0.51696306 step_consumed_tokens: 4087.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04142213, img_efficient_attn_ratio: 0.00000000 local_base_loss: 0.5170 grad_norm: 4.73295021 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7479.1 seqlen_tgs: 7495.6 exp_tgs: 6682.2 eta: 0:00:04 
+[XTuner][RANK 0][2026-09-17 21:34:42][INFO] Epoch 3 Step 193/200 data_time: 0.0072 lr: 1.247207e-06 time: 0.5486 text_tokens: 4080 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 782424 reduced_llm_loss: 0.46291444, local_loss: 0.46291444 step_consumed_tokens: 4080.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.05169749, img_efficient_attn_ratio: 0.00000000 local_base_loss: 0.4629 grad_norm: 3.80540609 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7437.3 seqlen_tgs: 7466.5 exp_tgs: 6683.5 eta: 0:00:03 
+[XTuner][RANK 0][2026-09-17 21:34:43][INFO] Epoch 3 Step 194/200 data_time: 0.0078 lr: 1.189330e-06 time: 0.5478 text_tokens: 4075 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 786499 reduced_llm_loss: 0.60132712, local_loss: 0.60132712 step_consumed_tokens: 4075.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04582763, img_efficient_attn_ratio: 0.00000000 local_base_loss: 0.6013 grad_norm: 4.21327829 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7439.4 seqlen_tgs: 7477.8 exp_tgs: 6684.8 eta: 0:00:03 
+[XTuner][RANK 0][2026-09-17 21:34:43][INFO] Epoch 3 Step 195/200 data_time: 0.0078 lr: 1.139139e-06 time: 0.5483 text_tokens: 4095 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 790594 reduced_llm_loss: 0.54298067, local_loss: 0.54298067 step_consumed_tokens: 4095.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04363918, img_efficient_attn_ratio: 0.00000000 local_base_loss: 0.5430 grad_norm: 4.06377125 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7468.8 seqlen_tgs: 7470.6 exp_tgs: 6686.3 eta: 0:00:02 
+[XTuner][RANK 0][2026-09-17 21:34:44][INFO] Epoch 3 Step 196/200 data_time: 0.0077 lr: 1.096648e-06 time: 0.5487 text_tokens: 4084 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 794678 reduced_llm_loss: 0.52122015, local_loss: 0.52122015 step_consumed_tokens: 4084.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04266953, img_efficient_attn_ratio: 0.00000000 local_base_loss: 0.5212 grad_norm: 4.00368023 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7443.0 seqlen_tgs: 7464.9 exp_tgs: 6687.6 eta: 0:00:02 
+[XTuner][RANK 0][2026-09-17 21:34:45][INFO] Epoch 3 Step 197/200 data_time: 0.0072 lr: 1.061867e-06 time: 0.5501 text_tokens: 4057 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 798735 reduced_llm_loss: 0.57080251, local_loss: 0.57080251 step_consumed_tokens: 4057.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.05464554, img_efficient_attn_ratio: 0.00000000 local_base_loss: 0.5708 grad_norm: 4.29894638 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7375.6 seqlen_tgs: 7446.5 exp_tgs: 6688.6 eta: 0:00:01 
+[XTuner][RANK 0][2026-09-17 21:34:45][INFO] Epoch 3 Step 198/200 data_time: 0.0079 lr: 1.034805e-06 time: 0.5507 text_tokens: 4074 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 802809 reduced_llm_loss: 0.47709736, local_loss: 0.47709736 step_consumed_tokens: 4074.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04265058, img_efficient_attn_ratio: 0.00000000 local_base_loss: 0.4771 grad_norm: 4.43645191 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7397.5 seqlen_tgs: 7437.4 exp_tgs: 6689.7 eta: 0:00:01 
+[XTuner][RANK 0][2026-09-17 21:34:46][INFO] Epoch 3 Step 199/200 data_time: 0.0059 lr: 1.015471e-06 time: 0.5495 text_tokens: 4093 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 806902 reduced_llm_loss: 0.31927469, local_loss: 0.31927469 step_consumed_tokens: 4093.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04860735, img_efficient_attn_ratio: 0.00000000 local_base_loss: 0.3193 grad_norm: 3.11688995 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7448.8 seqlen_tgs: 7454.3 exp_tgs: 6691.1 eta: 0:00:00 
+[XTuner][RANK 0][2026-09-17 21:34:46][INFO] Epoch 3 Step 200/200 data_time: 0.0075 lr: 1.003868e-06 time: 0.5495 text_tokens: 4090 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 810992 reduced_llm_loss: 0.51808298, local_loss: 0.51808298 step_consumed_tokens: 4090.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.04614186, img_efficient_attn_ratio: 0.00000000 local_base_loss: 0.5181 grad_norm: 4.46498537 max_memory: 12.38 GB reserved_memory: 14.15 GB tgs: 7442.7 seqlen_tgs: 7453.7 exp_tgs: 6692.3 eta: 0:00:00 
+[transformers] Unrecognized keys in `rope_parameters` for 'rope_type'='default': {'high_freq_factor', 'factor', 'short_factor', 'mscale', 'original_max_position_embeddings', 'beta_fast', 'truncate', 'beta_slow', 'long_factor', 'low_freq_factor', 'mscale_all_dim', 'mrope_section'}
+[transformers] Unrecognized keys in `rope_parameters` for 'rope_type'='default': {'high_freq_factor', 'factor', 'short_factor', 'mscale', 'original_max_position_embeddings', 'beta_fast', 'truncate', 'beta_slow', 'long_factor', 'low_freq_factor', 'mscale_all_dim', 'mrope_section'}
+[transformers] Unrecognized keys in `rope_parameters` for 'rope_type'='default': {'high_freq_factor', 'factor', 'short_factor', 'mscale', 'original_max_position_embeddings', 'beta_fast', 'truncate', 'beta_slow', 'long_factor', 'low_freq_factor', 'mscale_all_dim', 'mrope_section'}
+[transformers] Unrecognized keys in `rope_parameters` for 'rope_type'='default': {'high_freq_factor', 'factor', 'short_factor', 'mscale', 'original_max_position_embeddings', 'beta_fast', 'truncate', 'beta_slow', 'long_factor', 'low_freq_factor', 'mscale_all_dim', 'mrope_section'}
+[transformers] Unrecognized keys in `rope_parameters` for 'rope_type'='default': {'high_freq_factor', 'factor', 'short_factor', 'mscale', 'original_max_position_embeddings', 'beta_fast', 'truncate', 'beta_slow', 'long_factor', 'low_freq_factor', 'mscale_all_dim', 'mrope_section'}
+[XTuner][RANK 0][2026-09-17 21:34:47][SUCCESS] [Saving HF to [model]/home/gugubai/workspace/xtuner-lab/experiments/001_qwen3_06b_sft/work_dir/20260917213244/hf-200 cost] Elapsed time 0.53 seconds, peak gpu memory 12.6G
+[XTuner][RANK 0][2026-09-17 21:34:47][SUCCESS] [DCP Collect Model State Dict] Elapsed time 0.40 seconds, peak gpu memory 8.4G
+[XTuner][RANK 0][2026-09-17 21:34:48][SUCCESS] [DCP Collect Optimizer State Dict] Elapsed time 0.97 seconds, peak gpu memory 8.4G
+[XTuner][RANK 0][2026-09-17 21:34:51][SUCCESS] [DCP save for /home/gugubai/workspace/xtuner-lab/experiments/001_qwen3_06b_sft/work_dir/20260917213244/checkpoints/ckpt-step-200/weights] Elapsed time 3.05 seconds, peak gpu memory 8.4G
+[XTuner][RANK 0][2026-09-17 21:34:52][INFO] Training finished in 126.66 seconds
+[W917 21:34:53.777883240 AllocatorConfig.cpp:28] Warning: PYTORCH_CUDA_ALLOC_CONF is deprecated, use PYTORCH_ALLOC_CONF instead (function operator())
+[W917 21:34:53.108304307 AllocatorConfig.cpp:28] Warning: PYTORCH_CUDA_ALLOC_CONF is deprecated, use PYTORCH_ALLOC_CONF instead (function operator())

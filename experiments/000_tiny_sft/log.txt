@@ -1,0 +1,339 @@
+Could not find the bitsandbytes CUDA binary at PosixPath('/home/gugubai/miniconda3/envs/xtuner/lib/python3.11/site-packages/bitsandbytes/libbitsandbytes_cuda128.so')
+The installed version of bitsandbytes was compiled without GPU support. 8-bit optimizers, 8-bit multiplication, and GPU quantization are unavailable.
+Import FlashAttention 2 failed No module named 'flash_attn', Please install it manually.
+[XTuner][2026-09-17 17:33:27][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-17 17:33:27][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-17 17:33:27][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-17 17:33:27][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-17 17:33:27][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-17 17:33:27][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-17 17:33:27][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-17 17:33:27][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-17 17:33:27][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-17 17:33:27][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-17 17:33:27][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-17 17:33:27][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-17 17:33:27][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-17 17:33:27][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-17 17:33:27][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-17 17:33:27][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-17 17:33:27][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-17 17:33:27][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-17 17:33:27][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-17 17:33:27][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-17 17:33:27][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-17 17:33:27][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-17 17:33:27][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-17 17:33:27][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-17 17:33:27][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-17 17:33:27][INFO] set HF_MODULES_CACHE to /home/gugubai/.cache/huggingface/modules_cache_GuGu-Workstation_12216 for current process (hostname=GuGu-Workstation, pid=12216)
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[XTuner][RANK 0][2026-09-17 17:33:27][WARNING] `resume_cfg` is deprecated, please use `auto_resume` and `load_checkpoint_cfg` instead
+[XTuner][RANK 0][2026-09-17 17:33:27][INFO] 
+============XTuner Training Environment============
+XTUNER_DETERMINISTIC: None
+XTUNER_GC_ENABLE: None
+XTUNER_FILE_OPEN_CONCURRENCY: None
+XTUNER_TOKENIZE_CHUNK_SIZE: None
+XTUNER_TOKENIZE_WORKERS: None
+XTUNER_ACTIVATION_OFFLOAD: None
+XTUNER_USE_FA3: 0
+XTUNER_DISPATCHER_DEBUG: None
+XTUNER_ROUTER_DEBUG: None
+XTUNER_DECORD_VIDEO_THREADS: None
+XTUNER_USE_CUTLASS_GROUP_GEMM: None
+GROUPED_GEMM_USE_CUTLASS: None
+XTUNER_USE_NATIVE_RMSNORM: None
+XTUNER_SM_MARGIN: None
+XTUNER_RL_FP8_QUANTIZE_IN_BF16: None
+==================================================
+[XTuner][RANK 0][2026-09-17 17:33:27][INFO] Using toy tokenizer: <xtuner.v1.train.toy_tokenizer.UTF8ByteTokenizer object at 0x7138c4036b50>!
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[XTuner][RANK 0][2026-09-17 17:33:27][WARNING] Setting model_cfg.lm_loss_cfg from Trainer's loss_cfg for backward compatibility. In the future, please set lm_loss_cfg directly in model_cfg instead of Trainer.
+[XTuner][RANK 0][2026-09-17 17:33:27][WARNING] FSDPConfig.torch_compile is deprecated, and will be removed in version 1.1.0. Please use XTunerBaseModelConfig.compile_cfg to control whether to use torch.compile for the model
+[XTuner][RANK 0][2026-09-17 17:33:27][WARNING] `dataset_cfg` is deprecated, please use `dataloader_cfg.dataset_config_list` instead
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[XTuner][RANK 0][2026-09-17 17:33:27][SUCCESS] [Build Datasets] Elapsed time 0.05 seconds
+[XTuner][RANK 0][2026-09-17 17:33:27][INFO] [Dataset] Start packing data of ExpandSoftPackDataset.
+[XTuner][RANK 0][2026-09-17 17:33:27][INFO] Using 8 pack workers for packing datasets.
+0it [00:00, ?it/s]1it [00:00, 1143.17it/s]
+[XTuner][RANK 0][2026-09-17 17:33:27][SUCCESS] [Pack Datasets] Elapsed time 0.05 seconds
+[XTuner][RANK 0][2026-09-17 17:33:27][INFO] [Dataset] (Original) 128 samples.
+[XTuner][RANK 0][2026-09-17 17:33:27][INFO] [Dataset] (Packed) 13 samples.
+[transformers] Unrecognized keys in `rope_parameters` for 'rope_type'='default': {'long_factor', 'beta_fast', 'high_freq_factor', 'beta_slow', 'short_factor', 'original_max_position_embeddings', 'truncate', 'low_freq_factor', 'mscale', 'mscale_all_dim', 'factor', 'mrope_section'}
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[FSDP Sharding]:   0%|          | 0/3 [00:00<?, ?it/s]/home/gugubai/workspace/xtuner/xtuner/v1/model/utils/checkpointing.py:91: FutureWarning: Please specify CheckpointImpl.NO_REENTRANT as CheckpointImpl.REENTRANT will soon be removed as the default and eventually deprecated.
+  return checkpoint_wrapper(
+[FSDP Sharding]: 100%|██████████| 3/3 [00:00<00:00, 340.50it/s]
+[XTuner][RANK 0][2026-09-17 17:33:27][INFO] FSDPQwen3Dense(
+  (norm): FSDPRMSNorm((512,), type=default, eps=1e-06)
+  (lm_head): FSDPLMHead(in_features=512, out_features=151936, bias=False)
+  (layers): ModuleDict(
+    (0): FSDPCheckpointWrapper(
+      (_checkpoint_wrapped_module): DenseDecoderLayer(
+        (self_attn): MultiHeadAttention(
+          (q_proj): _Linear(in_features=512, out_features=4096, bias=False)
+          (k_proj): _Linear(in_features=512, out_features=1024, bias=False)
+          (v_proj): _Linear(in_features=512, out_features=1024, bias=False)
+          (o_proj): _Linear(in_features=4096, out_features=512, bias=False)
+          (q_norm): RMSNorm((128,), type=default, eps=1e-06)
+          (k_norm): RMSNorm((128,), type=default, eps=1e-06)
+        )
+        (mlp): DenseMLP(
+          (gate_proj): _Linear(in_features=512, out_features=12288, bias=False)
+          (up_proj): _Linear(in_features=512, out_features=12288, bias=False)
+          (down_proj): _Linear(in_features=12288, out_features=512, bias=False)
+        )
+        (input_layernorm): RMSNorm((512,), type=default, eps=1e-06)
+        (post_attention_layernorm): RMSNorm((512,), type=default, eps=1e-06)
+      )
+    )
+    (1): FSDPCheckpointWrapper(
+      (_checkpoint_wrapped_module): DenseDecoderLayer(
+        (self_attn): MultiHeadAttention(
+          (q_proj): _Linear(in_features=512, out_features=4096, bias=False)
+          (k_proj): _Linear(in_features=512, out_features=1024, bias=False)
+          (v_proj): _Linear(in_features=512, out_features=1024, bias=False)
+          (o_proj): _Linear(in_features=4096, out_features=512, bias=False)
+          (q_norm): RMSNorm((128,), type=default, eps=1e-06)
+          (k_norm): RMSNorm((128,), type=default, eps=1e-06)
+        )
+        (mlp): DenseMLP(
+          (gate_proj): _Linear(in_features=512, out_features=12288, bias=False)
+          (up_proj): _Linear(in_features=512, out_features=12288, bias=False)
+          (down_proj): _Linear(in_features=12288, out_features=512, bias=False)
+        )
+        (input_layernorm): RMSNorm((512,), type=default, eps=1e-06)
+        (post_attention_layernorm): RMSNorm((512,), type=default, eps=1e-06)
+      )
+    )
+    (2): FSDPCheckpointWrapper(
+      (_checkpoint_wrapped_module): DenseDecoderLayer(
+        (self_attn): MultiHeadAttention(
+          (q_proj): _Linear(in_features=512, out_features=4096, bias=False)
+          (k_proj): _Linear(in_features=512, out_features=1024, bias=False)
+          (v_proj): _Linear(in_features=512, out_features=1024, bias=False)
+          (o_proj): _Linear(in_features=4096, out_features=512, bias=False)
+          (q_norm): RMSNorm((128,), type=default, eps=1e-06)
+          (k_norm): RMSNorm((128,), type=default, eps=1e-06)
+        )
+        (mlp): DenseMLP(
+          (gate_proj): _Linear(in_features=512, out_features=12288, bias=False)
+          (up_proj): _Linear(in_features=512, out_features=12288, bias=False)
+          (down_proj): _Linear(in_features=12288, out_features=512, bias=False)
+        )
+        (input_layernorm): RMSNorm((512,), type=default, eps=1e-06)
+        (post_attention_layernorm): RMSNorm((512,), type=default, eps=1e-06)
+      )
+    )
+  )
+  (rotary_emb): RotaryEmbedding()
+  (embed_tokens): FSDPEmbedding(151936, 512)
+)
+[XTuner][RANK 0][2026-09-17 17:33:27][INFO] Total trainable parameters: 227.94M, total parameters: 227.94M
+[XTuner][RANK 0][2026-09-17 17:33:27][INFO] Untrainable parameters names: []
+[XTuner][RANK 0][2026-09-17 17:33:27][INFO] The `compile_cfg` of model is {}
+[XTuner][RANK 0][2026-09-17 17:33:27][INFO] Training config: {
+  "model_cfg": {
+    "hf_save_cfg": {
+      "worker_per_rank": 16,
+      "max_save_rank": 16,
+      "bucket_size": 4294967296,
+      "fp32_keys_pattern": null
+    },
+    "float8_cfg": null,
+    "compile_cfg": false,
+    "hf_key_mapping": null,
+    "dcp_ignore_frozen_params": true,
+    "lm_loss_cfg": {
+      "ignore_idx": -100,
+      "mode": "chunk",
+      "chunk_size": 1024,
+      "loss_reduction": "token"
+    },
+    "vocab_size": 151936,
+    "max_position_embeddings": 40960,
+    "eos_token_id": 151645,
+    "pad_token_id": null,
+    "num_hidden_layers": 3,
+    "hidden_size": 512,
+    "intermediate_size": 12288,
+    "rms_norm_eps": 1e-6,
+    "rms_norm_type": "default",
+    "hidden_act": "silu",
+    "attention": {
+      "num_attention_heads": 32,
+      "num_key_value_heads": 8,
+      "head_dim": 128,
+      "dropout": 0.0,
+      "qkv_bias": false,
+      "qk_norm": true,
+      "rms_norm_eps": 1e-6,
+      "rms_norm_type": "default",
+      "o_bias": false,
+      "sliding_window": 1024,
+      "with_sink": false,
+      "with_gate": false,
+      "attn_impl": "flex_attention"
+    },
+    "linear_attention": null,
+    "mlp_bias": false,
+    "tie_word_embeddings": false,
+    "model_type": null,
+    "generate_config": null,
+    "return_hidden_states": false,
+    "use_sliding_window": false,
+    "max_window_layers": 36,
+    "rope_parameters_cfg": {
+      "rope_theta": 1000000.0,
+      "rope_type": "default",
+      "original_max_position_embeddings": null,
+      "factor": null,
+      "beta_fast": null,
+      "beta_slow": null,
+      "short_factor": null,
+      "long_factor": null,
+      "low_freq_factor": null,
+      "high_freq_factor": null,
+      "mscale": null,
+      "mscale_all_dim": null,
+      "truncate": false,
+      "mrope_section": null,
+      "partial_rotary_factor": 1.0,
+      "fope_init_factor": null,
+      "fope_sep_head": null,
+      "num_inv_freq": null
+    },
+    "mesh_prefix": "default",
+    "bos_token_id": 151643,
+    "rope_scaling": null,
+    "rope_parameters": {
+      "rope_theta": 1000000.0,
+      "rope_type": "default",
+      "original_max_position_embeddings": null,
+      "factor": null,
+      "beta_fast": null,
+      "beta_slow": null,
+      "short_factor": null,
+      "long_factor": null,
+      "low_freq_factor": null,
+      "high_freq_factor": null,
+      "mscale": null,
+      "mscale_all_dim": null,
+      "truncate": false,
+      "mrope_section": null,
+      "partial_rotary_factor": 1.0
+    },
+    "num_attention_heads": 32,
+    "num_key_value_heads": 8,
+    "head_dim": 128,
+    "layers_type": [
+      "full_attention",
+      "full_attention",
+      "full_attention"
+    ]
+  },
+  "load_from": null,
+  "tokenizer_path": null,
+  "optim_cfg": {
+    "lr": 0.00006,
+    "max_grad_norm": 1.0,
+    "skip_grad_norm_threshold": null,
+    "weight_decay": 0.01,
+    "betas": [
+      0.9,
+      0.95
+    ],
+    "eps": 1e-8,
+    "foreach": false,
+    "swap_optimizer": false
+  },
+  "lr_cfg": {
+    "lr_type": "cosine",
+    "warmup_ratio": 0.03,
+    "lr_min": 1e-6
+  },
+  "loss_cfg": {
+    "ignore_idx": -100,
+    "mode": "chunk",
+    "chunk_size": 1024,
+    "loss_reduction": "token"
+  },
+  "fsdp_cfg": null,
+  "global_batch_size": null,
+  "work_dir": "/home/gugubai/workspace/xtuner-lab/experiments/000_tiny_sft/work_dir",
+  "log_dir": null,
+  "sp_size": 1,
+  "total_step": null,
+  "total_epoch": 1,
+  "resume_cfg": null,
+  "auto_resume": false,
+  "load_checkpoint_cfg": {
+    "checkpoint_path": null,
+    "load_optimizer_states": true,
+    "load_optimizer_args": true,
+    "load_dataset": true,
+    "load_scheduler": true,
+    "offload_optimizer_first_step": false
+  },
+  "strict_load": true,
+  "checkpoint_interval": -1,
+  "checkpoint_maxkeep": -1,
+  "async_hf_export": false,
+  "skip_checkpoint_validation": false,
+  "patch_for_dcp_finish": false,
+  "async_checkpoint": false,
+  "snapshot_interval": null,
+  "check_health_interval": null,
+  "hf_interval": null,
+  "hf_max_keep": null,
+  "exp_tracker": "jsonl",
+  "profile_step": null,
+  "profile_time": true,
+  "profile_memory": false,
+  "intra_layer_micro_batch": 1,
+  "seed": 42,
+  "dist_backend": null,
+  "debug": false,
+  "debug_skip_save": false,
+  "prober_list": [],
+  "do_clip": true,
+  "grad_norm_dtype": "torch.float32",
+  "hooks_config": {
+    "after_save_dcp": [],
+    "after_save_hf": [],
+    "after_save_snapshot": [],
+    "after_train_step": []
+  },
+  "internal_metrics_cfg": null
+}
+[XTuner][RANK 0][2026-09-17 17:33:28][INFO] grad_accumulation_steps: 1
+/home/gugubai/miniconda3/envs/xtuner/lib/python3.11/site-packages/torch/nn/attention/flex_attention.py:1622: FutureWarning: return_lse is deprecated and will be removed in v2.10. Please use return_aux=AuxRequest(lse=True) instead.
+  _warn_once(
+[XTuner][RANK 0][2026-09-17 17:33:31][INFO] Epoch 1 Step 1/13 data_time: 0.0017 lr: 6.000000e-05 time: 3.4105 text_tokens: 4054 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 4054 reduced_llm_loss: 11.91132927, local_loss: 11.91132927 step_consumed_tokens: 4054.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.18745065, img_efficient_attn_ratio: 0.00000000 local_base_loss: 11.9113 grad_norm: 16.40359116 max_memory: 3.99 GB reserved_memory: 5.69 GB tgs: 1188.7 seqlen_tgs: 1201.0 exp_tgs: 1188.1 eta: 0:00:40 
+[XTuner][RANK 0][2026-09-17 17:33:31][INFO] Epoch 1 Step 2/13 data_time: 0.0015 lr: 6.086985e-05 time: 0.1383 text_tokens: 3964 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 8018 reduced_llm_loss: 10.67754745, local_loss: 10.67754745 step_consumed_tokens: 3964.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.18885469, img_efficient_attn_ratio: 0.00000000 local_base_loss: 10.6775 grad_norm: 9.07938957 max_memory: 5.35 GB reserved_memory: 7.43 GB tgs: 28653.9 seqlen_tgs: 29608.1 exp_tgs: 2249.9 eta: 0:00:01 
+[XTuner][RANK 0][2026-09-17 17:33:31][INFO] Epoch 1 Step 3/13 data_time: 0.0013 lr: 6.000000e-05 time: 0.1361 text_tokens: 3898 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 11916 reduced_llm_loss: 10.11856270, local_loss: 10.11856270 step_consumed_tokens: 3898.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.14301157, img_efficient_attn_ratio: 0.00000000 local_base_loss: 10.1186 grad_norm: 7.33640385 max_memory: 5.35 GB reserved_memory: 7.43 GB tgs: 28649.5 seqlen_tgs: 30104.7 exp_tgs: 3200.5 eta: 0:00:01 
+[XTuner][RANK 0][2026-09-17 17:33:31][INFO] Epoch 1 Step 4/13 data_time: 0.0014 lr: 5.744099e-05 time: 0.1342 text_tokens: 4034 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 15950 reduced_llm_loss: 9.82926846, local_loss: 9.82926846 step_consumed_tokens: 4034.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.09420836, img_efficient_attn_ratio: 0.00000000 local_base_loss: 9.8293 grad_norm: 6.34779406 max_memory: 5.35 GB reserved_memory: 7.43 GB tgs: 30058.1 seqlen_tgs: 30520.1 exp_tgs: 4110.2 eta: 0:00:01 
+[XTuner][RANK 0][2026-09-17 17:33:32][INFO] Epoch 1 Step 5/13 data_time: 0.0013 lr: 5.334154e-05 time: 0.1334 text_tokens: 3991 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 19941 reduced_llm_loss: 9.60174179, local_loss: 9.60174179 step_consumed_tokens: 3991.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.10140181, img_efficient_attn_ratio: 0.00000000 local_base_loss: 9.6017 grad_norm: 5.95032358 max_memory: 5.35 GB reserved_memory: 7.43 GB tgs: 29916.7 seqlen_tgs: 30703.8 exp_tgs: 4939.1 eta: 0:00:01 
+[XTuner][RANK 0][2026-09-17 17:33:32][INFO] Epoch 1 Step 6/13 data_time: 0.0013 lr: 4.793990e-05 time: 0.1355 text_tokens: 3998 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 23939 reduced_llm_loss: 9.41227913, local_loss: 9.41227913 step_consumed_tokens: 3998.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.20665371, img_efficient_attn_ratio: 0.00000000 local_base_loss: 9.4123 grad_norm: 6.04726791 max_memory: 5.35 GB reserved_memory: 7.43 GB tgs: 29511.4 seqlen_tgs: 30234.8 exp_tgs: 5705.1 eta: 0:00:00 
+[XTuner][RANK 0][2026-09-17 17:33:32][INFO] Epoch 1 Step 7/13 data_time: 0.0013 lr: 4.155000e-05 time: 0.1325 text_tokens: 4004 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 27943 reduced_llm_loss: 9.29801369, local_loss: 9.29801369 step_consumed_tokens: 4004.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.11107790, img_efficient_attn_ratio: 0.00000000 local_base_loss: 9.2980 grad_norm: 5.95902300 max_memory: 5.35 GB reserved_memory: 7.43 GB tgs: 30212.9 seqlen_tgs: 30907.1 exp_tgs: 6421.1 eta: 0:00:00 
+[XTuner][RANK 0][2026-09-17 17:33:32][INFO] Epoch 1 Step 8/13 data_time: 0.0013 lr: 3.454318e-05 time: 0.1329 text_tokens: 3966 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 31909 reduced_llm_loss: 9.27597141, local_loss: 9.27597141 step_consumed_tokens: 3966.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.11480927, img_efficient_attn_ratio: 0.00000000 local_base_loss: 9.2760 grad_norm: 5.70071697 max_memory: 5.35 GB reserved_memory: 7.43 GB tgs: 29847.7 seqlen_tgs: 30826.1 exp_tgs: 7078.5 eta: 0:00:00 
+[XTuner][RANK 0][2026-09-17 17:33:32][INFO] Epoch 1 Step 9/13 data_time: 0.0013 lr: 2.732667e-05 time: 0.1344 text_tokens: 4083 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 35992 reduced_llm_loss: 9.04455566, local_loss: 9.04455566 step_consumed_tokens: 4083.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.18584585, img_efficient_attn_ratio: 0.00000000 local_base_loss: 9.0446 grad_norm: 6.04729414 max_memory: 5.35 GB reserved_memory: 7.43 GB tgs: 30385.8 seqlen_tgs: 30482.6 exp_tgs: 7714.6 eta: 0:00:00 
+[XTuner][RANK 0][2026-09-17 17:33:32][INFO] Epoch 1 Step 10/13 data_time: 0.0012 lr: 2.031986e-05 time: 0.1358 text_tokens: 4044 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 40036 reduced_llm_loss: 9.07163239, local_loss: 9.07163239 step_consumed_tokens: 4044.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.22754443, img_efficient_attn_ratio: 0.00000000 local_base_loss: 9.0716 grad_norm: 6.01229906 max_memory: 5.35 GB reserved_memory: 7.43 GB tgs: 29771.2 seqlen_tgs: 30154.0 exp_tgs: 8298.6 eta: 0:00:00 
+[XTuner][RANK 0][2026-09-17 17:33:32][INFO] Epoch 1 Step 11/13 data_time: 0.0014 lr: 1.392995e-05 time: 0.1324 text_tokens: 4042 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 44078 reduced_llm_loss: 9.23777390, local_loss: 9.23777390 step_consumed_tokens: 4042.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.09659624, img_efficient_attn_ratio: 0.00000000 local_base_loss: 9.2378 grad_norm: 5.37365818 max_memory: 5.35 GB reserved_memory: 7.43 GB tgs: 30524.5 seqlen_tgs: 30932.3 exp_tgs: 8850.6 eta: 0:00:00 
+[XTuner][RANK 0][2026-09-17 17:33:33][INFO] Epoch 1 Step 12/13 data_time: 0.0013 lr: 8.528312e-06 time: 0.1370 text_tokens: 4010 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 48088 reduced_llm_loss: 8.94813347, local_loss: 8.94813347 step_consumed_tokens: 4010.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.27219594, img_efficient_attn_ratio: 0.00000000 local_base_loss: 8.9481 grad_norm: 5.92084122 max_memory: 5.35 GB reserved_memory: 7.43 GB tgs: 29270.1 seqlen_tgs: 29897.8 exp_tgs: 9354.9 eta: 0:00:00 
+[XTuner][RANK 0][2026-09-17 17:33:33][INFO] Epoch 1 Step 13/13 data_time: 0.0013 lr: 4.428866e-06 time: 0.1323 text_tokens: 4000 seqlen_tokens: 4096 img_tokens: 0.0 approximate_total_consumed_tokens: 52088 reduced_llm_loss: 9.07830620, local_loss: 9.07830620 step_consumed_tokens: 4000.00000000, step_seqlen_tokens: 4096.00000000, step_consumed_img_tokens: 0.00000000, efficient_attn_ratio: 0.10775709, img_efficient_attn_ratio: 0.00000000 local_base_loss: 9.0783 grad_norm: 5.50700521 max_memory: 5.35 GB reserved_memory: 7.43 GB tgs: 30229.4 seqlen_tgs: 30954.9 exp_tgs: 9835.5 eta: 0:00:00 
+[transformers] Unrecognized keys in `rope_parameters` for 'rope_type'='default': {'long_factor', 'beta_fast', 'high_freq_factor', 'beta_slow', 'short_factor', 'original_max_position_embeddings', 'truncate', 'low_freq_factor', 'mscale', 'mscale_all_dim', 'factor', 'mrope_section'}
+[transformers] Unrecognized keys in `rope_parameters` for 'rope_type'='default': {'long_factor', 'beta_fast', 'high_freq_factor', 'beta_slow', 'short_factor', 'original_max_position_embeddings', 'truncate', 'low_freq_factor', 'mscale', 'mscale_all_dim', 'factor', 'mrope_section'}
+[transformers] Unrecognized keys in `rope_parameters` for 'rope_type'='default': {'long_factor', 'beta_fast', 'high_freq_factor', 'beta_slow', 'short_factor', 'original_max_position_embeddings', 'truncate', 'low_freq_factor', 'mscale', 'mscale_all_dim', 'factor', 'mrope_section'}
+[transformers] Unrecognized keys in `rope_parameters` for 'rope_type'='default': {'long_factor', 'beta_fast', 'high_freq_factor', 'beta_slow', 'short_factor', 'original_max_position_embeddings', 'truncate', 'low_freq_factor', 'mscale', 'mscale_all_dim', 'factor', 'mrope_section'}
+[transformers] Unrecognized keys in `rope_parameters` for 'rope_type'='default': {'long_factor', 'beta_fast', 'high_freq_factor', 'beta_slow', 'short_factor', 'original_max_position_embeddings', 'truncate', 'low_freq_factor', 'mscale', 'mscale_all_dim', 'factor', 'mrope_section'}
+[transformers] Unrecognized keys in `rope_parameters` for 'rope_type'='default': {'long_factor', 'beta_fast', 'high_freq_factor', 'beta_slow', 'short_factor', 'original_max_position_embeddings', 'truncate', 'low_freq_factor', 'mscale', 'mscale_all_dim', 'factor', 'mrope_section'}
+[XTuner][RANK 0][2026-09-17 17:33:33][SUCCESS] [Saving HF to [model]/home/gugubai/workspace/xtuner-lab/experiments/000_tiny_sft/work_dir/20260917173327/hf-13 cost] Elapsed time 0.18 seconds, peak gpu memory 3.8G
+[XTuner][RANK 0][2026-09-17 17:33:33][SUCCESS] [DCP Collect Model State Dict] Elapsed time 0.15 seconds, peak gpu memory 2.6G
+[XTuner][RANK 0][2026-09-17 17:33:33][SUCCESS] [DCP Collect Optimizer State Dict] Elapsed time 0.29 seconds, peak gpu memory 2.6G
+[XTuner][RANK 0][2026-09-17 17:33:35][SUCCESS] [DCP save for /home/gugubai/workspace/xtuner-lab/experiments/000_tiny_sft/work_dir/20260917173327/checkpoints/ckpt-step-13/weights] Elapsed time 1.16 seconds, peak gpu memory 2.6G
+[XTuner][RANK 0][2026-09-17 17:33:35][INFO] Training finished in 7.10 seconds

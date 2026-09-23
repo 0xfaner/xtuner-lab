@@ -1,0 +1,16 @@
+diff --git a/xtuner/v1/rl/trainer/worker.py b/xtuner/v1/rl/trainer/worker.py
+index bed65633..269acd5a 100644
+--- a/xtuner/v1/rl/trainer/worker.py
++++ b/xtuner/v1/rl/trainer/worker.py
+@@ -914,6 +914,13 @@ class TrainingWorker(SingleAcceleratorWorker):
+ 
+             self._maybe_onload_logprob(batches_loss_ctx)
+ 
++            # [xtuner-lab patch] cpu_offload 共卡档：训练步前清分配器缓存，防碎片 OOM（诊断用）。
++            _patch_model = getattr(self._engine, "model", None)
++            if getattr(_patch_model, "fsdp_config", None) is not None and _patch_model.fsdp_config.cpu_offload:
++                DEVICE_MODULE.empty_cache()
++
+             train_step_begin = time.perf_counter()
+             with self._maybe_profiling(global_train_step, "train_step"):
+                 train_step_info = self._engine.train_step(

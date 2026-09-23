@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+LAB=~/workspace/xtuner-lab
+EXP_DIR=$LAB/experiments/002_qwen3_17b_4b_sft
+
+cd ~/workspace/xtuner
+export HF_ENDPOINT=https://hf-mirror.com
+export XTUNER_USE_FA3=0
+export PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True
+export CUDA_VISIBLE_DEVICES=0
+
+~/miniconda3/envs/xtuner/bin/torchrun --nproc-per-node 1 xtuner/v1/train/cli/sft.py \
+  --model-cfg "$EXP_DIR/config/e2_model_4b.py" \
+  --load-from "$LAB/models/Qwen3-4B" \
+  --chat_template qwen3 \
+  --dataset "$LAB/data/train.jsonl" \
+  --total-step 100 \
+  --pack-max-length 4096 \
+  --fsdp-config.cpu-offload \
+  --work-dir "$EXP_DIR/work_dir"

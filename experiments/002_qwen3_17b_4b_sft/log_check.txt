@@ -1,0 +1,59 @@
+== 1. nvidia-smi（真实卡型 / 驱动 / 每卡显存）==
+Sun Sep 20 16:10:49 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 595.71.05              Driver Version: 595.71.05      CUDA Version: 13.2     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA GeForce RTX 4080 ...    On  |   00000000:31:00.0 Off |                  N/A |
+| 30%   28C    P8             16W /  320W |       1MiB /  32760MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   1  NVIDIA GeForce RTX 4080 ...    On  |   00000000:32:00.0 Off |                  N/A |
+| 30%   28C    P8             15W /  320W |       1MiB /  32760MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+
+== 2. 设备清单与链路拓扑 ==
+GPU 0: NVIDIA GeForce RTX 4080 SUPER
+GPU 1: NVIDIA GeForce RTX 4080 SUPER
+	[4mGPU0	GPU1	NIC0	NIC1	CPU Affinity	NUMA Affinity	GPU NUMA ID[0m
+GPU0	 X 	PHB	SYS	SYS	0-31,64-95	0		N/A
+GPU1	PHB	 X 	SYS	SYS	0-31,64-95	0		N/A
+NIC0	SYS	SYS	 X 	PIX				
+NIC1	SYS	SYS	PIX	 X 				
+
+Legend:
+
+  X    = Self
+  SYS  = Connection traversing PCIe as well as the SMP interconnect between NUMA nodes (e.g., QPI/UPI)
+  NODE = Connection traversing PCIe as well as the interconnect between PCIe Host Bridges within a NUMA node
+  PHB  = Connection traversing PCIe as well as a PCIe Host Bridge (typically the CPU)
+  PXB  = Connection traversing multiple PCIe bridges (without traversing the PCIe Host Bridge)
+  PIX  = Connection traversing at most a single PCIe bridge
+  NV#  = Connection traversing a bonded set of # NVLinks
+
+NIC Legend:
+
+  NIC0: mlx5_0
+  NIC1: mlx5_1
+
+
+== 3. torch / CUDA / bf16（conda 环境 xtuner）==
+torch: 2.9.1+cu128 | cuda: 12.8 | available: True
+device_count: 2
+bf16 supported: True
+[0] NVIDIA GeForce RTX 4080 SUPER | 31 GB
+[1] NVIDIA GeForce RTX 4080 SUPER | 31 GB
+
+== 提醒：四项结果抄进 log.md；驱动需 ≥550.127.08（建议 ≥580）；device_count 应为 2 ==

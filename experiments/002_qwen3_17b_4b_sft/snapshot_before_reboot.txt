@@ -1,0 +1,65 @@
+# 现场快照（重启前）
+Sun Sep 20 19:08:56 CST 2026
+
+== 磁盘 ==
+/dev/md0         50G   27G   24G  53% /root/autodl-tmp
+
+== GPU ==
+GPU 0: NVIDIA GeForce RTX 4080 SUPER
+GPU 1: NVIDIA GeForce RTX 4080 SUPER
+
+== 模型 ==
+3.8G	/root/autodl-tmp/xtuner-lab/models/Qwen3-1.7B
+7.6G	/root/autodl-tmp/xtuner-lab/models/Qwen3-4B
+
+== work_dir ==
+36K	/root/autodl-tmp/xtuner-lab/experiments/002_qwen3_17b_4b_sft/work_dir/20260920164105
+3.8G	/root/autodl-tmp/xtuner-lab/experiments/002_qwen3_17b_4b_sft/work_dir/20260920164728
+3.8G	/root/autodl-tmp/xtuner-lab/experiments/002_qwen3_17b_4b_sft/work_dir/20260920172200
+7.6G	/root/autodl-tmp/xtuner-lab/experiments/002_qwen3_17b_4b_sft/work_dir/20260920180100
+
+== 日志清单 ==
+-rw-r--r-- 1 root root    3439 Sep 20 16:10 /root/autodl-tmp/xtuner-lab/experiments/002_qwen3_17b_4b_sft/log_check.txt
+-rw-r--r-- 1 root root   37532 Sep 20 16:14 /root/autodl-tmp/xtuner-lab/experiments/002_qwen3_17b_4b_sft/log_install.txt
+-rw-r--r-- 1 root root 1073197 Sep 20 16:15 /root/autodl-tmp/xtuner-lab/experiments/002_qwen3_17b_4b_sft/log_models.txt
+-rw-r--r-- 1 root root   47290 Sep 20 16:41 /root/autodl-tmp/xtuner-lab/experiments/002_qwen3_17b_4b_sft/log_r1.txt
+-rw-r--r-- 1 root root  102778 Sep 20 17:11 /root/autodl-tmp/xtuner-lab/experiments/002_qwen3_17b_4b_sft/log_r2.txt
+-rw-r--r-- 1 root root  108159 Sep 20 17:47 /root/autodl-tmp/xtuner-lab/experiments/002_qwen3_17b_4b_sft/log_r3.txt
+-rw-r--r-- 1 root root  117516 Sep 20 18:56 /root/autodl-tmp/xtuner-lab/experiments/002_qwen3_17b_4b_sft/log_r4.txt
+-rw-r--r-- 1 root root   33044 Sep 20 15:48 /root/autodl-tmp/xtuner-lab/experiments/002_qwen3_17b_4b_sft/log_setup.txt
+-rw-r--r-- 1 root root     139 Sep 20 15:53 /root/autodl-tmp/xtuner-lab/experiments/002_qwen3_17b_4b_sft/log_setup_part2.txt
+
+== xtuner 版本 ==
+6c06f96e Fix nccl lmdeploy (#2082)
+
+== 各 run 的 git-info ==
+[/root/autodl-tmp/xtuner-lab/experiments/002_qwen3_17b_4b_sft/work_dir/20260920164105/git-info-begin-0]
+
+[/root/autodl-tmp/xtuner-lab/experiments/002_qwen3_17b_4b_sft/work_dir/20260920164728/git-info-begin-0]
+
+[/root/autodl-tmp/xtuner-lab/experiments/002_qwen3_17b_4b_sft/work_dir/20260920172200/git-info-begin-0]
+
+[/root/autodl-tmp/xtuner-lab/experiments/002_qwen3_17b_4b_sft/work_dir/20260920180100/git-info-begin-0]
+
+
+== 各 run 的 git-info（修正版：目录内文件） ==
+-- /root/autodl-tmp/xtuner-lab/experiments/002_qwen3_17b_4b_sft/work_dir/20260920164105/git-info-begin-0/staged.diff
+
+-- /root/autodl-tmp/xtuner-lab/experiments/002_qwen3_17b_4b_sft/work_dir/20260920164105/git-info-begin-0/unstaged.diff
+
+-- /root/autodl-tmp/xtuner-lab/experiments/002_qwen3_17b_4b_sft/work_dir/20260920164728/git-info-begin-0/staged.diff
+
+-- /root/autodl-tmp/xtuner-lab/experiments/002_qwen3_17b_4b_sft/work_dir/20260920164728/git-info-begin-0/unstaged.diff
+
+-- /root/autodl-tmp/xtuner-lab/experiments/002_qwen3_17b_4b_sft/work_dir/20260920172200/git-info-begin-0/staged.diff
+
+-- /root/autodl-tmp/xtuner-lab/experiments/002_qwen3_17b_4b_sft/work_dir/20260920172200/git-info-begin-0/unstaged.diff
+
+-- /root/autodl-tmp/xtuner-lab/experiments/002_qwen3_17b_4b_sft/work_dir/20260920180100/git-info-begin-0/staged.diff
+
+-- /root/autodl-tmp/xtuner-lab/experiments/002_qwen3_17b_4b_sft/work_dir/20260920180100/git-info-begin-0/unstaged.diff
+
+（说明：git-info 的 staged.diff / unstaged.diff 均为空 → 各 run 启动时工作区干净，版本 6c06f96e）
+（说明：hf-100 的 safetensors 权重未拉回本地，仍在云端——val loss 评估要用；释放实例前再拉）
+（权重核对：R2/R3 hf-100 = 单分片 4.06GB；R4 = 双分片合计 8.04GB；索引所列分片全部在位，无残缺；R1 无 hf-100——第一步 OOM、未到存档环节，log_r1 的 Saving HF 次数 = 0）
+（重启后核验（19:25 前后）：地址不变、老连接直接通；PID1 启动 = 19:23:34；数据盘扩容生效 = 250G（224G 可用）；双卡在位；模型/数据完好；xtuner import OK）

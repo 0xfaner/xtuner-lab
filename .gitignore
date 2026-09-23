@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+work_dir*/
+work_dir_*/
+.autodl.env
+models/
+data/
+log_models.txt
+log_setup*.txt
+pip_install.log

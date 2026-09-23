@@ -1,0 +1,140 @@
+#!/usr/bin/env bash
+# [xtuner-lab fork of examples/v1/scripts/run_rl.sh @ xtuner 6c06f96] 唯一改动：lmdeploy 分支的 PYTORCH_CUDA_ALLOC_CONF 可被 XTUNER_CUDA_ALLOC_CONF 覆盖（默认不变）。
+set -ex
+ray stop --force
+CONFIG_PATH=$1
+INFER_BACKEND=$2
+MODEL_PATH=$3
+DATA_PATH=$4
+EVAL_DATA_PATH=${5:-""}
+ACCELERATOR=${6:-"gpu"} # "gpu" or "npu"
+ACCELERATOR=$(echo "$ACCELERATOR" | tr '[:lower:]' '[:upper:]')
+if [ $ACCELERATOR != "GPU" ] && [ $ACCELERATOR != "NPU" ]; then
+  echo "Error: ACCELERATOR must be either 'gpu' or 'npu'!"
+  exit 1
+fi
+if [ "$ACCELERATOR" = "NPU" ]; then
+  accelerator_per_node=${7:-16}
+else
+  if [ -n "${CUDA_VISIBLE_DEVICES:-}" ]; then
+    IFS=',' read -ra visible_devices <<< "${CUDA_VISIBLE_DEVICES}"
+    accelerator_per_node=${#visible_devices[@]}
+  else
+    accelerator_per_node=${7:-8}
+  fi
+fi
+export ACCELERATOR
+RAY_ACCELERATOR_ARGS=()
+if [ "$ACCELERATOR" = "GPU" ]; then
+  RAY_ACCELERATOR_ARGS=(--num-gpus="$accelerator_per_node")
+fi
+
+ulimit -n 65536
+
+export PYTHONPATH=$(pwd):$PYTHONPATH
+
+export MASTER_PORT=6000
+export WORLD_SIZE=${NODE_COUNT:-"1"}
+export RANK=${NODE_RANK:-"0"}
+export RAY_MASTER_ADDR=${MASTER_ADDR:-"127.0.0.1"}
+export RAY_RANK=${RANK:-0}
+export RAY_HEAD_PORT=${RAY_HEAD_PORT:-"6379"}
+export RAY_DASHBOARD_PORT=${RAY_DASHBOARD_PORT:-"8265"}
+
+export MODEL_PATH=$MODEL_PATH
+export DATA_PATH=$DATA_PATH
+export EVAL_DATA_PATH=$EVAL_DATA_PATH
+export XTUNER_USE_FA3=${XTUNER_USE_FA3:-1}
+export XTUNER_LOG_LEVEL=${XTUNER_LOG_LEVEL:-"INFO"}
+export PYTHONUNBUFFERED=1
+
+infer_backend_lower=$(echo "$INFER_BACKEND" | tr '[:upper:]' '[:lower:]')
+if [ "$infer_backend_lower" = "sglang" ]; then
+  export XTUNER_USE_SGLANG=1
+  unset PYTORCH_CUDA_ALLOC_CONF
+  export SGLANG_ALLOW_OVERWRITE_LONGER_CONTEXT_LEN=1
+  export SGLANG_ENABLE_HEALTH_ENDPOINT_GENERATION=False
+elif [ "$infer_backend_lower" = "lmdeploy" ]; then
+  export XTUNER_USE_LMDEPLOY=1
+  export PYTORCH_CUDA_ALLOC_CONF="${XTUNER_CUDA_ALLOC_CONF:-expandable_segments:True}"
+  export PYTHONPATH=$LMDEPLOY_PATH:$PYTHONPATH
+elif [ "$infer_backend_lower" = "vllm" ]; then
+  export XTUNER_USE_VLLM=1
+  export PYTORCH_CUDA_ALLOC_CONF='expandable_segments:True'
+else
+  echo "Error: INFER_BACKEND '$INFER_BACKEND' is not supported or not specified!"
+  exit 1
+fi 
+
+current_time=$(date "+%m%d%H")
+model_dir_name=$(basename "$MODEL_PATH")
+data_dir_name=$(basename "$(dirname "$DATA_PATH")")
+
+if [ "x$WORK_DIR" = "x" ]; then
+  DIR=$(pwd)
+  export WORK_DIR="${DIR}/work_dirs/${model_dir_name}_${data_dir_name}_${infer_backend_lower}"
+else
+  export WORK_DIR=$WORK_DIR
+fi
+echo "WORK_DIR: $WORK_DIR"
+if [ ! -d "$WORK_DIR" ]; then
+  mkdir -p "$WORK_DIR"
+fi
+
+export LMDEPLOY_LOG_FILE="${WORK_DIR}/lmdeploy_log_${current_time}.txt"
+if [ "$ACCELERATOR" = "GPU" ]; then
+    export XTUNER_RL_MEM_DIR="${WORK_DIR}/mem_${current_time}"
+fi
+
+node_count=${NODE_COUNT:-1}
+expected_accelerator_count=$((node_count * accelerator_per_node))
+expected_accelerator_count=${XTUNER_RL_NUM_WORKERS:-$expected_accelerator_count}
+export XTUNER_RL_NUM_WORKERS=${expected_accelerator_count}
+
+WORK_DIR=$(realpath "$WORK_DIR")
+if [ "$RAY_RANK" -eq 0 ]; then
+  rm -rf /tmp/ray_log
+  export RAY_LOG_DIR="${WORK_DIR}/ray_${current_time}/"
+  mkdir -p ${RAY_LOG_DIR}
+  ln -sfn "${RAY_LOG_DIR}" /tmp/ray_log
+  ray start --head \
+    --node-ip-address="$RAY_MASTER_ADDR" \
+    --port="$RAY_HEAD_PORT" \
+    --dashboard-host=0.0.0.0 \
+    --dashboard-port=$RAY_DASHBOARD_PORT \
+    --include-dashboard=true \
+    --disable-usage-stats \
+    "${RAY_ACCELERATOR_ARGS[@]}" \
+    --temp-dir="/tmp/ray_log/"
+else
+  while true; do
+    if curl --connect-timeout 2 "http://${RAY_MASTER_ADDR}:${RAY_DASHBOARD_PORT}" >/dev/null 2>&1; then
+      echo "Successfully connected to Ray master at ${RAY_MASTER_ADDR}:${RAY_DASHBOARD_PORT}"
+      break
+    else
+      echo "Waiting for Ray master at ${RAY_MASTER_ADDR}:${RAY_DASHBOARD_PORT} to be available..."
+      sleep 2
+    fi
+  done
+  ray start --address="$RAY_MASTER_ADDR:$RAY_HEAD_PORT" --block --disable-usage-stats "${RAY_ACCELERATOR_ARGS[@]}"
+fi
+
+while true; do
+  result=$(ray status | grep ${ACCELERATOR} | cut -d ' ' -f2 | cut -d '/' -f2)
+  if [ "$result" = "$expected_accelerator_count.0" ]; then
+    break
+  else
+    echo "Waiting for ${ACCELERATOR} count to be $expected_accelerator_count, current: $result"
+    sleep 2
+  fi
+done
+
+SCRIPT_NAME=$(basename "$0")
+cp "$0" "${WORK_DIR}/${SCRIPT_NAME}"
+cp "$CONFIG_PATH" "${WORK_DIR}/config.py"
+LOG_FILE="${WORK_DIR}/training_log_${current_time}.txt"
+
+python xtuner/v1/train/cli/rl.py \
+    --config $CONFIG_PATH \
+    --num-workers $XTUNER_RL_NUM_WORKERS \
+    2>&1 | tee -a "${WORK_DIR}/training_log_${current_time}.txt"

@@ -1,0 +1,1170 @@
+W0920 20:00:09.740000 3498 site-packages/torch/distributed/run.py:803] 
+W0920 20:00:09.740000 3498 site-packages/torch/distributed/run.py:803] *****************************************
+W0920 20:00:09.740000 3498 site-packages/torch/distributed/run.py:803] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0920 20:00:09.740000 3498 site-packages/torch/distributed/run.py:803] *****************************************
+Could not find the bitsandbytes CUDA binary at PosixPath('/root/miniconda3/envs/xtuner/lib/python3.11/site-packages/bitsandbytes/libbitsandbytes_cuda128.so')
+The installed version of bitsandbytes was compiled without GPU support. 8-bit optimizers, 8-bit multiplication, and GPU quantization are unavailable.
+Could not find the bitsandbytes CUDA binary at PosixPath('/root/miniconda3/envs/xtuner/lib/python3.11/site-packages/bitsandbytes/libbitsandbytes_cuda128.so')
+The installed version of bitsandbytes was compiled without GPU support. 8-bit optimizers, 8-bit multiplication, and GPU quantization are unavailable.
+Import FlashAttention 2 failed No module named 'flash_attn', Please install it manually.
+Import FlashAttention 2 failed No module named 'flash_attn', Please install it manually.
+[XTuner][2026-09-20 20:00:17][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-20 20:00:17][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-20 20:00:17][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-20 20:00:17][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-20 20:00:17][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-20 20:00:17][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-20 20:00:17][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-20 20:00:17][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-20 20:00:17][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-20 20:00:17][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-20 20:00:17][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-20 20:00:17][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-20 20:00:17][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-20 20:00:17][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-20 20:00:17][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-20 20:00:17][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-20 20:00:17][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-20 20:00:17][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-20 20:00:17][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-20 20:00:17][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-20 20:00:17][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-20 20:00:17][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-20 20:00:17][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-20 20:00:17][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-20 20:00:17][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-20 20:00:17][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-20 20:00:17][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-20 20:00:17][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-20 20:00:17][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-20 20:00:17][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-20 20:00:17][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-20 20:00:17][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-20 20:00:17][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-20 20:00:17][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-20 20:00:17][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-20 20:00:17][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-20 20:00:17][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-20 20:00:17][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-20 20:00:17][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-20 20:00:17][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-20 20:00:17][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-20 20:00:17][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-20 20:00:17][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-20 20:00:17][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-20 20:00:17][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-20 20:00:17][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-20 20:00:17][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-20 20:00:17][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-20 20:00:17][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-20 20:00:17][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-20 20:00:17][INFO] set HF_MODULES_CACHE to /root/.cache/huggingface/modules_cache_autodl-container-05dd4aa883-5a476807_3565 for current process (hostname=autodl-container-05dd4aa883-5a476807, pid=3565)
+[XTuner][2026-09-20 20:00:17][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-20 20:00:17][INFO] set HF_MODULES_CACHE to /root/.cache/huggingface/modules_cache_autodl-container-05dd4aa883-5a476807_3566 for current process (hostname=autodl-container-05dd4aa883-5a476807, pid=3566)
+[XTuner][2026-09-20 20:00:17][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[Gloo] Rank [Gloo] Rank 1 is connected to 01 is connected to  peer ranks. 1Expected number of connected peer ranks is :  peer ranks. 1Expected number of connected peer ranks is : 
+1
+[XTuner][RANK 0][2026-09-20 20:00:18][WARNING] `resume_cfg` is deprecated, please use `auto_resume` and `load_checkpoint_cfg` instead
+[XTuner][RANK 0][2026-09-20 20:00:18][INFO] 
+============XTuner Training Environment============
+XTUNER_DETERMINISTIC: None
+XTUNER_GC_ENABLE: None
+XTUNER_FILE_OPEN_CONCURRENCY: None
+XTUNER_TOKENIZE_CHUNK_SIZE: None
+XTUNER_TOKENIZE_WORKERS: None
+XTUNER_ACTIVATION_OFFLOAD: None
+XTUNER_USE_FA3: 0
+XTUNER_DISPATCHER_DEBUG: None
+XTUNER_ROUTER_DEBUG: None
+XTUNER_DECORD_VIDEO_THREADS: None
+XTUNER_USE_CUTLASS_GROUP_GEMM: None
+GROUPED_GEMM_USE_CUTLASS: None
+XTUNER_USE_NATIVE_RMSNORM: None
+XTUNER_SM_MARGIN: None
+XTUNER_RL_FP8_QUANTIZE_IN_BF16: None
+==================================================
+[Gloo] Rank [Gloo] Rank 0 is connected to 11 is connected to  peer ranks. 1Expected number of connected peer ranks is :  peer ranks. 1Expected number of connected peer ranks is : 
+1
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[XTuner][RANK 0][2026-09-20 20:00:18][WARNING] Setting model_cfg.lm_loss_cfg from Trainer's loss_cfg for backward compatibility. In the future, please set lm_loss_cfg directly in model_cfg instead of Trainer.
+[XTuner][RANK 0][2026-09-20 20:00:18][WARNING] FSDPConfig.torch_compile is deprecated, and will be removed in version 1.1.0. Please use XTunerBaseModelConfig.compile_cfg to control whether to use torch.compile for the model
+[XTuner][RANK 0][2026-09-20 20:00:18][WARNING] `dataset_cfg` is deprecated, please use `dataloader_cfg.dataset_config_list` instead
+[Gloo] Rank [Gloo] Rank 1 is connected to 1 peer ranks. 0Expected number of connected peer ranks is :  is connected to 11
+ peer ranks. Expected number of connected peer ranks is : 1
+[XTuner][RANK 1][2026-09-20 20:00:19][SUCCESS] [Build Datasets] Elapsed time 0.43 seconds
+[XTuner][RANK 0][2026-09-20 20:00:19][SUCCESS] [Build Datasets] Elapsed time 0.43 seconds
+[XTuner][RANK 0][2026-09-20 20:00:19][INFO] [Dataset] Start packing data of ExpandSoftPackDataset.
+[XTuner][RANK 0][2026-09-20 20:00:19][INFO] Using 8 pack workers for packing datasets.
+0it [00:00, ?it/s]1it [00:00, 72.28it/s]
+0it [00:00, ?it/s]1it [00:00, 71.09it/s]
+[XTuner][RANK 1][2026-09-20 20:00:19][SUCCESS] [Pack Datasets] Elapsed time 0.25 seconds
+[transformers] Unrecognized keys in `rope_parameters` for 'rope_type'='default': {'mscale', 'beta_fast', 'mscale_all_dim', 'long_factor', 'original_max_position_embeddings', 'beta_slow', 'short_factor', 'factor', 'truncate', 'low_freq_factor', 'high_freq_factor', 'mrope_section'}
+[XTuner][RANK 0][2026-09-20 20:00:19][SUCCESS] [Pack Datasets] Elapsed time 0.29 seconds
+[XTuner][RANK 0][2026-09-20 20:00:19][INFO] [Dataset] (Original) 2000 samples.
+[XTuner][RANK 0][2026-09-20 20:00:19][INFO] [Dataset] (Packed) 68 samples.
+[transformers] Unrecognized keys in `rope_parameters` for 'rope_type'='default': {'factor', 'high_freq_factor', 'truncate', 'mscale_all_dim', 'beta_fast', 'long_factor', 'short_factor', 'beta_slow', 'mrope_section', 'mscale', 'original_max_position_embeddings', 'low_freq_factor'}
+[Gloo] Rank [Gloo] Rank 1 is connected to 1 peer ranks. Expected number of connected peer ranks is : 1
+0 is connected to 1 peer ranks. Expected number of connected peer ranks is : 1
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[FSDP Sharding]:   0%|          | 0/36 [00:00<?, ?it/s]/root/workspace/xtuner/xtuner/v1/model/utils/checkpointing.py:91: FutureWarning: Please specify CheckpointImpl.NO_REENTRANT as CheckpointImpl.REENTRANT will soon be removed as the default and eventually deprecated.
+  return checkpoint_wrapper(
+[FSDP Sharding]:   0%|          | 0/36 [00:00<?, ?it/s]/root/workspace/xtuner/xtuner/v1/model/utils/checkpointing.py:91: FutureWarning: Please specify CheckpointImpl.NO_REENTRANT as CheckpointImpl.REENTRANT will soon be removed as the default and eventually deprecated.
+  return checkpoint_wrapper(
+[FSDP Sharding]:  28%|██▊       | 10/36 [00:00<00:00, 95.70it/s][FSDP Sharding]:  33%|███▎      | 12/36 [00:00<00:00, 117.71it/s][FSDP Sharding]:  72%|███████▏  | 26/36 [00:00<00:00, 128.06it/s][FSDP Sharding]:  78%|███████▊  | 28/36 [00:00<00:00, 138.25it/s][FSDP Sharding]: 100%|██████████| 36/36 [00:00<00:00, 138.23it/s]
+[FSDP Sharding]: 100%|██████████| 36/36 [00:00<00:00, 128.02it/s]
+[XTuner][RANK 0][2026-09-20 20:00:20][INFO] FSDPQwen3Dense(
+  (norm): FSDPRMSNorm((2560,), type=default, eps=1e-06)
+  (lm_head): FSDPLMHead(in_features=2560, out_features=151936, bias=False)
+  (layers): ModuleDict(
+    (0): FSDPCheckpointWrapper(
+      (_checkpoint_wrapped_module): DenseDecoderLayer(
+        (self_attn): MultiHeadAttention(
+          (q_proj): _Linear(in_features=2560, out_features=4096, bias=False)
+          (k_proj): _Linear(in_features=2560, out_features=1024, bias=False)
+          (v_proj): _Linear(in_features=2560, out_features=1024, bias=False)
+          (o_proj): _Linear(in_features=4096, out_features=2560, bias=False)
+          (q_norm): RMSNorm((128,), type=default, eps=1e-06)
+          (k_norm): RMSNorm((128,), type=default, eps=1e-06)
+        )
+        (mlp): DenseMLP(
+          (gate_proj): _Linear(in_features=2560, out_features=9728, bias=False)
+          (up_proj): _Linear(in_features=2560, out_features=9728, bias=False)
+          (down_proj): _Linear(in_features=9728, out_features=2560, bias=False)
+        )
+        (input_layernorm): RMSNorm((2560,), type=default, eps=1e-06)
+        (post_attention_layernorm): RMSNorm((2560,), type=default, eps=1e-06)
+      )
+    )
+    (1): FSDPCheckpointWrapper(
+      (_checkpoint_wrapped_module): DenseDecoderLayer(
+        (self_attn): MultiHeadAttention(
+          (q_proj): _Linear(in_features=2560, out_features=4096, bias=False)
+          (k_proj): _Linear(in_features=2560, out_features=1024, bias=False)
+          (v_proj): _Linear(in_features=2560, out_features=1024, bias=False)
+          (o_proj): _Linear(in_features=4096, out_features=2560, bias=False)
+          (q_norm): RMSNorm((128,), type=default, eps=1e-06)
+          (k_norm): RMSNorm((128,), type=default, eps=1e-06)
+        )
+        (mlp): DenseMLP(
+          (gate_proj): _Linear(in_features=2560, out_features=9728, bias=False)
+          (up_proj): _Linear(in_features=2560, out_features=9728, bias=False)
+          (down_proj): _Linear(in_features=9728, out_features=2560, bias=False)
+        )
+        (input_layernorm): RMSNorm((2560,), type=default, eps=1e-06)
+        (post_attention_layernorm): RMSNorm((2560,), type=default, eps=1e-06)
+      )
+    )
+    (2): FSDPCheckpointWrapper(
+      (_checkpoint_wrapped_module): DenseDecoderLayer(
+        (self_attn): MultiHeadAttention(
+          (q_proj): _Linear(in_features=2560, out_features=4096, bias=False)
+          (k_proj): _Linear(in_features=2560, out_features=1024, bias=False)
+          (v_proj): _Linear(in_features=2560, out_features=1024, bias=False)
+          (o_proj): _Linear(in_features=4096, out_features=2560, bias=False)
+          (q_norm): RMSNorm((128,), type=default, eps=1e-06)
+          (k_norm): RMSNorm((128,), type=default, eps=1e-06)
+        )
+        (mlp): DenseMLP(
+          (gate_proj): _Linear(in_features=2560, out_features=9728, bias=False)
+          (up_proj): _Linear(in_features=2560, out_features=9728, bias=False)
+          (down_proj): _Linear(in_features=9728, out_features=2560, bias=False)
+        )
+        (input_layernorm): RMSNorm((2560,), type=default, eps=1e-06)
+        (post_attention_layernorm): RMSNorm((2560,), type=default, eps=1e-06)
+      )
+    )
+    (3): FSDPCheckpointWrapper(
+      (_checkpoint_wrapped_module): DenseDecoderLayer(
+        (self_attn): MultiHeadAttention(
+          (q_proj): _Linear(in_features=2560, out_features=4096, bias=False)
+          (k_proj): _Linear(in_features=2560, out_features=1024, bias=False)
+          (v_proj): _Linear(in_features=2560, out_features=1024, bias=False)
+          (o_proj): _Linear(in_features=4096, out_features=2560, bias=False)
+          (q_norm): RMSNorm((128,), type=default, eps=1e-06)
+          (k_norm): RMSNorm((128,), type=default, eps=1e-06)
+        )
+        (mlp): DenseMLP(
+          (gate_proj): _Linear(in_features=2560, out_features=9728, bias=False)
+          (up_proj): _Linear(in_features=2560, out_features=9728, bias=False)
+          (down_proj): _Linear(in_features=9728, out_features=2560, bias=False)
+        )
+        (input_layernorm): RMSNorm((2560,), type=default, eps=1e-06)
+        (post_attention_layernorm): RMSNorm((2560,), type=default, eps=1e-06)
+      )
+    )
+    (4): FSDPCheckpointWrapper(
+      (_checkpoint_wrapped_module): DenseDecoderLayer(
+        (self_attn): MultiHeadAttention(
+          (q_proj): _Linear(in_features=2560, out_features=4096, bias=False)
+          (k_proj): _Linear(in_features=2560, out_features=1024, bias=False)
+          (v_proj): _Linear(in_features=2560, out_features=1024, bias=False)
+          (o_proj): _Linear(in_features=4096, out_features=2560, bias=False)
+          (q_norm): RMSNorm((128,), type=default, eps=1e-06)
+          (k_norm): RMSNorm((128,), type=default, eps=1e-06)
+        )
+        (mlp): DenseMLP(
+          (gate_proj): _Linear(in_features=2560, out_features=9728, bias=False)
+          (up_proj): _Linear(in_features=2560, out_features=9728, bias=False)
+          (down_proj): _Linear(in_features=9728, out_features=2560, bias=False)
+        )
+        (input_layernorm): RMSNorm((2560,), type=default, eps=1e-06)
+        (post_attention_layernorm): RMSNorm((2560,), type=default, eps=1e-06)
+      )
+    )
+    (5): FSDPCheckpointWrapper(
+      (_checkpoint_wrapped_module): DenseDecoderLayer(
+        (self_attn): MultiHeadAttention(
+          (q_proj): _Linear(in_features=2560, out_features=4096, bias=False)
+          (k_proj): _Linear(in_features=2560, out_features=1024, bias=False)
+          (v_proj): _Linear(in_features=2560, out_features=1024, bias=False)
+          (o_proj): _Linear(in_features=4096, out_features=2560, bias=False)
+          (q_norm): RMSNorm((128,), type=default, eps=1e-06)
+          (k_norm): RMSNorm((128,), type=default, eps=1e-06)
+        )
+        (mlp): DenseMLP(
+          (gate_proj): _Linear(in_features=2560, out_features=9728, bias=False)
+          (up_proj): _Linear(in_features=2560, out_features=9728, bias=False)
+          (down_proj): _Linear(in_features=9728, out_features=2560, bias=False)
+        )
+        (input_layernorm): RMSNorm((2560,), type=default, eps=1e-06)
+        (post_attention_layernorm): RMSNorm((2560,), type=default, eps=1e-06)
+      )
+    )
+    (6): FSDPCheckpointWrapper(
+      (_checkpoint_wrapped_module): DenseDecoderLayer(
+        (self_attn): MultiHeadAttention(
+          (q_proj): _Linear(in_features=2560, out_features=4096, bias=False)
+          (k_proj): _Linear(in_features=2560, out_features=1024, bias=False)
+          (v_proj): _Linear(in_features=2560, out_features=1024, bias=False)
+          (o_proj): _Linear(in_features=4096, out_features=2560, bias=False)
+          (q_norm): RMSNorm((128,), type=default, eps=1e-06)
+          (k_norm): RMSNorm((128,), type=default, eps=1e-06)
+        )
+        (mlp): DenseMLP(
+          (gate_proj): _Linear(in_features=2560, out_features=9728, bias=False)
+          (up_proj): _Linear(in_features=2560, out_features=9728, bias=False)
+          (down_proj): _Linear(in_features=9728, out_features=2560, bias=False)
+        )
+        (input_layernorm): RMSNorm((2560,), type=default, eps=1e-06)
+        (post_attention_layernorm): RMSNorm((2560,), type=default, eps=1e-06)
+      )
+    )
+    (7): FSDPCheckpointWrapper(
+      (_checkpoint_wrapped_module): DenseDecoderLayer(
+        (self_attn): MultiHeadAttention(
+          (q_proj): _Linear(in_features=2560, out_features=4096, bias=False)
+          (k_proj): _Linear(in_features=2560, out_features=1024, bias=False)
+          (v_proj): _Linear(in_features=2560, out_features=1024, bias=False)
+          (o_proj): _Linear(in_features=4096, out_features=2560, bias=False)
+          (q_norm): RMSNorm((128,), type=default, eps=1e-06)
+          (k_norm): RMSNorm((128,), type=default, eps=1e-06)
+        )
+        (mlp): DenseMLP(
+          (gate_proj): _Linear(in_features=2560, out_features=9728, bias=False)
+          (up_proj): _Linear(in_features=2560, out_features=9728, bias=False)
+          (down_proj): _Linear(in_features=9728, out_features=2560, bias=False)
+        )
+        (input_layernorm): RMSNorm((2560,), type=default, eps=1e-06)
+        (post_attention_layernorm): RMSNorm((2560,), type=default, eps=1e-06)
+      )
+    )
+    (8): FSDPCheckpointWrapper(
+      (_checkpoint_wrapped_module): DenseDecoderLayer(
+        (self_attn): MultiHeadAttention(
+          (q_proj): _Linear(in_features=2560, out_features=4096, bias=False)
+          (k_proj): _Linear(in_features=2560, out_features=1024, bias=False)
+          (v_proj): _Linear(in_features=2560, out_features=1024, bias=False)
+          (o_proj): _Linear(in_features=4096, out_features=2560, bias=False)
+          (q_norm): RMSNorm((128,), type=default, eps=1e-06)
+          (k_norm): RMSNorm((128,), type=default, eps=1e-06)
+        )
+        (mlp): DenseMLP(
+          (gate_proj): _Linear(in_features=2560, out_features=9728, bias=False)
+          (up_proj): _Linear(in_features=2560, out_features=9728, bias=False)
+          (down_proj): _Linear(in_features=9728, out_features=2560, bias=False)
+        )
+        (input_layernorm): RMSNorm((2560,), type=default, eps=1e-06)
+        (post_attention_layernorm): RMSNorm((2560,), type=default, eps=1e-06)
+      )
+    )
+    (9): FSDPCheckpointWrapper(
+      (_checkpoint_wrapped_module): DenseDecoderLayer(
+        (self_attn): MultiHeadAttention(
+          (q_proj): _Linear(in_features=2560, out_features=4096, bias=False)
+          (k_proj): _Linear(in_features=2560, out_features=1024, bias=False)
+          (v_proj): _Linear(in_features=2560, out_features=1024, bias=False)
+          (o_proj): _Linear(in_features=4096, out_features=2560, bias=False)
+          (q_norm): RMSNorm((128,), type=default, eps=1e-06)
+          (k_norm): RMSNorm((128,), type=default, eps=1e-06)
+        )
+        (mlp): DenseMLP(
+          (gate_proj): _Linear(in_features=2560, out_features=9728, bias=False)
+          (up_proj): _Linear(in_features=2560, out_features=9728, bias=False)
+          (down_proj): _Linear(in_features=9728, out_features=2560, bias=False)
+        )
+        (input_layernorm): RMSNorm((2560,), type=default, eps=1e-06)
+        (post_attention_layernorm): RMSNorm((2560,), type=default, eps=1e-06)
+      )
+    )
+    (10): FSDPCheckpointWrapper(
+      (_checkpoint_wrapped_module): DenseDecoderLayer(
+        (self_attn): MultiHeadAttention(
+          (q_proj): _Linear(in_features=2560, out_features=4096, bias=False)
+          (k_proj): _Linear(in_features=2560, out_features=1024, bias=False)
+          (v_proj): _Linear(in_features=2560, out_features=1024, bias=False)
+          (o_proj): _Linear(in_features=4096, out_features=2560, bias=False)
+          (q_norm): RMSNorm((128,), type=default, eps=1e-06)
+          (k_norm): RMSNorm((128,), type=default, eps=1e-06)
+        )
+        (mlp): DenseMLP(
+          (gate_proj): _Linear(in_features=2560, out_features=9728, bias=False)
+          (up_proj): _Linear(in_features=2560, out_features=9728, bias=False)
+          (down_proj): _Linear(in_features=9728, out_features=2560, bias=False)
+        )
+        (input_layernorm): RMSNorm((2560,), type=default, eps=1e-06)
+        (post_attention_layernorm): RMSNorm((2560,), type=default, eps=1e-06)
+      )
+    )
+    (11): FSDPCheckpointWrapper(
+      (_checkpoint_wrapped_module): DenseDecoderLayer(
+        (self_attn): MultiHeadAttention(
+          (q_proj): _Linear(in_features=2560, out_features=4096, bias=False)
+          (k_proj): _Linear(in_features=2560, out_features=1024, bias=False)
+          (v_proj): _Linear(in_features=2560, out_features=1024, bias=False)
+          (o_proj): _Linear(in_features=4096, out_features=2560, bias=False)
+          (q_norm): RMSNorm((128,), type=default, eps=1e-06)
+          (k_norm): RMSNorm((128,), type=default, eps=1e-06)
+        )
+        (mlp): DenseMLP(
+          (gate_proj): _Linear(in_features=2560, out_features=9728, bias=False)
+          (up_proj): _Linear(in_features=2560, out_features=9728, bias=False)
+          (down_proj): _Linear(in_features=9728, out_features=2560, bias=False)
+        )
+        (input_layernorm): RMSNorm((2560,), type=default, eps=1e-06)
+        (post_attention_layernorm): RMSNorm((2560,), type=default, eps=1e-06)
+      )
+    )
+    (12): FSDPCheckpointWrapper(
+      (_checkpoint_wrapped_module): DenseDecoderLayer(
+        (self_attn): MultiHeadAttention(
+          (q_proj): _Linear(in_features=2560, out_features=4096, bias=False)
+          (k_proj): _Linear(in_features=2560, out_features=1024, bias=False)
+          (v_proj): _Linear(in_features=2560, out_features=1024, bias=False)
+          (o_proj): _Linear(in_features=4096, out_features=2560, bias=False)
+          (q_norm): RMSNorm((128,), type=default, eps=1e-06)
+          (k_norm): RMSNorm((128,), type=default, eps=1e-06)
+        )
+        (mlp): DenseMLP(
+          (gate_proj): _Linear(in_features=2560, out_features=9728, bias=False)
+          (up_proj): _Linear(in_features=2560, out_features=9728, bias=False)
+          (down_proj): _Linear(in_features=9728, out_features=2560, bias=False)
+        )
+        (input_layernorm): RMSNorm((2560,), type=default, eps=1e-06)
+        (post_attention_layernorm): RMSNorm((2560,), type=default, eps=1e-06)
+      )
+    )
+    (13): FSDPCheckpointWrapper(
+      (_checkpoint_wrapped_module): DenseDecoderLayer(
+        (self_attn): MultiHeadAttention(
+          (q_proj): _Linear(in_features=2560, out_features=4096, bias=False)
+          (k_proj): _Linear(in_features=2560, out_features=1024, bias=False)
+          (v_proj): _Linear(in_features=2560, out_features=1024, bias=False)
+          (o_proj): _Linear(in_features=4096, out_features=2560, bias=False)
+          (q_norm): RMSNorm((128,), type=default, eps=1e-06)
+          (k_norm): RMSNorm((128,), type=default, eps=1e-06)
+        )
+        (mlp): DenseMLP(
+          (gate_proj): _Linear(in_features=2560, out_features=9728, bias=False)
+          (up_proj): _Linear(in_features=2560, out_features=9728, bias=False)
+          (down_proj): _Linear(in_features=9728, out_features=2560, bias=False)
+        )
+        (input_layernorm): RMSNorm((2560,), type=default, eps=1e-06)
+        (post_attention_layernorm): RMSNorm((2560,), type=default, eps=1e-06)
+      )
+    )
+    (14): FSDPCheckpointWrapper(
+      (_checkpoint_wrapped_module): DenseDecoderLayer(
+        (self_attn): MultiHeadAttention(
+          (q_proj): _Linear(in_features=2560, out_features=4096, bias=False)
+          (k_proj): _Linear(in_features=2560, out_features=1024, bias=False)
+          (v_proj): _Linear(in_features=2560, out_features=1024, bias=False)
+          (o_proj): _Linear(in_features=4096, out_features=2560, bias=False)
+          (q_norm): RMSNorm((128,), type=default, eps=1e-06)
+          (k_norm): RMSNorm((128,), type=default, eps=1e-06)
+        )
+        (mlp): DenseMLP(
+          (gate_proj): _Linear(in_features=2560, out_features=9728, bias=False)
+          (up_proj): _Linear(in_features=2560, out_features=9728, bias=False)
+          (down_proj): _Linear(in_features=9728, out_features=2560, bias=False)
+        )
+        (input_layernorm): RMSNorm((2560,), type=default, eps=1e-06)
+        (post_attention_layernorm): RMSNorm((2560,), type=default, eps=1e-06)
+      )
+    )
+    (15): FSDPCheckpointWrapper(
+      (_checkpoint_wrapped_module): DenseDecoderLayer(
+        (self_attn): MultiHeadAttention(
+          (q_proj): _Linear(in_features=2560, out_features=4096, bias=False)
+          (k_proj): _Linear(in_features=2560, out_features=1024, bias=False)
+          (v_proj): _Linear(in_features=2560, out_features=1024, bias=False)
+          (o_proj): _Linear(in_features=4096, out_features=2560, bias=False)
+          (q_norm): RMSNorm((128,), type=default, eps=1e-06)
+          (k_norm): RMSNorm((128,), type=default, eps=1e-06)
+        )
+        (mlp): DenseMLP(
+          (gate_proj): _Linear(in_features=2560, out_features=9728, bias=False)
+          (up_proj): _Linear(in_features=2560, out_features=9728, bias=False)
+          (down_proj): _Linear(in_features=9728, out_features=2560, bias=False)
+        )
+        (input_layernorm): RMSNorm((2560,), type=default, eps=1e-06)
+        (post_attention_layernorm): RMSNorm((2560,), type=default, eps=1e-06)
+      )
+    )
+    (16): FSDPCheckpointWrapper(
+      (_checkpoint_wrapped_module): DenseDecoderLayer(
+        (self_attn): MultiHeadAttention(
+          (q_proj): _Linear(in_features=2560, out_features=4096, bias=False)
+          (k_proj): _Linear(in_features=2560, out_features=1024, bias=False)
+          (v_proj): _Linear(in_features=2560, out_features=1024, bias=False)
+          (o_proj): _Linear(in_features=4096, out_features=2560, bias=False)
+          (q_norm): RMSNorm((128,), type=default, eps=1e-06)
+          (k_norm): RMSNorm((128,), type=default, eps=1e-06)
+        )
+        (mlp): DenseMLP(
+          (gate_proj): _Linear(in_features=2560, out_features=9728, bias=False)
+          (up_proj): _Linear(in_features=2560, out_features=9728, bias=False)
+          (down_proj): _Linear(in_features=9728, out_features=2560, bias=False)
+        )
+        (input_layernorm): RMSNorm((2560,), type=default, eps=1e-06)
+        (post_attention_layernorm): RMSNorm((2560,), type=default, eps=1e-06)
+      )
+    )
+    (17): FSDPCheckpointWrapper(
+      (_checkpoint_wrapped_module): DenseDecoderLayer(
+        (self_attn): MultiHeadAttention(
+          (q_proj): _Linear(in_features=2560, out_features=4096, bias=False)
+          (k_proj): _Linear(in_features=2560, out_features=1024, bias=False)
+          (v_proj): _Linear(in_features=2560, out_features=1024, bias=False)
+          (o_proj): _Linear(in_features=4096, out_features=2560, bias=False)
+          (q_norm): RMSNorm((128,), type=default, eps=1e-06)
+          (k_norm): RMSNorm((128,), type=default, eps=1e-06)
+        )
+        (mlp): DenseMLP(
+          (gate_proj): _Linear(in_features=2560, out_features=9728, bias=False)
+          (up_proj): _Linear(in_features=2560, out_features=9728, bias=False)
+          (down_proj): _Linear(in_features=9728, out_features=2560, bias=False)
+        )
+        (input_layernorm): RMSNorm((2560,), type=default, eps=1e-06)
+        (post_attention_layernorm): RMSNorm((2560,), type=default, eps=1e-06)
+      )
+    )
+    (18): FSDPCheckpointWrapper(
+      (_checkpoint_wrapped_module): DenseDecoderLayer(
+        (self_attn): MultiHeadAttention(
+          (q_proj): _Linear(in_features=2560, out_features=4096, bias=False)
+          (k_proj): _Linear(in_features=2560, out_features=1024, bias=False)
+          (v_proj): _Linear(in_features=2560, out_features=1024, bias=False)
+          (o_proj): _Linear(in_features=4096, out_features=2560, bias=False)
+          (q_norm): RMSNorm((128,), type=default, eps=1e-06)
+          (k_norm): RMSNorm((128,), type=default, eps=1e-06)
+        )
+        (mlp): DenseMLP(
+          (gate_proj): _Linear(in_features=2560, out_features=9728, bias=False)
+          (up_proj): _Linear(in_features=2560, out_features=9728, bias=False)
+          (down_proj): _Linear(in_features=9728, out_features=2560, bias=False)
+        )
+        (input_layernorm): RMSNorm((2560,), type=default, eps=1e-06)
+        (post_attention_layernorm): RMSNorm((2560,), type=default, eps=1e-06)
+      )
+    )
+    (19): FSDPCheckpointWrapper(
+      (_checkpoint_wrapped_module): DenseDecoderLayer(
+        (self_attn): MultiHeadAttention(
+          (q_proj): _Linear(in_features=2560, out_features=4096, bias=False)
+          (k_proj): _Linear(in_features=2560, out_features=1024, bias=False)
+          (v_proj): _Linear(in_features=2560, out_features=1024, bias=False)
+          (o_proj): _Linear(in_features=4096, out_features=2560, bias=False)
+          (q_norm): RMSNorm((128,), type=default, eps=1e-06)
+          (k_norm): RMSNorm((128,), type=default, eps=1e-06)
+        )
+        (mlp): DenseMLP(
+          (gate_proj): _Linear(in_features=2560, out_features=9728, bias=False)
+          (up_proj): _Linear(in_features=2560, out_features=9728, bias=False)
+          (down_proj): _Linear(in_features=9728, out_features=2560, bias=False)
+        )
+        (input_layernorm): RMSNorm((2560,), type=default, eps=1e-06)
+        (post_attention_layernorm): RMSNorm((2560,), type=default, eps=1e-06)
+      )
+    )
+    (20): FSDPCheckpointWrapper(
+      (_checkpoint_wrapped_module): DenseDecoderLayer(
+        (self_attn): MultiHeadAttention(
+          (q_proj): _Linear(in_features=2560, out_features=4096, bias=False)
+          (k_proj): _Linear(in_features=2560, out_features=1024, bias=False)
+          (v_proj): _Linear(in_features=2560, out_features=1024, bias=False)
+          (o_proj): _Linear(in_features=4096, out_features=2560, bias=False)
+          (q_norm): RMSNorm((128,), type=default, eps=1e-06)
+          (k_norm): RMSNorm((128,), type=default, eps=1e-06)
+        )
+        (mlp): DenseMLP(
+          (gate_proj): _Linear(in_features=2560, out_features=9728, bias=False)
+          (up_proj): _Linear(in_features=2560, out_features=9728, bias=False)
+          (down_proj): _Linear(in_features=9728, out_features=2560, bias=False)
+        )
+        (input_layernorm): RMSNorm((2560,), type=default, eps=1e-06)
+        (post_attention_layernorm): RMSNorm((2560,), type=default, eps=1e-06)
+      )
+    )
+    (21): FSDPCheckpointWrapper(
+      (_checkpoint_wrapped_module): DenseDecoderLayer(
+        (self_attn): MultiHeadAttention(
+          (q_proj): _Linear(in_features=2560, out_features=4096, bias=False)
+          (k_proj): _Linear(in_features=2560, out_features=1024, bias=False)
+          (v_proj): _Linear(in_features=2560, out_features=1024, bias=False)
+          (o_proj): _Linear(in_features=4096, out_features=2560, bias=False)
+          (q_norm): RMSNorm((128,), type=default, eps=1e-06)
+          (k_norm): RMSNorm((128,), type=default, eps=1e-06)
+        )
+        (mlp): DenseMLP(
+          (gate_proj): _Linear(in_features=2560, out_features=9728, bias=False)
+          (up_proj): _Linear(in_features=2560, out_features=9728, bias=False)
+          (down_proj): _Linear(in_features=9728, out_features=2560, bias=False)
+        )
+        (input_layernorm): RMSNorm((2560,), type=default, eps=1e-06)
+        (post_attention_layernorm): RMSNorm((2560,), type=default, eps=1e-06)
+      )
+    )
+    (22): FSDPCheckpointWrapper(
+      (_checkpoint_wrapped_module): DenseDecoderLayer(
+        (self_attn): MultiHeadAttention(
+          (q_proj): _Linear(in_features=2560, out_features=4096, bias=False)
+          (k_proj): _Linear(in_features=2560, out_features=1024, bias=False)
+          (v_proj): _Linear(in_features=2560, out_features=1024, bias=False)
+          (o_proj): _Linear(in_features=4096, out_features=2560, bias=False)
+          (q_norm): RMSNorm((128,), type=default, eps=1e-06)
+          (k_norm): RMSNorm((128,), type=default, eps=1e-06)
+        )
+        (mlp): DenseMLP(
+          (gate_proj): _Linear(in_features=2560, out_features=9728, bias=False)
+          (up_proj): _Linear(in_features=2560, out_features=9728, bias=False)
+          (down_proj): _Linear(in_features=9728, out_features=2560, bias=False)
+        )
+        (input_layernorm): RMSNorm((2560,), type=default, eps=1e-06)
+        (post_attention_layernorm): RMSNorm((2560,), type=default, eps=1e-06)
+      )
+    )
+    (23): FSDPCheckpointWrapper(
+      (_checkpoint_wrapped_module): DenseDecoderLayer(
+        (self_attn): MultiHeadAttention(
+          (q_proj): _Linear(in_features=2560, out_features=4096, bias=False)
+          (k_proj): _Linear(in_features=2560, out_features=1024, bias=False)
+          (v_proj): _Linear(in_features=2560, out_features=1024, bias=False)
+          (o_proj): _Linear(in_features=4096, out_features=2560, bias=False)
+          (q_norm): RMSNorm((128,), type=default, eps=1e-06)
+          (k_norm): RMSNorm((128,), type=default, eps=1e-06)
+        )
+        (mlp): DenseMLP(
+          (gate_proj): _Linear(in_features=2560, out_features=9728, bias=False)
+          (up_proj): _Linear(in_features=2560, out_features=9728, bias=False)
+          (down_proj): _Linear(in_features=9728, out_features=2560, bias=False)
+        )
+        (input_layernorm): RMSNorm((2560,), type=default, eps=1e-06)
+        (post_attention_layernorm): RMSNorm((2560,), type=default, eps=1e-06)
+      )
+    )
+    (24): FSDPCheckpointWrapper(
+      (_checkpoint_wrapped_module): DenseDecoderLayer(
+        (self_attn): MultiHeadAttention(
+          (q_proj): _Linear(in_features=2560, out_features=4096, bias=False)
+          (k_proj): _Linear(in_features=2560, out_features=1024, bias=False)
+          (v_proj): _Linear(in_features=2560, out_features=1024, bias=False)
+          (o_proj): _Linear(in_features=4096, out_features=2560, bias=False)
+          (q_norm): RMSNorm((128,), type=default, eps=1e-06)
+          (k_norm): RMSNorm((128,), type=default, eps=1e-06)
+        )
+        (mlp): DenseMLP(
+          (gate_proj): _Linear(in_features=2560, out_features=9728, bias=False)
+          (up_proj): _Linear(in_features=2560, out_features=9728, bias=False)
+          (down_proj): _Linear(in_features=9728, out_features=2560, bias=False)
+        )
+        (input_layernorm): RMSNorm((2560,), type=default, eps=1e-06)
+        (post_attention_layernorm): RMSNorm((2560,), type=default, eps=1e-06)
+      )
+    )
+    (25): FSDPCheckpointWrapper(
+      (_checkpoint_wrapped_module): DenseDecoderLayer(
+        (self_attn): MultiHeadAttention(
+          (q_proj): _Linear(in_features=2560, out_features=4096, bias=False)
+          (k_proj): _Linear(in_features=2560, out_features=1024, bias=False)
+          (v_proj): _Linear(in_features=2560, out_features=1024, bias=False)
+          (o_proj): _Linear(in_features=4096, out_features=2560, bias=False)
+          (q_norm): RMSNorm((128,), type=default, eps=1e-06)
+          (k_norm): RMSNorm((128,), type=default, eps=1e-06)
+        )
+        (mlp): DenseMLP(
+          (gate_proj): _Linear(in_features=2560, out_features=9728, bias=False)
+          (up_proj): _Linear(in_features=2560, out_features=9728, bias=False)
+          (down_proj): _Linear(in_features=9728, out_features=2560, bias=False)
+        )
+        (input_layernorm): RMSNorm((2560,), type=default, eps=1e-06)
+        (post_attention_layernorm): RMSNorm((2560,), type=default, eps=1e-06)
+      )
+    )
+    (26): FSDPCheckpointWrapper(
+      (_checkpoint_wrapped_module): DenseDecoderLayer(
+        (self_attn): MultiHeadAttention(
+          (q_proj): _Linear(in_features=2560, out_features=4096, bias=False)
+          (k_proj): _Linear(in_features=2560, out_features=1024, bias=False)
+          (v_proj): _Linear(in_features=2560, out_features=1024, bias=False)
+          (o_proj): _Linear(in_features=4096, out_features=2560, bias=False)
+          (q_norm): RMSNorm((128,), type=default, eps=1e-06)
+          (k_norm): RMSNorm((128,), type=default, eps=1e-06)
+        )
+        (mlp): DenseMLP(
+          (gate_proj): _Linear(in_features=2560, out_features=9728, bias=False)
+          (up_proj): _Linear(in_features=2560, out_features=9728, bias=False)
+          (down_proj): _Linear(in_features=9728, out_features=2560, bias=False)
+        )
+        (input_layernorm): RMSNorm((2560,), type=default, eps=1e-06)
+        (post_attention_layernorm): RMSNorm((2560,), type=default, eps=1e-06)
+      )
+    )
+    (27): FSDPCheckpointWrapper(
+      (_checkpoint_wrapped_module): DenseDecoderLayer(
+        (self_attn): MultiHeadAttention(
+          (q_proj): _Linear(in_features=2560, out_features=4096, bias=False)
+          (k_proj): _Linear(in_features=2560, out_features=1024, bias=False)
+          (v_proj): _Linear(in_features=2560, out_features=1024, bias=False)
+          (o_proj): _Linear(in_features=4096, out_features=2560, bias=False)
+          (q_norm): RMSNorm((128,), type=default, eps=1e-06)
+          (k_norm): RMSNorm((128,), type=default, eps=1e-06)
+        )
+        (mlp): DenseMLP(
+          (gate_proj): _Linear(in_features=2560, out_features=9728, bias=False)
+          (up_proj): _Linear(in_features=2560, out_features=9728, bias=False)
+          (down_proj): _Linear(in_features=9728, out_features=2560, bias=False)
+        )
+        (input_layernorm): RMSNorm((2560,), type=default, eps=1e-06)
+        (post_attention_layernorm): RMSNorm((2560,), type=default, eps=1e-06)
+      )
+    )
+    (28): FSDPCheckpointWrapper(
+      (_checkpoint_wrapped_module): DenseDecoderLayer(
+        (self_attn): MultiHeadAttention(
+          (q_proj): _Linear(in_features=2560, out_features=4096, bias=False)
+          (k_proj): _Linear(in_features=2560, out_features=1024, bias=False)
+          (v_proj): _Linear(in_features=2560, out_features=1024, bias=False)
+          (o_proj): _Linear(in_features=4096, out_features=2560, bias=False)
+          (q_norm): RMSNorm((128,), type=default, eps=1e-06)
+          (k_norm): RMSNorm((128,), type=default, eps=1e-06)
+        )
+        (mlp): DenseMLP(
+          (gate_proj): _Linear(in_features=2560, out_features=9728, bias=False)
+          (up_proj): _Linear(in_features=2560, out_features=9728, bias=False)
+          (down_proj): _Linear(in_features=9728, out_features=2560, bias=False)
+        )
+        (input_layernorm): RMSNorm((2560,), type=default, eps=1e-06)
+        (post_attention_layernorm): RMSNorm((2560,), type=default, eps=1e-06)
+      )
+    )
+    (29): FSDPCheckpointWrapper(
+      (_checkpoint_wrapped_module): DenseDecoderLayer(
+        (self_attn): MultiHeadAttention(
+          (q_proj): _Linear(in_features=2560, out_features=4096, bias=False)
+          (k_proj): _Linear(in_features=2560, out_features=1024, bias=False)
+          (v_proj): _Linear(in_features=2560, out_features=1024, bias=False)
+          (o_proj): _Linear(in_features=4096, out_features=2560, bias=False)
+          (q_norm): RMSNorm((128,), type=default, eps=1e-06)
+          (k_norm): RMSNorm((128,), type=default, eps=1e-06)
+        )
+        (mlp): DenseMLP(
+          (gate_proj): _Linear(in_features=2560, out_features=9728, bias=False)
+          (up_proj): _Linear(in_features=2560, out_features=9728, bias=False)
+          (down_proj): _Linear(in_features=9728, out_features=2560, bias=False)
+        )
+        (input_layernorm): RMSNorm((2560,), type=default, eps=1e-06)
+        (post_attention_layernorm): RMSNorm((2560,), type=default, eps=1e-06)
+      )
+    )
+    (30): FSDPCheckpointWrapper(
+      (_checkpoint_wrapped_module): DenseDecoderLayer(
+        (self_attn): MultiHeadAttention(
+          (q_proj): _Linear(in_features=2560, out_features=4096, bias=False)
+          (k_proj): _Linear(in_features=2560, out_features=1024, bias=False)
+          (v_proj): _Linear(in_features=2560, out_features=1024, bias=False)
+          (o_proj): _Linear(in_features=4096, out_features=2560, bias=False)
+          (q_norm): RMSNorm((128,), type=default, eps=1e-06)
+          (k_norm): RMSNorm((128,), type=default, eps=1e-06)
+        )
+        (mlp): DenseMLP(
+          (gate_proj): _Linear(in_features=2560, out_features=9728, bias=False)
+          (up_proj): _Linear(in_features=2560, out_features=9728, bias=False)
+          (down_proj): _Linear(in_features=9728, out_features=2560, bias=False)
+        )
+        (input_layernorm): RMSNorm((2560,), type=default, eps=1e-06)
+        (post_attention_layernorm): RMSNorm((2560,), type=default, eps=1e-06)
+      )
+    )
+    (31): FSDPCheckpointWrapper(
+      (_checkpoint_wrapped_module): DenseDecoderLayer(
+        (self_attn): MultiHeadAttention(
+          (q_proj): _Linear(in_features=2560, out_features=4096, bias=False)
+          (k_proj): _Linear(in_features=2560, out_features=1024, bias=False)
+          (v_proj): _Linear(in_features=2560, out_features=1024, bias=False)
+          (o_proj): _Linear(in_features=4096, out_features=2560, bias=False)
+          (q_norm): RMSNorm((128,), type=default, eps=1e-06)
+          (k_norm): RMSNorm((128,), type=default, eps=1e-06)
+        )
+        (mlp): DenseMLP(
+          (gate_proj): _Linear(in_features=2560, out_features=9728, bias=False)
+          (up_proj): _Linear(in_features=2560, out_features=9728, bias=False)
+          (down_proj): _Linear(in_features=9728, out_features=2560, bias=False)
+        )
+        (input_layernorm): RMSNorm((2560,), type=default, eps=1e-06)
+        (post_attention_layernorm): RMSNorm((2560,), type=default, eps=1e-06)
+      )
+    )
+    (32): FSDPCheckpointWrapper(
+      (_checkpoint_wrapped_module): DenseDecoderLayer(
+        (self_attn): MultiHeadAttention(
+          (q_proj): _Linear(in_features=2560, out_features=4096, bias=False)
+          (k_proj): _Linear(in_features=2560, out_features=1024, bias=False)
+          (v_proj): _Linear(in_features=2560, out_features=1024, bias=False)
+          (o_proj): _Linear(in_features=4096, out_features=2560, bias=False)
+          (q_norm): RMSNorm((128,), type=default, eps=1e-06)
+          (k_norm): RMSNorm((128,), type=default, eps=1e-06)
+        )
+        (mlp): DenseMLP(
+          (gate_proj): _Linear(in_features=2560, out_features=9728, bias=False)
+          (up_proj): _Linear(in_features=2560, out_features=9728, bias=False)
+          (down_proj): _Linear(in_features=9728, out_features=2560, bias=False)
+        )
+        (input_layernorm): RMSNorm((2560,), type=default, eps=1e-06)
+        (post_attention_layernorm): RMSNorm((2560,), type=default, eps=1e-06)
+      )
+    )
+    (33): FSDPCheckpointWrapper(
+      (_checkpoint_wrapped_module): DenseDecoderLayer(
+        (self_attn): MultiHeadAttention(
+          (q_proj): _Linear(in_features=2560, out_features=4096, bias=False)
+          (k_proj): _Linear(in_features=2560, out_features=1024, bias=False)
+          (v_proj): _Linear(in_features=2560, out_features=1024, bias=False)
+          (o_proj): _Linear(in_features=4096, out_features=2560, bias=False)
+          (q_norm): RMSNorm((128,), type=default, eps=1e-06)
+          (k_norm): RMSNorm((128,), type=default, eps=1e-06)
+        )
+        (mlp): DenseMLP(
+          (gate_proj): _Linear(in_features=2560, out_features=9728, bias=False)
+          (up_proj): _Linear(in_features=2560, out_features=9728, bias=False)
+          (down_proj): _Linear(in_features=9728, out_features=2560, bias=False)
+        )
+        (input_layernorm): RMSNorm((2560,), type=default, eps=1e-06)
+        (post_attention_layernorm): RMSNorm((2560,), type=default, eps=1e-06)
+      )
+    )
+    (34): FSDPCheckpointWrapper(
+      (_checkpoint_wrapped_module): DenseDecoderLayer(
+        (self_attn): MultiHeadAttention(
+          (q_proj): _Linear(in_features=2560, out_features=4096, bias=False)
+          (k_proj): _Linear(in_features=2560, out_features=1024, bias=False)
+          (v_proj): _Linear(in_features=2560, out_features=1024, bias=False)
+          (o_proj): _Linear(in_features=4096, out_features=2560, bias=False)
+          (q_norm): RMSNorm((128,), type=default, eps=1e-06)
+          (k_norm): RMSNorm((128,), type=default, eps=1e-06)
+        )
+        (mlp): DenseMLP(
+          (gate_proj): _Linear(in_features=2560, out_features=9728, bias=False)
+          (up_proj): _Linear(in_features=2560, out_features=9728, bias=False)
+          (down_proj): _Linear(in_features=9728, out_features=2560, bias=False)
+        )
+        (input_layernorm): RMSNorm((2560,), type=default, eps=1e-06)
+        (post_attention_layernorm): RMSNorm((2560,), type=default, eps=1e-06)
+      )
+    )
+    (35): FSDPCheckpointWrapper(
+      (_checkpoint_wrapped_module): DenseDecoderLayer(
+        (self_attn): MultiHeadAttention(
+          (q_proj): _Linear(in_features=2560, out_features=4096, bias=False)
+          (k_proj): _Linear(in_features=2560, out_features=1024, bias=False)
+          (v_proj): _Linear(in_features=2560, out_features=1024, bias=False)
+          (o_proj): _Linear(in_features=4096, out_features=2560, bias=False)
+          (q_norm): RMSNorm((128,), type=default, eps=1e-06)
+          (k_norm): RMSNorm((128,), type=default, eps=1e-06)
+        )
+        (mlp): DenseMLP(
+          (gate_proj): _Linear(in_features=2560, out_features=9728, bias=False)
+          (up_proj): _Linear(in_features=2560, out_features=9728, bias=False)
+          (down_proj): _Linear(in_features=9728, out_features=2560, bias=False)
+        )
+        (input_layernorm): RMSNorm((2560,), type=default, eps=1e-06)
+        (post_attention_layernorm): RMSNorm((2560,), type=default, eps=1e-06)
+      )
+    )
+  )
+  (rotary_emb): RotaryEmbedding()
+  (embed_tokens): FSDPEmbedding(151936, 2560)
+)
+[XTuner][RANK 0][2026-09-20 20:00:20][INFO] Total trainable parameters: 4022.47M, total parameters: 4022.47M
+[XTuner][RANK 0][2026-09-20 20:00:20][INFO] Untrainable parameters names: []
+[XTuner][RANK 0][2026-09-20 20:00:22][SUCCESS] [HF loading cost] Elapsed time 2.28 seconds, peak gpu memory 8.9G
+[XTuner][RANK 1][2026-09-20 20:00:22][SUCCESS] [HF loading cost] Elapsed time 2.26 seconds, peak gpu memory 8.9G
+[XTuner][RANK 0][2026-09-20 20:00:22][INFO] The `compile_cfg` of model is {}
+[XTuner][RANK 0][2026-09-20 20:00:22][INFO] Training config: {
+  "model_cfg": {
+    "hf_save_cfg": {
+      "worker_per_rank": 16,
+      "max_save_rank": 16,
+      "bucket_size": 4294967296,
+      "fp32_keys_pattern": null
+    },
+    "float8_cfg": null,
+    "compile_cfg": false,
+    "hf_key_mapping": null,
+    "dcp_ignore_frozen_params": true,
+    "lm_loss_cfg": {
+      "ignore_idx": -100,
+      "mode": "chunk",
+      "chunk_size": 1024,
+      "loss_reduction": "token"
+    },
+    "vocab_size": 151936,
+    "max_position_embeddings": 40960,
+    "eos_token_id": 151645,
+    "pad_token_id": null,
+    "num_hidden_layers": 36,
+    "hidden_size": 2560,
+    "intermediate_size": 9728,
+    "rms_norm_eps": 1e-6,
+    "rms_norm_type": "default",
+    "hidden_act": "silu",
+    "attention": {
+      "num_attention_heads": 32,
+      "num_key_value_heads": 8,
+      "head_dim": 128,
+      "dropout": 0.0,
+      "qkv_bias": false,
+      "qk_norm": true,
+      "rms_norm_eps": 1e-6,
+      "rms_norm_type": "default",
+      "o_bias": false,
+      "sliding_window": null,
+      "with_sink": false,
+      "with_gate": false,
+      "attn_impl": "flex_attention"
+    },
+    "linear_attention": null,
+    "mlp_bias": false,
+    "tie_word_embeddings": true,
+    "model_type": null,
+    "generate_config": null,
+    "return_hidden_states": false,
+    "use_sliding_window": false,
+    "max_window_layers": 36,
+    "rope_parameters_cfg": {
+      "rope_theta": 1000000.0,
+      "rope_type": "default",
+      "original_max_position_embeddings": null,
+      "factor": null,
+      "beta_fast": null,
+      "beta_slow": null,
+      "short_factor": null,
+      "long_factor": null,
+      "low_freq_factor": null,
+      "high_freq_factor": null,
+      "mscale": null,
+      "mscale_all_dim": null,
+      "truncate": false,
+      "mrope_section": null,
+      "partial_rotary_factor": 1.0,
+      "fope_init_factor": null,
+      "fope_sep_head": null,
+      "num_inv_freq": null
+    },
+    "mesh_prefix": "default",
+    "bos_token_id": 151643,
+    "rope_scaling": null,
+    "rope_parameters": {
+      "rope_theta": 1000000.0,
+      "rope_type": "default",
+      "original_max_position_embeddings": null,
+      "factor": null,
+      "beta_fast": null,
+      "beta_slow": null,
+      "short_factor": null,
+      "long_factor": null,
+      "low_freq_factor": null,
+      "high_freq_factor": null,
+      "mscale": null,
+      "mscale_all_dim": null,
+      "truncate": false,
+      "mrope_section": null,
+      "partial_rotary_factor": 1.0
+    },
+    "num_attention_heads": 32,
+    "num_key_value_heads": 8,
+    "head_dim": 128,
+    "layers_type": [
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention"
+    ]
+  },
+  "load_from": "/root/workspace/xtuner-lab/models/Qwen3-4B",
+  "tokenizer_path": "/root/workspace/xtuner-lab/models/Qwen3-4B",
+  "optim_cfg": {
+    "lr": 0.00006,
+    "max_grad_norm": 1.0,
+    "skip_grad_norm_threshold": null,
+    "weight_decay": 0.01,
+    "betas": [
+      0.9,
+      0.95
+    ],
+    "eps": 1e-8,
+    "foreach": false,
+    "swap_optimizer": false
+  },
+  "lr_cfg": {
+    "lr_type": "cosine",
+    "warmup_ratio": 0.03,
+    "lr_min": 1e-6
+  },
+  "loss_cfg": {
+    "ignore_idx": -100,
+    "mode": "chunk",
+    "chunk_size": 1024,
+    "loss_reduction": "token"
+  },
+  "fsdp_cfg": null,
+  "global_batch_size": null,
+  "work_dir": "/root/workspace/xtuner-lab/experiments/003_fsdp_scaling/work_dir",
+  "log_dir": null,
+  "sp_size": 1,
+  "total_step": 100,
+  "total_epoch": null,
+  "resume_cfg": null,
+  "auto_resume": false,
+  "load_checkpoint_cfg": {
+    "checkpoint_path": null,
+    "load_optimizer_states": true,
+    "load_optimizer_args": true,
+    "load_dataset": true,
+    "load_scheduler": true,
+    "offload_optimizer_first_step": false
+  },
+  "strict_load": true,
+  "checkpoint_interval": -1,
+  "checkpoint_maxkeep": -1,
+  "async_hf_export": false,
+  "skip_checkpoint_validation": false,
+  "patch_for_dcp_finish": false,
+  "async_checkpoint": false,
+  "snapshot_interval": null,
+  "check_health_interval": null,
+  "hf_interval": null,
+  "hf_max_keep": null,
+  "exp_tracker": "jsonl",
+  "profile_step": null,
+  "profile_time": true,
+  "profile_memory": false,
+  "intra_layer_micro_batch": 1,
+  "seed": 42,
+  "dist_backend": null,
+  "debug": false,
+  "debug_skip_save": false,
+  "prober_list": [],
+  "do_clip": true,
+  "grad_norm_dtype": "torch.float32",
+  "hooks_config": {
+    "after_save_dcp": [],
+    "after_save_hf": [],
+    "after_save_snapshot": [],
+    "after_train_step": []
+  },
+  "internal_metrics_cfg": null
+}
+[XTuner][RANK 0][2026-09-20 20:00:22][INFO] grad_accumulation_steps: 1
+/root/miniconda3/envs/xtuner/lib/python3.11/site-packages/torch/nn/attention/flex_attention.py:1622: FutureWarning: return_lse is deprecated and will be removed in v2.10. Please use return_aux=AuxRequest(lse=True) instead.
+  _warn_once(
+/root/miniconda3/envs/xtuner/lib/python3.11/site-packages/torch/nn/attention/flex_attention.py:1622: FutureWarning: return_lse is deprecated and will be removed in v2.10. Please use return_aux=AuxRequest(lse=True) instead.
+  _warn_once(
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/root/workspace/xtuner/xtuner/v1/train/cli/sft.py", line 46, in <module>
+[rank0]:     app(exit_on_error=False)
+[rank0]:   File "/root/miniconda3/envs/xtuner/lib/python3.11/site-packages/cyclopts/core.py", line 1978, in __call__
+[rank0]:     result = _run_maybe_async_command(command, bound, resolved_backend)
+[rank0]:              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/root/miniconda3/envs/xtuner/lib/python3.11/site-packages/cyclopts/_run.py", line 50, in _run_maybe_async_command
+[rank0]:     return command(*bound.args, **bound.kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/root/workspace/xtuner/xtuner/v1/train/cli/sft.py", line 39, in main
+[rank0]:     trainer.fit()
+[rank0]:   File "/root/workspace/xtuner/xtuner/v1/train/trainer.py", line 880, in fit
+[rank0]:     self._engine.step_optimizer(grad_norm)
+[rank0]:   File "/root/workspace/xtuner/xtuner/v1/engine/train_engine.py", line 323, in step_optimizer
+[rank0]:     self.optimizer.step()
+[rank0]:   File "/root/miniconda3/envs/xtuner/lib/python3.11/site-packages/torch/optim/lr_scheduler.py", line 133, in wrapper
+[rank0]:     return func.__get__(opt, opt.__class__)(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/root/miniconda3/envs/xtuner/lib/python3.11/site-packages/torch/optim/optimizer.py", line 517, in wrapper
+[rank0]:     out = func(*args, **kwargs)
+[rank0]:           ^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/root/miniconda3/envs/xtuner/lib/python3.11/site-packages/torch/optim/optimizer.py", line 82, in _use_grad
+[rank0]:     ret = func(*args, **kwargs)
+[rank0]:           ^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/root/miniconda3/envs/xtuner/lib/python3.11/site-packages/torch/optim/adam.py", line 247, in step
+[rank0]:     adam(
+[rank0]:   File "/root/miniconda3/envs/xtuner/lib/python3.11/site-packages/torch/optim/optimizer.py", line 150, in maybe_fallback
+[rank0]:     return func(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/root/miniconda3/envs/xtuner/lib/python3.11/site-packages/torch/optim/adam.py", line 953, in adam
+[rank0]:     func(
+[rank0]:   File "/root/miniconda3/envs/xtuner/lib/python3.11/site-packages/torch/optim/adam.py", line 535, in _single_tensor_adam
+[rank0]:     denom = (exp_avg_sq.sqrt() / bias_correction2_sqrt).add_(eps)
+[rank0]:              ~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+[rank0]:   File "/root/miniconda3/envs/xtuner/lib/python3.11/site-packages/torch/_compile.py", line 53, in inner
+[rank0]:     return disable_fn(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/root/miniconda3/envs/xtuner/lib/python3.11/site-packages/torch/_dynamo/eval_frame.py", line 1044, in _fn
+[rank0]:     return fn(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/root/miniconda3/envs/xtuner/lib/python3.11/site-packages/torch/distributed/tensor/_api.py", line 349, in __torch_dispatch__
+[rank0]:     return DTensor._op_dispatcher.dispatch(
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/root/miniconda3/envs/xtuner/lib/python3.11/site-packages/torch/distributed/tensor/_dispatch.py", line 233, in dispatch
+[rank0]:     local_results = op_call(*local_tensor_args, **op_info.local_kwargs)
+[rank0]:                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/root/miniconda3/envs/xtuner/lib/python3.11/site-packages/torch/_ops.py", line 841, in __call__
+[rank0]:     return self._op(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]: torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 742.00 MiB. GPU 0 has a total capacity of 31.48 GiB of which 277.62 MiB is free. Including non-PyTorch memory, this process has 31.20 GiB memory in use. Of the allocated memory 30.71 GiB is allocated by PyTorch, and 56.66 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+[rank1]: Traceback (most recent call last):
+[rank1]:   File "/root/workspace/xtuner/xtuner/v1/train/cli/sft.py", line 46, in <module>
+[rank1]:     app(exit_on_error=False)
+[rank1]:   File "/root/miniconda3/envs/xtuner/lib/python3.11/site-packages/cyclopts/core.py", line 1978, in __call__
+[rank1]:     result = _run_maybe_async_command(command, bound, resolved_backend)
+[rank1]:              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/root/miniconda3/envs/xtuner/lib/python3.11/site-packages/cyclopts/_run.py", line 50, in _run_maybe_async_command
+[rank1]:     return command(*bound.args, **bound.kwargs)
+[rank1]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/root/workspace/xtuner/xtuner/v1/train/cli/sft.py", line 39, in main
+[rank1]:     trainer.fit()
+[rank1]:   File "/root/workspace/xtuner/xtuner/v1/train/trainer.py", line 880, in fit
+[rank1]:     self._engine.step_optimizer(grad_norm)
+[rank1]:   File "/root/workspace/xtuner/xtuner/v1/engine/train_engine.py", line 323, in step_optimizer
+[rank1]:     self.optimizer.step()
+[rank1]:   File "/root/miniconda3/envs/xtuner/lib/python3.11/site-packages/torch/optim/lr_scheduler.py", line 133, in wrapper
+[rank1]:     return func.__get__(opt, opt.__class__)(*args, **kwargs)
+[rank1]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/root/miniconda3/envs/xtuner/lib/python3.11/site-packages/torch/optim/optimizer.py", line 517, in wrapper
+[rank1]:     out = func(*args, **kwargs)
+[rank1]:           ^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/root/miniconda3/envs/xtuner/lib/python3.11/site-packages/torch/optim/optimizer.py", line 82, in _use_grad
+[rank1]:     ret = func(*args, **kwargs)
+[rank1]:           ^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/root/miniconda3/envs/xtuner/lib/python3.11/site-packages/torch/optim/adam.py", line 247, in step
+[rank1]:     adam(
+[rank1]:   File "/root/miniconda3/envs/xtuner/lib/python3.11/site-packages/torch/optim/optimizer.py", line 150, in maybe_fallback
+[rank1]:     return func(*args, **kwargs)
+[rank1]:            ^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/root/miniconda3/envs/xtuner/lib/python3.11/site-packages/torch/optim/adam.py", line 953, in adam
+[rank1]:     func(
+[rank1]:   File "/root/miniconda3/envs/xtuner/lib/python3.11/site-packages/torch/optim/adam.py", line 535, in _single_tensor_adam
+[rank1]:     denom = (exp_avg_sq.sqrt() / bias_correction2_sqrt).add_(eps)
+[rank1]:              ~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+[rank1]:   File "/root/miniconda3/envs/xtuner/lib/python3.11/site-packages/torch/_compile.py", line 53, in inner
+[rank1]:     return disable_fn(*args, **kwargs)
+[rank1]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/root/miniconda3/envs/xtuner/lib/python3.11/site-packages/torch/_dynamo/eval_frame.py", line 1044, in _fn
+[rank1]:     return fn(*args, **kwargs)
+[rank1]:            ^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/root/miniconda3/envs/xtuner/lib/python3.11/site-packages/torch/distributed/tensor/_api.py", line 349, in __torch_dispatch__
+[rank1]:     return DTensor._op_dispatcher.dispatch(
+[rank1]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/root/miniconda3/envs/xtuner/lib/python3.11/site-packages/torch/distributed/tensor/_dispatch.py", line 233, in dispatch
+[rank1]:     local_results = op_call(*local_tensor_args, **op_info.local_kwargs)
+[rank1]:                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/root/miniconda3/envs/xtuner/lib/python3.11/site-packages/torch/_ops.py", line 841, in __call__
+[rank1]:     return self._op(*args, **kwargs)
+[rank1]:            ^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]: torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 742.00 MiB. GPU 1 has a total capacity of 31.48 GiB of which 277.62 MiB is free. Including non-PyTorch memory, this process has 31.20 GiB memory in use. Of the allocated memory 30.71 GiB is allocated by PyTorch, and 56.66 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+[rank0]:[W920 20:00:37.097206394 ProcessGroupNCCL.cpp:1524] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())
+[rank1]:[W920 20:00:37.128637196 ProcessGroupNCCL.cpp:1524] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())
+[rank0]:[W920 20:00:38.380302917 AllocatorConfig.cpp:28] Warning: PYTORCH_CUDA_ALLOC_CONF is deprecated, use PYTORCH_ALLOC_CONF instead (function operator())
+[rank1]:[W920 20:00:39.910045627 AllocatorConfig.cpp:28] Warning: PYTORCH_CUDA_ALLOC_CONF is deprecated, use PYTORCH_ALLOC_CONF instead (function operator())
+W0920 20:00:39.488000 3498 site-packages/torch/distributed/elastic/multiprocessing/api.py:908] Sending process 3566 closing signal SIGTERM
+E0920 20:00:39.853000 3498 site-packages/torch/distributed/elastic/multiprocessing/api.py:882] failed (exitcode: 1) local_rank: 0 (pid: 3565) of binary: /root/miniconda3/envs/xtuner/bin/python3.11
+Traceback (most recent call last):
+  File "/root/miniconda3/envs/xtuner/bin/torchrun", line 6, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/root/miniconda3/envs/xtuner/lib/python3.11/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 357, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/xtuner/lib/python3.11/site-packages/torch/distributed/run.py", line 936, in main
+    run(args)
+  File "/root/miniconda3/envs/xtuner/lib/python3.11/site-packages/torch/distributed/run.py", line 927, in run
+    elastic_launch(
+  File "/root/miniconda3/envs/xtuner/lib/python3.11/site-packages/torch/distributed/launcher/api.py", line 156, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/xtuner/lib/python3.11/site-packages/torch/distributed/launcher/api.py", line 293, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+xtuner/v1/train/cli/sft.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-09-20_20:00:39
+  host      : localhost
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 3565)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+[W920 20:00:40.555179850 AllocatorConfig.cpp:28] Warning: PYTORCH_CUDA_ALLOC_CONF is deprecated, use PYTORCH_ALLOC_CONF instead (function operator())
+
+real	0m32.479s
+user	1m4.061s
+sys	0m19.208s

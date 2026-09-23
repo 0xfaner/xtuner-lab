@@ -1,0 +1,1123 @@
++ ray stop --force
+2026-09-21 16:04:56,957	INFO scripts.py:1490 -- Did not find any active Ray processes.
++ CONFIG_PATH=/root/workspace/xtuner-lab/experiments/004_grpo_gsm8k/config/e4_grpo_06b.py
++ INFER_BACKEND=lmdeploy
++ MODEL_PATH=/root/workspace/xtuner-lab/models/Qwen3-1.7B
++ DATA_PATH=/root/workspace/xtuner-lab/data/gsm8k_train.jsonl
++ EVAL_DATA_PATH=/root/workspace/xtuner-lab/data/gsm8k_val.jsonl
++ ACCELERATOR=gpu
+++ echo gpu
+++ tr '[:lower:]' '[:upper:]'
++ ACCELERATOR=GPU
++ '[' GPU '!=' GPU ']'
++ '[' GPU = NPU ']'
++ '[' -n 0 ']'
++ IFS=,
++ read -ra visible_devices
++ accelerator_per_node=1
++ export ACCELERATOR
++ RAY_ACCELERATOR_ARGS=()
++ '[' GPU = GPU ']'
++ RAY_ACCELERATOR_ARGS=(--num-gpus="$accelerator_per_node")
++ ulimit -n 65536
+++ pwd
++ export PYTHONPATH=/root/workspace/xtuner:
++ PYTHONPATH=/root/workspace/xtuner:
++ export MASTER_PORT=6000
++ MASTER_PORT=6000
++ export WORLD_SIZE=1
++ WORLD_SIZE=1
++ export RANK=0
++ RANK=0
++ export RAY_MASTER_ADDR=127.0.0.1
++ RAY_MASTER_ADDR=127.0.0.1
++ export RAY_RANK=0
++ RAY_RANK=0
++ export RAY_HEAD_PORT=6379
++ RAY_HEAD_PORT=6379
++ export RAY_DASHBOARD_PORT=8265
++ RAY_DASHBOARD_PORT=8265
++ export MODEL_PATH=/root/workspace/xtuner-lab/models/Qwen3-1.7B
++ MODEL_PATH=/root/workspace/xtuner-lab/models/Qwen3-1.7B
++ export DATA_PATH=/root/workspace/xtuner-lab/data/gsm8k_train.jsonl
++ DATA_PATH=/root/workspace/xtuner-lab/data/gsm8k_train.jsonl
++ export EVAL_DATA_PATH=/root/workspace/xtuner-lab/data/gsm8k_val.jsonl
++ EVAL_DATA_PATH=/root/workspace/xtuner-lab/data/gsm8k_val.jsonl
++ export XTUNER_USE_FA3=0
++ XTUNER_USE_FA3=0
++ export XTUNER_LOG_LEVEL=INFO
++ XTUNER_LOG_LEVEL=INFO
++ export PYTHONUNBUFFERED=1
++ PYTHONUNBUFFERED=1
+++ echo lmdeploy
+++ tr '[:upper:]' '[:lower:]'
++ infer_backend_lower=lmdeploy
++ '[' lmdeploy = sglang ']'
++ '[' lmdeploy = lmdeploy ']'
++ export XTUNER_USE_LMDEPLOY=1
++ XTUNER_USE_LMDEPLOY=1
++ export PYTORCH_CUDA_ALLOC_CONF=expandable_segments:False
++ PYTORCH_CUDA_ALLOC_CONF=expandable_segments:False
++ export PYTHONPATH=:/root/workspace/xtuner:
++ PYTHONPATH=:/root/workspace/xtuner:
+++ date +%m%d%H
++ current_time=092116
+++ basename /root/workspace/xtuner-lab/models/Qwen3-1.7B
++ model_dir_name=Qwen3-1.7B
++++ dirname /root/workspace/xtuner-lab/data/gsm8k_train.jsonl
+++ basename /root/workspace/xtuner-lab/data
++ data_dir_name=data
++ '[' x/root/workspace/xtuner-lab/experiments/004_grpo_gsm8k/work_dir_17b = x ']'
++ export WORK_DIR=/root/workspace/xtuner-lab/experiments/004_grpo_gsm8k/work_dir_17b
++ WORK_DIR=/root/workspace/xtuner-lab/experiments/004_grpo_gsm8k/work_dir_17b
++ echo 'WORK_DIR: /root/workspace/xtuner-lab/experiments/004_grpo_gsm8k/work_dir_17b'
+WORK_DIR: /root/workspace/xtuner-lab/experiments/004_grpo_gsm8k/work_dir_17b
++ '[' '!' -d /root/workspace/xtuner-lab/experiments/004_grpo_gsm8k/work_dir_17b ']'
++ export LMDEPLOY_LOG_FILE=/root/workspace/xtuner-lab/experiments/004_grpo_gsm8k/work_dir_17b/lmdeploy_log_092116.txt
++ LMDEPLOY_LOG_FILE=/root/workspace/xtuner-lab/experiments/004_grpo_gsm8k/work_dir_17b/lmdeploy_log_092116.txt
++ '[' GPU = GPU ']'
++ export XTUNER_RL_MEM_DIR=/root/workspace/xtuner-lab/experiments/004_grpo_gsm8k/work_dir_17b/mem_092116
++ XTUNER_RL_MEM_DIR=/root/workspace/xtuner-lab/experiments/004_grpo_gsm8k/work_dir_17b/mem_092116
++ node_count=1
++ expected_accelerator_count=1
++ expected_accelerator_count=1
++ export XTUNER_RL_NUM_WORKERS=1
++ XTUNER_RL_NUM_WORKERS=1
+++ realpath /root/workspace/xtuner-lab/experiments/004_grpo_gsm8k/work_dir_17b
++ WORK_DIR=/root/autodl-tmp/xtuner-lab/experiments/004_grpo_gsm8k/work_dir_17b
++ '[' 0 -eq 0 ']'
++ rm -rf /tmp/ray_log
++ export RAY_LOG_DIR=/root/autodl-tmp/xtuner-lab/experiments/004_grpo_gsm8k/work_dir_17b/ray_092116/
++ RAY_LOG_DIR=/root/autodl-tmp/xtuner-lab/experiments/004_grpo_gsm8k/work_dir_17b/ray_092116/
++ mkdir -p /root/autodl-tmp/xtuner-lab/experiments/004_grpo_gsm8k/work_dir_17b/ray_092116/
++ ln -sfn /root/autodl-tmp/xtuner-lab/experiments/004_grpo_gsm8k/work_dir_17b/ray_092116/ /tmp/ray_log
++ ray start --head --node-ip-address=127.0.0.1 --port=6379 --dashboard-host=0.0.0.0 --dashboard-port=8265 --include-dashboard=true --disable-usage-stats --num-gpus=1 --temp-dir=/tmp/ray_log/
+2026-09-21 16:04:59,243	INFO usage_lib.py:448 -- Usage stats collection is disabled.
+2026-09-21 16:04:59,244	INFO scripts.py:1042 -- [37mLocal node IP[39m: [1m172.17.0.3[22m
+2026-09-21 16:05:01,825	WARNING utils.py:473 -- Detecting docker specified CPUs. In previous versions of Ray, CPU detection in containers was incorrect. Please ensure that Ray has enough CPUs allocated. As a temporary workaround to revert to the prior behavior, set `RAY_USE_MULTIPROCESSING_CPU_COUNT=1` as an env var before starting Ray. Set the env var: `RAY_DISABLE_DOCKER_CPU_WARNING=1` to mute this warning.
+2026-09-21 16:05:04,163	SUCC scripts.py:1081 -- [32m--------------------[39m
+2026-09-21 16:05:04,163	SUCC scripts.py:1082 -- [32mRay runtime started.[39m
+2026-09-21 16:05:04,163	SUCC scripts.py:1083 -- [32m--------------------[39m
+2026-09-21 16:05:04,164	INFO scripts.py:1085 -- [36mNext steps[39m
+2026-09-21 16:05:04,164	INFO cli_output_helpers.py:16 -- [2mNote: The following commands are intended for use on[22m
+2026-09-21 16:05:04,164	INFO cli_output_helpers.py:17 -- [2mthe head node or within the cluster network.[22m
+2026-09-21 16:05:04,164	INFO scripts.py:1089 -- To add another node to this Ray cluster, run
+2026-09-21 16:05:04,165	INFO scripts.py:1092 -- [1m  ray start --address='172.17.0.3:6379'[22m
+2026-09-21 16:05:04,165	INFO scripts.py:1103 -- To connect to this Ray cluster:
+2026-09-21 16:05:04,165	INFO scripts.py:1105 -- [35mimport[39m[26m ray
+2026-09-21 16:05:04,165	INFO scripts.py:1106 -- ray[35m.[39m[26minit(_node_ip_address[35m=[39m[26m[33m'172.17.0.3'[39m[26m)
+2026-09-21 16:05:04,165	INFO scripts.py:1120 -- To submit a Ray job using the Ray Jobs CLI:
+2026-09-21 16:05:04,166	INFO scripts.py:1121 -- [1m  RAY_API_SERVER_ADDRESS='http://172.17.0.3:8265' ray job submit --working-dir . -- python my_script.py[22m
+2026-09-21 16:05:04,166	INFO scripts.py:1130 -- See https://docs.ray.io/en/latest/cluster/running-applications/job-submission/index.html 
+2026-09-21 16:05:04,166	INFO scripts.py:1134 -- for more information on submitting Ray jobs to the Ray cluster.
+2026-09-21 16:05:04,166	INFO scripts.py:1139 -- To terminate the Ray runtime, run
+2026-09-21 16:05:04,166	INFO scripts.py:1140 -- [1m  ray stop[22m
+2026-09-21 16:05:04,166	INFO scripts.py:1143 -- To view the status of the cluster, use
+2026-09-21 16:05:04,166	INFO scripts.py:1144 --   [1mray status[22m[26m
+2026-09-21 16:05:04,166	INFO scripts.py:1148 -- To monitor and debug Ray, view the dashboard at 
+2026-09-21 16:05:04,166	INFO scripts.py:1149 --   [1m172.17.0.3:8265[22m[26m
+2026-09-21 16:05:04,167	INFO scripts.py:1156 -- [4mIf connection to the dashboard fails, check your firewall settings and network configuration.[24m
++ true
+++ ray status
+++ grep GPU
+++ cut -d ' ' -f2
+++ cut -d / -f2
++ result=1.0
++ '[' 1.0 = 1.0 ']'
++ break
+++ basename /root/workspace/xtuner-lab/experiments/004_grpo_gsm8k/run_rl_lab.sh
++ SCRIPT_NAME=run_rl_lab.sh
++ cp /root/workspace/xtuner-lab/experiments/004_grpo_gsm8k/run_rl_lab.sh /root/autodl-tmp/xtuner-lab/experiments/004_grpo_gsm8k/work_dir_17b/run_rl_lab.sh
++ cp /root/workspace/xtuner-lab/experiments/004_grpo_gsm8k/config/e4_grpo_06b.py /root/autodl-tmp/xtuner-lab/experiments/004_grpo_gsm8k/work_dir_17b/config.py
++ LOG_FILE=/root/autodl-tmp/xtuner-lab/experiments/004_grpo_gsm8k/work_dir_17b/training_log_092116.txt
++ python xtuner/v1/train/cli/rl.py --config /root/workspace/xtuner-lab/experiments/004_grpo_gsm8k/config/e4_grpo_06b.py --num-workers 1
++ tee -a /root/autodl-tmp/xtuner-lab/experiments/004_grpo_gsm8k/work_dir_17b/training_log_092116.txt
+2026-09-21 16:05:11,819	INFO worker.py:1833 -- Connecting to existing Ray cluster at address: 172.17.0.3:6379...
+2026-09-21 16:05:11,836	INFO worker.py:2015 -- Connected to Ray cluster. View the dashboard at [1m[32mhttp://172.17.0.3:8265 [39m[22m
+开始监控当前节点 Actor 内存使用情况，间隔 60 秒...
+当前节点 ID: bee86ba4aca0a9c5dbb703d7ab1b0416e14aca5f32459ef3a62504d7
+说明: 该监控只统计运行在当前节点上的 Ray actor，当前节点通常是 head 节点，但不保证。
+================================================================================
+当前节点物理 GPU 数量(NVML): 2
+当前节点 Ray 配置 GPU resource 数量: 1
+Import FlashAttention 2 failed No module named 'flash_attn', Please install it manually.
+[XTuner][2026-09-21 16:05:19][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-21 16:05:19][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-21 16:05:19][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-21 16:05:19][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-21 16:05:19][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-21 16:05:19][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-21 16:05:19][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-21 16:05:20][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-21 16:05:20][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-21 16:05:20][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-21 16:05:20][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-21 16:05:20][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-21 16:05:20][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-21 16:05:20][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-21 16:05:20][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-21 16:05:20][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-21 16:05:20][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-21 16:05:20][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-21 16:05:20][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-21 16:05:20][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-21 16:05:20][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-21 16:05:20][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-21 16:05:20][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-21 16:05:20][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-21 16:05:20][WARNING] flash-attn is not installed, using `flex_attention` instead.
+Could not find the bitsandbytes CUDA binary at PosixPath('/root/miniconda3/envs/xtuner/lib/python3.11/site-packages/bitsandbytes/libbitsandbytes_cuda128.so')
+The installed version of bitsandbytes was compiled without GPU support. 8-bit optimizers, 8-bit multiplication, and GPU quantization are unavailable.
+[XTuner][2026-09-21 16:05:21][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-21 16:05:21][INFO] XTuner OTel tracing disabled.
+[XTuner][2026-09-21 16:05:21][INFO] 
+============XTuner RL Training Environment============
+XTUNER_CUDA_ALLOC_CONF: expandable_segments:False
+XTUNER_LOG_LEVEL: INFO
+XTUNER_RL_MEM_DIR: /root/workspace/xtuner-lab/experiments/004_grpo_gsm8k/work_dir_17b/mem_092116
+XTUNER_RL_NUM_WORKERS: 1
+XTUNER_USE_FA3: 0
+XTUNER_USE_LMDEPLOY: 1
+======================================================
+[XTuner][2026-09-21 16:05:21][WARNING] RLTrainer seed 123 is used as train worker seed.
+[XTuner][2026-09-21 16:05:21][INFO] External CPU initial cluster snapshot. Registered external CPU pools are not shown yet and may change as components are built:
+item                    | CPU | memory(GB) | note                                       
+------------------------+-----+------------+--------------------------------------------
+cluster_total           | 32  | 85.66      | Ray cluster_resources total.               
+accelerator_pg_reserved | 12  | 16.00      | Reserved by accelerator placement group(s).
+external_capacity       | 20  | 69.66      | cluster_total - accelerator_pg_reserved.   
+------------------------+-----+------------+--------------------------------------------
+[36m(pid=49624)[0m Import FlashAttention 2 failed No module named 'flash_attn', Please install it manually.
+[36m(pid=49624)[0m [XTuner][2026-09-21 16:05:37][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[36m(pid=49624)[0m [XTuner][2026-09-21 16:05:37][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[36m(pid=49624)[0m [XTuner][2026-09-21 16:05:37][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[36m(pid=49624)[0m [XTuner][2026-09-21 16:05:37][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[36m(pid=49624)[0m [XTuner][2026-09-21 16:05:37][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[36m(pid=49624)[0m [XTuner][2026-09-21 16:05:37][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[36m(pid=49624)[0m [XTuner][2026-09-21 16:05:37][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[36m(pid=49624)[0m [XTuner][2026-09-21 16:05:37][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[36m(pid=49624)[0m [XTuner][2026-09-21 16:05:37][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[36m(pid=49624)[0m [XTuner][2026-09-21 16:05:37][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[36m(pid=49624)[0m [XTuner][2026-09-21 16:05:37][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[36m(pid=49624)[0m [XTuner][2026-09-21 16:05:37][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[36m(pid=49624)[0m [XTuner][2026-09-21 16:05:37][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[36m(pid=49624)[0m [XTuner][2026-09-21 16:05:37][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[36m(pid=49624)[0m [XTuner][2026-09-21 16:05:37][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[36m(pid=49624)[0m [XTuner][2026-09-21 16:05:37][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[36m(pid=49624)[0m [XTuner][2026-09-21 16:05:37][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[36m(pid=49624)[0m [XTuner][2026-09-21 16:05:37][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[36m(pid=49624)[0m [XTuner][2026-09-21 16:05:37][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[36m(pid=49624)[0m [XTuner][2026-09-21 16:05:37][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[36m(pid=49624)[0m [XTuner][2026-09-21 16:05:37][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[36m(pid=49624)[0m [XTuner][2026-09-21 16:05:37][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[36m(pid=49624)[0m [XTuner][2026-09-21 16:05:37][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[36m(pid=49624)[0m [XTuner][2026-09-21 16:05:37][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[36m(pid=49624)[0m [XTuner][2026-09-21 16:05:37][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[36m(pid=49624)[0m Could not find the bitsandbytes CUDA binary at PosixPath('/root/miniconda3/envs/xtuner/lib/python3.11/site-packages/bitsandbytes/libbitsandbytes_cuda128.so')
+[36m(pid=49624)[0m The installed version of bitsandbytes was compiled without GPU support. 8-bit optimizers, 8-bit multiplication, and GPU quantization are unavailable.
+[36m(TrainingWorker pid=49624)[0m [FSDP Sharding]:   0%|          | 0/28 [00:00<?, ?it/s]/root/workspace/xtuner/xtuner/v1/model/utils/checkpointing.py:91: FutureWarning: Please specify CheckpointImpl.NO_REENTRANT as CheckpointImpl.REENTRANT will soon be removed as the default and eventually deprecated.
+[36m(TrainingWorker pid=49624)[0m   return checkpoint_wrapper(
+[36m(TrainingWorker pid=49624)[0m [FSDP Sharding]:  54%|█████▎    | 15/28 [00:00<00:00, 147.36it/s]
+[36m(TrainingWorker pid=49624)[0m [FSDP Sharding]: 100%|██████████| 28/28 [00:00<00:00, 157.54it/s]
+[36m(TrainingWorker pid=49624)[0m [XTuner][2026-09-21 16:05:41][INFO] FSDPQwen3Dense(
+[36m(TrainingWorker pid=49624)[0m   (norm): FSDPRMSNorm((2048,), type=default, eps=1e-06)
+[36m(TrainingWorker pid=49624)[0m   (lm_head): FSDPLMHead(in_features=2048, out_features=151936, bias=False)
+[36m(TrainingWorker pid=49624)[0m   (layers): ModuleDict(
+[36m(TrainingWorker pid=49624)[0m     (0): FSDPCheckpointWrapper(
+[36m(TrainingWorker pid=49624)[0m       (_checkpoint_wrapped_module): DenseDecoderLayer(
+[36m(TrainingWorker pid=49624)[0m         (self_attn): MultiHeadAttention(
+[36m(TrainingWorker pid=49624)[0m           (q_proj): _Linear(in_features=2048, out_features=2048, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (k_proj): _Linear(in_features=2048, out_features=1024, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (v_proj): _Linear(in_features=2048, out_features=1024, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (o_proj): _Linear(in_features=2048, out_features=2048, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (q_norm): RMSNorm((128,), type=default, eps=1e-06)
+[36m(TrainingWorker pid=49624)[0m           (k_norm): RMSNorm((128,), type=default, eps=1e-06)
+[36m(TrainingWorker pid=49624)[0m         )
+[36m(TrainingWorker pid=49624)[0m         (mlp): DenseMLP(
+[36m(TrainingWorker pid=49624)[0m           (gate_proj): _Linear(in_features=2048, out_features=6144, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (up_proj): _Linear(in_features=2048, out_features=6144, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (down_proj): _Linear(in_features=6144, out_features=2048, bias=False)
+[36m(TrainingWorker pid=49624)[0m         )
+[36m(TrainingWorker pid=49624)[0m         (input_layernorm): RMSNorm((2048,), type=default, eps=1e-06)
+[36m(TrainingWorker pid=49624)[0m         (post_attention_layernorm): RMSNorm((2048,), type=default, eps=1e-06)
+[36m(TrainingWorker pid=49624)[0m       )
+[36m(TrainingWorker pid=49624)[0m     )
+[36m(TrainingWorker pid=49624)[0m     (1): FSDPCheckpointWrapper(
+[36m(TrainingWorker pid=49624)[0m       (_checkpoint_wrapped_module): DenseDecoderLayer(
+[36m(TrainingWorker pid=49624)[0m         (self_attn): MultiHeadAttention(
+[36m(TrainingWorker pid=49624)[0m           (q_proj): _Linear(in_features=2048, out_features=2048, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (k_proj): _Linear(in_features=2048, out_features=1024, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (v_proj): _Linear(in_features=2048, out_features=1024, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (o_proj): _Linear(in_features=2048, out_features=2048, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (q_norm): RMSNorm((128,), type=default, eps=1e-06)
+[36m(TrainingWorker pid=49624)[0m           (k_norm): RMSNorm((128,), type=default, eps=1e-06)
+[36m(TrainingWorker pid=49624)[0m         )
+[36m(TrainingWorker pid=49624)[0m         (mlp): DenseMLP(
+[36m(TrainingWorker pid=49624)[0m           (gate_proj): _Linear(in_features=2048, out_features=6144, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (up_proj): _Linear(in_features=2048, out_features=6144, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (down_proj): _Linear(in_features=6144, out_features=2048, bias=False)
+[36m(TrainingWorker pid=49624)[0m         )
+[36m(TrainingWorker pid=49624)[0m         (input_layernorm): RMSNorm((2048,), type=default, eps=1e-06)
+[36m(TrainingWorker pid=49624)[0m         (post_attention_layernorm): RMSNorm((2048,), type=default, eps=1e-06)
+[36m(TrainingWorker pid=49624)[0m       )
+[36m(TrainingWorker pid=49624)[0m     )
+[36m(TrainingWorker pid=49624)[0m     (2): FSDPCheckpointWrapper(
+[36m(TrainingWorker pid=49624)[0m       (_checkpoint_wrapped_module): DenseDecoderLayer(
+[36m(TrainingWorker pid=49624)[0m         (self_attn): MultiHeadAttention(
+[36m(TrainingWorker pid=49624)[0m           (q_proj): _Linear(in_features=2048, out_features=2048, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (k_proj): _Linear(in_features=2048, out_features=1024, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (v_proj): _Linear(in_features=2048, out_features=1024, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (o_proj): _Linear(in_features=2048, out_features=2048, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (q_norm): RMSNorm((128,), type=default, eps=1e-06)
+[36m(TrainingWorker pid=49624)[0m           (k_norm): RMSNorm((128,), type=default, eps=1e-06)
+[36m(TrainingWorker pid=49624)[0m         )
+[36m(TrainingWorker pid=49624)[0m         (mlp): DenseMLP(
+[36m(TrainingWorker pid=49624)[0m           (gate_proj): _Linear(in_features=2048, out_features=6144, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (up_proj): _Linear(in_features=2048, out_features=6144, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (down_proj): _Linear(in_features=6144, out_features=2048, bias=False)
+[36m(TrainingWorker pid=49624)[0m         )
+[36m(TrainingWorker pid=49624)[0m         (input_layernorm): RMSNorm((2048,), type=default, eps=1e-06)
+[36m(TrainingWorker pid=49624)[0m         (post_attention_layernorm): RMSNorm((2048,), type=default, eps=1e-06)
+[36m(TrainingWorker pid=49624)[0m       )
+[36m(TrainingWorker pid=49624)[0m     )
+[36m(TrainingWorker pid=49624)[0m     (3): FSDPCheckpointWrapper(
+[36m(TrainingWorker pid=49624)[0m       (_checkpoint_wrapped_module): DenseDecoderLayer(
+[36m(TrainingWorker pid=49624)[0m         (self_attn): MultiHeadAttention(
+[36m(TrainingWorker pid=49624)[0m           (q_proj): _Linear(in_features=2048, out_features=2048, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (k_proj): _Linear(in_features=2048, out_features=1024, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (v_proj): _Linear(in_features=2048, out_features=1024, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (o_proj): _Linear(in_features=2048, out_features=2048, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (q_norm): RMSNorm((128,), type=default, eps=1e-06)
+[36m(TrainingWorker pid=49624)[0m           (k_norm): RMSNorm((128,), type=default, eps=1e-06)
+[36m(TrainingWorker pid=49624)[0m         )
+[36m(TrainingWorker pid=49624)[0m         (mlp): DenseMLP(
+[36m(TrainingWorker pid=49624)[0m           (gate_proj): _Linear(in_features=2048, out_features=6144, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (up_proj): _Linear(in_features=2048, out_features=6144, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (down_proj): _Linear(in_features=6144, out_features=2048, bias=False)
+[36m(TrainingWorker pid=49624)[0m         )
+[36m(TrainingWorker pid=49624)[0m         (input_layernorm): RMSNorm((2048,), type=default, eps=1e-06)
+[36m(TrainingWorker pid=49624)[0m         (post_attention_layernorm): RMSNorm((2048,), type=default, eps=1e-06)
+[36m(TrainingWorker pid=49624)[0m       )
+[36m(TrainingWorker pid=49624)[0m     )
+[36m(TrainingWorker pid=49624)[0m     (4): FSDPCheckpointWrapper(
+[36m(TrainingWorker pid=49624)[0m       (_checkpoint_wrapped_module): DenseDecoderLayer(
+[36m(TrainingWorker pid=49624)[0m         (self_attn): MultiHeadAttention(
+[36m(TrainingWorker pid=49624)[0m           (q_proj): _Linear(in_features=2048, out_features=2048, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (k_proj): _Linear(in_features=2048, out_features=1024, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (v_proj): _Linear(in_features=2048, out_features=1024, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (o_proj): _Linear(in_features=2048, out_features=2048, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (q_norm): RMSNorm((128,), type=default, eps=1e-06)
+[36m(TrainingWorker pid=49624)[0m           (k_norm): RMSNorm((128,), type=default, eps=1e-06)
+[36m(TrainingWorker pid=49624)[0m         )
+[36m(TrainingWorker pid=49624)[0m         (mlp): DenseMLP(
+[36m(TrainingWorker pid=49624)[0m           (gate_proj): _Linear(in_features=2048, out_features=6144, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (up_proj): _Linear(in_features=2048, out_features=6144, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (down_proj): _Linear(in_features=6144, out_features=2048, bias=False)
+[36m(TrainingWorker pid=49624)[0m         )
+[36m(TrainingWorker pid=49624)[0m         (input_layernorm): RMSNorm((2048,), type=default, eps=1e-06)
+[36m(TrainingWorker pid=49624)[0m         (post_attention_layernorm): RMSNorm((2048,), type=default, eps=1e-06)
+[36m(TrainingWorker pid=49624)[0m       )
+[36m(TrainingWorker pid=49624)[0m     )
+[36m(TrainingWorker pid=49624)[0m     (5): FSDPCheckpointWrapper(
+[36m(TrainingWorker pid=49624)[0m       (_checkpoint_wrapped_module): DenseDecoderLayer(
+[36m(TrainingWorker pid=49624)[0m         (self_attn): MultiHeadAttention(
+[36m(TrainingWorker pid=49624)[0m           (q_proj): _Linear(in_features=2048, out_features=2048, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (k_proj): _Linear(in_features=2048, out_features=1024, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (v_proj): _Linear(in_features=2048, out_features=1024, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (o_proj): _Linear(in_features=2048, out_features=2048, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (q_norm): RMSNorm((128,), type=default, eps=1e-06)
+[36m(TrainingWorker pid=49624)[0m           (k_norm): RMSNorm((128,), type=default, eps=1e-06)
+[36m(TrainingWorker pid=49624)[0m         )
+[36m(TrainingWorker pid=49624)[0m         (mlp): DenseMLP(
+[36m(TrainingWorker pid=49624)[0m           (gate_proj): _Linear(in_features=2048, out_features=6144, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (up_proj): _Linear(in_features=2048, out_features=6144, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (down_proj): _Linear(in_features=6144, out_features=2048, bias=False)
+[36m(TrainingWorker pid=49624)[0m         )
+[36m(TrainingWorker pid=49624)[0m         (input_layernorm): RMSNorm((2048,), type=default, eps=1e-06)
+[36m(TrainingWorker pid=49624)[0m         (post_attention_layernorm): RMSNorm((2048,), type=default, eps=1e-06)
+[36m(TrainingWorker pid=49624)[0m       )
+[36m(TrainingWorker pid=49624)[0m     )
+[36m(TrainingWorker pid=49624)[0m     (6): FSDPCheckpointWrapper(
+[36m(TrainingWorker pid=49624)[0m       (_checkpoint_wrapped_module): DenseDecoderLayer(
+[36m(TrainingWorker pid=49624)[0m         (self_attn): MultiHeadAttention(
+[36m(TrainingWorker pid=49624)[0m           (q_proj): _Linear(in_features=2048, out_features=2048, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (k_proj): _Linear(in_features=2048, out_features=1024, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (v_proj): _Linear(in_features=2048, out_features=1024, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (o_proj): _Linear(in_features=2048, out_features=2048, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (q_norm): RMSNorm((128,), type=default, eps=1e-06)
+[36m(TrainingWorker pid=49624)[0m           (k_norm): RMSNorm((128,), type=default, eps=1e-06)
+[36m(TrainingWorker pid=49624)[0m         )
+[36m(TrainingWorker pid=49624)[0m         (mlp): DenseMLP(
+[36m(TrainingWorker pid=49624)[0m           (gate_proj): _Linear(in_features=2048, out_features=6144, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (up_proj): _Linear(in_features=2048, out_features=6144, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (down_proj): _Linear(in_features=6144, out_features=2048, bias=False)
+[36m(TrainingWorker pid=49624)[0m         )
+[36m(TrainingWorker pid=49624)[0m         (input_layernorm): RMSNorm((2048,), type=default, eps=1e-06)
+[36m(TrainingWorker pid=49624)[0m         (post_attention_layernorm): RMSNorm((2048,), type=default, eps=1e-06)
+[36m(TrainingWorker pid=49624)[0m       )
+[36m(TrainingWorker pid=49624)[0m     )
+[36m(TrainingWorker pid=49624)[0m     (7): FSDPCheckpointWrapper(
+[36m(TrainingWorker pid=49624)[0m       (_checkpoint_wrapped_module): DenseDecoderLayer(
+[36m(TrainingWorker pid=49624)[0m         (self_attn): MultiHeadAttention(
+[36m(TrainingWorker pid=49624)[0m           (q_proj): _Linear(in_features=2048, out_features=2048, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (k_proj): _Linear(in_features=2048, out_features=1024, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (v_proj): _Linear(in_features=2048, out_features=1024, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (o_proj): _Linear(in_features=2048, out_features=2048, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (q_norm): RMSNorm((128,), type=default, eps=1e-06)
+[36m(TrainingWorker pid=49624)[0m           (k_norm): RMSNorm((128,), type=default, eps=1e-06)
+[36m(TrainingWorker pid=49624)[0m         )
+[36m(TrainingWorker pid=49624)[0m         (mlp): DenseMLP(
+[36m(TrainingWorker pid=49624)[0m           (gate_proj): _Linear(in_features=2048, out_features=6144, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (up_proj): _Linear(in_features=2048, out_features=6144, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (down_proj): _Linear(in_features=6144, out_features=2048, bias=False)
+[36m(TrainingWorker pid=49624)[0m         )
+[36m(TrainingWorker pid=49624)[0m         (input_layernorm): RMSNorm((2048,), type=default, eps=1e-06)
+[36m(TrainingWorker pid=49624)[0m         (post_attention_layernorm): RMSNorm((2048,), type=default, eps=1e-06)
+[36m(TrainingWorker pid=49624)[0m       )
+[36m(TrainingWorker pid=49624)[0m     )
+[36m(TrainingWorker pid=49624)[0m     (8): FSDPCheckpointWrapper(
+[36m(TrainingWorker pid=49624)[0m       (_checkpoint_wrapped_module): DenseDecoderLayer(
+[36m(TrainingWorker pid=49624)[0m         (self_attn): MultiHeadAttention(
+[36m(TrainingWorker pid=49624)[0m           (q_proj): _Linear(in_features=2048, out_features=2048, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (k_proj): _Linear(in_features=2048, out_features=1024, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (v_proj): _Linear(in_features=2048, out_features=1024, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (o_proj): _Linear(in_features=2048, out_features=2048, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (q_norm): RMSNorm((128,), type=default, eps=1e-06)
+[36m(TrainingWorker pid=49624)[0m           (k_norm): RMSNorm((128,), type=default, eps=1e-06)
+[36m(TrainingWorker pid=49624)[0m         )
+[36m(TrainingWorker pid=49624)[0m         (mlp): DenseMLP(
+[36m(TrainingWorker pid=49624)[0m           (gate_proj): _Linear(in_features=2048, out_features=6144, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (up_proj): _Linear(in_features=2048, out_features=6144, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (down_proj): _Linear(in_features=6144, out_features=2048, bias=False)
+[36m(TrainingWorker pid=49624)[0m         )
+[36m(TrainingWorker pid=49624)[0m         (input_layernorm): RMSNorm((2048,), type=default, eps=1e-06)
+[36m(TrainingWorker pid=49624)[0m         (post_attention_layernorm): RMSNorm((2048,), type=default, eps=1e-06)
+[36m(TrainingWorker pid=49624)[0m       )
+[36m(TrainingWorker pid=49624)[0m     )
+[36m(TrainingWorker pid=49624)[0m     (9): FSDPCheckpointWrapper(
+[36m(TrainingWorker pid=49624)[0m       (_checkpoint_wrapped_module): DenseDecoderLayer(
+[36m(TrainingWorker pid=49624)[0m         (self_attn): MultiHeadAttention(
+[36m(TrainingWorker pid=49624)[0m           (q_proj): _Linear(in_features=2048, out_features=2048, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (k_proj): _Linear(in_features=2048, out_features=1024, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (v_proj): _Linear(in_features=2048, out_features=1024, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (o_proj): _Linear(in_features=2048, out_features=2048, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (q_norm): RMSNorm((128,), type=default, eps=1e-06)
+[36m(TrainingWorker pid=49624)[0m           (k_norm): RMSNorm((128,), type=default, eps=1e-06)
+[36m(TrainingWorker pid=49624)[0m         )
+[36m(TrainingWorker pid=49624)[0m         (mlp): DenseMLP(
+[36m(TrainingWorker pid=49624)[0m           (gate_proj): _Linear(in_features=2048, out_features=6144, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (up_proj): _Linear(in_features=2048, out_features=6144, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (down_proj): _Linear(in_features=6144, out_features=2048, bias=False)
+[36m(TrainingWorker pid=49624)[0m         )
+[36m(TrainingWorker pid=49624)[0m         (input_layernorm): RMSNorm((2048,), type=default, eps=1e-06)
+[36m(TrainingWorker pid=49624)[0m         (post_attention_layernorm): RMSNorm((2048,), type=default, eps=1e-06)
+[36m(TrainingWorker pid=49624)[0m       )
+[36m(TrainingWorker pid=49624)[0m     )
+[36m(TrainingWorker pid=49624)[0m     (10): FSDPCheckpointWrapper(
+[36m(TrainingWorker pid=49624)[0m       (_checkpoint_wrapped_module): DenseDecoderLayer(
+[36m(TrainingWorker pid=49624)[0m         (self_attn): MultiHeadAttention(
+[36m(TrainingWorker pid=49624)[0m           (q_proj): _Linear(in_features=2048, out_features=2048, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (k_proj): _Linear(in_features=2048, out_features=1024, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (v_proj): _Linear(in_features=2048, out_features=1024, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (o_proj): _Linear(in_features=2048, out_features=2048, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (q_norm): RMSNorm((128,), type=default, eps=1e-06)
+[36m(TrainingWorker pid=49624)[0m           (k_norm): RMSNorm((128,), type=default, eps=1e-06)
+[36m(TrainingWorker pid=49624)[0m         )
+[36m(TrainingWorker pid=49624)[0m         (mlp): DenseMLP(
+[36m(TrainingWorker pid=49624)[0m           (gate_proj): _Linear(in_features=2048, out_features=6144, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (up_proj): _Linear(in_features=2048, out_features=6144, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (down_proj): _Linear(in_features=6144, out_features=2048, bias=False)
+[36m(TrainingWorker pid=49624)[0m         )
+[36m(TrainingWorker pid=49624)[0m         (input_layernorm): RMSNorm((2048,), type=default, eps=1e-06)
+[36m(TrainingWorker pid=49624)[0m         (post_attention_layernorm): RMSNorm((2048,), type=default, eps=1e-06)
+[36m(TrainingWorker pid=49624)[0m       )
+[36m(TrainingWorker pid=49624)[0m     )
+[36m(TrainingWorker pid=49624)[0m     (11): FSDPCheckpointWrapper(
+[36m(TrainingWorker pid=49624)[0m       (_checkpoint_wrapped_module): DenseDecoderLayer(
+[36m(TrainingWorker pid=49624)[0m         (self_attn): MultiHeadAttention(
+[36m(TrainingWorker pid=49624)[0m           (q_proj): _Linear(in_features=2048, out_features=2048, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (k_proj): _Linear(in_features=2048, out_features=1024, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (v_proj): _Linear(in_features=2048, out_features=1024, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (o_proj): _Linear(in_features=2048, out_features=2048, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (q_norm): RMSNorm((128,), type=default, eps=1e-06)
+[36m(TrainingWorker pid=49624)[0m           (k_norm): RMSNorm((128,), type=default, eps=1e-06)
+[36m(TrainingWorker pid=49624)[0m         )
+[36m(TrainingWorker pid=49624)[0m         (mlp): DenseMLP(
+[36m(TrainingWorker pid=49624)[0m           (gate_proj): _Linear(in_features=2048, out_features=6144, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (up_proj): _Linear(in_features=2048, out_features=6144, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (down_proj): _Linear(in_features=6144, out_features=2048, bias=False)
+[36m(TrainingWorker pid=49624)[0m         )
+[36m(TrainingWorker pid=49624)[0m         (input_layernorm): RMSNorm((2048,), type=default, eps=1e-06)
+[36m(TrainingWorker pid=49624)[0m         (post_attention_layernorm): RMSNorm((2048,), type=default, eps=1e-06)
+[36m(TrainingWorker pid=49624)[0m       )
+[36m(TrainingWorker pid=49624)[0m     )
+[36m(TrainingWorker pid=49624)[0m     (12): FSDPCheckpointWrapper(
+[36m(TrainingWorker pid=49624)[0m       (_checkpoint_wrapped_module): DenseDecoderLayer(
+[36m(TrainingWorker pid=49624)[0m         (self_attn): MultiHeadAttention(
+[36m(TrainingWorker pid=49624)[0m           (q_proj): _Linear(in_features=2048, out_features=2048, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (k_proj): _Linear(in_features=2048, out_features=1024, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (v_proj): _Linear(in_features=2048, out_features=1024, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (o_proj): _Linear(in_features=2048, out_features=2048, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (q_norm): RMSNorm((128,), type=default, eps=1e-06)
+[36m(TrainingWorker pid=49624)[0m           (k_norm): RMSNorm((128,), type=default, eps=1e-06)
+[36m(TrainingWorker pid=49624)[0m         )
+[36m(TrainingWorker pid=49624)[0m         (mlp): DenseMLP(
+[36m(TrainingWorker pid=49624)[0m           (gate_proj): _Linear(in_features=2048, out_features=6144, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (up_proj): _Linear(in_features=2048, out_features=6144, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (down_proj): _Linear(in_features=6144, out_features=2048, bias=False)
+[36m(TrainingWorker pid=49624)[0m         )
+[36m(TrainingWorker pid=49624)[0m         (input_layernorm): RMSNorm((2048,), type=default, eps=1e-06)
+[36m(TrainingWorker pid=49624)[0m         (post_attention_layernorm): RMSNorm((2048,), type=default, eps=1e-06)
+[36m(TrainingWorker pid=49624)[0m       )
+[36m(TrainingWorker pid=49624)[0m     )
+[36m(TrainingWorker pid=49624)[0m     (13): FSDPCheckpointWrapper(
+[36m(TrainingWorker pid=49624)[0m       (_checkpoint_wrapped_module): DenseDecoderLayer(
+[36m(TrainingWorker pid=49624)[0m         (self_attn): MultiHeadAttention(
+[36m(TrainingWorker pid=49624)[0m           (q_proj): _Linear(in_features=2048, out_features=2048, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (k_proj): _Linear(in_features=2048, out_features=1024, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (v_proj): _Linear(in_features=2048, out_features=1024, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (o_proj): _Linear(in_features=2048, out_features=2048, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (q_norm): RMSNorm((128,), type=default, eps=1e-06)
+[36m(TrainingWorker pid=49624)[0m           (k_norm): RMSNorm((128,), type=default, eps=1e-06)
+[36m(TrainingWorker pid=49624)[0m         )
+[36m(TrainingWorker pid=49624)[0m         (mlp): DenseMLP(
+[36m(TrainingWorker pid=49624)[0m           (gate_proj): _Linear(in_features=2048, out_features=6144, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (up_proj): _Linear(in_features=2048, out_features=6144, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (down_proj): _Linear(in_features=6144, out_features=2048, bias=False)
+[36m(TrainingWorker pid=49624)[0m         )
+[36m(TrainingWorker pid=49624)[0m         (input_layernorm): RMSNorm((2048,), type=default, eps=1e-06)
+[36m(TrainingWorker pid=49624)[0m         (post_attention_layernorm): RMSNorm((2048,), type=default, eps=1e-06)
+[36m(TrainingWorker pid=49624)[0m       )
+[36m(TrainingWorker pid=49624)[0m     )
+[36m(TrainingWorker pid=49624)[0m     (14): FSDPCheckpointWrapper(
+[36m(TrainingWorker pid=49624)[0m       (_checkpoint_wrapped_module): DenseDecoderLayer(
+[36m(TrainingWorker pid=49624)[0m         (self_attn): MultiHeadAttention(
+[36m(TrainingWorker pid=49624)[0m           (q_proj): _Linear(in_features=2048, out_features=2048, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (k_proj): _Linear(in_features=2048, out_features=1024, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (v_proj): _Linear(in_features=2048, out_features=1024, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (o_proj): _Linear(in_features=2048, out_features=2048, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (q_norm): RMSNorm((128,), type=default, eps=1e-06)
+[36m(TrainingWorker pid=49624)[0m           (k_norm): RMSNorm((128,), type=default, eps=1e-06)
+[36m(TrainingWorker pid=49624)[0m         )
+[36m(TrainingWorker pid=49624)[0m         (mlp): DenseMLP(
+[36m(TrainingWorker pid=49624)[0m           (gate_proj): _Linear(in_features=2048, out_features=6144, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (up_proj): _Linear(in_features=2048, out_features=6144, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (down_proj): _Linear(in_features=6144, out_features=2048, bias=False)
+[36m(TrainingWorker pid=49624)[0m         )
+[36m(TrainingWorker pid=49624)[0m         (input_layernorm): RMSNorm((2048,), type=default, eps=1e-06)
+[36m(TrainingWorker pid=49624)[0m         (post_attention_layernorm): RMSNorm((2048,), type=default, eps=1e-06)
+[36m(TrainingWorker pid=49624)[0m       )
+[36m(TrainingWorker pid=49624)[0m     )
+[36m(TrainingWorker pid=49624)[0m     (15): FSDPCheckpointWrapper(
+[36m(TrainingWorker pid=49624)[0m       (_checkpoint_wrapped_module): DenseDecoderLayer(
+[36m(TrainingWorker pid=49624)[0m         (self_attn): MultiHeadAttention(
+[36m(TrainingWorker pid=49624)[0m           (q_proj): _Linear(in_features=2048, out_features=2048, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (k_proj): _Linear(in_features=2048, out_features=1024, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (v_proj): _Linear(in_features=2048, out_features=1024, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (o_proj): _Linear(in_features=2048, out_features=2048, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (q_norm): RMSNorm((128,), type=default, eps=1e-06)
+[36m(TrainingWorker pid=49624)[0m           (k_norm): RMSNorm((128,), type=default, eps=1e-06)
+[36m(TrainingWorker pid=49624)[0m         )
+[36m(TrainingWorker pid=49624)[0m         (mlp): DenseMLP(
+[36m(TrainingWorker pid=49624)[0m           (gate_proj): _Linear(in_features=2048, out_features=6144, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (up_proj): _Linear(in_features=2048, out_features=6144, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (down_proj): _Linear(in_features=6144, out_features=2048, bias=False)
+[36m(TrainingWorker pid=49624)[0m         )
+[36m(TrainingWorker pid=49624)[0m         (input_layernorm): RMSNorm((2048,), type=default, eps=1e-06)
+[36m(TrainingWorker pid=49624)[0m         (post_attention_layernorm): RMSNorm((2048,), type=default, eps=1e-06)
+[36m(TrainingWorker pid=49624)[0m       )
+[36m(TrainingWorker pid=49624)[0m     )
+[36m(TrainingWorker pid=49624)[0m     (16): FSDPCheckpointWrapper(
+[36m(TrainingWorker pid=49624)[0m       (_checkpoint_wrapped_module): DenseDecoderLayer(
+[36m(TrainingWorker pid=49624)[0m         (self_attn): MultiHeadAttention(
+[36m(TrainingWorker pid=49624)[0m           (q_proj): _Linear(in_features=2048, out_features=2048, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (k_proj): _Linear(in_features=2048, out_features=1024, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (v_proj): _Linear(in_features=2048, out_features=1024, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (o_proj): _Linear(in_features=2048, out_features=2048, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (q_norm): RMSNorm((128,), type=default, eps=1e-06)
+[36m(TrainingWorker pid=49624)[0m           (k_norm): RMSNorm((128,), type=default, eps=1e-06)
+[36m(TrainingWorker pid=49624)[0m         )
+[36m(TrainingWorker pid=49624)[0m         (mlp): DenseMLP(
+[36m(TrainingWorker pid=49624)[0m           (gate_proj): _Linear(in_features=2048, out_features=6144, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (up_proj): _Linear(in_features=2048, out_features=6144, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (down_proj): _Linear(in_features=6144, out_features=2048, bias=False)
+[36m(TrainingWorker pid=49624)[0m         )
+[36m(TrainingWorker pid=49624)[0m         (input_layernorm): RMSNorm((2048,), type=default, eps=1e-06)
+[36m(TrainingWorker pid=49624)[0m         (post_attention_layernorm): RMSNorm((2048,), type=default, eps=1e-06)
+[36m(TrainingWorker pid=49624)[0m       )
+[36m(TrainingWorker pid=49624)[0m     )
+[36m(TrainingWorker pid=49624)[0m     (17): FSDPCheckpointWrapper(
+[36m(TrainingWorker pid=49624)[0m       (_checkpoint_wrapped_module): DenseDecoderLayer(
+[36m(TrainingWorker pid=49624)[0m         (self_attn): MultiHeadAttention(
+[36m(TrainingWorker pid=49624)[0m           (q_proj): _Linear(in_features=2048, out_features=2048, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (k_proj): _Linear(in_features=2048, out_features=1024, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (v_proj): _Linear(in_features=2048, out_features=1024, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (o_proj): _Linear(in_features=2048, out_features=2048, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (q_norm): RMSNorm((128,), type=default, eps=1e-06)
+[36m(TrainingWorker pid=49624)[0m           (k_norm): RMSNorm((128,), type=default, eps=1e-06)
+[36m(TrainingWorker pid=49624)[0m         )
+[36m(TrainingWorker pid=49624)[0m         (mlp): DenseMLP(
+[36m(TrainingWorker pid=49624)[0m           (gate_proj): _Linear(in_features=2048, out_features=6144, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (up_proj): _Linear(in_features=2048, out_features=6144, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (down_proj): _Linear(in_features=6144, out_features=2048, bias=False)
+[36m(TrainingWorker pid=49624)[0m         )
+[36m(TrainingWorker pid=49624)[0m         (input_layernorm): RMSNorm((2048,), type=default, eps=1e-06)
+[36m(TrainingWorker pid=49624)[0m         (post_attention_layernorm): RMSNorm((2048,), type=default, eps=1e-06)
+[36m(TrainingWorker pid=49624)[0m       )
+[36m(TrainingWorker pid=49624)[0m     )
+[36m(TrainingWorker pid=49624)[0m     (18): FSDPCheckpointWrapper(
+[36m(TrainingWorker pid=49624)[0m       (_checkpoint_wrapped_module): DenseDecoderLayer(
+[36m(TrainingWorker pid=49624)[0m         (self_attn): MultiHeadAttention(
+[36m(TrainingWorker pid=49624)[0m           (q_proj): _Linear(in_features=2048, out_features=2048, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (k_proj): _Linear(in_features=2048, out_features=1024, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (v_proj): _Linear(in_features=2048, out_features=1024, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (o_proj): _Linear(in_features=2048, out_features=2048, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (q_norm): RMSNorm((128,), type=default, eps=1e-06)
+[36m(TrainingWorker pid=49624)[0m           (k_norm): RMSNorm((128,), type=default, eps=1e-06)
+[36m(TrainingWorker pid=49624)[0m         )
+[36m(TrainingWorker pid=49624)[0m         (mlp): DenseMLP(
+[36m(TrainingWorker pid=49624)[0m           (gate_proj): _Linear(in_features=2048, out_features=6144, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (up_proj): _Linear(in_features=2048, out_features=6144, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (down_proj): _Linear(in_features=6144, out_features=2048, bias=False)
+[36m(TrainingWorker pid=49624)[0m         )
+[36m(TrainingWorker pid=49624)[0m         (input_layernorm): RMSNorm((2048,), type=default, eps=1e-06)
+[36m(TrainingWorker pid=49624)[0m         (post_attention_layernorm): RMSNorm((2048,), type=default, eps=1e-06)
+[36m(TrainingWorker pid=49624)[0m       )
+[36m(TrainingWorker pid=49624)[0m     )
+[36m(TrainingWorker pid=49624)[0m     (19): FSDPCheckpointWrapper(
+[36m(TrainingWorker pid=49624)[0m       (_checkpoint_wrapped_module): DenseDecoderLayer(
+[36m(TrainingWorker pid=49624)[0m         (self_attn): MultiHeadAttention(
+[36m(TrainingWorker pid=49624)[0m           (q_proj): _Linear(in_features=2048, out_features=2048, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (k_proj): _Linear(in_features=2048, out_features=1024, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (v_proj): _Linear(in_features=2048, out_features=1024, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (o_proj): _Linear(in_features=2048, out_features=2048, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (q_norm): RMSNorm((128,), type=default, eps=1e-06)
+[36m(TrainingWorker pid=49624)[0m           (k_norm): RMSNorm((128,), type=default, eps=1e-06)
+[36m(TrainingWorker pid=49624)[0m         )
+[36m(TrainingWorker pid=49624)[0m         (mlp): DenseMLP(
+[36m(TrainingWorker pid=49624)[0m           (gate_proj): _Linear(in_features=2048, out_features=6144, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (up_proj): _Linear(in_features=2048, out_features=6144, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (down_proj): _Linear(in_features=6144, out_features=2048, bias=False)
+[36m(TrainingWorker pid=49624)[0m         )
+[36m(TrainingWorker pid=49624)[0m         (input_layernorm): RMSNorm((2048,), type=default, eps=1e-06)
+[36m(TrainingWorker pid=49624)[0m         (post_attention_layernorm): RMSNorm((2048,), type=default, eps=1e-06)
+[36m(TrainingWorker pid=49624)[0m       )
+[36m(TrainingWorker pid=49624)[0m     )
+[36m(TrainingWorker pid=49624)[0m     (20): FSDPCheckpointWrapper(
+[36m(TrainingWorker pid=49624)[0m       (_checkpoint_wrapped_module): DenseDecoderLayer(
+[36m(TrainingWorker pid=49624)[0m         (self_attn): MultiHeadAttention(
+[36m(TrainingWorker pid=49624)[0m           (q_proj): _Linear(in_features=2048, out_features=2048, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (k_proj): _Linear(in_features=2048, out_features=1024, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (v_proj): _Linear(in_features=2048, out_features=1024, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (o_proj): _Linear(in_features=2048, out_features=2048, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (q_norm): RMSNorm((128,), type=default, eps=1e-06)
+[36m(TrainingWorker pid=49624)[0m           (k_norm): RMSNorm((128,), type=default, eps=1e-06)
+[36m(TrainingWorker pid=49624)[0m         )
+[36m(TrainingWorker pid=49624)[0m         (mlp): DenseMLP(
+[36m(TrainingWorker pid=49624)[0m           (gate_proj): _Linear(in_features=2048, out_features=6144, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (up_proj): _Linear(in_features=2048, out_features=6144, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (down_proj): _Linear(in_features=6144, out_features=2048, bias=False)
+[36m(TrainingWorker pid=49624)[0m         )
+[36m(TrainingWorker pid=49624)[0m         (input_layernorm): RMSNorm((2048,), type=default, eps=1e-06)
+[36m(TrainingWorker pid=49624)[0m         (post_attention_layernorm): RMSNorm((2048,), type=default, eps=1e-06)
+[36m(TrainingWorker pid=49624)[0m       )
+[36m(TrainingWorker pid=49624)[0m     )
+[36m(TrainingWorker pid=49624)[0m     (21): FSDPCheckpointWrapper(
+[36m(TrainingWorker pid=49624)[0m       (_checkpoint_wrapped_module): DenseDecoderLayer(
+[36m(TrainingWorker pid=49624)[0m         (self_attn): MultiHeadAttention(
+[36m(TrainingWorker pid=49624)[0m           (q_proj): _Linear(in_features=2048, out_features=2048, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (k_proj): _Linear(in_features=2048, out_features=1024, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (v_proj): _Linear(in_features=2048, out_features=1024, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (o_proj): _Linear(in_features=2048, out_features=2048, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (q_norm): RMSNorm((128,), type=default, eps=1e-06)
+[36m(TrainingWorker pid=49624)[0m           (k_norm): RMSNorm((128,), type=default, eps=1e-06)
+[36m(TrainingWorker pid=49624)[0m         )
+[36m(TrainingWorker pid=49624)[0m         (mlp): DenseMLP(
+[36m(TrainingWorker pid=49624)[0m           (gate_proj): _Linear(in_features=2048, out_features=6144, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (up_proj): _Linear(in_features=2048, out_features=6144, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (down_proj): _Linear(in_features=6144, out_features=2048, bias=False)
+[36m(TrainingWorker pid=49624)[0m         )
+[36m(TrainingWorker pid=49624)[0m         (input_layernorm): RMSNorm((2048,), type=default, eps=1e-06)
+[36m(TrainingWorker pid=49624)[0m         (post_attention_layernorm): RMSNorm((2048,), type=default, eps=1e-06)
+[36m(TrainingWorker pid=49624)[0m       )
+[36m(TrainingWorker pid=49624)[0m     )
+[36m(TrainingWorker pid=49624)[0m     (22): FSDPCheckpointWrapper(
+[36m(TrainingWorker pid=49624)[0m       (_checkpoint_wrapped_module): DenseDecoderLayer(
+[36m(TrainingWorker pid=49624)[0m         (self_attn): MultiHeadAttention(
+[36m(TrainingWorker pid=49624)[0m           (q_proj): _Linear(in_features=2048, out_features=2048, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (k_proj): _Linear(in_features=2048, out_features=1024, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (v_proj): _Linear(in_features=2048, out_features=1024, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (o_proj): _Linear(in_features=2048, out_features=2048, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (q_norm): RMSNorm((128,), type=default, eps=1e-06)
+[36m(TrainingWorker pid=49624)[0m           (k_norm): RMSNorm((128,), type=default, eps=1e-06)
+[36m(TrainingWorker pid=49624)[0m         )
+[36m(TrainingWorker pid=49624)[0m         (mlp): DenseMLP(
+[36m(TrainingWorker pid=49624)[0m           (gate_proj): _Linear(in_features=2048, out_features=6144, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (up_proj): _Linear(in_features=2048, out_features=6144, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (down_proj): _Linear(in_features=6144, out_features=2048, bias=False)
+[36m(TrainingWorker pid=49624)[0m         )
+[36m(TrainingWorker pid=49624)[0m         (input_layernorm): RMSNorm((2048,), type=default, eps=1e-06)
+[36m(TrainingWorker pid=49624)[0m         (post_attention_layernorm): RMSNorm((2048,), type=default, eps=1e-06)
+[36m(TrainingWorker pid=49624)[0m       )
+[36m(TrainingWorker pid=49624)[0m     )
+[36m(TrainingWorker pid=49624)[0m     (23): FSDPCheckpointWrapper(
+[36m(TrainingWorker pid=49624)[0m       (_checkpoint_wrapped_module): DenseDecoderLayer(
+[36m(TrainingWorker pid=49624)[0m         (self_attn): MultiHeadAttention(
+[36m(TrainingWorker pid=49624)[0m           (q_proj): _Linear(in_features=2048, out_features=2048, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (k_proj): _Linear(in_features=2048, out_features=1024, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (v_proj): _Linear(in_features=2048, out_features=1024, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (o_proj): _Linear(in_features=2048, out_features=2048, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (q_norm): RMSNorm((128,), type=default, eps=1e-06)
+[36m(TrainingWorker pid=49624)[0m           (k_norm): RMSNorm((128,), type=default, eps=1e-06)
+[36m(TrainingWorker pid=49624)[0m         )
+[36m(TrainingWorker pid=49624)[0m         (mlp): DenseMLP(
+[36m(TrainingWorker pid=49624)[0m           (gate_proj): _Linear(in_features=2048, out_features=6144, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (up_proj): _Linear(in_features=2048, out_features=6144, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (down_proj): _Linear(in_features=6144, out_features=2048, bias=False)
+[36m(TrainingWorker pid=49624)[0m         )
+[36m(TrainingWorker pid=49624)[0m         (input_layernorm): RMSNorm((2048,), type=default, eps=1e-06)
+[36m(TrainingWorker pid=49624)[0m         (post_attention_layernorm): RMSNorm((2048,), type=default, eps=1e-06)
+[36m(TrainingWorker pid=49624)[0m       )
+[36m(TrainingWorker pid=49624)[0m     )
+[36m(TrainingWorker pid=49624)[0m     (24): FSDPCheckpointWrapper(
+[36m(TrainingWorker pid=49624)[0m       (_checkpoint_wrapped_module): DenseDecoderLayer(
+[36m(TrainingWorker pid=49624)[0m         (self_attn): MultiHeadAttention(
+[36m(TrainingWorker pid=49624)[0m           (q_proj): _Linear(in_features=2048, out_features=2048, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (k_proj): _Linear(in_features=2048, out_features=1024, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (v_proj): _Linear(in_features=2048, out_features=1024, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (o_proj): _Linear(in_features=2048, out_features=2048, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (q_norm): RMSNorm((128,), type=default, eps=1e-06)
+[36m(TrainingWorker pid=49624)[0m           (k_norm): RMSNorm((128,), type=default, eps=1e-06)
+[36m(TrainingWorker pid=49624)[0m         )
+[36m(TrainingWorker pid=49624)[0m         (mlp): DenseMLP(
+[36m(TrainingWorker pid=49624)[0m           (gate_proj): _Linear(in_features=2048, out_features=6144, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (up_proj): _Linear(in_features=2048, out_features=6144, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (down_proj): _Linear(in_features=6144, out_features=2048, bias=False)
+[36m(TrainingWorker pid=49624)[0m         )
+[36m(TrainingWorker pid=49624)[0m         (input_layernorm): RMSNorm((2048,), type=default, eps=1e-06)
+[36m(TrainingWorker pid=49624)[0m         (post_attention_layernorm): RMSNorm((2048,), type=default, eps=1e-06)
+[36m(TrainingWorker pid=49624)[0m       )
+[36m(TrainingWorker pid=49624)[0m     )
+[36m(TrainingWorker pid=49624)[0m     (25): FSDPCheckpointWrapper(
+[36m(TrainingWorker pid=49624)[0m       (_checkpoint_wrapped_module): DenseDecoderLayer(
+[36m(TrainingWorker pid=49624)[0m         (self_attn): MultiHeadAttention(
+[36m(TrainingWorker pid=49624)[0m           (q_proj): _Linear(in_features=2048, out_features=2048, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (k_proj): _Linear(in_features=2048, out_features=1024, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (v_proj): _Linear(in_features=2048, out_features=1024, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (o_proj): _Linear(in_features=2048, out_features=2048, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (q_norm): RMSNorm((128,), type=default, eps=1e-06)
+[36m(TrainingWorker pid=49624)[0m           (k_norm): RMSNorm((128,), type=default, eps=1e-06)
+[36m(TrainingWorker pid=49624)[0m         )
+[36m(TrainingWorker pid=49624)[0m         (mlp): DenseMLP(
+[36m(TrainingWorker pid=49624)[0m           (gate_proj): _Linear(in_features=2048, out_features=6144, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (up_proj): _Linear(in_features=2048, out_features=6144, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (down_proj): _Linear(in_features=6144, out_features=2048, bias=False)
+[36m(TrainingWorker pid=49624)[0m         )
+[36m(TrainingWorker pid=49624)[0m         (input_layernorm): RMSNorm((2048,), type=default, eps=1e-06)
+[36m(TrainingWorker pid=49624)[0m         (post_attention_layernorm): RMSNorm((2048,), type=default, eps=1e-06)
+[36m(TrainingWorker pid=49624)[0m       )
+[36m(TrainingWorker pid=49624)[0m     )
+[36m(TrainingWorker pid=49624)[0m     (26): FSDPCheckpointWrapper(
+[36m(TrainingWorker pid=49624)[0m       (_checkpoint_wrapped_module): DenseDecoderLayer(
+[36m(TrainingWorker pid=49624)[0m         (self_attn): MultiHeadAttention(
+[36m(TrainingWorker pid=49624)[0m           (q_proj): _Linear(in_features=2048, out_features=2048, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (k_proj): _Linear(in_features=2048, out_features=1024, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (v_proj): _Linear(in_features=2048, out_features=1024, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (o_proj): _Linear(in_features=2048, out_features=2048, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (q_norm): RMSNorm((128,), type=default, eps=1e-06)
+[36m(TrainingWorker pid=49624)[0m           (k_norm): RMSNorm((128,), type=default, eps=1e-06)
+[36m(TrainingWorker pid=49624)[0m         )
+[36m(TrainingWorker pid=49624)[0m         (mlp): DenseMLP(
+[36m(TrainingWorker pid=49624)[0m           (gate_proj): _Linear(in_features=2048, out_features=6144, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (up_proj): _Linear(in_features=2048, out_features=6144, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (down_proj): _Linear(in_features=6144, out_features=2048, bias=False)
+[36m(TrainingWorker pid=49624)[0m         )
+[36m(TrainingWorker pid=49624)[0m         (input_layernorm): RMSNorm((2048,), type=default, eps=1e-06)
+[36m(TrainingWorker pid=49624)[0m         (post_attention_layernorm): RMSNorm((2048,), type=default, eps=1e-06)
+[36m(TrainingWorker pid=49624)[0m       )
+[36m(TrainingWorker pid=49624)[0m     )
+[36m(TrainingWorker pid=49624)[0m     (27): FSDPCheckpointWrapper(
+[36m(TrainingWorker pid=49624)[0m       (_checkpoint_wrapped_module): DenseDecoderLayer(
+[36m(TrainingWorker pid=49624)[0m         (self_attn): MultiHeadAttention(
+[36m(TrainingWorker pid=49624)[0m           (q_proj): _Linear(in_features=2048, out_features=2048, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (k_proj): _Linear(in_features=2048, out_features=1024, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (v_proj): _Linear(in_features=2048, out_features=1024, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (o_proj): _Linear(in_features=2048, out_features=2048, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (q_norm): RMSNorm((128,), type=default, eps=1e-06)
+[36m(TrainingWorker pid=49624)[0m           (k_norm): RMSNorm((128,), type=default, eps=1e-06)
+[36m(TrainingWorker pid=49624)[0m         )
+[36m(TrainingWorker pid=49624)[0m         (mlp): DenseMLP(
+[36m(TrainingWorker pid=49624)[0m           (gate_proj): _Linear(in_features=2048, out_features=6144, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (up_proj): _Linear(in_features=2048, out_features=6144, bias=False)
+[36m(TrainingWorker pid=49624)[0m           (down_proj): _Linear(in_features=6144, out_features=2048, bias=False)
+[36m(TrainingWorker pid=49624)[0m         )
+[36m(TrainingWorker pid=49624)[0m         (input_layernorm): RMSNorm((2048,), type=default, eps=1e-06)
+[36m(TrainingWorker pid=49624)[0m         (post_attention_layernorm): RMSNorm((2048,), type=default, eps=1e-06)
+[36m(TrainingWorker pid=49624)[0m       )
+[36m(TrainingWorker pid=49624)[0m     )
+[36m(TrainingWorker pid=49624)[0m   )
+[36m(TrainingWorker pid=49624)[0m   (rotary_emb): RotaryEmbedding()
+[36m(TrainingWorker pid=49624)[0m   (embed_tokens): FSDPEmbedding(151936, 2048)
+[36m(TrainingWorker pid=49624)[0m )
+[36m(TrainingWorker pid=49624)[0m [XTuner][2026-09-21 16:05:41][INFO] Total trainable parameters: 2031.74M, total parameters: 2031.74M
+[36m(TrainingWorker pid=49624)[0m [XTuner][2026-09-21 16:05:41][INFO] Untrainable parameters names: []
+[36m(TrainingWorker pid=49624)[0m [XTuner][2026-09-21 16:05:45][SUCCESS] [HF loading cost] Elapsed time 3.16 seconds, peak gpu memory 0.0G
+[36m(TrainingWorker pid=49624)[0m [XTuner][2026-09-21 16:05:45][INFO] The `compile_cfg` of model is {}
+[36m(TrainingWorker pid=49624)[0m [XTuner][2026-09-21 16:05:45][INFO] Offloaded model to CPU. Current allocate 0.00048828125 MB, reserved: 2.0 MB
+[36m(TrainingWorker pid=49624)[0m [XTuner][2026-09-21 16:05:45][INFO] Skip optimizer offload because optimizer state is empty.
+[36m(pid=47641)[0m Import FlashAttention 2 failed No module named 'flash_attn', Please install it manually.
+[36m(pid=47641)[0m [XTuner][2026-09-21 16:05:54][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[36m(pid=47641)[0m [XTuner][2026-09-21 16:05:54][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[36m(pid=47641)[0m [XTuner][2026-09-21 16:05:54][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[36m(pid=47641)[0m [XTuner][2026-09-21 16:05:54][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[36m(pid=47641)[0m [XTuner][2026-09-21 16:05:54][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[36m(pid=47641)[0m [XTuner][2026-09-21 16:05:55][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[36m(pid=47641)[0m [XTuner][2026-09-21 16:05:55][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[36m(pid=47641)[0m [XTuner][2026-09-21 16:05:55][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[36m(pid=47641)[0m [XTuner][2026-09-21 16:05:55][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[36m(pid=47641)[0m [XTuner][2026-09-21 16:05:55][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[36m(pid=47641)[0m [XTuner][2026-09-21 16:05:55][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[36m(pid=47641)[0m [XTuner][2026-09-21 16:05:55][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[36m(pid=47641)[0m [XTuner][2026-09-21 16:05:55][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[36m(pid=47641)[0m [XTuner][2026-09-21 16:05:55][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[36m(pid=47641)[0m [XTuner][2026-09-21 16:05:55][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[36m(pid=47641)[0m [XTuner][2026-09-21 16:05:55][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[36m(pid=47641)[0m [XTuner][2026-09-21 16:05:55][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[36m(pid=47641)[0m [XTuner][2026-09-21 16:05:55][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[36m(pid=47641)[0m [XTuner][2026-09-21 16:05:55][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[36m(pid=47641)[0m [XTuner][2026-09-21 16:05:55][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[36m(pid=47641)[0m [XTuner][2026-09-21 16:05:55][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[36m(pid=47641)[0m [XTuner][2026-09-21 16:05:55][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[36m(pid=47641)[0m [XTuner][2026-09-21 16:05:55][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[36m(pid=47641)[0m [XTuner][2026-09-21 16:05:55][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[36m(pid=47641)[0m [XTuner][2026-09-21 16:05:55][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[36m(RolloutController pid=47641)[0m Using blocking ray.get inside async actor. This blocks the event loop. Please use `await` on object ref with asyncio.gather if you want to yield execution to the event loop instead.
+[36m(pid=47640)[0m Import FlashAttention 2 failed No module named 'flash_attn', Please install it manually.
+[36m(pid=47640)[0m [XTuner][2026-09-21 16:06:05][WARNING] flash-attn is not installed, using `flex_attention` instead.[32m [repeated 4x across cluster] (Ray deduplicates logs by default. Set RAY_DEDUP_LOGS=0 to disable log deduplication, or see https://docs.ray.io/en/master/ray-observability/user-guides/configure-logging.html#log-deduplication for more options.)[0m
+[36m(LMDeployWorker pid=47640)[0m [XTuner][2026-09-21 16:06:07][INFO] RolloutConfig:
+[36m(LMDeployWorker pid=47640)[0m {
+[36m(LMDeployWorker pid=47640)[0m   "env": "grpo_gsm8k",
+[36m(LMDeployWorker pid=47640)[0m   "device": "GPU",
+[36m(LMDeployWorker pid=47640)[0m   "model_path": "/root/workspace/xtuner-lab/models/Qwen3-1.7B",
+[36m(LMDeployWorker pid=47640)[0m   "model_name": "qwen3",
+[36m(LMDeployWorker pid=47640)[0m   "tokenizer_path": "/root/workspace/xtuner-lab/models/Qwen3-1.7B",
+[36m(LMDeployWorker pid=47640)[0m   "api_key": null,
+[36m(LMDeployWorker pid=47640)[0m   "gpus_per_node": 8,
+[36m(LMDeployWorker pid=47640)[0m   "dtype": "bfloat16",
+[36m(LMDeployWorker pid=47640)[0m   "gpu_memory_utilization": 0.5,
+[36m(LMDeployWorker pid=47640)[0m   "random_seed": 1024,
+[36m(LMDeployWorker pid=47640)[0m   "rollout_cross_node_comm": true,
+[36m(LMDeployWorker pid=47640)[0m   "dist_port_base": 25000,
+[36m(LMDeployWorker pid=47640)[0m   "weight_transport_type": null,
+[36m(LMDeployWorker pid=47640)[0m   "weight_update_host": null,
+[36m(LMDeployWorker pid=47640)[0m   "weight_update_port": 30000,
+[36m(LMDeployWorker pid=47640)[0m   "checkpoint_name_prefix": "xtuner-rl",
+[36m(LMDeployWorker pid=47640)[0m   "checkpoint_engine_timeout": 300.0,
+[36m(LMDeployWorker pid=47640)[0m   "checkpoint_engine_sync_after_register": true,
+[36m(LMDeployWorker pid=47640)[0m   "rollout_max_batch_size_per_instance": 1024,
+[36m(LMDeployWorker pid=47640)[0m   "allow_over_concurrency_ratio": 1.2,
+[36m(LMDeployWorker pid=47640)[0m   "tensor_parallel_size": 1,
+[36m(LMDeployWorker pid=47640)[0m   "data_parallel_size": 1,
+[36m(LMDeployWorker pid=47640)[0m   "expert_parallel_size": 1,
+[36m(LMDeployWorker pid=47640)[0m   "enable_chunked_prefill": false,
+[36m(LMDeployWorker pid=47640)[0m   "chunked_prefill_size": 128,
+[36m(LMDeployWorker pid=47640)[0m   "skip_load_weights": false,
+[36m(LMDeployWorker pid=47640)[0m   "enable_return_routed_experts": false,
+[36m(LMDeployWorker pid=47640)[0m   "launch_server_method": "ray",
+[36m(LMDeployWorker pid=47640)[0m   "rollout_timeout": 1200.0,
+[36m(LMDeployWorker pid=47640)[0m   "session_server_timeout": 1200.0,
+[36m(LMDeployWorker pid=47640)[0m   "context_length": 1536,
+[36m(LMDeployWorker pid=47640)[0m   "enable_float8": false,
+[36m(LMDeployWorker pid=47640)[0m   "extra_rollout_config": {},
+[36m(LMDeployWorker pid=47640)[0m   "max_retry_per_worker": 1024,
+[36m(LMDeployWorker pid=47640)[0m   "max_retry_per_sample": 1,
+[36m(LMDeployWorker pid=47640)[0m   "max_prefill_token_num": null,
+[36m(LMDeployWorker pid=47640)[0m   "router_n_groups": null,
+[36m(LMDeployWorker pid=47640)[0m   "fp32_lm_head": false,
+[36m(LMDeployWorker pid=47640)[0m   "enable_prefix_caching": false,
+[36m(LMDeployWorker pid=47640)[0m   "worker_log_dir": "/root/autodl-tmp/xtuner-lab/experiments/004_grpo_gsm8k/work_dir_17b/20260921160521/logs",
+[36m(LMDeployWorker pid=47640)[0m   "health_check_interval_seconds": 30.0,
+[36m(LMDeployWorker pid=47640)[0m   "health_check_timeout_seconds": 15.0,
+[36m(LMDeployWorker pid=47640)[0m   "health_check_failure_threshold": 3,
+[36m(LMDeployWorker pid=47640)[0m   "enable_proxy": false,
+[36m(LMDeployWorker pid=47640)[0m   "routed_proxy_url": "http://s-20260104203038-22bhb.ailab-evalservice.pjh-service.org.cn",
+[36m(LMDeployWorker pid=47640)[0m   "routed_proxy_admin_url": "http://s-20260104203038-22bhb-decode.ailab-evalservice.svc:4000"
+[36m(LMDeployWorker pid=47640)[0m }
+[36m(LMDeployWorker pid=47640)[0m [XTuner][2026-09-21 16:06:07][INFO] Using eos_token: [151645, 151643] for model at /root/workspace/xtuner-lab/models/Qwen3-1.7B
+[36m(LMDeployWorker pid=47640)[0m [XTuner][2026-09-21 16:06:08][INFO] Launch server task on server_url: http://172.17.0.3:25001
+[36m(LMDeployWorker pid=47640)[0m Using blocking ray.get inside async actor. This blocks the event loop. Please use `await` on object ref with asyncio.gather if you want to yield execution to the event loop instead.
+[36m(pid=49846)[0m Import FlashAttention 2 failed No module named 'flash_attn', Please install it manually.
+[36m(pid=49846)[0m [XTuner][2026-09-21 16:06:18][WARNING] flash-attn is not installed, using `flex_attention` instead.[32m [repeated 25x across cluster][0m
+[36m(LMDeployWorker pid=47640)[0m [XTuner][2026-09-21 16:06:23][INFO] Waiting for server to start... Elapsed time: 15.09s
+[36m(RayEngineWorker pid=49945)[0m [W921 16:06:32.934035097 AllocatorConfig.cpp:28] Warning: PYTORCH_CUDA_ALLOC_CONF is deprecated, use PYTORCH_ALLOC_CONF instead (function operator())
+[36m(pid=49846)[0m [XTuner][2026-09-21 16:06:19][WARNING] flash-attn is not installed, using `flex_attention` instead.[32m [repeated 21x across cluster][0m
+[36m(RayEngineWorker pid=49945)[0m Using blocking ray.get inside async actor. This blocks the event loop. Please use `await` on object ref with asyncio.gather if you want to yield execution to the event loop instead.
+[36m(LMDeployWorker pid=47640)[0m [XTuner][2026-09-21 16:06:38][INFO] Waiting for server to start... Elapsed time: 30.17s
+[36m(RayWorkerWrapper pid=50074)[0m Loading weights from safetensors:   0%|          | 0/2 [00:00<?, ?it/s]
+[36m(RayWorkerWrapper pid=50074)[0m Loading weights from safetensors: 100%|██████████| 2/2 [00:00<00:00,  2.49it/s]Loading weights from safetensors: 100%|██████████| 2/2 [00:00<00:00,  2.49it/s]
+[36m(run_lmdeploy_server_wrapper pid=49846)[0m HINT:    Please open [93m[1mhttp://172.17.0.3:25001[0m in a browser for detailed api usage!!!
+[36m(run_lmdeploy_server_wrapper pid=49846)[0m HINT:    Please open [93m[1mhttp://172.17.0.3:25001[0m in a browser for detailed api usage!!!
+[36m(run_lmdeploy_server_wrapper pid=49846)[0m HINT:    Please open [93m[1mhttp://172.17.0.3:25001[0m in a browser for detailed api usage!!!
+[36m(pid=47642)[0m Import FlashAttention 2 failed No module named 'flash_attn', Please install it manually.
+[36m(pid=47642)[0m [XTuner][2026-09-21 16:06:57][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[36m(pid=47642)[0m [XTuner][2026-09-21 16:06:58][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[36m(pid=47642)[0m [XTuner][2026-09-21 16:06:58][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[36m(pid=47642)[0m [XTuner][2026-09-21 16:06:58][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[36m(pid=47642)[0m [XTuner][2026-09-21 16:06:58][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[36m(pid=47642)[0m [XTuner][2026-09-21 16:06:58][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[36m(pid=47642)[0m [XTuner][2026-09-21 16:06:58][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[36m(pid=47642)[0m [XTuner][2026-09-21 16:06:58][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[36m(pid=47642)[0m [XTuner][2026-09-21 16:06:58][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[36m(pid=47642)[0m [XTuner][2026-09-21 16:06:58][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[36m(pid=47642)[0m [XTuner][2026-09-21 16:06:58][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[36m(pid=47642)[0m [XTuner][2026-09-21 16:06:58][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[36m(pid=47642)[0m [XTuner][2026-09-21 16:06:58][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[36m(pid=47642)[0m [XTuner][2026-09-21 16:06:58][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[36m(pid=47642)[0m [XTuner][2026-09-21 16:06:58][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[36m(pid=47642)[0m [XTuner][2026-09-21 16:06:58][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[36m(pid=47642)[0m [XTuner][2026-09-21 16:06:58][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[36m(pid=47642)[0m [XTuner][2026-09-21 16:06:58][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[36m(pid=47642)[0m [XTuner][2026-09-21 16:06:58][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[36m(pid=47642)[0m [XTuner][2026-09-21 16:06:58][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[36m(pid=47642)[0m [XTuner][2026-09-21 16:06:58][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[36m(pid=47642)[0m [XTuner][2026-09-21 16:06:58][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[36m(pid=47642)[0m [XTuner][2026-09-21 16:06:58][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[36m(pid=47642)[0m [XTuner][2026-09-21 16:06:58][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[36m(pid=47642)[0m [XTuner][2026-09-21 16:06:58][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[36m(RolloutController pid=47641)[0m [XTuner][2026-09-21 16:06:59][INFO] Rollout worker registry snapshot: weight_update_targets=((RolloutWeightUpdateTarget(endpoint_rank=0, update_ranks=(0,), server_url='http://172.17.0.3:25001', lifecycle_state='active', inference_engine_ranks=(0,)),), ((0,),)), active_entrypoints=(WorkerSnapshot(rank=0, actor=Actor(LMDeployWorker, 7f0753b5aa908d77c186269201000000), url='http://172.17.0.3:25001', session_url='http://172.17.0.3:25003', is_request_entrypoint=True, lifecycle_state=<WorkerLifecycleState.ACTIVE: 'active'>),), server_process_urls=['http://172.17.0.3:25001'], lifecycle_groups=((0,),)
+[36m(RolloutController pid=47641)[0m [XTuner][2026-09-21 16:06:59][INFO] RolloutHealthManager loop started.
+[36m(RolloutController pid=47641)[0m [XTuner][2026-09-21 16:06:59][INFO] RolloutHealthManager started.
+[36m(SessionServerActor pid=47642)[0m [XTuner][2026-09-21 16:06:59][INFO] SessionServer listening on http://172.17.0.3:25003 (Forwarding to http://172.17.0.3:25001)
+[XTuner][2026-09-21 16:07:02][SUCCESS] [Build Datasets] Elapsed time 0.39 seconds
+[XTuner][2026-09-21 16:07:02][SUCCESS] [Pack Datasets] Elapsed time 0.00 seconds
+[XTuner][2026-09-21 16:07:02][INFO] External CPU resource summary before rollout/training:
+item                       | CPU | memory(GB) | note                                       
+---------------------------+-----+------------+--------------------------------------------
+cluster_total              | 32  | 85.66      | Ray cluster_resources total.               
+accelerator_pg_reserved    | 12  | 16.00      | Reserved by accelerator placement group(s).
+external_capacity          | 20  | 69.66      | cluster_total - accelerator_pg_reserved.   
+registered_external        | 2   | 2.00       | External CPU pools managed by XTuner.      
+remaining_after_registered | 18  | 67.66      | XTuner budget after registered pools.      
+pool:rollout_controller    | 1   | 1.00       | 1 worker(s) * 1 CPU.                       
+pool:judger:openai/gsm8k   | 1   | 1.00       | 1 worker(s) * 1 CPU.                       
+---------------------------+-----+------------+--------------------------------------------
+[XTuner][2026-09-21 16:07:02][INFO] Start RL training
+[XTuner][2026-09-21 16:07:02][INFO] Train step 1/3 start
+[XTuner][2026-09-21 16:07:02][INFO] [Step 1] start to generate rollout experience for train step 1 with model step 0
+[XTuner][2026-09-21 16:07:02][INFO] [AgentLoopManager][train_task] Start produce_batch: train_step=1 model_step=0 batch_size=2
+[XTuner][2026-09-21 16:07:02][INFO] [AgentLoopManager][train_task] Refresh staleness for task train_task: expired_count=0
+[XTuner][2026-09-21 16:07:03][INFO] [SyncProduceStrategy] Started 2 initial tasks.
+SyncProduceStrategy train_task:   0%|          | 0/2 [00:00<?, ?sample/s][36m(RolloutController pid=47641)[0m [XTuner][2026-09-21 16:07:02][INFO] RolloutHealthManager resumed.
+[36m(RayEngineWorker pid=49945)[0m /root/miniconda3/envs/xtuner/lib/python3.11/site-packages/lmdeploy/pytorch/engine/model_agent/agent.py:159: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:206.)
+[36m(RayEngineWorker pid=49945)[0m   v = torch.from_numpy(v)
+[36m(pid=47643)[0m Import FlashAttention 2 failed No module named 'flash_attn', Please install it manually.
+[36m(run_lmdeploy_server_wrapper pid=49846)[0m [2026-09-21 16:07:07 DP0] Avg thr (in/out): 98.4 / 156.9 tokens/s, Server (succeeded/failed/routed/waiting): 0 / 0 / 10 / 0, Engine (running/waiting): 10 / 0, KV cache: 2.5%, 
+[36m(pid=47643)[0m [XTuner][2026-09-21 16:07:10][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[36m(pid=47643)[0m [XTuner][2026-09-21 16:07:10][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[36m(pid=47643)[0m [XTuner][2026-09-21 16:07:10][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[36m(pid=47643)[0m [XTuner][2026-09-21 16:07:10][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[36m(pid=47643)[0m [XTuner][2026-09-21 16:07:10][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[36m(pid=47643)[0m [XTuner][2026-09-21 16:07:10][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[36m(pid=47643)[0m [XTuner][2026-09-21 16:07:10][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[36m(pid=47643)[0m [XTuner][2026-09-21 16:07:10][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[36m(pid=47643)[0m [XTuner][2026-09-21 16:07:10][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[36m(pid=47643)[0m [XTuner][2026-09-21 16:07:10][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[36m(pid=47643)[0m [XTuner][2026-09-21 16:07:10][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[36m(pid=47643)[0m [XTuner][2026-09-21 16:07:10][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[36m(pid=47643)[0m [XTuner][2026-09-21 16:07:10][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[36m(pid=47643)[0m [XTuner][2026-09-21 16:07:10][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[36m(pid=47643)[0m [XTuner][2026-09-21 16:07:10][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[36m(pid=47643)[0m [XTuner][2026-09-21 16:07:10][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[36m(pid=47643)[0m [XTuner][2026-09-21 16:07:10][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[36m(pid=47643)[0m [XTuner][2026-09-21 16:07:10][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[36m(pid=47643)[0m [XTuner][2026-09-21 16:07:10][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[36m(pid=47643)[0m [XTuner][2026-09-21 16:07:10][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[36m(pid=47643)[0m [XTuner][2026-09-21 16:07:10][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[36m(pid=47643)[0m [XTuner][2026-09-21 16:07:10][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[36m(pid=47643)[0m [XTuner][2026-09-21 16:07:10][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[36m(pid=47643)[0m [XTuner][2026-09-21 16:07:11][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[36m(pid=47643)[0m [XTuner][2026-09-21 16:07:11][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[36m(run_lmdeploy_server_wrapper pid=49846)[0m [2026-09-21 16:07:17 DP0] Avg thr (in/out): 0.0 / 409.2 tokens/s, Server (succeeded/failed/routed/waiting): 0 / 0 / 10 / 0, Engine (running/waiting): 10 / 0, KV cache: 6.1%, 
+                                                                         [XTuner][2026-09-21 16:07:27][INFO] [AgentLoopManager][train_task] get_batch from buffer for task train_task: requested=2, retrieved=2, leftover_init=0, leftover_completed=0, leftover_aborted=0, leftover_expired=0, buffer_failed_groups=0, buffer_filtered_groups=0
+[XTuner][2026-09-21 16:07:27][INFO] [AgentLoopManager][train_task] produce_batch done elapsed=24.271, completed_groups=2
+[XTuner][2026-09-21 16:07:27][INFO] generate 10 samples for training
+[XTuner][2026-09-21 16:07:27][INFO] Train step 1 train trajectories saved to /root/autodl-tmp/xtuner-lab/experiments/004_grpo_gsm8k/work_dir_17b/20260921160521/train_rollout/train_rollout_1.jsonl
+[36m(RolloutController pid=47641)[0m [XTuner][2026-09-21 16:07:27][INFO] RolloutHealthManager paused.
+[36m(RolloutController pid=47641)[0m [XTuner][2026-09-21 16:07:27][INFO] Abort request sent successfully: count=1
+[36m(RolloutController pid=47641)[0m [XTuner][2026-09-21 16:07:27][INFO] No failed rollout workers detected during shutdown barrier.
+[36m(run_lmdeploy_server_wrapper pid=49846)[0m [2026-09-21 16:07:27 DP0] Avg thr (in/out): 0.0 / 292.2 tokens/s, Server (succeeded/failed/routed/waiting): 10 / 0 / 0 / 0, Engine (running/waiting): 0 / 0, KV cache: 0.1%, 
+[XTuner][2026-09-21 16:07:27][INFO] Training controller loaded
+[XTuner][2026-09-21 16:07:27][INFO] Prepared 10 training data batches
+[36m(TrainingWorker pid=49624)[0m [XTuner][2026-09-21 16:07:27][INFO] Skip optimizer onload because optimizer state is empty.
+[36m(TrainingWorker pid=49624)[0m /root/miniconda3/envs/xtuner/lib/python3.11/site-packages/torch/nn/attention/flex_attention.py:1622: FutureWarning: return_lse is deprecated and will be removed in v2.10. Please use return_aux=AuxRequest(lse=True) instead.
+[36m(TrainingWorker pid=49624)[0m   _warn_once(
+[36m(TrainingWorker pid=49624)[0m [XTuner][2026-09-21 16:07:36][INFO] Rollout 1: avg entropy: 0.1361, avg rollout entropy: 0.1349
+[36m(TrainingWorker pid=49624)[0m  rollout mismatch metrics:
+[36m(TrainingWorker pid=49624)[0m {
+[36m(TrainingWorker pid=49624)[0m     "mismatch/mismatch_training_ppl": 1.145763635635376,
+[36m(TrainingWorker pid=49624)[0m     "mismatch/mismatch_training_log_ppl": 0.13607141375541687,
+[36m(TrainingWorker pid=49624)[0m     "mismatch/mismatch_kl": 0.0011548114707693458,
+[36m(TrainingWorker pid=49624)[0m     "mismatch/mismatch_k3_kl": 0.0007054098532535136,
+[36m(TrainingWorker pid=49624)[0m     "mismatch/mismatch_rollout_ppl": 1.1444413661956787,
+[36m(TrainingWorker pid=49624)[0m     "mismatch/mismatch_rollout_log_ppl": 0.13491658866405487,
+[36m(TrainingWorker pid=49624)[0m     "mismatch/mismatch_log_ppl_diff": 0.0011548250913619995,
+[36m(TrainingWorker pid=49624)[0m     "mismatch/mismatch_log_ppl_abs_diff": 0.0011548250913619995,
+[36m(TrainingWorker pid=49624)[0m     "mismatch/mismatch_log_ppl_diff_max": 0.0011548250913619995,
+[36m(TrainingWorker pid=49624)[0m     "mismatch/mismatch_log_ppl_diff_min": 0.0011548250913619995,
+[36m(TrainingWorker pid=49624)[0m     "mismatch/mismatch_ppl_ratio": 1.0011554956436157,
+[36m(TrainingWorker pid=49624)[0m     "mismatch/mismatch_logprob_abs_diff": 0.009622272104024887
+[36m(TrainingWorker pid=49624)[0m }
+[36m(TrainingWorker pid=49624)[0m [XTuner][2026-09-21 16:07:36][INFO] grad_accumulation_steps: 1
+[XTuner][2026-09-21 16:08:44][INFO] Release all sessions and free associated resources
+[36m(TrainingWorker pid=49624)[0m [XTuner][2026-09-21 16:08:44][INFO] Rank0 Rollout 1 Step 0: reduced_llm_loss=0.0000, step_consumed_tokens=9569, step_seqlen_tokens=32768, step_consumed_img_tokens=0.0000, efficient_attn_ratio=0.0306, img_efficient_attn_ratio=0.0000, local_base_loss=0.0000, grad_norm=0.0000, max_memory=10.6190, reserved_memory=12.7461
+[36m(TrainingWorker pid=49624)[0m [XTuner][2026-09-21 16:08:44][INFO] Offloaded optimizer to CPU. Current allocate 17.5048828125 MB, reserved: 1786.0 MB
+[36m(TrainingWorker pid=49624)[0m /root/miniconda3/envs/xtuner/lib/python3.11/site-packages/torch/distributed/distributed_c10d.py:4876: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+[36m(TrainingWorker pid=49624)[0m   warnings.warn(  # warn only once
+[36m(TrainingWorker pid=49624)[0m [rank0]:[W921 16:08:50.163699165 ProcessGroupNCCL.cpp:5072] Guessing device ID based on global rank. This can cause a hang if rank to GPU mapping is heterogeneous. You can specify device_id in init_process_group()
+[XTuner][2026-09-21 16:08:50][INFO] Rollout workers update weights successfully in colocate mode
+[36m(TrainingWorker pid=49624)[0m [XTuner][2026-09-21 16:08:50][INFO] Offloaded model to CPU. Current allocate 1.25537109375 MB, reserved: 4.0 MB
+[XTuner][2026-09-21 16:08:52][INFO] Train step 1/3
+Train step 1 finished and timing listed:
+ - produce_batch            : 24.27s
+ - onload                   : 0.01s
+ - prepare_data             : 0.02s
+ - training                 : 77.12s
+ - save_ckpt                : 0.05s
+ - sync_weight              : 7.54s
+ - step                     : 109.28s 
+Train step 1 data statistics:
+- batch_size               : 10.0000
+- rewards/mean             : 0.0000
+- rewards/min              : 0.0000
+- rewards/max              : 0.0000
+- raw_rewards/mean         : 0.0000
+- advantages/mean          : 0.0000
+- advantages/min           : 0.0000
+- advantages/max           : 0.0000
+- response_len/mean        : 859.4000
+- response_len/min         : 616.0000
+- response_len/max         : 1024.0000
+- response_len/std         : 143.4962
+- prompt_len/mean          : 98.5000
+- prompt_len/min           : 91.0000
+- prompt_len/max           : 106.0000 
+Train step 1 throughput statistics:
+- e2e_effective_sgs        : 0.0915
+- e2e_effective_tgs        : 87.5610
+- effective_sgs            : 0.0915
+- effective_tgs            : 87.5660
+- training_tgs             : 124.0753
+- rollout_sgs              : 0.4129
+- rollout_tgs              : 354.8055
+[XTuner][2026-09-21 16:08:52][INFO] Train step 2/3 start
+[XTuner][2026-09-21 16:08:52][INFO] [Step 2] start to generate rollout experience for train step 2 with model step 1
+[XTuner][2026-09-21 16:08:52][INFO] [AgentLoopManager][train_task] Start produce_batch: train_step=2 model_step=1 batch_size=2
+[XTuner][2026-09-21 16:08:52][INFO] [AgentLoopManager][train_task] Refresh staleness for task train_task: expired_count=0
+SyncProduceStrategy train_task:   0%|          | 0/2 [00:00<?, ?sample/s][XTuner][2026-09-21 16:08:52][INFO] [SyncProduceStrategy] Started 2 initial tasks.
+[36m(RolloutController pid=47641)[0m [XTuner][2026-09-21 16:08:52][INFO] RolloutHealthManager resumed.
+[36m(run_lmdeploy_server_wrapper pid=49846)[0m [2026-09-21 16:08:57 DP0] Avg thr (in/out): 96.4 / 166.8 tokens/s, Server (succeeded/failed/routed/waiting): 10 / 0 / 10 / 0, Engine (running/waiting): 10 / 0, KV cache: 2.8%, 
+[36m(run_lmdeploy_server_wrapper pid=49846)[0m [2026-09-21 16:09:07 DP0] Avg thr (in/out): 0.0 / 359.3 tokens/s, Server (succeeded/failed/routed/waiting): 10 / 0 / 10 / 0, Engine (running/waiting): 10 / 0, KV cache: 5.6%, 
+[36m(run_lmdeploy_server_wrapper pid=49846)[0m [2026-09-21 16:09:17 DP0] Avg thr (in/out): 0.0 / 358.7 tokens/s, Server (succeeded/failed/routed/waiting): 10 / 0 / 10 / 0, Engine (running/waiting): 10 / 0, KV cache: 8.9%, 
+                                                                         [XTuner][2026-09-21 16:09:20][INFO] [AgentLoopManager][train_task] get_batch from buffer for task train_task: requested=2, retrieved=2, leftover_init=0, leftover_completed=0, leftover_aborted=0, leftover_expired=0, buffer_failed_groups=0, buffer_filtered_groups=0
+[XTuner][2026-09-21 16:09:20][INFO] [AgentLoopManager][train_task] produce_batch done elapsed=28.289, completed_groups=2
+[XTuner][2026-09-21 16:09:20][INFO] generate 10 samples for training
+[XTuner][2026-09-21 16:09:20][INFO] Train step 2 train trajectories saved to /root/autodl-tmp/xtuner-lab/experiments/004_grpo_gsm8k/work_dir_17b/20260921160521/train_rollout/train_rollout_2.jsonl
+[36m(RolloutController pid=47641)[0m [XTuner][2026-09-21 16:09:20][INFO] RolloutHealthManager paused.
+[36m(RolloutController pid=47641)[0m [XTuner][2026-09-21 16:09:20][INFO] Abort request sent successfully: count=1
+[36m(RolloutController pid=47641)[0m [XTuner][2026-09-21 16:09:20][INFO] No failed rollout workers detected during shutdown barrier.
+[36m(run_lmdeploy_server_wrapper pid=49846)[0m [2026-09-21 16:09:27 DP0] Avg thr (in/out): 0.0 / 132.8 tokens/s, Server (succeeded/failed/routed/waiting): 20 / 0 / 0 / 0, Engine (running/waiting): 0 / 0, KV cache: 0.1%, 
+[XTuner][2026-09-21 16:09:29][INFO] Training controller loaded
+[XTuner][2026-09-21 16:09:29][INFO] Prepared 10 training data batches
+[36m(TrainingWorker pid=49624)[0m [XTuner][2026-09-21 16:09:31][INFO] Rollout 2: avg entropy: 0.2816, avg rollout entropy: 0.2797
+[36m(TrainingWorker pid=49624)[0m  rollout mismatch metrics:
+[36m(TrainingWorker pid=49624)[0m {
+[36m(TrainingWorker pid=49624)[0m     "mismatch/mismatch_training_ppl": 1.3252781629562378,
+[36m(TrainingWorker pid=49624)[0m     "mismatch/mismatch_training_log_ppl": 0.28162238001823425,
+[36m(TrainingWorker pid=49624)[0m     "mismatch/mismatch_kl": 0.001916809007525444,
+[36m(TrainingWorker pid=49624)[0m     "mismatch/mismatch_k3_kl": 0.0011816159822046757,
+[36m(TrainingWorker pid=49624)[0m     "mismatch/mismatch_rollout_ppl": 1.3227403163909912,
+[36m(TrainingWorker pid=49624)[0m     "mismatch/mismatch_rollout_log_ppl": 0.27970555424690247,
+[36m(TrainingWorker pid=49624)[0m     "mismatch/mismatch_log_ppl_diff": 0.0019168257713317871,
+[36m(TrainingWorker pid=49624)[0m     "mismatch/mismatch_log_ppl_abs_diff": 0.0019168257713317871,
+[36m(TrainingWorker pid=49624)[0m     "mismatch/mismatch_log_ppl_diff_max": 0.0019168257713317871,
+[36m(TrainingWorker pid=49624)[0m     "mismatch/mismatch_log_ppl_diff_min": 0.0019168257713317871,
+[36m(TrainingWorker pid=49624)[0m     "mismatch/mismatch_ppl_ratio": 1.0019186735153198,
+[36m(TrainingWorker pid=49624)[0m     "mismatch/mismatch_logprob_abs_diff": 0.017241796478629112
+[36m(TrainingWorker pid=49624)[0m }
+Traceback (most recent call last):
+  File "/root/workspace/xtuner/xtuner/v1/train/cli/rl.py", line 71, in <module>
+    app(exit_on_error=False)
+  File "/root/miniconda3/envs/xtuner/lib/python3.11/site-packages/cyclopts/core.py", line 1978, in __call__
+    result = _run_maybe_async_command(command, bound, resolved_backend)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/xtuner/lib/python3.11/site-packages/cyclopts/_run.py", line 50, in _run_maybe_async_command
+    return command(*bound.args, **bound.kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/workspace/xtuner/xtuner/v1/train/cli/rl.py", line 63, in main
+    trainer.fit()
+  File "/root/workspace/xtuner/xtuner/v1/train/rl_trainer.py", line 1837, in fit
+    self._fit()
+  File "/root/workspace/xtuner/xtuner/v1/train/rl_trainer.py", line 1896, in _fit
+    train_log_info = self._train_one_batch(
+                     ^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/workspace/xtuner/xtuner/v1/train/rl_trainer.py", line 1060, in _train_one_batch
+    workers_log_item: list[WorkerLogItem] = self.train_controller.fit(
+                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/workspace/xtuner/xtuner/v1/rl/trainer/controller.py", line 365, in fit
+    log_infos = ray.get(handles, timeout=TRAIN_RAY_GET_TIMEOUT)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/xtuner/lib/python3.11/site-packages/ray/_private/auto_init_hook.py", line 22, in auto_init_wrapper
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/xtuner/lib/python3.11/site-packages/ray/_private/client_mode_hook.py", line 134, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/xtuner/lib/python3.11/site-packages/ray/_private/worker.py", line 2986, in get
+    values, debugger_breakpoint = worker.get_objects(
+                                  ^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/xtuner/lib/python3.11/site-packages/ray/_private/worker.py", line 1050, in get_objects
+    raise value.as_instanceof_cause()
+ray.exceptions.RayTaskError(RuntimeError): [36mray::TrainingWorker.fit()[39m (pid=49624, ip=172.17.0.3, actor_id=93ed0365b8ecbbbe6791b0b301000000, repr=<xtuner.v1.rl.trainer.worker.TrainingWorker object at 0x7fe6966a41d0>)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/workspace/xtuner/xtuner/v1/rl/trainer/worker.py", line 943, in fit
+    self._engine.step_optimizer(grad_norm)
+  File "/root/workspace/xtuner/xtuner/v1/engine/train_engine.py", line 323, in step_optimizer
+    self.optimizer.step()
+  File "/root/miniconda3/envs/xtuner/lib/python3.11/site-packages/torch/optim/optimizer.py", line 517, in wrapper
+    out = func(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/xtuner/lib/python3.11/site-packages/torch/optim/optimizer.py", line 82, in _use_grad
+    ret = func(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/xtuner/lib/python3.11/site-packages/torch/optim/adam.py", line 247, in step
+    adam(
+  File "/root/miniconda3/envs/xtuner/lib/python3.11/site-packages/torch/optim/optimizer.py", line 150, in maybe_fallback
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/xtuner/lib/python3.11/site-packages/torch/optim/adam.py", line 953, in adam
+    func(
+  File "/root/miniconda3/envs/xtuner/lib/python3.11/site-packages/torch/optim/adam.py", line 447, in _single_tensor_adam
+    exp_avg.lerp_(grad, 1 - device_beta1)
+  File "/root/miniconda3/envs/xtuner/lib/python3.11/site-packages/torch/_compile.py", line 53, in inner
+    return disable_fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/xtuner/lib/python3.11/site-packages/torch/_dynamo/eval_frame.py", line 1044, in _fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/xtuner/lib/python3.11/site-packages/torch/distributed/tensor/_api.py", line 349, in __torch_dispatch__
+    return DTensor._op_dispatcher.dispatch(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/xtuner/lib/python3.11/site-packages/torch/distributed/tensor/_dispatch.py", line 233, in dispatch
+    local_results = op_call(*local_tensor_args, **op_info.local_kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/xtuner/lib/python3.11/site-packages/torch/_ops.py", line 841, in __call__
+    return self._op(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Expected all tensors to be on the same device, but found at least two devices, cuda:0 and cpu!
+[XTuner][2026-09-21 16:09:40][INFO] Ray shutdown successfully
+[W921 16:09:45.471538691 AllocatorConfig.cpp:28] Warning: PYTORCH_CUDA_ALLOC_CONF is deprecated, use PYTORCH_ALLOC_CONF instead (function operator())
+
+real	4m52.131s
+user	1m1.663s
+sys	0m4.717s

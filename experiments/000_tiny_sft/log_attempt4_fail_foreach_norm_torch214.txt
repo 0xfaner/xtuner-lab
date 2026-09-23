@@ -1,0 +1,407 @@
+Could not find the bitsandbytes CUDA binary at PosixPath('/home/gugubai/miniconda3/envs/xtuner/lib/python3.11/site-packages/bitsandbytes/libbitsandbytes_cuda130.so')
+The installed version of bitsandbytes was compiled without GPU support. 8-bit optimizers, 8-bit multiplication, and GPU quantization are unavailable.
+Import FlashAttention 2 failed No module named 'flash_attn', Please install it manually.
+[XTuner][2026-09-17 17:31:22][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-17 17:31:22][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-17 17:31:22][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-17 17:31:22][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-17 17:31:22][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-17 17:31:22][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-17 17:31:22][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-17 17:31:22][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-17 17:31:22][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-17 17:31:22][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-17 17:31:22][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-17 17:31:22][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-17 17:31:22][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-17 17:31:22][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-17 17:31:22][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-17 17:31:22][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-17 17:31:22][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-17 17:31:22][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-17 17:31:22][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-17 17:31:22][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-17 17:31:22][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-17 17:31:22][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-17 17:31:22][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-17 17:31:22][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-17 17:31:22][WARNING] flash-attn is not installed, using `flex_attention` instead.
+[XTuner][2026-09-17 17:31:22][INFO] set HF_MODULES_CACHE to /home/gugubai/.cache/huggingface/modules_cache_GuGu-Workstation_11692 for current process (hostname=GuGu-Workstation, pid=11692)
+[XTuner][RANK 0][2026-09-17 17:31:23][WARNING] `resume_cfg` is deprecated, please use `auto_resume` and `load_checkpoint_cfg` instead
+[XTuner][RANK 0][2026-09-17 17:31:23][INFO] 
+============XTuner Training Environment============
+XTUNER_DETERMINISTIC: None
+XTUNER_GC_ENABLE: None
+XTUNER_FILE_OPEN_CONCURRENCY: None
+XTUNER_TOKENIZE_CHUNK_SIZE: None
+XTUNER_TOKENIZE_WORKERS: None
+XTUNER_ACTIVATION_OFFLOAD: None
+XTUNER_USE_FA3: 0
+XTUNER_DISPATCHER_DEBUG: None
+XTUNER_ROUTER_DEBUG: None
+XTUNER_DECORD_VIDEO_THREADS: None
+XTUNER_USE_CUTLASS_GROUP_GEMM: None
+GROUPED_GEMM_USE_CUTLASS: None
+XTUNER_USE_NATIVE_RMSNORM: None
+XTUNER_SM_MARGIN: None
+XTUNER_RL_FP8_QUANTIZE_IN_BF16: None
+==================================================
+[XTuner][RANK 0][2026-09-17 17:31:23][INFO] Using toy tokenizer: <xtuner.v1.train.toy_tokenizer.UTF8ByteTokenizer object at 0x7406744cd8d0>!
+[XTuner][RANK 0][2026-09-17 17:31:23][WARNING] Setting model_cfg.lm_loss_cfg from Trainer's loss_cfg for backward compatibility. In the future, please set lm_loss_cfg directly in model_cfg instead of Trainer.
+[XTuner][RANK 0][2026-09-17 17:31:23][WARNING] FSDPConfig.torch_compile is deprecated, and will be removed in version 1.1.0. Please use XTunerBaseModelConfig.compile_cfg to control whether to use torch.compile for the model
+[XTuner][RANK 0][2026-09-17 17:31:23][WARNING] `dataset_cfg` is deprecated, please use `dataloader_cfg.dataset_config_list` instead
+[XTuner][RANK 0][2026-09-17 17:31:23][SUCCESS] [Build Datasets] Elapsed time 0.05 seconds
+[XTuner][RANK 0][2026-09-17 17:31:23][INFO] [Dataset] Start packing data of ExpandSoftPackDataset.
+[XTuner][RANK 0][2026-09-17 17:31:23][INFO] Using 8 pack workers for packing datasets.
+0it [00:00, ?it/s]1it [00:00, 1685.81it/s]
+[XTuner][RANK 0][2026-09-17 17:31:23][SUCCESS] [Pack Datasets] Elapsed time 0.05 seconds
+[XTuner][RANK 0][2026-09-17 17:31:23][INFO] [Dataset] (Original) 128 samples.
+[XTuner][RANK 0][2026-09-17 17:31:23][INFO] [Dataset] (Packed) 13 samples.
+[transformers] Unrecognized keys in `rope_parameters` for 'rope_type'='default': {'factor', 'mrope_section', 'beta_fast', 'low_freq_factor', 'beta_slow', 'short_factor', 'original_max_position_embeddings', 'mscale', 'mscale_all_dim', 'high_freq_factor', 'truncate', 'long_factor'}
+[FSDP Sharding]:   0%|          | 0/3 [00:00<?, ?it/s][FSDP Sharding]: 100%|██████████| 3/3 [00:00<00:00, 284.76it/s]
+[XTuner][RANK 0][2026-09-17 17:31:23][INFO] FSDPQwen3Dense(
+  (norm): FSDPRMSNorm((512,), type=default, eps=1e-06)
+  (lm_head): FSDPLMHead(in_features=512, out_features=151936, bias=False)
+  (layers): ModuleDict(
+    (0): FSDPCheckpointWrapper(
+      (_checkpoint_wrapped_module): DenseDecoderLayer(
+        (self_attn): MultiHeadAttention(
+          (q_proj): _Linear(in_features=512, out_features=4096, bias=False)
+          (k_proj): _Linear(in_features=512, out_features=1024, bias=False)
+          (v_proj): _Linear(in_features=512, out_features=1024, bias=False)
+          (o_proj): _Linear(in_features=4096, out_features=512, bias=False)
+          (q_norm): RMSNorm((128,), type=default, eps=1e-06)
+          (k_norm): RMSNorm((128,), type=default, eps=1e-06)
+        )
+        (mlp): DenseMLP(
+          (gate_proj): _Linear(in_features=512, out_features=12288, bias=False)
+          (up_proj): _Linear(in_features=512, out_features=12288, bias=False)
+          (down_proj): _Linear(in_features=12288, out_features=512, bias=False)
+        )
+        (input_layernorm): RMSNorm((512,), type=default, eps=1e-06)
+        (post_attention_layernorm): RMSNorm((512,), type=default, eps=1e-06)
+      )
+    )
+    (1): FSDPCheckpointWrapper(
+      (_checkpoint_wrapped_module): DenseDecoderLayer(
+        (self_attn): MultiHeadAttention(
+          (q_proj): _Linear(in_features=512, out_features=4096, bias=False)
+          (k_proj): _Linear(in_features=512, out_features=1024, bias=False)
+          (v_proj): _Linear(in_features=512, out_features=1024, bias=False)
+          (o_proj): _Linear(in_features=4096, out_features=512, bias=False)
+          (q_norm): RMSNorm((128,), type=default, eps=1e-06)
+          (k_norm): RMSNorm((128,), type=default, eps=1e-06)
+        )
+        (mlp): DenseMLP(
+          (gate_proj): _Linear(in_features=512, out_features=12288, bias=False)
+          (up_proj): _Linear(in_features=512, out_features=12288, bias=False)
+          (down_proj): _Linear(in_features=12288, out_features=512, bias=False)
+        )
+        (input_layernorm): RMSNorm((512,), type=default, eps=1e-06)
+        (post_attention_layernorm): RMSNorm((512,), type=default, eps=1e-06)
+      )
+    )
+    (2): FSDPCheckpointWrapper(
+      (_checkpoint_wrapped_module): DenseDecoderLayer(
+        (self_attn): MultiHeadAttention(
+          (q_proj): _Linear(in_features=512, out_features=4096, bias=False)
+          (k_proj): _Linear(in_features=512, out_features=1024, bias=False)
+          (v_proj): _Linear(in_features=512, out_features=1024, bias=False)
+          (o_proj): _Linear(in_features=4096, out_features=512, bias=False)
+          (q_norm): RMSNorm((128,), type=default, eps=1e-06)
+          (k_norm): RMSNorm((128,), type=default, eps=1e-06)
+        )
+        (mlp): DenseMLP(
+          (gate_proj): _Linear(in_features=512, out_features=12288, bias=False)
+          (up_proj): _Linear(in_features=512, out_features=12288, bias=False)
+          (down_proj): _Linear(in_features=12288, out_features=512, bias=False)
+        )
+        (input_layernorm): RMSNorm((512,), type=default, eps=1e-06)
+        (post_attention_layernorm): RMSNorm((512,), type=default, eps=1e-06)
+      )
+    )
+  )
+  (rotary_emb): RotaryEmbedding()
+  (embed_tokens): FSDPEmbedding(151936, 512)
+)
+[XTuner][RANK 0][2026-09-17 17:31:23][INFO] Total trainable parameters: 227.94M, total parameters: 227.94M
+[XTuner][RANK 0][2026-09-17 17:31:23][INFO] Untrainable parameters names: []
+[XTuner][RANK 0][2026-09-17 17:31:23][INFO] The `compile_cfg` of model is {}
+[XTuner][RANK 0][2026-09-17 17:31:23][INFO] Training config: {
+  "model_cfg": {
+    "hf_save_cfg": {
+      "worker_per_rank": 16,
+      "max_save_rank": 16,
+      "bucket_size": 4294967296,
+      "fp32_keys_pattern": null
+    },
+    "float8_cfg": null,
+    "compile_cfg": false,
+    "hf_key_mapping": null,
+    "dcp_ignore_frozen_params": true,
+    "lm_loss_cfg": {
+      "ignore_idx": -100,
+      "mode": "chunk",
+      "chunk_size": 1024,
+      "loss_reduction": "token"
+    },
+    "vocab_size": 151936,
+    "max_position_embeddings": 40960,
+    "eos_token_id": 151645,
+    "pad_token_id": null,
+    "num_hidden_layers": 3,
+    "hidden_size": 512,
+    "intermediate_size": 12288,
+    "rms_norm_eps": 1e-6,
+    "rms_norm_type": "default",
+    "hidden_act": "silu",
+    "attention": {
+      "num_attention_heads": 32,
+      "num_key_value_heads": 8,
+      "head_dim": 128,
+      "dropout": 0.0,
+      "qkv_bias": false,
+      "qk_norm": true,
+      "rms_norm_eps": 1e-6,
+      "rms_norm_type": "default",
+      "o_bias": false,
+      "sliding_window": 1024,
+      "with_sink": false,
+      "with_gate": false,
+      "attn_impl": "flex_attention"
+    },
+    "linear_attention": null,
+    "mlp_bias": false,
+    "tie_word_embeddings": false,
+    "model_type": null,
+    "generate_config": null,
+    "return_hidden_states": false,
+    "use_sliding_window": false,
+    "max_window_layers": 36,
+    "rope_parameters_cfg": {
+      "rope_theta": 1000000.0,
+      "rope_type": "default",
+      "original_max_position_embeddings": null,
+      "factor": null,
+      "beta_fast": null,
+      "beta_slow": null,
+      "short_factor": null,
+      "long_factor": null,
+      "low_freq_factor": null,
+      "high_freq_factor": null,
+      "mscale": null,
+      "mscale_all_dim": null,
+      "truncate": false,
+      "mrope_section": null,
+      "partial_rotary_factor": 1.0,
+      "fope_init_factor": null,
+      "fope_sep_head": null,
+      "num_inv_freq": null
+    },
+    "mesh_prefix": "default",
+    "bos_token_id": 151643,
+    "rope_scaling": null,
+    "rope_parameters": {
+      "rope_theta": 1000000.0,
+      "rope_type": "default",
+      "original_max_position_embeddings": null,
+      "factor": null,
+      "beta_fast": null,
+      "beta_slow": null,
+      "short_factor": null,
+      "long_factor": null,
+      "low_freq_factor": null,
+      "high_freq_factor": null,
+      "mscale": null,
+      "mscale_all_dim": null,
+      "truncate": false,
+      "mrope_section": null,
+      "partial_rotary_factor": 1.0
+    },
+    "num_attention_heads": 32,
+    "num_key_value_heads": 8,
+    "head_dim": 128,
+    "layers_type": [
+      "full_attention",
+      "full_attention",
+      "full_attention"
+    ]
+  },
+  "load_from": null,
+  "tokenizer_path": null,
+  "optim_cfg": {
+    "lr": 0.00006,
+    "max_grad_norm": 1.0,
+    "skip_grad_norm_threshold": null,
+    "weight_decay": 0.01,
+    "betas": [
+      0.9,
+      0.95
+    ],
+    "eps": 1e-8,
+    "foreach": false,
+    "swap_optimizer": false
+  },
+  "lr_cfg": {
+    "lr_type": "cosine",
+    "warmup_ratio": 0.03,
+    "lr_min": 1e-6
+  },
+  "loss_cfg": {
+    "ignore_idx": -100,
+    "mode": "chunk",
+    "chunk_size": 1024,
+    "loss_reduction": "token"
+  },
+  "fsdp_cfg": null,
+  "global_batch_size": null,
+  "work_dir": "/home/gugubai/workspace/xtuner-lab/experiments/000_tiny_sft/work_dir",
+  "log_dir": null,
+  "sp_size": 1,
+  "total_step": null,
+  "total_epoch": 1,
+  "resume_cfg": null,
+  "auto_resume": false,
+  "load_checkpoint_cfg": {
+    "checkpoint_path": null,
+    "load_optimizer_states": true,
+    "load_optimizer_args": true,
+    "load_dataset": true,
+    "load_scheduler": true,
+    "offload_optimizer_first_step": false
+  },
+  "strict_load": true,
+  "checkpoint_interval": -1,
+  "checkpoint_maxkeep": -1,
+  "async_hf_export": false,
+  "skip_checkpoint_validation": false,
+  "patch_for_dcp_finish": false,
+  "async_checkpoint": false,
+  "snapshot_interval": null,
+  "check_health_interval": null,
+  "hf_interval": null,
+  "hf_max_keep": null,
+  "exp_tracker": "jsonl",
+  "profile_step": null,
+  "profile_time": true,
+  "profile_memory": false,
+  "intra_layer_micro_batch": 1,
+  "seed": 42,
+  "dist_backend": null,
+  "debug": false,
+  "debug_skip_save": false,
+  "prober_list": [],
+  "do_clip": true,
+  "grad_norm_dtype": "torch.float32",
+  "hooks_config": {
+    "after_save_dcp": [],
+    "after_save_hf": [],
+    "after_save_snapshot": [],
+    "after_train_step": []
+  },
+  "internal_metrics_cfg": null
+}
+[XTuner][RANK 0][2026-09-17 17:31:23][INFO] grad_accumulation_steps: 1
+/home/gugubai/workspace/xtuner/xtuner/v1/loss/ce_loss.py:287: FutureWarning: torch.distributed.nn.functional.all_reduce is deprecated, use torch.distributed._functional_collectives.all_reduce instead.
+  loss = all_reduce(loss, op=dist.ReduceOp.SUM, group=dist.group.WORLD)
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/home/gugubai/miniconda3/envs/xtuner/lib/python3.11/site-packages/torch/distributed/tensor/_dispatch.py", line 299, in _propagate_op_sharding_dispatch_slow_path
+[rank0]:     result = self.sharding_propagator.propagate_op_sharding_non_cached(
+[rank0]:              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/gugubai/miniconda3/envs/xtuner/lib/python3.11/site-packages/torch/distributed/tensor/_sharding_prop.py", line 783, in propagate_op_sharding_non_cached
+[rank0]:     op_strategy = _expanded_strategy_fn(
+[rank0]:                   ^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/gugubai/miniconda3/envs/xtuner/lib/python3.11/site-packages/torch/distributed/tensor/_ops/single_dim_strategy.py", line 814, in expanded_foreach_strategy
+[rank0]:     per_index_strategy(
+[rank0]:   File "/home/gugubai/miniconda3/envs/xtuner/lib/python3.11/site-packages/torch/distributed/tensor/_ops/single_dim_strategy.py", line 702, in expanded_strategy
+[rank0]:     prepared_strategy = _PreparedSingleDimStrategy(
+[rank0]:                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/gugubai/miniconda3/envs/xtuner/lib/python3.11/site-packages/torch/distributed/tensor/_ops/single_dim_strategy.py", line 393, in __init__
+[rank0]:     func(op_schema.op, op_schema.args_meta, op_schema.kwargs_meta),
+[rank0]:     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/gugubai/miniconda3/envs/xtuner/lib/python3.11/site-packages/torch/distributed/tensor/_ops/_math_ops.py", line 954, in vector_norm_single_dim_strategy
+[rank0]:     dims = _infer_reduction_dims(dim, ndim)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/gugubai/miniconda3/envs/xtuner/lib/python3.11/site-packages/torch/distributed/tensor/_ops/_math_ops.py", line 133, in _infer_reduction_dims
+[rank0]:     dims = cast(list[int], normalize_dims(dims, ndim))
+[rank0]:                            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/gugubai/miniconda3/envs/xtuner/lib/python3.11/site-packages/torch/distributed/tensor/_ops/utils.py", line 163, in normalize_dims
+[rank0]:     dims = [normalize_dim(dim, ndim) for dim in dims]
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/gugubai/miniconda3/envs/xtuner/lib/python3.11/site-packages/torch/distributed/tensor/_ops/utils.py", line 163, in <listcomp>
+[rank0]:     dims = [normalize_dim(dim, ndim) for dim in dims]
+[rank0]:             ^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/gugubai/miniconda3/envs/xtuner/lib/python3.11/site-packages/torch/distributed/tensor/_ops/utils.py", line 155, in normalize_dim
+[rank0]:     return dim if dim >= 0 else dim + ndim
+[rank0]:                   ^^^^^^^^
+[rank0]: TypeError: '>=' not supported between instances of 'torch.dtype' and 'int'
+
+[rank0]: The above exception was the direct cause of the following exception:
+
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/home/gugubai/workspace/xtuner/xtuner/v1/train/cli/sft.py", line 46, in <module>
+[rank0]:     app(exit_on_error=False)
+[rank0]:   File "/home/gugubai/miniconda3/envs/xtuner/lib/python3.11/site-packages/cyclopts/core.py", line 1978, in __call__
+[rank0]:     result = _run_maybe_async_command(command, bound, resolved_backend)
+[rank0]:              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/gugubai/miniconda3/envs/xtuner/lib/python3.11/site-packages/cyclopts/_run.py", line 50, in _run_maybe_async_command
+[rank0]:     return command(*bound.args, **bound.kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/gugubai/workspace/xtuner/xtuner/v1/train/cli/sft.py", line 39, in main
+[rank0]:     trainer.fit()
+[rank0]:   File "/home/gugubai/workspace/xtuner/xtuner/v1/train/trainer.py", line 876, in fit
+[rank0]:     grad_norm = self._engine.clip_grad_norm(do_clip=self._do_clip, dtype=self._grad_norm_dtype)
+[rank0]:                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/gugubai/miniconda3/envs/xtuner/lib/python3.11/site-packages/torch/nn/utils/clip_grad.py", line 41, in _no_grad_wrapper
+[rank0]:     return func(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/gugubai/workspace/xtuner/xtuner/v1/engine/train_engine.py", line 265, in clip_grad_norm
+[rank0]:     total_grad_norm, grouped_all_grads = self.model.cal_grad_norm(all_grads, dtype=dtype)
+[rank0]:                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/gugubai/workspace/xtuner/xtuner/v1/model/base.py", line 611, in cal_grad_norm
+[rank0]:     return cal_grad_norm(grads, dtype=dtype)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/gugubai/workspace/xtuner/xtuner/v1/utils/grad_norm.py", line 13, in cal_grad_norm
+[rank0]:     total_norm = cal_total_norm(grads, norm_type=2.0, foreach=True, dtype=dtype)
+[rank0]:                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/gugubai/workspace/xtuner/xtuner/v1/utils/dtensor.py", line 67, in cal_total_norm
+[rank0]:     norms = torch._foreach_norm(tensors, norm_type, dtype=dtype)  # type: ignore
+[rank0]:             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/gugubai/miniconda3/envs/xtuner/lib/python3.11/site-packages/torch/distributed/tensor/_dispatch.py", line 323, in _propagate_op_sharding_dispatch_slow_path
+[rank0]:     raise RuntimeError(
+[rank0]: RuntimeError: '>=' not supported between instances of 'torch.dtype' and 'int'
+
+[rank0]: Sharding propagation failed for aten._foreach_norm.Scalar([DTensorSpec(mesh=DeviceMesh((default.fsdp=1), 'cuda', stride=((),)), placements=(Shard(dim=0),), tensor_meta=TensorMeta(shape=torch.Size([512]), stride=(1,), dtype=torch.float32), shard_order=(ShardOrderEntry(tensor_dim=0, mesh_dims=(0,)),), use_strided_shard_as_shard_order=False), DTensorSpec(mesh=DeviceMesh((default.fsdp=1), 'cuda', stride=((),)), placements=(Shard(dim=0),), tensor_meta=TensorMeta(shape=torch.Size([151936, 512]), stride=(512, 1), dtype=torch.float32), shard_order=(ShardOrderEntry(tensor_dim=0, mesh_dims=(0,)),), use_strided_shard_as_shard_order=False), DTensorSpec(mesh=DeviceMesh((default.fsdp=1), 'cuda', stride=((),)), placements=(Shard(dim=0),), tensor_meta=TensorMeta(shape=torch.Size([4096, 512]), stride=(512, 1), dtype=torch.float32), shard_order=(ShardOrderEntry(tensor_dim=0, mesh_dims=(0,)),), use_strided_shard_as_shard_order=False), DTensorSpec(mesh=DeviceMesh((default.fsdp=1), 'cuda', stride=((),)), placements=(Shard(dim=0),), tensor_meta=TensorMeta(shape=torch.Size([1024, 512]), stride=(512, 1), dtype=torch.float32), shard_order=(ShardOrderEntry(tensor_dim=0, mesh_dims=(0,)),), use_strided_shard_as_shard_order=False), DTensorSpec(mesh=DeviceMesh((default.fsdp=1), 'cuda', stride=((),)), placements=(Shard(dim=0),), tensor_meta=TensorMeta(shape=torch.Size([1024, 512]), stride=(512, 1), dtype=torch.float32), shard_order=(ShardOrderEntry(tensor_dim=0, mesh_dims=(0,)),), use_strided_shard_as_shard_order=False), DTensorSpec(mesh=DeviceMesh((default.fsdp=1), 'cuda', stride=((),)), placements=(Shard(dim=0),), tensor_meta=TensorMeta(shape=torch.Size([512, 4096]), stride=(4096, 1), dtype=torch.float32), shard_order=(ShardOrderEntry(tensor_dim=0, mesh_dims=(0,)),), use_strided_shard_as_shard_order=False), DTensorSpec(mesh=DeviceMesh((default.fsdp=1), 'cuda', stride=((),)), placements=(Shard(dim=0),), tensor_meta=TensorMeta(shape=torch.Size([128]), stride=(1,), dtype=torch.float32), shard_order=(ShardOrderEntry(tensor_dim=0, mesh_dims=(0,)),), use_strided_shard_as_shard_order=False), DTensorSpec(mesh=DeviceMesh((default.fsdp=1), 'cuda', stride=((),)), placements=(Shard(dim=0),), tensor_meta=TensorMeta(shape=torch.Size([128]), stride=(1,), dtype=torch.float32), shard_order=(ShardOrderEntry(tensor_dim=0, mesh_dims=(0,)),), use_strided_shard_as_shard_order=False), DTensorSpec(mesh=DeviceMesh((default.fsdp=1), 'cuda', stride=((),)), placements=(Shard(dim=0),), tensor_meta=TensorMeta(shape=torch.Size([12288, 512]), stride=(512, 1), dtype=torch.float32), shard_order=(ShardOrderEntry(tensor_dim=0, mesh_dims=(0,)),), use_strided_shard_as_shard_order=False), DTensorSpec(mesh=DeviceMesh((default.fsdp=1), 'cuda', stride=((),)), placements=(Shard(dim=0),), tensor_meta=TensorMeta(shape=torch.Size([12288, 512]), stride=(512, 1), dtype=torch.float32), shard_order=(ShardOrderEntry(tensor_dim=0, mesh_dims=(0,)),), use_strided_shard_as_shard_order=False), DTensorSpec(mesh=DeviceMesh((default.fsdp=1), 'cuda', stride=((),)), placements=(Shard(dim=0),), tensor_meta=TensorMeta(shape=torch.Size([512, 12288]), stride=(12288, 1), dtype=torch.float32), shard_order=(ShardOrderEntry(tensor_dim=0, mesh_dims=(0,)),), use_strided_shard_as_shard_order=False), DTensorSpec(mesh=DeviceMesh((default.fsdp=1), 'cuda', stride=((),)), placements=(Shard(dim=0),), tensor_meta=TensorMeta(shape=torch.Size([512]), stride=(1,), dtype=torch.float32), shard_order=(ShardOrderEntry(tensor_dim=0, mesh_dims=(0,)),), use_strided_shard_as_shard_order=False), DTensorSpec(mesh=DeviceMesh((default.fsdp=1), 'cuda', stride=((),)), placements=(Shard(dim=0),), tensor_meta=TensorMeta(shape=torch.Size([512]), stride=(1,), dtype=torch.float32), shard_order=(ShardOrderEntry(tensor_dim=0, mesh_dims=(0,)),), use_strided_shard_as_shard_order=False), DTensorSpec(mesh=DeviceMesh((default.fsdp=1), 'cuda', stride=((),)), placements=(Shard(dim=0),), tensor_meta=TensorMeta(shape=torch.Size([4096, 512]), stride=(512, 1), dtype=torch.float32), shard_order=(ShardOrderEntry(tensor_dim=0, mesh_dims=(0,)),), use_strided_shard_as_shard_order=False), DTensorSpec(mesh=DeviceMesh((default.fsdp=1), 'cuda', stride=((),)), placements=(Shard(dim=0),), tensor_meta=TensorMeta(shape=torch.Size([1024, 512]), stride=(512, 1), dtype=torch.float32), shard_order=(ShardOrderEntry(tensor_dim=0, mesh_dims=(0,)),), use_strided_shard_as_shard_order=False), DTensorSpec(mesh=DeviceMesh((default.fsdp=1), 'cuda', stride=((),)), placements=(Shard(dim=0),), tensor_meta=TensorMeta(shape=torch.Size([1024, 512]), stride=(512, 1), dtype=torch.float32), shard_order=(ShardOrderEntry(tensor_dim=0, mesh_dims=(0,)),), use_strided_shard_as_shard_order=False), DTensorSpec(mesh=DeviceMesh((default.fsdp=1), 'cuda', stride=((),)), placements=(Shard(dim=0),), tensor_meta=TensorMeta(shape=torch.Size([512, 4096]), stride=(4096, 1), dtype=torch.float32), shard_order=(ShardOrderEntry(tensor_dim=0, mesh_dims=(0,)),), use_strided_shard_as_shard_order=False), DTensorSpec(mesh=DeviceMesh((default.fsdp=1), 'cuda', stride=((),)), placements=(Shard(dim=0),), tensor_meta=TensorMeta(shape=torch.Size([128]), stride=(1,), dtype=torch.float32), shard_order=(ShardOrderEntry(tensor_dim=0, mesh_dims=(0,)),), use_strided_shard_as_shard_order=False), DTensorSpec(mesh=DeviceMesh((default.fsdp=1), 'cuda', stride=((),)), placements=(Shard(dim=0),), tensor_meta=TensorMeta(shape=torch.Size([128]), stride=(1,), dtype=torch.float32), shard_order=(ShardOrderEntry(tensor_dim=0, mesh_dims=(0,)),), use_strided_shard_as_shard_order=False), DTensorSpec(mesh=DeviceMesh((default.fsdp=1), 'cuda', stride=((),)), placements=(Shard(dim=0),), tensor_meta=TensorMeta(shape=torch.Size([12288, 512]), stride=(512, 1), dtype=torch.float32), shard_order=(ShardOrderEntry(tensor_dim=0, mesh_dims=(0,)),), use_strided_shard_as_shard_order=False), DTensorSpec(mesh=DeviceMesh((default.fsdp=1), 'cuda', stride=((),)), placements=(Shard(dim=0),), tensor_meta=TensorMeta(shape=torch.Size([12288, 512]), stride=(512, 1), dtype=torch.float32), shard_order=(ShardOrderEntry(tensor_dim=0, mesh_dims=(0,)),), use_strided_shard_as_shard_order=False), DTensorSpec(mesh=DeviceMesh((default.fsdp=1), 'cuda', stride=((),)), placements=(Shard(dim=0),), tensor_meta=TensorMeta(shape=torch.Size([512, 12288]), stride=(12288, 1), dtype=torch.float32), shard_order=(ShardOrderEntry(tensor_dim=0, mesh_dims=(0,)),), use_strided_shard_as_shard_order=False), DTensorSpec(mesh=DeviceMesh((default.fsdp=1), 'cuda', stride=((),)), placements=(Shard(dim=0),), tensor_meta=TensorMeta(shape=torch.Size([512]), stride=(1,), dtype=torch.float32), shard_order=(ShardOrderEntry(tensor_dim=0, mesh_dims=(0,)),), use_strided_shard_as_shard_order=False), DTensorSpec(mesh=DeviceMesh((default.fsdp=1), 'cuda', stride=((),)), placements=(Shard(dim=0),), tensor_meta=TensorMeta(shape=torch.Size([512]), stride=(1,), dtype=torch.float32), shard_order=(ShardOrderEntry(tensor_dim=0, mesh_dims=(0,)),), use_strided_shard_as_shard_order=False), DTensorSpec(mesh=DeviceMesh((default.fsdp=1), 'cuda', stride=((),)), placements=(Shard(dim=0),), tensor_meta=TensorMeta(shape=torch.Size([4096, 512]), stride=(512, 1), dtype=torch.float32), shard_order=(ShardOrderEntry(tensor_dim=0, mesh_dims=(0,)),), use_strided_shard_as_shard_order=False), DTensorSpec(mesh=DeviceMesh((default.fsdp=1), 'cuda', stride=((),)), placements=(Shard(dim=0),), tensor_meta=TensorMeta(shape=torch.Size([1024, 512]), stride=(512, 1), dtype=torch.float32), shard_order=(ShardOrderEntry(tensor_dim=0, mesh_dims=(0,)),), use_strided_shard_as_shard_order=False), DTensorSpec(mesh=DeviceMesh((default.fsdp=1), 'cuda', stride=((),)), placements=(Shard(dim=0),), tensor_meta=TensorMeta(shape=torch.Size([1024, 512]), stride=(512, 1), dtype=torch.float32), shard_order=(ShardOrderEntry(tensor_dim=0, mesh_dims=(0,)),), use_strided_shard_as_shard_order=False), DTensorSpec(mesh=DeviceMesh((default.fsdp=1), 'cuda', stride=((),)), placements=(Shard(dim=0),), tensor_meta=TensorMeta(shape=torch.Size([512, 4096]), stride=(4096, 1), dtype=torch.float32), shard_order=(ShardOrderEntry(tensor_dim=0, mesh_dims=(0,)),), use_strided_shard_as_shard_order=False), DTensorSpec(mesh=DeviceMesh((default.fsdp=1), 'cuda', stride=((),)), placements=(Shard(dim=0),), tensor_meta=TensorMeta(shape=torch.Size([128]), stride=(1,), dtype=torch.float32), shard_order=(ShardOrderEntry(tensor_dim=0, mesh_dims=(0,)),), use_strided_shard_as_shard_order=False), DTensorSpec(mesh=DeviceMesh((default.fsdp=1), 'cuda', stride=((),)), placements=(Shard(dim=0),), tensor_meta=TensorMeta(shape=torch.Size([128]), stride=(1,), dtype=torch.float32), shard_order=(ShardOrderEntry(tensor_dim=0, mesh_dims=(0,)),), use_strided_shard_as_shard_order=False), DTensorSpec(mesh=DeviceMesh((default.fsdp=1), 'cuda', stride=((),)), placements=(Shard(dim=0),), tensor_meta=TensorMeta(shape=torch.Size([12288, 512]), stride=(512, 1), dtype=torch.float32), shard_order=(ShardOrderEntry(tensor_dim=0, mesh_dims=(0,)),), use_strided_shard_as_shard_order=False), DTensorSpec(mesh=DeviceMesh((default.fsdp=1), 'cuda', stride=((),)), placements=(Shard(dim=0),), tensor_meta=TensorMeta(shape=torch.Size([12288, 512]), stride=(512, 1), dtype=torch.float32), shard_order=(ShardOrderEntry(tensor_dim=0, mesh_dims=(0,)),), use_strided_shard_as_shard_order=False), DTensorSpec(mesh=DeviceMesh((default.fsdp=1), 'cuda', stride=((),)), placements=(Shard(dim=0),), tensor_meta=TensorMeta(shape=torch.Size([512, 12288]), stride=(12288, 1), dtype=torch.float32), shard_order=(ShardOrderEntry(tensor_dim=0, mesh_dims=(0,)),), use_strided_shard_as_shard_order=False), DTensorSpec(mesh=DeviceMesh((default.fsdp=1), 'cuda', stride=((),)), placements=(Shard(dim=0),), tensor_meta=TensorMeta(shape=torch.Size([512]), stride=(1,), dtype=torch.float32), shard_order=(ShardOrderEntry(tensor_dim=0, mesh_dims=(0,)),), use_strided_shard_as_shard_order=False), DTensorSpec(mesh=DeviceMesh((default.fsdp=1), 'cuda', stride=((),)), placements=(Shard(dim=0),), tensor_meta=TensorMeta(shape=torch.Size([512]), stride=(1,), dtype=torch.float32), shard_order=(ShardOrderEntry(tensor_dim=0, mesh_dims=(0,)),), use_strided_shard_as_shard_order=False), DTensorSpec(mesh=DeviceMesh((default.fsdp=1), 'cuda', stride=((),)), placements=(Shard(dim=0),), tensor_meta=TensorMeta(shape=torch.Size([151936, 512]), stride=(512, 1), dtype=torch.float32), shard_order=(ShardOrderEntry(tensor_dim=0, mesh_dims=(0,)),), use_strided_shard_as_shard_order=False)], 2.0, torch.float32) on None)
+E0917 17:31:27.974000 11652 site-packages/torch/distributed/elastic/multiprocessing/api.py:1002] failed (exitcode: 1) local_rank: 0 (pid: 11692) of binary: /home/gugubai/miniconda3/envs/xtuner/bin/python3.11
+Traceback (most recent call last):
+  File "/home/gugubai/miniconda3/envs/xtuner/bin/torchrun", line 6, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/home/gugubai/miniconda3/envs/xtuner/lib/python3.11/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 380, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/gugubai/miniconda3/envs/xtuner/lib/python3.11/site-packages/torch/distributed/run.py", line 1138, in main
+    run(args)
+  File "/home/gugubai/miniconda3/envs/xtuner/lib/python3.11/site-packages/torch/distributed/run.py", line 1129, in run
+    elastic_launch(
+  File "/home/gugubai/miniconda3/envs/xtuner/lib/python3.11/site-packages/torch/distributed/launcher/api.py", line 197, in __call__
+    return launch_agent(
+           ^^^^^^^^^^^^^
+  File "/home/gugubai/miniconda3/envs/xtuner/lib/python3.11/site-packages/torch/distributed/launcher/api.py", line 386, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+xtuner/v1/train/cli/sft.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-09-17_17:31:27
+  host      : GuGu-Workstation
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 11692) 
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================

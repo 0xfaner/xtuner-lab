@@ -1,0 +1,21 @@
+diff --git a/xtuner/v1/utils/load_spec.py b/xtuner/v1/utils/load_spec.py
+index c88eed2b..59af056e 100644
+--- a/xtuner/v1/utils/load_spec.py
++++ b/xtuner/v1/utils/load_spec.py
+@@ -493,7 +493,18 @@ def _foreach_all_gather_save_shards(
+         _pad_tensor_for_save_shard(tensor, shard_step)
+         for tensor, shard_step in zip(tensor_list, shard_steps, strict=True)
+     ]
++    # [xtuner-lab patch] cpu_offload 下分片在 CPU、本组后端是 NCCL：all_gather 前挪到计算设备、收集后挪回。
++    orig_devices = [tensor.device for tensor in padded_tensor_list]
++    if dist.get_backend(group) == "nccl" and any(device.type != "cuda" for device in orig_devices):
++        compute_device = torch.device("cuda", torch.cuda.current_device())
++        padded_tensor_list = [tensor.to(compute_device) for tensor in padded_tensor_list]
+     gathered_chunks_list = foreach_all_gather(padded_tensor_list, group)
++    gathered_chunks_list = [
++        [chunk.to(device=orig_device) for chunk in chunks]
++        for chunks, orig_device in zip(gathered_chunks_list, orig_devices, strict=True)
++    ]
+     return [
+         _merge_gathered_save_shard(gathered_chunks, shard_step)
+         for gathered_chunks, shard_step in zip(gathered_chunks_list, shard_steps, strict=True)
